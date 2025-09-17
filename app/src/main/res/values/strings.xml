@@ -27,6 +27,23 @@
     <string name="teacher_password" translatable="false">Teacher Password</string>
     <string name="gototeacherlogin" translatable="false">Go to Teacher Login</string>
     <string name="gobackstdlogin" translatable="false">Go Back Student Login</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Teacher Dashboard Strings -->
+    <string name="teacher_dashboard_welcome">Welcome to Teacher Dashboard</string>
+    <string name="teacher_dashboard_description">Access all your teaching tools and resources from this central dashboard. Use the navigation drawer to explore different sections.</string>
+    <string name="teacher_features">Teacher Features</string>
+    <string name="quick_navigation">Quick Navigation</string>
+    <string name="teacher_navigation_hint">Use the menu button (☰) in the top-left corner to access Profile, About School, Settings, and Logout options.</string>
+    <string name="profile_info">Profile Information</string>
+    <string name="teacher_profile_description">This is your teacher profile containing your personal and professional information. Contact your administrator if any information needs to be updated.</string>
+
+    <!-- Teacher Dashboard Sections -->
+    <string name="teacher_management">Class Management</string>
+    <string name="teacher_academic">Academic Tools</string>
+    <string name="teacher_communication">Communication</string>
+    <string name="teacher_tools">Teaching Tools</string>
 
     <!--LOGIN PAGE-->
 
@@ -411,6 +428,8 @@
 
     <!--ABOUT-->
     <string name="phone">Phone</string>
+    <string name="designation">Designation</string>
+    <string name="department">Department</string>
     <string name="schoolCode">School Code</string>
     <string name="currentSession">Current Session</string>
     <string name="sessionStartMonth">Session Start Month</string>

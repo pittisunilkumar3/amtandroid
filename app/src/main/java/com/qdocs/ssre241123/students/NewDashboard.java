@@ -999,33 +999,34 @@ public class NewDashboard extends AppCompatActivity {
                         pd.dismiss();
                         try {
 
+
                             JSONObject object = new JSONObject(result);
 
                             if(object.getString("status").equals("0")) {
                                 Utility.setSharedPreferenceBoolean(getApplicationContext(), Constants.isLoggegIn, false);
 
-                                android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(NewDashboard.this);
-                                builder.setCancelable(false);
-                                //builder.setMessage(R.string.verificationMessage);
-                                builder.setMessage(object.getString("msg"));
-                                builder.setTitle("");
-                                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                                // android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(NewDashboard.this);
+                                // builder.setCancelable(false);
+                                // //builder.setMessage(R.string.verificationMessage);
+                                // builder.setMessage(object.getString("msg"));
+                                // builder.setTitle("");
+                                // builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
 
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        if (Utility.isConnectingToInternet(getApplicationContext())) {
-                                            logoutparams.put("deviceToken", device_token);
-                                            JSONObject obj=new JSONObject(logoutparams);
-                                            Log.e("params ", obj.toString());
-                                            System.out.println("Logout Details=="+obj.toString());
-                                            loginOutApi(obj.toString());
-                                        } else {
-                                            makeText(getApplicationContext(),R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
-                                        }
-                                    }
-                                });
+                                //     public void onClick(DialogInterface dialog, int which) {
+                                //         if (Utility.isConnectingToInternet(getApplicationContext())) {
+                                //             logoutparams.put("deviceToken", device_token);
+                                //             JSONObject obj=new JSONObject(logoutparams);
+                                //             Log.e("params ", obj.toString());
+                                //             System.out.println("Logout Details=="+obj.toString());
+                                //             loginOutApi(obj.toString());
+                                //         } else {
+                                //             makeText(getApplicationContext(),R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
+                                //         }
+                                //     }
+                                // });
 
-                                android.app.AlertDialog alert = builder.create();
-                                alert.show();
+                                // android.app.AlertDialog alert = builder.create();
+                                // alert.show();
                             }else {
 
                                 if (Utility.getSharedPreferences(getApplicationContext(), Constants.loginType).equals("student")) {

@@ -56,6 +56,10 @@
         "source": "C:\\Users\\pitti\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-41:\\drawable\\pdf_file.png"
     },
     {
+        "merged": "com.qdocs.ssre241123.app-merged_res-39:/layout_teacher_profile_activity.xml.flat",
+        "source": "com.qdocs.ssre241123.app-main-41:/layout/teacher_profile_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\pitti\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-39:\\drawable_ic_add_black.xml.flat",
         "source": "C:\\Users\\pitti\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-41:\\drawable\\ic_add_black.xml"
     },
@@ -940,6 +944,10 @@
         "source": "C:\\Users\\pitti\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-41:\\layout\\commentlist.xml"
     },
     {
+        "merged": "C:\\Users\\pitti\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-39:\\layout_teacher_profile_activity.xml.flat",
+        "source": "C:\\Users\\pitti\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-41:\\layout\\teacher_profile_activity.xml"
+    },
+    {
         "merged": "C:\\Users\\pitti\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-39:\\drawable_ic_arrow_left.png.flat",
         "source": "C:\\Users\\pitti\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-41:\\drawable\\ic_arrow_left.png"
     },
@@ -1570,10 +1578,6 @@
     {
         "merged": "C:\\Users\\pitti\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-39:\\layout_fragment_student_profile.xml.flat",
         "source": "C:\\Users\\pitti\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-41:\\layout\\fragment_student_profile.xml"
-    },
-    {
-        "merged": "com.qdocs.ssre241123.app-merged_res-39:/layout_activity_teacher_login.xml.flat",
-        "source": "com.qdocs.ssre241123.app-main-41:/layout/activity_teacher_login.xml"
     },
     {
         "merged": "C:\\Users\\pitti\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-39:\\drawable_ic_folder_shared.xml.flat",

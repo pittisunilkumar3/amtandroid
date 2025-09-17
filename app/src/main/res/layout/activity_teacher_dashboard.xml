@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:orientation="vertical"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".teachers.TeacherDashboard">
 
     <FrameLayout
@@ -149,7 +149,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:layout_marginTop="5dp"
-                                android:text="Karan Sharma"
+                                android:text="Teacher Name"
                                 android:textColor="@color/textHeading"
                                 android:textSize="@dimen/largeheading"
                                 android:textStyle="bold" />
@@ -164,7 +164,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_horizontal"
                                     android:layout_marginBottom="20dp"
-                                    android:text="Admission No. 1800"
+                                    android:text="Emp. ID: EMP001"
                                     android:textColor="@color/textHeading"
                                     android:textSize="@dimen/secondaryText" />
                                 <TextView
@@ -173,7 +173,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_horizontal"
                                     android:layout_marginBottom="20dp"
-                                    android:text="Class 1-A"
+                                    android:text="Teacher"
                                     android:layout_marginStart="10dp"
                                     android:textColor="@color/textHeading"
                                     android:textSize="@dimen/secondaryText" />
@@ -234,7 +234,7 @@
                                         android:orientation="vertical">
 
                                         <androidx.cardview.widget.CardView
-                                            android:id="@+id/elearning_card"
+                                            android:id="@+id/teacher_management_card"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_marginLeft="20dp"
@@ -249,13 +249,15 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textview1"
+                                                    android:id="@+id/teacher_management_textview"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:padding="10dp"
+                                                    android:text="@string/teacher_management"
                                                     android:textColor="@color/hintDark"
                                                     android:textSize="@dimen/btntext"
                                                     android:textStyle="bold" />
+
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
@@ -264,13 +266,14 @@
                                                     android:weightSum="4">
 
                                                     <androidx.recyclerview.widget.RecyclerView
-                                                        android:id="@+id/elearning_recyclerView"
+                                                        android:id="@+id/teacher_management_recyclerView"
                                                         android:layout_width="match_parent"
                                                         android:layout_height="wrap_content"
                                                         android:numColumns="4"
                                                         android:gravity="center"
                                                         android:visibility="visible"
                                                         android:stretchMode="columnWidth" />
+
                                                 </LinearLayout>
 
                                             </LinearLayout>
@@ -278,7 +281,7 @@
                                         </androidx.cardview.widget.CardView>
 
                                         <androidx.cardview.widget.CardView
-                                            android:id="@+id/academic_card"
+                                            android:id="@+id/teacher_academic_card"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_marginLeft="20dp"
@@ -293,10 +296,11 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textview2"
+                                                    android:id="@+id/teacher_academic_textview"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:padding="10dp"
+                                                    android:text="@string/teacher_academic"
                                                     android:textColor="@color/hintDark"
                                                     android:textSize="@dimen/btntext"
                                                     android:textStyle="bold" />
@@ -309,7 +313,7 @@
                                                     android:weightSum="4">
 
                                                     <androidx.recyclerview.widget.RecyclerView
-                                                        android:id="@+id/academic_recyclerView"
+                                                        android:id="@+id/teacher_academic_recyclerView"
                                                         android:layout_width="match_parent"
                                                         android:layout_height="wrap_content"
                                                         android:numColumns="4"
@@ -324,7 +328,7 @@
                                         </androidx.cardview.widget.CardView>
 
                                         <androidx.cardview.widget.CardView
-                                            android:id="@+id/communicate_card"
+                                            android:id="@+id/teacher_communication_card"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_marginLeft="20dp"
@@ -339,10 +343,11 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textview3"
+                                                    android:id="@+id/teacher_communication_textview"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:padding="10dp"
+                                                    android:text="@string/teacher_communication"
                                                     android:textColor="@color/hintDark"
                                                     android:textSize="@dimen/btntext"
                                                     android:textStyle="bold" />
@@ -355,7 +360,7 @@
                                                     android:weightSum="4">
 
                                                     <androidx.recyclerview.widget.RecyclerView
-                                                        android:id="@+id/communicate_recyclerView"
+                                                        android:id="@+id/teacher_communication_recyclerView"
                                                         android:layout_width="match_parent"
                                                         android:layout_height="wrap_content"
                                                         android:numColumns="4"
@@ -370,7 +375,7 @@
                                         </androidx.cardview.widget.CardView>
 
                                         <androidx.cardview.widget.CardView
-                                            android:id="@+id/other_card"
+                                            android:id="@+id/teacher_tools_card"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_marginLeft="20dp"
@@ -386,10 +391,11 @@
                                                 android:orientation="vertical">
 
                                                 <TextView
-                                                    android:id="@+id/textview4"
+                                                    android:id="@+id/teacher_tools_textview"
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:padding="10dp"
+                                                    android:text="@string/teacher_tools"
                                                     android:textColor="@color/hintDark"
                                                     android:textSize="@dimen/primaryText"
                                                     android:textStyle="bold" />
@@ -402,7 +408,7 @@
                                                     android:weightSum="4">
 
                                                     <androidx.recyclerview.widget.RecyclerView
-                                                        android:id="@+id/other_recyclerView"
+                                                        android:id="@+id/teacher_tools_recyclerView"
                                                         android:layout_width="match_parent"
                                                         android:layout_height="wrap_content"
                                                         android:numColumns="4"

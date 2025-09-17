@@ -10,6 +10,9 @@ public class Constants {
     public static final String contentTypes = "application/x-www-form-urlencoded";
     public static final String domain = "https://school.cyberdetox.in";
     public static final String loginUrl = "auth/login";
+    public static final String teacherLoginUrl = "teacher/login";
+    public static final String teacherLogoutUrl = "teacher/logout";
+    public static final String teacherProfileUrl = "teacher/profile";
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";
     public static final String uploadHomeworkUrl = "webservice/addaa";
@@ -158,6 +161,21 @@ public class Constants {
     public static final String modulesArray = "modulesArray";
     public static final String isLoggegIn = "isLoggegIn";
     public static final String isLock = "isLock";
+
+    // Teacher specific constants
+    public static final String teacherId = "teacherId";
+    public static final String teacherStaffId = "teacherStaffId";
+    public static final String teacherEmployeeId = "teacherEmployeeId";
+    public static final String teacherName = "teacherName";
+    public static final String teacherSurname = "teacherSurname";
+    public static final String teacherEmail = "teacherEmail";
+    public static final String teacherContact = "teacherContact";
+    public static final String teacherDesignation = "teacherDesignation";
+    public static final String teacherDepartment = "teacherDepartment";
+    public static final String teacherImage = "teacherImage";
+    public static final String teacherToken = "teacherToken";
+    public static final String teacherJwtToken = "teacherJwtToken";
+    public static final String isTeacherLoggedIn = "isTeacherLoggedIn";
     public static final String showPaymentBtn = "showPaymentBtn";
     public static final String showCoursePaymentBtn = "showPaymentBtn";
     public static final String langCode = "langCode";
