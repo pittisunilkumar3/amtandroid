@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:298:9-306:20
+INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:301:9-309:20
 	android:grantUriPermissions
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:302:13-47
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:305:13-47
 	android:authorities
 		INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:300:13-60
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:303:13-60
 	android:exported
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:301:13-37
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:304:13-37
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:299:13-62
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:302:13-62
 manifest
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:2:1-309:12
-INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:2:1-309:12
-INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:2:1-309:12
-INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:2:1-309:12
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:2:1-312:12
+INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:2:1-312:12
+INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:2:1-312:12
+INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:2:1-312:12
 MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\pitti\.gradle\caches\transforms-3\795c86524f3a4b92a009042d95bd8589\transformed\material-1.0.0-beta01\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\pitti\.gradle\caches\transforms-3\d3fd7daf1d8796e5b1ef531309cda3ef\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\pitti\.gradle\caches\transforms-3\c67bbbe7ccdb4f9b411f3078b1185fdb\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -173,8 +173,8 @@ ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-
 	android:name
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:31:9-47
 application
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:34:5-307:19
-INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:34:5-307:19
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:34:5-310:19
+INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:34:5-310:19
 MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\pitti\.gradle\caches\transforms-3\795c86524f3a4b92a009042d95bd8589\transformed\material-1.0.0-beta01\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0-beta01] C:\Users\pitti\.gradle\caches\transforms-3\795c86524f3a4b92a009042d95bd8589\transformed\material-1.0.0-beta01\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\pitti\.gradle\caches\transforms-3\d3fd7daf1d8796e5b1ef531309cda3ef\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -257,496 +257,502 @@ ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:51:13-37
 	android:name
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:50:13-54
-activity#com.qdocs.ssre241123.teachers.TeacherLogin
+activity#com.qdocs.ssre241123.teachers.TeacherProfile
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:52:9-54:40
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:54:13-37
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:53:13-50
-activity#com.qdocs.ssre241123.students.CbseExaminationActivity
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:53:13-52
+activity#com.qdocs.ssre241123.teachers.TeacherLogin
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:55:9-57:40
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:57:13-37
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:56:13-61
-activity#com.qdocs.ssre241123.students.CbseTimeTableActivity
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:56:13-50
+activity#com.qdocs.ssre241123.students.CbseExaminationActivity
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:58:9-60:40
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:60:13-37
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:59:13-59
-activity#com.qdocs.ssre241123.students.StudentOfflinePayment
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:59:13-61
+activity#com.qdocs.ssre241123.students.CbseTimeTableActivity
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:61:9-63:40
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:63:13-37
 	android:name
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:62:13-59
-activity#com.qdocs.ssre241123.students.BehaviourComment
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:64:9-66:39
+activity#com.qdocs.ssre241123.students.StudentOfflinePayment
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:64:9-66:40
 	android:exported
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:66:13-36
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:66:13-37
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:65:13-54
-activity#com.qdocs.ssre241123.students.StudentVideoTutorialPlay
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:65:13-59
+activity#com.qdocs.ssre241123.students.BehaviourComment
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:67:9-69:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:69:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:68:13-62
-activity#com.qdocs.ssre241123.students.StudentHomeworkNew
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:68:13-54
+activity#com.qdocs.ssre241123.students.StudentVideoTutorialPlay
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:70:9-72:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:72:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:71:13-56
-activity#com.qdocs.ssre241123.students.NewDashboard
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:71:13-62
+activity#com.qdocs.ssre241123.students.StudentHomeworkNew
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:73:9-75:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:75:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:74:13-50
-activity#com.qdocs.ssre241123.students.StudentCoursePerformance
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:74:13-56
+activity#com.qdocs.ssre241123.students.NewDashboard
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:76:9-78:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:78:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:77:13-62
-activity#com.qdocs.ssre241123.students.StudentUploadDocument
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:77:13-50
+activity#com.qdocs.ssre241123.students.StudentCoursePerformance
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:79:9-81:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:81:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:80:13-59
-activity#com.qdocs.ssre241123.students.StudentDailyAssignment
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:80:13-62
+activity#com.qdocs.ssre241123.students.StudentUploadDocument
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:82:9-84:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:84:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:83:13-60
-activity#com.qdocs.ssre241123.students.StudentProcessingFees
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:83:13-59
+activity#com.qdocs.ssre241123.students.StudentDailyAssignment
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:85:9-87:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:87:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:86:13-59
-activity#com.qdocs.ssre241123.students.StudentCourseDetail
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:88:9-91:39
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:86:13-60
+activity#com.qdocs.ssre241123.students.StudentProcessingFees
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:88:9-90:39
 	android:exported
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:91:13-36
-	android:configChanges
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:90:13-90
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:90:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:89:13-57
-activity#com.qdocs.ssre241123.students.StudentOnlineCourse
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:92:9-94:39
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:89:13-59
+activity#com.qdocs.ssre241123.students.StudentCourseDetail
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:91:9-94:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:94:13-36
-	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:93:13-57
-activity#com.qdocs.ssre241123.students.StudentStartLessonActivity
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:95:9-98:39
-	android:exported
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:98:13-36
 	android:configChanges
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:97:13-97
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:93:13-90
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:96:13-64
-activity#com.qdocs.ssre241123.students.StudentLiveClasses
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:99:9-101:39
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:92:13-57
+activity#com.qdocs.ssre241123.students.StudentOnlineCourse
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:95:9-97:39
+	android:exported
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:97:13-36
+	android:name
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:96:13-57
+activity#com.qdocs.ssre241123.students.StudentStartLessonActivity
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:98:9-101:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:101:13-36
+	android:configChanges
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:100:13-97
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:100:13-56
-activity#com.qdocs.ssre241123.students.CourseExamResult
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:99:13-64
+activity#com.qdocs.ssre241123.students.StudentLiveClasses
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:102:9-104:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:104:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:103:13-54
-activity#com.qdocs.ssre241123.students.StudentOfflinePaymentList
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:103:13-56
+activity#com.qdocs.ssre241123.students.CourseExamResult
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:105:9-107:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:107:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:106:13-63
-activity#com.qdocs.ssre241123.students.StudentGmeetLiveClasses
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:106:13-54
+activity#com.qdocs.ssre241123.students.StudentOfflinePaymentList
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:108:9-110:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:110:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:109:13-61
-activity#com.qdocs.ssre241123.students.StudentBehaviourReport
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:109:13-63
+activity#com.qdocs.ssre241123.students.StudentGmeetLiveClasses
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:111:9-113:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:113:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:112:13-60
-activity#com.qdocs.ssre241123.students.NotificationList
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:112:13-61
+activity#com.qdocs.ssre241123.students.StudentBehaviourReport
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:114:9-116:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:116:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:115:13-54
-activity#com.qdocs.ssre241123.students.AddCourseAssignment
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:115:13-60
+activity#com.qdocs.ssre241123.students.NotificationList
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:117:9-119:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:119:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:118:13-57
-activity#com.qdocs.ssre241123.students.OnlineCourseExam
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:118:13-54
+activity#com.qdocs.ssre241123.students.AddCourseAssignment
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:120:9-122:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:122:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:121:13-54
-activity#com.qdocs.ssre241123.students.StudentOnlineExamQuestionsNew
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:123:9-126:39
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:121:13-57
+activity#com.qdocs.ssre241123.students.OnlineCourseExam
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:123:9-125:39
 	android:exported
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:126:13-36
-	android:configChanges
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:125:13-59
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:125:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:124:13-67
-activity#com.qdocs.ssre241123.students.StudentOnlineExamResult
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:127:9-129:39
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:124:13-54
+activity#com.qdocs.ssre241123.students.StudentOnlineExamQuestionsNew
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:126:9-129:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:129:13-36
+	android:configChanges
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:128:13-59
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:128:13-61
-activity#com.qdocs.ssre241123.students.StudentOnlineExam
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:127:13-67
+activity#com.qdocs.ssre241123.students.StudentOnlineExamResult
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:130:9-132:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:132:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:131:13-55
-activity#com.qdocs.ssre241123.AboutSchool
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:131:13-61
+activity#com.qdocs.ssre241123.students.StudentOnlineExam
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:133:9-135:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:135:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:134:13-40
-activity#com.qdocs.ssre241123.students.StudentTimeline
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:134:13-55
+activity#com.qdocs.ssre241123.AboutSchool
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:136:9-138:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:138:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:137:13-53
-activity#com.qdocs.ssre241123.students.StudentAddTimeLine
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:137:13-40
+activity#com.qdocs.ssre241123.students.StudentTimeline
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:139:9-141:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:141:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:140:13-56
-activity#com.qdocs.ssre241123.students.StudentEditTimeLine
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:140:13-53
+activity#com.qdocs.ssre241123.students.StudentAddTimeLine
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:142:9-144:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:144:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:143:13-57
-activity#com.qdocs.ssre241123.students.StudentDocuments
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:143:13-56
+activity#com.qdocs.ssre241123.students.StudentEditTimeLine
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:145:9-147:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:147:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:146:13-54
-activity#com.qdocs.ssre241123.SplashActivity
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:148:9-156:20
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:146:13-57
+activity#com.qdocs.ssre241123.students.StudentDocuments
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:148:9-150:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:150:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:149:13-43
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:151:13-155:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:152:17-69
-	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:152:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:154:17-77
-	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:154:27-74
-activity#com.qdocs.ssre241123.Login
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:157:9-159:39
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:149:13-54
+activity#com.qdocs.ssre241123.SplashActivity
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:151:9-159:20
 	android:exported
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:159:13-36
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:153:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:158:13-34
-activity#com.qdocs.ssre241123.students.StudentProfileDetailsNew
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:152:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:154:13-158:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:155:17-69
+	android:name
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:155:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:157:17-77
+	android:name
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:157:27-74
+activity#com.qdocs.ssre241123.Login
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:160:9-162:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:162:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:161:13-62
-activity#com.qdocs.ssre241123.students.StudentAddAssignment
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:161:13-34
+activity#com.qdocs.ssre241123.students.StudentProfileDetailsNew
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:163:9-165:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:165:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:164:13-58
-activity#com.qdocs.ssre241123.students.StudentEditAssignment
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:164:13-62
+activity#com.qdocs.ssre241123.students.StudentAddAssignment
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:166:9-168:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:168:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:167:13-59
-activity#com.qdocs.ssre241123.students.StudentUploadHomework
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:167:13-58
+activity#com.qdocs.ssre241123.students.StudentEditAssignment
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:169:9-171:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:171:13-36
 	android:name
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:170:13-59
-activity#com.qdocs.ssre241123.ForgotPassword
+activity#com.qdocs.ssre241123.students.StudentUploadHomework
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:172:9-174:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:174:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:173:13-43
-activity#com.qdocs.ssre241123.BaseActivity
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:173:13-59
+activity#com.qdocs.ssre241123.ForgotPassword
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:175:9-177:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:177:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:176:13-41
-activity#com.qdocs.ssre241123.students.StudentFees
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:176:13-43
+activity#com.qdocs.ssre241123.BaseActivity
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:178:9-180:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:180:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:179:13-49
-activity#com.qdocs.ssre241123.students.StudentNoticeBoard
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:179:13-41
+activity#com.qdocs.ssre241123.students.StudentFees
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:181:9-183:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:183:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:182:13-56
-activity#com.qdocs.ssre241123.students.StudentExaminationList
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:182:13-49
+activity#com.qdocs.ssre241123.students.StudentNoticeBoard
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:184:9-186:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:186:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:185:13-60
-activity#com.qdocs.ssre241123.students.StudentReportCard_ExamListResult
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:185:13-56
+activity#com.qdocs.ssre241123.students.StudentExaminationList
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:187:9-189:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:189:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:188:13-70
-activity#com.qdocs.ssre241123.students.StudentSubjectList
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:188:13-60
+activity#com.qdocs.ssre241123.students.StudentReportCard_ExamListResult
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:190:9-192:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:192:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:191:13-56
-activity#com.qdocs.ssre241123.students.StudentTeachersList
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:191:13-70
+activity#com.qdocs.ssre241123.students.StudentSubjectList
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:193:9-195:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:195:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:194:13-57
-activity#com.qdocs.ssre241123.students.StudentTransportRoutes
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:194:13-56
+activity#com.qdocs.ssre241123.students.StudentTeachersList
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:196:9-198:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:198:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:197:13-60
-activity#com.qdocs.ssre241123.students.StudentDownloads
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:197:13-57
+activity#com.qdocs.ssre241123.students.StudentTransportRoutes
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:199:9-201:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:201:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:200:13-54
-activity#com.qdocs.ssre241123.students.StudentAttendance
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:200:13-60
+activity#com.qdocs.ssre241123.students.StudentDownloads
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:202:9-204:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:204:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:203:13-55
-activity#com.qdocs.ssre241123.students.StudentReportCard_ExamList
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:203:13-54
+activity#com.qdocs.ssre241123.students.StudentAttendance
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:205:9-207:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:207:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:206:13-64
-activity#com.qdocs.ssre241123.students.StudentExamSchedule_ExamList
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:206:13-55
+activity#com.qdocs.ssre241123.students.StudentReportCard_ExamList
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:208:9-210:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:210:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:209:13-66
-activity#com.qdocs.ssre241123.students.StudentExamSchedule
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:209:13-64
+activity#com.qdocs.ssre241123.students.StudentExamSchedule_ExamList
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:211:9-213:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:213:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:212:13-57
-activity#com.qdocs.ssre241123.students.StudentVisitorBook
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:212:13-66
+activity#com.qdocs.ssre241123.students.StudentExamSchedule
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:214:9-216:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:216:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:215:13-56
-activity#com.qdocs.ssre241123.students.StudentHostel
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:215:13-57
+activity#com.qdocs.ssre241123.students.StudentVisitorBook
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:217:9-219:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:219:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:218:13-51
-activity#com.qdocs.ssre241123.students.StudentLibraryBook
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:218:13-56
+activity#com.qdocs.ssre241123.students.StudentHostel
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:220:9-222:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:222:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:221:13-56
-activity#com.qdocs.ssre241123.students.StudentClassTimetable
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:221:13-51
+activity#com.qdocs.ssre241123.students.StudentLibraryBook
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:223:9-225:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:225:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:224:13-59
-activity#com.qdocs.ssre241123.students.StudentSyllabusTimetable
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:224:13-56
+activity#com.qdocs.ssre241123.students.StudentClassTimetable
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:226:9-228:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:228:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:227:13-62
-activity#com.qdocs.ssre241123.students.StudentSyllabusStatus
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:227:13-59
+activity#com.qdocs.ssre241123.students.StudentSyllabusTimetable
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:229:9-231:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:231:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:230:13-59
-activity#com.qdocs.ssre241123.students.StudentLibraryBookIssued
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:230:13-62
+activity#com.qdocs.ssre241123.students.StudentSyllabusStatus
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:232:9-234:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:234:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:233:13-62
-activity#com.qdocs.ssre241123.students.StudentAppyLeave
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:233:13-59
+activity#com.qdocs.ssre241123.students.StudentLibraryBookIssued
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:235:9-237:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:237:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:236:13-54
-activity#com.qdocs.ssre241123.students.StudentAddLeave
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:236:13-62
+activity#com.qdocs.ssre241123.students.StudentAppyLeave
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:238:9-240:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:240:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:239:13-53
-activity#com.qdocs.ssre241123.students.StudentEditLeave
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:239:13-54
+activity#com.qdocs.ssre241123.students.StudentAddLeave
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:241:9-243:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:243:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:242:13-54
-activity#com.qdocs.ssre241123.students.StudentSyllabus
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:242:13-53
+activity#com.qdocs.ssre241123.students.StudentEditLeave
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:244:9-246:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:246:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:245:13-53
-activity#com.qdocs.ssre241123.students.StudentOnlineQuizResult
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:245:13-54
+activity#com.qdocs.ssre241123.students.StudentSyllabus
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:247:9-249:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:249:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:248:13-61
-activity#com.qdocs.ssre241123.students.StudentSyllabuslesson
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:248:13-53
+activity#com.qdocs.ssre241123.students.StudentOnlineQuizResult
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:250:9-252:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:252:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:251:13-59
-activity#com.qdocs.ssre241123.students.StudentOnlineCourseQuiz
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:251:13-61
+activity#com.qdocs.ssre241123.students.StudentSyllabuslesson
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:253:9-255:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:255:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:254:13-61
-activity#com.qdocs.ssre241123.SettingActivity
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:254:13-59
+activity#com.qdocs.ssre241123.students.StudentOnlineCourseQuiz
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:256:9-258:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:258:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:257:13-44
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:257:13-61
+activity#com.qdocs.ssre241123.SettingActivity
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:259:9-261:39
+	android:exported
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:261:13-36
+	android:name
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:260:13-44
 activity#com.qdocs.ssre241123.TakeUrl
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:259:9-262:40
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:262:9-265:40
 	android:exported
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:262:13-37
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:265:13-37
 	android:configChanges
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:261:13-59
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:264:13-59
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:260:13-36
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:263:13-36
 activity#com.qdocs.ssre241123.OpenPdf
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:263:9-265:39
-	android:exported
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:265:13-36
-	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:264:13-36
-activity#com.qdocs.ssre241123.students.StudentTasks
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:266:9-268:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:268:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:267:13-50
-activity#com.qdocs.ssre241123.students.StudentTasksEdit
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:267:13-36
+activity#com.qdocs.ssre241123.students.StudentTasks
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:269:9-271:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:271:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:270:13-54
-activity#com.qdocs.ssre241123.students.Payment
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:270:13-50
+activity#com.qdocs.ssre241123.students.StudentTasksEdit
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:272:9-274:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:274:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:273:13-45
-activity#com.qdocs.ssre241123.students.MultiplePayment
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:273:13-54
+activity#com.qdocs.ssre241123.students.Payment
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:275:9-277:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:277:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:276:13-53
-activity#com.qdocs.ssre241123.students.CoursePayment
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:276:13-45
+activity#com.qdocs.ssre241123.students.MultiplePayment
 ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:278:9-280:39
 	android:exported
 		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:280:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:279:13-51
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:279:13-53
+activity#com.qdocs.ssre241123.students.CoursePayment
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:281:9-283:39
+	android:exported
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:283:13-36
+	android:name
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:282:13-51
 activity#com.qdocs.ssre241123.students.CourseVideoPlay
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:281:9-285:53
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:284:9-288:53
 	android:screenOrientation
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:285:13-50
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:288:13-50
 	android:exported
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:284:13-37
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:287:13-37
 	android:configChanges
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:283:13-59
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:286:13-59
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:282:13-53
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:285:13-53
 activity#com.qdocs.ssre241123.students.LiveClasses
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:286:9-288:40
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:289:9-291:40
 	android:exported
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:288:13-37
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:291:13-37
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:287:13-49
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:290:13-49
 service#com.qdocs.ssre241123.utils.MyFirebaseMessagingService
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:290:9-296:19
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:293:9-299:19
 	android:exported
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:292:13-36
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:295:13-36
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:291:13-61
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:294:13-61
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:293:13-295:29
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:296:13-298:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:294:17-78
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:297:17-78
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:294:25-75
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:297:25-75
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:303:13-305:58
+ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:306:13-308:58
 	android:resource
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:305:17-55
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:308:17-55
 	android:name
-		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:304:17-67
+		ADDED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:307:17-67
 uses-sdk
 INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml

@@ -2,96 +2,95 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:orientation="vertical"
+    android:id="@+id/main_content"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".teachers.TeacherDashboard">
-
     <FrameLayout
         android:id="@+id/actionBar"
         android:layout_width="match_parent"
         android:background="#E7F1EE"
         android:layout_height="56dp">
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_scrollFlags="scroll|enterAlways">
+            android:gravity="center_vertical">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
+            <ImageView
+                android:id="@+id/drawer_indicator"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:tint="@color/textHeading"
+                android:scaleType="centerInside"
+                android:background="@drawable/drawer_selector"
+                android:layout_gravity="start" />
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical">
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
 
                 <ImageView
-                    android:id="@+id/drawer_indicator"
-                    android:layout_width="56dp"
-                    android:layout_height="56dp"
+                    android:id="@+id/actionBar_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="200dp"
+                    android:maxHeight="45dp"
+                    android:minWidth="150dp"
+                    android:padding="5dp"
+                    android:minHeight="30dp"
+                    android:src="@drawable/splash_logo"
+                    android:scaleType="fitStart"
+                    android:adjustViewBounds="true" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/notification_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:clipToPadding="false"
+                android:focusable="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
                     android:tint="@color/textHeading"
-                    android:scaleType="centerInside"
-                    android:background="@drawable/drawer_selector"
-                    android:layout_gravity="start" />
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true">
+                    android:src="@drawable/ic_add_alert"/>
 
-                    <ImageView
-                        android:id="@+id/actionBar_logo"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:maxWidth="200dp"
-                        android:maxHeight="45dp"
-                        android:minWidth="150dp"
-                        android:padding="5dp"
-                        android:minHeight="30dp"
-                        android:src="@drawable/splash_logo"
-                        android:scaleType="fitStart"
-                        android:adjustViewBounds="true" />
+                <TextView
+                    android:id="@+id/unread_count"
+                    android:layout_width="18dp"
+                    android:layout_height="17dp"
+                    android:layout_gravity="right|end|top"
+                    android:layout_marginLeft="18dp"
+                    android:background="@drawable/badge_background"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
 
-                </LinearLayout>
+            </FrameLayout>
 
-                <FrameLayout
-                    android:id="@+id/notification_alert"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:clipToPadding="false"
-                    android:focusable="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="15dp"
-                    >
+        </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_gravity="center"
-                        android:tint="@color/textHeading"
-                        android:src="@drawable/ic_add_alert"/>
-
-                    <TextView
-                        android:id="@+id/unread_count"
-                        android:layout_width="18dp"
-                        android:layout_height="17dp"
-                        android:layout_gravity="right|end|top"
-                        android:layout_marginLeft="18dp"
-                        android:background="@drawable/badge_background"
-                        android:gravity="center"
-                        android:padding="3dp"
-                        android:text=""
-                        android:visibility="gone"
-                        android:textColor="@android:color/white"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
-
-                </FrameLayout>
-
-            </RelativeLayout>
-
-        </androidx.appcompat.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     </FrameLayout>
 
@@ -99,7 +98,8 @@
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:fitsSystemWindows="false">
 
         <FrameLayout
             android:id="@+id/studentDashboard_frame"
@@ -184,11 +184,11 @@
 
                     </com.google.android.material.appbar.CollapsingToolbarLayout>
                 </com.google.android.material.appbar.AppBarLayout>
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                    android:fitsSystemWindows="true">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        android:fitsSystemWindows="true">
 
 
                     <androidx.cardview.widget.CardView

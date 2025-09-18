@@ -67,6 +67,9 @@
             android:name="com.qdocs.ssre241123.teachers.TeacherDashboard"
             android:exported="false" />
         <activity
+            android:name="com.qdocs.ssre241123.teachers.TeacherProfile"
+            android:exported="false" />
+        <activity
             android:name="com.qdocs.ssre241123.teachers.TeacherLogin"
             android:exported="false" />
         <activity

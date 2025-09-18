@@ -50,6 +50,9 @@
             android:name=".teachers.TeacherDashboard"
             android:exported="false" />
         <activity
+            android:name=".teachers.TeacherProfile"
+            android:exported="false" />
+        <activity
             android:name=".teachers.TeacherLogin"
             android:exported="false" />
         <activity
