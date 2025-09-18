@@ -1,6 +1,8 @@
 package com.qdocs.ssre241123.teachers;
 
+import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -8,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,19 +50,33 @@ public class TeacherProfile extends BaseActivity {
 
     private TextView nameTV, designationTV, employeeIdTV;
     private CircleImageView profileImageIV;
+    private ImageView qrcodeIV;
     private RecyclerView recyclerView;
     private StudentProfileAdapter adapter;
     private CardView cardViewOuter;
+    private LinearLayout qrcode_layout;
     private Map<String, String> headers = new HashMap<String, String>();
 
-    // Profile data arrays for RecyclerView
+    // Profile data arrays for comprehensive profile display
     private ArrayList<String> profileValues = new ArrayList<>();
     private int[] profileHeaderArray = {
         R.string.email,
         R.string.phone,
+        R.string.emergency_contact,
         R.string.designation,
-        R.string.department
+        R.string.department,
+        R.string.date_of_joining,
+        R.string.qualification,
+        R.string.work_experience,
+        R.string.marital_status,
+        R.string.father_name,
+        R.string.mother_name,
+        R.string.local_address,
+        R.string.permanent_address
     };
+
+    // Profile sections data
+    private JSONObject basicInfo, contactInfo, personalInfo, addressInfo, bankDetails, socialMedia, qrCodeData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,11 +112,15 @@ public class TeacherProfile extends BaseActivity {
         designationTV = findViewById(R.id.teacher_profile_designationTV);
         employeeIdTV = findViewById(R.id.teacher_profile_employeeIdTV);
         profileImageIV = findViewById(R.id.teacher_profile_imageIV);
+        qrcodeIV = findViewById(R.id.teacherProfile_qrcodeIV);
         recyclerView = findViewById(R.id.teacher_profile_recyclerView);
         cardViewOuter = findViewById(R.id.card_view_outer);
+        qrcode_layout = findViewById(R.id.teacher_qrcode_layout);
 
         // Set theme color for outer card
         cardViewOuter.setBackgroundColor(Color.parseColor(Utility.getSharedPreferences(getApplicationContext(), Constants.primaryColour)));
+
+        // QR code click listener will be set up after API response
     }
 
     private void setupRecyclerView() {
@@ -180,7 +201,9 @@ public class TeacherProfile extends BaseActivity {
         pd.setCancelable(false);
         pd.show();
 
-        String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.teacherProfileUrl;
+        // Use GET method with staff_id in URL path
+        String teacherId = TeacherAuthHelper.getTeacherId(this);
+        String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.teacherProfileUrl + "/" + teacherId;
         Log.e("Teacher Profile URL", url);
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
@@ -195,9 +218,8 @@ public class TeacherProfile extends BaseActivity {
                         String message = object.getString("message");
 
                         if (status.equals("1")) {
-                            // Profile retrieved successfully
-                            JSONObject data = object.getJSONObject("data");
-                            updateProfileUI(data);
+                            // Profile retrieved successfully - parse comprehensive response
+                            parseComprehensiveProfile(object);
                         } else {
                             Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
                         }
@@ -234,35 +256,183 @@ public class TeacherProfile extends BaseActivity {
         requestQueue.add(stringRequest);
     }
 
-    private void updateProfileUI(JSONObject data) {
+    private void parseComprehensiveProfile(JSONObject response) {
         try {
-            String name = data.optString("name", "") + " " + data.optString("surname", "");
-            String employeeId = data.optString("employee_id", "");
-            String email = data.optString("email", "");
-            String phone = data.optString("phone", "");
-            String designation = data.optString("designation", "");
-            String department = data.optString("department", "");
+            // Parse all sections of the comprehensive profile response
+            basicInfo = response.optJSONObject("basic_info");
+            contactInfo = response.optJSONObject("contact_info");
+            personalInfo = response.optJSONObject("personal_info");
+            addressInfo = response.optJSONObject("address_info");
+            bankDetails = response.optJSONObject("bank_details");
+            socialMedia = response.optJSONObject("social_media");
+            qrCodeData = response.optJSONObject("qr_code");
 
             // Update header information
-            nameTV.setText(name.trim());
-            designationTV.setText(designation);
-            employeeIdTV.setText(employeeId);
+            updateHeaderInformation();
 
-            // Update profile values for RecyclerView
-            updateProfileValues(email, phone, designation, department);
+            // Update comprehensive profile values
+            updateComprehensiveProfileValues();
 
-            // Update cached data
-            Utility.setSharedPreference(this, Constants.teacherName, data.optString("name", ""));
-            Utility.setSharedPreference(this, Constants.teacherSurname, data.optString("surname", ""));
-            Utility.setSharedPreference(this, Constants.teacherEmployeeId, employeeId);
-            Utility.setSharedPreference(this, Constants.teacherEmail, email);
-            Utility.setSharedPreference(this, Constants.teacherContact, phone);
-            Utility.setSharedPreference(this, Constants.teacherDesignation, designation);
-            Utility.setSharedPreference(this, Constants.teacherDepartment, department);
+            // Load profile image
+            String profileImageUrl = response.optString("profile_image", "");
+            loadProfileImageFromUrl(profileImageUrl);
+
+            // Load QR code
+            loadQRCode();
+
+            // Cache important data
+            cacheProfileData();
 
         } catch (Exception e) {
             e.printStackTrace();
-            Log.e("Teacher Profile Update", "Error updating profile UI: " + e.getMessage());
+            Log.e("Teacher Profile Parse", "Error parsing comprehensive profile: " + e.getMessage());
         }
+    }
+
+    private void updateHeaderInformation() {
+        if (basicInfo != null) {
+            String fullName = basicInfo.optString("full_name", "");
+            String employeeId = basicInfo.optString("employee_id", "");
+            String designationName = basicInfo.optString("designation_name", "");
+
+            nameTV.setText(fullName);
+            designationTV.setText(designationName);
+            employeeIdTV.setText(employeeId);
+        }
+    }
+
+    private void updateComprehensiveProfileValues() {
+        profileValues.clear();
+
+        // Email
+        profileValues.add(contactInfo != null ? contactInfo.optString("email", "Not provided") : "Not provided");
+
+        // Phone
+        profileValues.add(contactInfo != null ? contactInfo.optString("contact_no", "Not provided") : "Not provided");
+
+        // Emergency Contact
+        profileValues.add(contactInfo != null ? contactInfo.optString("emergency_contact_no", "Not provided") : "Not provided");
+
+        // Designation
+        profileValues.add(basicInfo != null ? basicInfo.optString("designation_name", "Not provided") : "Not provided");
+
+        // Department
+        profileValues.add(basicInfo != null ? basicInfo.optString("department_name", "Not provided") : "Not provided");
+
+        // Date of Joining
+        profileValues.add(basicInfo != null ? basicInfo.optString("date_of_joining", "Not provided") : "Not provided");
+
+        // Qualification
+        profileValues.add(personalInfo != null ? personalInfo.optString("qualification", "Not provided") : "Not provided");
+
+        // Work Experience
+        profileValues.add(personalInfo != null ? personalInfo.optString("work_exp", "Not provided") : "Not provided");
+
+        // Marital Status
+        profileValues.add(personalInfo != null ? personalInfo.optString("marital_status", "Not provided") : "Not provided");
+
+        // Father's Name
+        profileValues.add(personalInfo != null ? personalInfo.optString("father_name", "Not provided") : "Not provided");
+
+        // Mother's Name
+        profileValues.add(personalInfo != null ? personalInfo.optString("mother_name", "Not provided") : "Not provided");
+
+        // Local Address
+        profileValues.add(addressInfo != null ? addressInfo.optString("local_address", "Not provided") : "Not provided");
+
+        // Permanent Address
+        profileValues.add(addressInfo != null ? addressInfo.optString("permanent_address", "Not provided") : "Not provided");
+
+        // Notify adapter of data changes
+        if (adapter != null) {
+            adapter.notifyDataSetChanged();
+        }
+    }
+
+    private void loadProfileImageFromUrl(String imageUrl) {
+        if (imageUrl != null && !imageUrl.isEmpty()) {
+            Log.e("Teacher Profile Image URL", imageUrl);
+
+            Picasso.with(this)
+                    .load(imageUrl)
+                    .placeholder(R.drawable.demo)
+                    .error(R.drawable.demo)
+                    .memoryPolicy(MemoryPolicy.NO_CACHE)
+                    .networkPolicy(NetworkPolicy.NO_CACHE)
+                    .into(profileImageIV);
+        } else {
+            Log.d("Teacher Profile Image", "No image URL available, using default");
+            profileImageIV.setImageResource(R.drawable.demo);
+        }
+    }
+
+    private void loadQRCode() {
+        if (qrCodeData != null) {
+            String qrCodeUrl = qrCodeData.optString("qr_code_url", "");
+            if (!qrCodeUrl.isEmpty()) {
+                Log.e("Teacher QR Code URL", qrCodeUrl);
+
+                // Load QR code image exactly like student profile
+                Picasso.with(getApplicationContext()).load(qrCodeUrl).into(qrcodeIV);
+
+                // Set up click listener exactly like student profile
+                qrcodeIV.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        showAddDialog(TeacherProfile.this, qrCodeUrl, "QR Code");
+                    }
+                });
+
+                // Show QR code layout
+                qrcode_layout.setVisibility(View.VISIBLE);
+            } else {
+                // Hide QR code layout if no QR code available
+                qrcode_layout.setVisibility(View.GONE);
+            }
+        } else {
+            qrcode_layout.setVisibility(View.GONE);
+        }
+    }
+
+    private void cacheProfileData() {
+        try {
+            if (basicInfo != null) {
+                Utility.setSharedPreference(this, Constants.teacherName, basicInfo.optString("name", ""));
+                Utility.setSharedPreference(this, Constants.teacherSurname, basicInfo.optString("surname", ""));
+                Utility.setSharedPreference(this, Constants.teacherEmployeeId, basicInfo.optString("employee_id", ""));
+                Utility.setSharedPreference(this, Constants.teacherDesignation, basicInfo.optString("designation_name", ""));
+                Utility.setSharedPreference(this, Constants.teacherDepartment, basicInfo.optString("department_name", ""));
+            }
+
+            if (contactInfo != null) {
+                Utility.setSharedPreference(this, Constants.teacherEmail, contactInfo.optString("email", ""));
+                Utility.setSharedPreference(this, Constants.teacherContact, contactInfo.optString("contact_no", ""));
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.e("Teacher Profile Cache", "Error caching profile data: " + e.getMessage());
+        }
+    }
+
+    private void showAddDialog(Context context, String url, String name) {
+        final Dialog dialog = new Dialog(context);
+        dialog.setContentView(R.layout.qrcode_layout);
+
+        TextView nameTV = (TextView) dialog.findViewById(R.id.nameTV);
+        nameTV.setText(name);
+        ImageView qrcode_image = (ImageView) dialog.findViewById(R.id.qrcode_image);
+        ImageView crossIcon = (ImageView) dialog.findViewById(R.id.crossIcon);
+
+        Picasso.with(getApplicationContext()).load(url).into(qrcode_image);
+
+        crossIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
     }
 }

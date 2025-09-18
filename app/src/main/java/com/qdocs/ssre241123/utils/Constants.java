@@ -10,9 +10,14 @@ public class Constants {
     public static final String contentTypes = "application/x-www-form-urlencoded";
     public static final String domain = "https://school.cyberdetox.in";
     public static final String loginUrl = "auth/login";
+
+
     public static final String teacherLoginUrl = "teacher/login";
     public static final String teacherLogoutUrl = "teacher/logout";
     public static final String teacherProfileUrl = "teacher/profile";
+
+
+
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";
     public static final String uploadHomeworkUrl = "webservice/addaa";
@@ -161,6 +166,8 @@ public class Constants {
     public static final String modulesArray = "modulesArray";
     public static final String isLoggegIn = "isLoggegIn";
     public static final String isLock = "isLock";
+
+
 
     // Teacher specific constants
     public static final String teacherId = "teacherId";

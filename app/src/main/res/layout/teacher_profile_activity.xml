@@ -114,6 +114,53 @@
 
                 </androidx.cardview.widget.CardView>
 
+                <!-- QR Code Section - Matching Student Profile Layout -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    app:cardElevation="5dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <LinearLayout
+                            android:id="@+id/teacher_qrcode_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/teacherProfile_qrcodeHeader"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:text="@string/qrcode"
+                                android:textColor="@color/textHeading"
+                                android:textSize="@dimen/secondaryText" />
+
+                            <ImageView
+                                android:id="@+id/teacherProfile_qrcodeIV"
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:text="@string/empty"
+                                android:textColor="@color/textHeading"
+                                android:textSize="@dimen/secondaryText" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Profile Information Section -->
                 <androidx.cardview.widget.CardView
                     android:id="@+id/teacher_profile_info_card"
                     android:layout_width="match_parent"

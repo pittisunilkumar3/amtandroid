@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.qdocs.ssre241123.app-mergeDebugResources-37:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.qdocs.ssre241123.app-mergeDebugResources-3:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\pitti\\.gradle\\caches\\transforms-3\\b5575a86ee5ccf20f778177f2b298974\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\caches\\transforms-3\\b5575a86ee5ccf20f778177f2b298974\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

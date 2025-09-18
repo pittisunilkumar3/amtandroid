@@ -1575,6 +1575,7 @@ drawable ic_play_icon
 drawable ic_plus_white
 drawable ic_profile_plus
 drawable ic_publisher
+drawable ic_qr_code
 drawable ic_quiz
 drawable ic_relation
 drawable ic_reset
@@ -3001,6 +3002,8 @@ id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id takephoto
 id teacherNameTV
+id teacherProfile_qrcodeHeader
+id teacherProfile_qrcodeIV
 id teacher_ImageIV
 id teacher_academic_card
 id teacher_academic_recyclerView
@@ -3021,6 +3024,7 @@ id teacher_profile_imageIV
 id teacher_profile_info_card
 id teacher_profile_nameTV
 id teacher_profile_recyclerView
+id teacher_qrcode_layout
 id teacher_remark
 id teacher_remark_layout
 id teacher_tools_card
@@ -3541,11 +3545,13 @@ string about
 string absent
 string absent_a
 string academic
+string account_title
 string addassignmentheading
 string addcourseassignmentheading
 string addfile
 string addleaveheading
 string address
+string address_info
 string addtimelineheading
 string admDate
 string admin
@@ -3584,9 +3590,14 @@ string balance
 string balanceAmt
 string bankAcNo
 string bankName
+string bank_account_no
+string bank_branch
+string bank_details
 string bankpayment
 string banktransfer
 string barcode
+string basic_info
+string basic_salary
 string behavioureport
 string behaviourreportheading
 string behaviourscore
@@ -3654,7 +3665,9 @@ string communicate
 string completed
 string compre_ques
 string consolidate
+string contact_info
 string contents
+string contract_type
 string correct
 string correctanswer
 string correctanswernotattempt
@@ -3684,6 +3697,7 @@ string dailyassignmentheading
 string dailycircularheading
 string date
 string dateError
+string date_of_joining
 string datefrom
 string dateofPayment
 string datetime
@@ -3725,6 +3739,8 @@ string edittask
 string edittimelineheading
 string elearning
 string email
+string emergency_contact
+string employee_id
 string empty
 string english
 string enterreview
@@ -3746,11 +3762,13 @@ string examscheduleheading
 string examto
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string facebook
 string fail
 string father
 string fatherName
 string fatherOcc
 string fatherPhone
+string father_name
 string fcm_fallback_notification_channel_label
 string feeDetail
 string feeheading
@@ -3813,6 +3831,7 @@ string ifscCode
 string incomplete
 string incompleted
 string incorrect
+string instagram
 string intime
 string invalidPassword
 string invalidUsername
@@ -3830,13 +3849,17 @@ string lessons
 string library
 string libraryBookIssued
 string libraryStatus
+string linkedin
 string liveclasses
 string livegmeetclasses
 string localIdNo
+string local_address
+string location
 string login
 string logoutMsg
 string made
 string maintainMessage
+string marital_status
 string marks
 string mathematics
 string max
@@ -3849,6 +3872,7 @@ string mother
 string motherName
 string motherOcc
 string motherPhone
+string mother_name
 string mtrl_chip_close_icon_content_description
 string name
 string nationalIdNo
@@ -3928,7 +3952,9 @@ string pendingTask
 string pendingtaskheading
 string percentage
 string permanentAdd
+string permanent_address
 string personalDetail
+string personal_info
 string phone
 string pickup_point
 string pickuptime
@@ -3951,6 +3977,7 @@ string publishDate
 string publisher
 string purpose
 string qrcode
+string qualification
 string quantity
 string question
 string quick_navigation
@@ -4005,6 +4032,8 @@ string setting
 string settingheading
 string shareby
 string sharedate
+string shift
+string social_media
 string staff
 string startEndTime
 string startexam
@@ -4081,6 +4110,7 @@ string transportRoute
 string transportfeesmonth
 string transportheading
 string tuesday
+string twitter
 string unpaid
 string upcomingexam
 string upi
@@ -4111,6 +4141,7 @@ string visitorbook
 string visitorbookheading
 string wednesday
 string weight
+string work_experience
 string wrong
 string wronganswer
 string yes
