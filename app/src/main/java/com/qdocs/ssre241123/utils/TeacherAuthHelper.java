@@ -184,6 +184,10 @@ public class TeacherAuthHelper {
         return Utility.getSharedPreferences(context, Constants.teacherId);
     }
 
+    public static String getTeacherStaffId(Context context) {
+        return Utility.getSharedPreferences(context, Constants.teacherStaffId);
+    }
+
     public static String getTeacherName(Context context) {
         String firstName = Utility.getSharedPreferences(context, Constants.teacherName);
         String lastName = Utility.getSharedPreferences(context, Constants.teacherSurname);

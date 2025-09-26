@@ -160,32 +160,31 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <!-- Profile Information Section -->
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/teacher_profile_info_card"
+                <!-- Tab Layout and ViewPager Section -->
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:elevation="10dp"
-                    app:cardElevation="5dp"
-                    android:layout_margin="10dp"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="15dp">
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="15dp">
-
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/teacher_profile_recyclerView"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/teacherProfileTabLayout"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-                        </androidx.recyclerview.widget.RecyclerView>
-
+                            android:layout_height="wrap_content"
+                            app:tabMode="scrollable"
+                            app:tabGravity="fill"
+                            app:tabTextAppearance="@style/CustomTablayout" />
                     </LinearLayout>
 
-                </androidx.cardview.widget.CardView>
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/teacherProfileViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </LinearLayout>
 
             </LinearLayout>
 

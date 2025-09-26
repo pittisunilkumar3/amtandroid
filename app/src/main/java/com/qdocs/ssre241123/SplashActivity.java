@@ -95,8 +95,14 @@ public class SplashActivity extends Activity {
                         finish();
                     }
                 } else {
+                    // When askUrlFromUser is false, always use Constants.domain and clear any stored URL
+                    String defaultApiUrl = Constants.domain + "/api/";
+                    Utility.setSharedPreference(getApplicationContext(), Constants.apiUrl, defaultApiUrl);
+                    Utility.setSharedPreferenceBoolean(getApplicationContext(), "isUrlTaken", false);
+                    Log.e("API URL Reset", "Using default domain: " + defaultApiUrl);
+
                     if(Utility.isConnectingToInternet(SplashActivity.this)){
-                        ismaintenancemode(Constants.domain+"/api/");
+                        ismaintenancemode(defaultApiUrl);
                     }else{
                         makeText(getApplicationContext(), R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
                     }

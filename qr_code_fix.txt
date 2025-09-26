@@ -1,0 +1,90 @@
+
+// QR CODE ISSUE IDENTIFIED: The QR code URL returns 404
+// Current URL: https://school.cyberdetox.in/api/api/teacher/qr-code/6
+// Notice the double "/api/api" - this might be the issue
+
+// SOLUTION: Fix the QR code URL construction or handle the 404 gracefully
+
+// In TeacherProfile.java, update the loadQRCode method:
+
+private void loadQRCode() {
+    Log.d("Teacher QR Code", "=== QR CODE LOADING DEBUG ===");
+    
+    if (qrCodeData != null) {
+        Log.d("Teacher QR Code", "QR Code data available: " + qrCodeData.toString());
+        
+        String qrCodeUrl = qrCodeData.optString("qr_code_url", "");
+        Log.d("Teacher QR Code", "QR Code URL: " + qrCodeUrl);
+        
+        if (!qrCodeUrl.isEmpty()) {
+            // Try to load the QR code with error handling
+            Picasso.with(getApplicationContext())
+                .load(qrCodeUrl)
+                .placeholder(R.drawable.demo)  // Show placeholder while loading
+                .error(R.drawable.demo)        // Show default image if loading fails
+                .into(qrcodeIV, new com.squareup.picasso.Callback() {
+                    @Override
+                    public void onSuccess() {
+                        Log.d("Teacher QR Code", "QR Code loaded successfully");
+                        qrcode_layout.setVisibility(View.VISIBLE);
+                        
+                        // Set up click listener
+                        qrcodeIV.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                showAddDialog(TeacherProfile.this, qrCodeUrl, "QR Code");
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onError() {
+                        Log.e("Teacher QR Code", "Failed to load QR Code from URL: " + qrCodeUrl);
+                        
+                        // Try alternative: Generate QR code locally from qr_string
+                        String qrString = qrCodeData.optString("qr_string", "");
+                        if (!qrString.isEmpty()) {
+                            Log.d("Teacher QR Code", "Attempting to generate QR code locally from string");
+                            generateQRCodeLocally(qrString);
+                        } else {
+                            Log.w("Teacher QR Code", "No QR string available, hiding QR code layout");
+                            qrcode_layout.setVisibility(View.GONE);
+                        }
+                    }
+                });
+        } else {
+            Log.w("Teacher QR Code", "QR Code URL is empty");
+            qrcode_layout.setVisibility(View.GONE);
+        }
+    } else {
+        Log.w("Teacher QR Code", "QR Code data is null");
+        qrcode_layout.setVisibility(View.GONE);
+    }
+    
+    Log.d("Teacher QR Code", "=== END QR CODE LOADING DEBUG ===");
+}
+
+// Add this method to generate QR code locally if the URL fails
+private void generateQRCodeLocally(String qrString) {
+    // This would require adding a QR code generation library
+    // For now, just show the QR code layout with a placeholder
+    Log.d("Teacher QR Code", "Local QR generation not implemented, showing placeholder");
+    qrcode_layout.setVisibility(View.VISIBLE);
+    qrcodeIV.setImageResource(R.drawable.demo);
+    
+    // Set up click listener to show the QR string in a dialog
+    qrcodeIV.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            showQRStringDialog(qrString);
+        }
+    });
+}
+
+private void showQRStringDialog(String qrString) {
+    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    builder.setTitle("QR Code Data");
+    builder.setMessage(qrString);
+    builder.setPositiveButton("OK", null);
+    builder.show();
+}

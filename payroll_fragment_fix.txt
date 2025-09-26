@@ -1,0 +1,127 @@
+
+// ISSUE IDENTIFIED: The API response structure doesn't match what the fragment expects
+// The API returns payroll_records as an empty array, but the provided JSON shows it should have data
+
+// SOLUTION 1: Update the fragment to handle both empty and populated payroll records better
+// SOLUTION 2: Check if the API endpoint is correct or if there's a data issue
+
+// In TeacherPayrollFragment.java, update the loadPayrollData method:
+
+private void loadPayrollData() {
+    payrollValues.clear();
+    payrollData.clear();
+    
+    Log.d("TeacherPayrollFragment", "=== PAYROLL DATA LOADING DEBUG ===");
+    
+    if (getArguments() != null && getArguments().getString("teacherData") != null) {
+        try {
+            JSONObject teacherData = new JSONObject(getArguments().getString("teacherData"));
+            String currency = Utility.getSharedPreferences(getActivity(), Constants.currency);
+            
+            Log.d("TeacherPayrollFragment", "Teacher data received, parsing payroll information");
+            
+            // Extract bank details first (these should always be shown)
+            JSONObject bankDetails = teacherData.optJSONObject("bank_details");
+            Log.d("TeacherPayrollFragment", "Bank details: " + (bankDetails != null ? bankDetails.toString() : "null"));
+            
+            // Basic salary from bank_details
+            if (bankDetails != null) {
+                String basicSalary = bankDetails.optString("basic_salary", "0");
+                if (!basicSalary.equals("0") && !basicSalary.isEmpty()) {
+                    payrollValues.add(currency + " " + basicSalary);
+                } else {
+                    payrollValues.add("Not specified");
+                }
+                
+                // Bank account details
+                payrollValues.add(bankDetails.optString("account_title", "Not provided"));
+                payrollValues.add(bankDetails.optString("bank_account_no", "Not provided"));
+                payrollValues.add(bankDetails.optString("bank_name", "Not provided"));
+                payrollValues.add(bankDetails.optString("bank_branch", "Not provided"));
+                payrollValues.add(bankDetails.optString("ifsc_code", "Not provided"));
+                payrollValues.add(bankDetails.optString("contract_type", "Not specified"));
+                payrollValues.add(bankDetails.optString("shift", "Not specified"));
+                payrollValues.add(bankDetails.optString("location", "Not specified"));
+            } else {
+                // Fill with default values if bank details are missing
+                for (int i = 0; i < 9; i++) {
+                    payrollValues.add("Not available");
+                }
+            }
+
+            // Extract payroll records
+            JSONObject payrollDetails = teacherData.optJSONObject("payroll_details");
+            Log.d("TeacherPayrollFragment", "Payroll details: " + (payrollDetails != null ? "Present" : "Missing"));
+            
+            if (payrollDetails != null) {
+                JSONArray payrollRecords = payrollDetails.optJSONArray("payroll_records");
+                Log.d("TeacherPayrollFragment", "Payroll records count: " + (payrollRecords != null ? payrollRecords.length() : 0));
+                
+                if (payrollRecords != null && payrollRecords.length() > 0) {
+                    // Get the latest payroll record (first in array)
+                    JSONObject latestPayroll = payrollRecords.optJSONObject(0);
+                    if (latestPayroll != null) {
+                        Log.d("TeacherPayrollFragment", "Latest payroll: " + latestPayroll.toString());
+                        
+                        String status = latestPayroll.optString("status", "Unknown");
+                        payrollValues.add(status);
+
+                        // Format payment date
+                        String paymentDate = latestPayroll.optString("payment_date", "");
+                        if (!paymentDate.isEmpty()) {
+                            try {
+                                paymentDate = Utility.parseDate("yyyy-MM-dd",
+                                    Utility.getSharedPreferences(getActivity(), "dateFormat"),
+                                    paymentDate);
+                            } catch (Exception e) {
+                                Log.e("TeacherPayrollFragment", "Date parsing error: " + e.getMessage());
+                            }
+                        } else {
+                            paymentDate = "Not specified";
+                        }
+                        payrollValues.add(paymentDate);
+                    } else {
+                        payrollValues.add("No record details");
+                        payrollValues.add("No payment date");
+                    }
+                } else {
+                    // No payroll records available - this is the current case
+                    payrollValues.add("No payroll records");
+                    payrollValues.add("No payment date");
+                    Log.d("TeacherPayrollFragment", "No payroll records found - showing default message");
+                }
+            } else {
+                // No payroll details section
+                payrollValues.add("No payroll data");
+                payrollValues.add("No payment data");
+                Log.d("TeacherPayrollFragment", "No payroll details section found");
+            }
+            
+            Log.d("TeacherPayrollFragment", "Final payroll values count: " + payrollValues.size());
+            for (int i = 0; i < payrollValues.size(); i++) {
+                Log.d("TeacherPayrollFragment", "Value " + i + ": " + payrollValues.get(i));
+            }
+            
+        } catch (JSONException e) {
+            e.printStackTrace();
+            Log.e("TeacherPayrollFragment", "JSON parsing error: " + e.getMessage());
+            // Fill with error values if parsing fails
+            for (int i = 0; i < payrollHeaderArray.length; i++) {
+                payrollValues.add("Error loading data");
+            }
+        }
+    } else {
+        Log.w("TeacherPayrollFragment", "No teacher data available");
+        // Fill with empty values if no data
+        for (int i = 0; i < payrollHeaderArray.length; i++) {
+            payrollValues.add("No data available");
+        }
+    }
+    
+    // Populate payroll data map for adapter
+    for (int i = 0; i < payrollHeaderArray.length && i < payrollValues.size(); i++) {
+        payrollData.put(String.valueOf(payrollHeaderArray[i]), payrollValues.get(i));
+    }
+    
+    Log.d("TeacherPayrollFragment", "=== END PAYROLL DATA LOADING DEBUG ===");
+}

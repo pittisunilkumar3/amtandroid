@@ -23,10 +23,10 @@
     <string name="admin">Admin</string>
 
 
-    <string name="teacher_login" translatable="false">Teacher Login</string>
-    <string name="teacher_password" translatable="false">Teacher Password</string>
-    <string name="gototeacherlogin" translatable="false">Go to Teacher Login</string>
-    <string name="gobackstdlogin" translatable="false">Go Back Student Login</string>
+    <string name="teacher_login">Teacher Login</string>
+    <string name="teacher_password">Teacher Password</string>
+    <string name="gototeacherlogin">Go to Teacher Login</string>
+    <string name="gobackstdlogin">Go Back Student Login</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
@@ -657,5 +657,23 @@
     <string name="outtime">Out Time</string>
     <!--VISITOR-->
 
+    <!-- Teacher Profile Tab Names -->
+    <string name="teacher_profile_tab">Profile</string>
+    <string name="teacher_payroll_tab">Payroll</string>
+    <string name="teacher_leaves_tab">Leaves</string>
+    <string name="teacher_attendance_tab">Attendance</string>
+    <string name="teacher_documents_tab">Documents</string>
+    <string name="teacher_timeline_tab">Timeline</string>
+
+    <!-- Teacher Payroll Additional Fields -->
+    <string name="teacher_paymentDate">Payment Date</string>
+    <string name="net_salary">Net Salary</string>
+    <string name="earnings">Total Earnings</string>
+    <string name="deduction">Total Deductions</string>
+    <string name="tax">Tax Amount</string>
+    <string name="timeline">Timeline</string>
+
+    <!-- Teacher Leaves -->
+    <string name="leaves">Leaves</string>
 
 </resources>

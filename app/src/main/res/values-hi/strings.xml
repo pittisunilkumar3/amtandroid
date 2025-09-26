@@ -21,6 +21,30 @@
     <string name="forgotPassword">पासवर्ड भूल गए?</string>
     <string name="changeUrl">डोमेन बदलें</string>
     <string name="admin">व्यवस्थापक</string>
+
+
+    <string name="teacher_login">शिक्षक लॉगिन</string>
+    <string name="teacher_password">शिक्षक पासवर्ड</string>
+    <string name="gototeacherlogin">शिक्षक लॉगिन पर जाएं</string>
+    <string name="gobackstdlogin">छात्र लॉगिन पर वापस जाएं</string>
+    <string name="navigation_drawer_open">नेवीगेशन ड्रॉअर खोलें</string>
+    <string name="navigation_drawer_close">नेवीगेशन ड्रॉअर बंद करें</string>
+
+    <!-- Teacher Dashboard Strings -->
+    <string name="teacher_dashboard_welcome">शिक्षक डैशबोर्ड में आपका स्वागत है</string>
+    <string name="teacher_dashboard_description">इस केंद्रीय डैशबोर्ड से अपने सभी शिक्षण उपकरण और संसाधनों तक पहुंचें। विभिन्न अनुभागों का पता लगाने के लिए नेवीगेशन ड्रॉअर का उपयोग करें।</string>
+    <string name="teacher_features">शिक्षक सुविधाएं</string>
+    <string name="quick_navigation">त्वरित नेवीगेशन</string>
+    <string name="teacher_navigation_hint">प्रोफाइल, स्कूल के बारे में, सेटिंग्स और लॉगआउट विकल्पों तक पहुंचने के लिए ऊपरी-बाएं कोने में मेनू बटन (☰) का उपयोग करें।</string>
+    <string name="profile_info">प्रोफाइल जानकारी</string>
+    <string name="teacher_profile_description">यह आपकी शिक्षक प्रोफाइल है जिसमें आपकी व्यक्तिगत और व्यावसायिक जानकारी है। यदि कोई जानकारी अपडेट करने की आवश्यकता है तो अपने प्रशासक से संपर्क करें।</string>
+
+    <!-- Teacher Dashboard Sections -->
+    <string name="teacher_management">कक्षा प्रबंधन</string>
+    <string name="teacher_academic">शैक्षणिक उपकरण</string>
+    <string name="teacher_communication">संचार</string>
+    <string name="teacher_tools">शिक्षण उपकरण</string>
+
     <!--LOGIN PAGE-->
 
     <!--DASHBOARD DETAIL-->
@@ -427,6 +451,35 @@
 
     <!--ABOUT-->
     <string name="phone">फ़ोन</string>
+    <string name="designation">पदनाम</string>
+    <string name="department">विभाग</string>
+    <string name="emergency_contact">आपातकालीन संपर्क</string>
+    <string name="qualification">योग्यता</string>
+    <string name="work_experience">कार्य अनुभव</string>
+    <string name="marital_status">वैवाहिक स्थिति</string>
+    <string name="father_name">पिता का नाम</string>
+    <string name="mother_name">माता का नाम</string>
+    <string name="local_address">स्थानीय पता</string>
+    <string name="permanent_address">स्थायी पता</string>
+    <string name="date_of_joining">ज्वाइनिंग की तारीख</string>
+    <string name="employee_id">कर्मचारी आईडी</string>
+    <string name="basic_salary">मूल वेतन</string>
+    <string name="account_title">खाता शीर्षक</string>
+    <string name="bank_branch">बैंक शाखा</string>
+    <string name="bank_account_no">बैंक खाता संख्या</string>
+    <string name="contract_type">अनुबंध प्रकार</string>
+    <string name="shift">शिफ्ट</string>
+    <string name="location">स्थान</string>
+    <string name="facebook">फेसबुक</string>
+    <string name="twitter">ट्विटर</string>
+    <string name="linkedin">लिंक्डइन</string>
+    <string name="instagram">इंस्टाग्राम</string>
+    <string name="basic_info">बुनियादी जानकारी</string>
+    <string name="contact_info">संपर्क जानकारी</string>
+    <string name="personal_info">व्यक्तिगत जानकारी</string>
+    <string name="address_info">पता जानकारी</string>
+    <string name="bank_details">बैंक विवरण</string>
+    <string name="social_media">सोशल मीडिया</string>
     <string name="schoolCode">स्कूल कोड</string>
     <string name="currentSession">सत्र</string>
     <string name="sessionStartMonth">सत्र शुरू माह</string>
@@ -600,5 +653,19 @@
     <string name="uploaddate"> डालने की तारिक </string>
     <string name="totalfees"> कुल शुल्क</string>
     <!--VISITOR-->
+
+    <!-- Teacher Profile Tab Names -->
+    <string name="teacher_profile_tab">प्रोफाइल</string>
+    <string name="teacher_payroll_tab">वेतन</string>
+    <string name="teacher_leaves_tab">अवकाश</string>
+    <string name="teacher_attendance_tab">उपस्थिति</string>
+    <string name="teacher_documents_tab">दस्तावेज़</string>
+    <string name="teacher_timeline_tab">समयरेखा</string>
+
+    <!-- Teacher Payroll Additional Fields -->
+    <string name="teacher_paymentDate">भुगतान की तारीख</string>
+
+    <!-- Teacher Leaves -->
+    <string name="leaves">अवकाश</string>
 
 </resources>

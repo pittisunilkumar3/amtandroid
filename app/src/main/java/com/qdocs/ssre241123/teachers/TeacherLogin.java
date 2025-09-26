@@ -60,12 +60,21 @@ public class TeacherLogin extends AppCompatActivity {
         initializeViews();
         setupClickListeners();
 
-        // Ensure API URL is set like in student login
-        String apiUrl = Utility.getSharedPreferences(getApplicationContext(), "apiUrl");
-        if (apiUrl == null || apiUrl.isEmpty()) {
+        // Ensure API URL is set correctly based on Constants.askUrlFromUser
+        String apiUrl;
+        if (Constants.askUrlFromUser) {
+            // If asking URL from user, get from SharedPreferences
+            apiUrl = Utility.getSharedPreferences(getApplicationContext(), "apiUrl");
+            if (apiUrl == null || apiUrl.isEmpty()) {
+                apiUrl = Constants.domain + "/api/";
+                Utility.setSharedPreference(getApplicationContext(), "apiUrl", apiUrl);
+                Log.e("API URL Set (User Mode)", apiUrl);
+            }
+        } else {
+            // If not asking URL from user, always use Constants.domain
             apiUrl = Constants.domain + "/api/";
             Utility.setSharedPreference(getApplicationContext(), "apiUrl", apiUrl);
-            Log.e("API URL Set", apiUrl);
+            Log.e("API URL Set (Fixed Mode)", apiUrl);
         }
         Log.e("Current API URL", apiUrl);
 
@@ -173,10 +182,17 @@ public class TeacherLogin extends AppCompatActivity {
 
         final String requestBody = bodyParams;
 
-        // Get API URL - use the same logic as student login
-        String apiUrl = Utility.getSharedPreferences(getApplicationContext(), "apiUrl");
-        if (apiUrl == null || apiUrl.isEmpty()) {
-            // If no API URL is set, use the default domain + api/
+        // Get API URL - ensure consistency with Constants.askUrlFromUser setting
+        String apiUrl;
+        if (Constants.askUrlFromUser) {
+            // If asking URL from user, get from SharedPreferences
+            apiUrl = Utility.getSharedPreferences(getApplicationContext(), "apiUrl");
+            if (apiUrl == null || apiUrl.isEmpty()) {
+                apiUrl = Constants.domain + "/api/";
+                Utility.setSharedPreference(getApplicationContext(), "apiUrl", apiUrl);
+            }
+        } else {
+            // If not asking URL from user, always use Constants.domain
             apiUrl = Constants.domain + "/api/";
             Utility.setSharedPreference(getApplicationContext(), "apiUrl", apiUrl);
         }

@@ -1,0 +1,41 @@
+
+// Add these logging statements to TeacherProfile.java in parseComprehensiveTeacherProfile method
+
+Log.d("Teacher Profile Debug", "=== COMPREHENSIVE PROFILE PARSING DEBUG ===");
+Log.d("Teacher Profile Debug", "Response status: " + response.optString("status"));
+Log.d("Teacher Profile Debug", "Response message: " + response.optString("message"));
+
+// Log all main sections
+Log.d("Teacher Profile Debug", "Basic Info: " + (response.has("basic_info") ? "Present" : "Missing"));
+Log.d("Teacher Profile Debug", "Contact Info: " + (response.has("contact_info") ? "Present" : "Missing"));
+Log.d("Teacher Profile Debug", "Personal Info: " + (response.has("personal_info") ? "Present" : "Missing"));
+Log.d("Teacher Profile Debug", "Address Info: " + (response.has("address_info") ? "Present" : "Missing"));
+Log.d("Teacher Profile Debug", "Bank Details: " + (response.has("bank_details") ? "Present" : "Missing"));
+Log.d("Teacher Profile Debug", "Payroll Details: " + (response.has("payroll_details") ? "Present" : "Missing"));
+Log.d("Teacher Profile Debug", "Leave Records: " + (response.has("leave_records") ? "Present" : "Missing"));
+Log.d("Teacher Profile Debug", "Attendance Records: " + (response.has("attendance_records") ? "Present" : "Missing"));
+Log.d("Teacher Profile Debug", "Documents: " + (response.has("documents") ? "Present" : "Missing"));
+Log.d("Teacher Profile Debug", "QR Code: " + (response.has("qr_code") ? "Present" : "Missing"));
+
+// Log payroll details specifically
+JSONObject payrollDetails = response.optJSONObject("payroll_details");
+if (payrollDetails != null) {
+    JSONArray payrollRecords = payrollDetails.optJSONArray("payroll_records");
+    Log.d("Teacher Profile Debug", "Payroll records count: " + (payrollRecords != null ? payrollRecords.length() : 0));
+    if (payrollRecords != null && payrollRecords.length() > 0) {
+        Log.d("Teacher Profile Debug", "First payroll record: " + payrollRecords.optJSONObject(0).toString());
+    }
+} else {
+    Log.d("Teacher Profile Debug", "Payroll details is null");
+}
+
+// Log QR code details
+JSONObject qrCode = response.optJSONObject("qr_code");
+if (qrCode != null) {
+    Log.d("Teacher Profile Debug", "QR Code URL: " + qrCode.optString("qr_code_url"));
+    Log.d("Teacher Profile Debug", "QR Code Data: " + qrCode.optJSONObject("data"));
+} else {
+    Log.d("Teacher Profile Debug", "QR Code is null");
+}
+
+Log.d("Teacher Profile Debug", "=== END COMPREHENSIVE PROFILE PARSING DEBUG ===");
