@@ -50,9 +50,10 @@ public class TeacherAuthHelper {
 
         JSONObject obj = new JSONObject(params);
         final String requestBody = obj.toString();
-        
-        String url = Utility.getSharedPreferences(context, "apiUrl") + Constants.teacherLogoutUrl;
-        Log.e("Logout URL", url);
+
+        // Always use the configured domain to ensure consistency
+        String url = Utility.buildApiUrl(context, Constants.teacherLogoutUrl);
+        Log.e("Teacher Logout URL", "Using configured domain: " + url);
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override

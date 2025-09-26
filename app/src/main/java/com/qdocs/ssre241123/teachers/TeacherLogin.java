@@ -60,23 +60,9 @@ public class TeacherLogin extends AppCompatActivity {
         initializeViews();
         setupClickListeners();
 
-        // Ensure API URL is set correctly based on Constants.askUrlFromUser
-        String apiUrl;
-        if (Constants.askUrlFromUser) {
-            // If asking URL from user, get from SharedPreferences
-            apiUrl = Utility.getSharedPreferences(getApplicationContext(), "apiUrl");
-            if (apiUrl == null || apiUrl.isEmpty()) {
-                apiUrl = Constants.domain + "/api/";
-                Utility.setSharedPreference(getApplicationContext(), "apiUrl", apiUrl);
-                Log.e("API URL Set (User Mode)", apiUrl);
-            }
-        } else {
-            // If not asking URL from user, always use Constants.domain
-            apiUrl = Constants.domain + "/api/";
-            Utility.setSharedPreference(getApplicationContext(), "apiUrl", apiUrl);
-            Log.e("API URL Set (Fixed Mode)", apiUrl);
-        }
-        Log.e("Current API URL", apiUrl);
+        // Ensure API URL uses the configured domain from Constants
+        String apiUrl = Utility.getApiUrl(getApplicationContext());
+        Log.e("API URL Set (Teacher Login)", "Using configured domain: " + apiUrl);
 
         // Get Firebase device token
         try {
@@ -182,22 +168,8 @@ public class TeacherLogin extends AppCompatActivity {
 
         final String requestBody = bodyParams;
 
-        // Get API URL - ensure consistency with Constants.askUrlFromUser setting
-        String apiUrl;
-        if (Constants.askUrlFromUser) {
-            // If asking URL from user, get from SharedPreferences
-            apiUrl = Utility.getSharedPreferences(getApplicationContext(), "apiUrl");
-            if (apiUrl == null || apiUrl.isEmpty()) {
-                apiUrl = Constants.domain + "/api/";
-                Utility.setSharedPreference(getApplicationContext(), "apiUrl", apiUrl);
-            }
-        } else {
-            // If not asking URL from user, always use Constants.domain
-            apiUrl = Constants.domain + "/api/";
-            Utility.setSharedPreference(getApplicationContext(), "apiUrl", apiUrl);
-        }
-
-        String url = apiUrl + Constants.teacherLoginUrl;
+        // Always use the configured domain to ensure consistency
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.teacherLoginUrl);
         Log.e("Teacher Login URL", url);
         Log.e("Teacher Login Body", requestBody);
         

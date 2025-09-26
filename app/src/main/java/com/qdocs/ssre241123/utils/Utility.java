@@ -193,8 +193,32 @@ public class Utility {
 		Log.e("Utility Status", "Locale updated!");
 	}
 
+	/**
+	 * Get the correct API URL that always uses the configured domain from Constants
+	 * This prevents issues where server responses override the configured domain
+	 * @param context Application context
+	 * @return The API URL using the configured domain
+	 */
+	public static String getApiUrl(Context context) {
+		String apiUrl = Constants.domain + "/api/";
+		// Always update SharedPreferences to ensure consistency
+		setSharedPreference(context, Constants.apiUrl, apiUrl);
+		Log.d("Utility", "API URL enforced: " + apiUrl);
+		return apiUrl;
+	}
 
-
+	/**
+	 * Build a complete API endpoint URL using the configured domain
+	 * @param context Application context
+	 * @param endpoint The API endpoint (e.g., Constants.loginUrl)
+	 * @return Complete URL using configured domain
+	 */
+	public static String buildApiUrl(Context context, String endpoint) {
+		String apiUrl = getApiUrl(context);
+		String fullUrl = apiUrl + endpoint;
+		Log.d("Utility", "Built API URL: " + fullUrl);
+		return fullUrl;
+	}
 
 }// final class ends here
 

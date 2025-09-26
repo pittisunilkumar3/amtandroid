@@ -259,8 +259,10 @@ public class Login extends Activity {
                         String success = "200"; //object.getString("status");
                         if (success.equals("200")) {
                             Utility.setSharedPreferenceBoolean(getApplicationContext(), "isUrlTaken", true);
-                            Utility.setSharedPreference(MyApp.getContext(), Constants.apiUrl, object.getString("url"));
+                            // Always use the configured domain instead of server-returned URL
+                            String configuredApiUrl = Utility.getApiUrl(getApplicationContext());
                             Utility.setSharedPreference(MyApp.getContext(), Constants.imagesUrl, object.getString("site_url"));
+                            Log.e("API URL Override", "Using configured domain: " + configuredApiUrl + " instead of server URL: " + object.getString("url"));
                             String app_ver= object.getString("app_ver");
                             Utility.setSharedPreference(getApplicationContext(), Constants.app_ver, app_ver);
                             String appLogo = object.getString("site_url") + "uploads/school_content/logo/app_logo/" + object.getString("app_logo");
@@ -323,8 +325,10 @@ public class Login extends Activity {
          pd.show();
 
         final String requestBody = bodyParams;
-         String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+Constants.loginUrl;
-         Log.e("URL", url);
+
+        // Always use the configured domain to ensure consistency
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.loginUrl);
+        Log.e("Student Login URL", "Using configured domain: " + url);
          StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
              @Override
              public void onResponse(String result) {
@@ -497,7 +501,9 @@ public class Login extends Activity {
     private void getCurrencyDataFromApi (String bodyParams) {
         Log.e("RESULT PARAMS", bodyParams);
         final String requestBody = bodyParams;
-        String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.getStudentCurrencyUrl;
+        // Always use the configured domain to ensure consistency
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.getStudentCurrencyUrl);
+        Log.e("Currency API URL", "Using configured domain: " + url);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
@@ -566,7 +572,9 @@ public class Login extends Activity {
 
         final String requestBody = bodyParams;
 
-        String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+ Constants.lock_student_panelUrl;
+        // Always use the configured domain to ensure consistency
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.lock_student_panelUrl);
+        Log.e("Profile Lock API URL", "Using configured domain: " + url);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
