@@ -185,7 +185,9 @@ public class TeacherModuleAdapter extends RecyclerView.Adapter<TeacherModuleAdap
                 showComingSoon("Alumni");
                 break;
             case "reports":
-                showComingSoon("Reports");
+                Intent reportsIntent = new Intent(context, com.qdocs.ssre241123.teachers.TeacherReportsActivity.class);
+                context.startActivity(reportsIntent);
+                context.overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
                 break;
             case "teacher_profile":
                 Intent profileIntent = new Intent(context, TeacherProfile.class);

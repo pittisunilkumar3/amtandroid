@@ -70,6 +70,12 @@
             android:name="com.qdocs.ssre241123.teachers.TeacherProfile"
             android:exported="false" />
         <activity
+            android:name="com.qdocs.ssre241123.teachers.TeacherReportsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.TeacherReportCategoryActivity"
+            android:exported="false" />
+        <activity
             android:name="com.qdocs.ssre241123.teachers.TeacherLogin"
             android:exported="false" />
         <activity

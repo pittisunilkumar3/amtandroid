@@ -45,6 +45,96 @@
     <string name="teacher_communication">Communication</string>
     <string name="teacher_tools">Teaching Tools</string>
 
+    <!-- Teacher Reports -->
+    <string name="teacher_reports">Reports</string>
+    <string name="student_information_reports">Student Information</string>
+    <string name="finance_reports">Finance</string>
+    <string name="attendance_reports">Attendance</string>
+    <string name="examinations_reports">Examinations</string>
+    <string name="online_examinations_reports">Online Examinations</string>
+    <string name="lesson_plan_reports">Lesson Plan</string>
+    <string name="human_resource_reports">Human Resource</string>
+    <string name="homework_reports">Homework</string>
+    <string name="library_reports">Library</string>
+    <string name="book_issue_report">Book Issue Report</string>
+    <string name="book_due_report">Book Due Report</string>
+    <string name="book_inventory_report">Book Inventory Report</string>
+    <string name="book_issue_return_report">Book Issue Return Report</string>
+    <string name="inventory_reports">Inventory</string>
+    <string name="stock_report">Stock Report</string>
+    <string name="add_item_report">Add Item Report</string>
+    <string name="issue_item_report">Issue Item Report</string>
+    <string name="transport_reports">Transport</string>
+    <string name="hostel_reports">Hostel</string>
+    <string name="alumni_reports">Alumni</string>
+    <string name="user_log_reports">User Log</string>
+    <string name="audit_trail_reports">Audit Trail Report</string>
+
+    <!-- Student Information Reports -->
+    <string name="student_report">Student Report</string>
+    <string name="student_history">Student History</string>
+    <string name="class_subject_report">Class Subject Report</string>
+    <string name="student_profile_report">Student Profile</string>
+    <string name="online_admission_report">Online Admission Report</string>
+    <string name="class_section_report">Class &amp; Section Report</string>
+    <string name="student_login_credential">Student Login Credential</string>
+    <string name="admission_report">Admission Report</string>
+    <string name="student_gender_ratio_report">Student Gender Ratio Report</string>
+    <string name="guardian_report">Guardian Report</string>
+    <string name="parent_login_credential">Parent Login Credential</string>
+    <string name="sibling_report">Sibling Report</string>
+    <string name="student_teacher_ratio_report">Student Teacher Ratio Report</string>
+
+    <!-- Finance Reports -->
+    <string name="total_balance_fees_statement">Total Balance Fees Statement</string>
+    <string name="type_wise_balance_report">Type Wise Balance Report</string>
+    <string name="total_balance_fees_report">Total Balance Fees Report</string>
+    <string name="other_fees_collection_report">Other Fees Collection Report</string>
+    <string name="online_fees_collection_report">Online Fees Collection Report</string>
+    <string name="expense_report">Expense Report</string>
+    <string name="expense_group_report">Expense Group Report</string>
+    <string name="balance_fees_statement">Balance Fees Statement</string>
+    <string name="fees_statement">Fees Statement</string>
+    <string name="total_fee_collection_report">Total Fee Collection Report</string>
+    <string name="other_fee_and_collection_fee_combined">Other Fee and Collection Fee Combined</string>
+    <string name="balance_fees_report_with_remark">Balance Fees Report With Remark</string>
+    <string name="payroll_report">Payroll Report</string>
+    <string name="online_admission_fees_collection_report">Online Admission Fees Collection Report</string>
+    <string name="daily_collection_report">Daily Collection Report</string>
+    <string name="balance_fees_report">Balance Fees Report</string>
+    <string name="fees_collection_report">Fees Collection Report</string>
+    <string name="fee_collection_report_column_wise">Fee Collection Report Column Wise</string>
+    <string name="income_report">Income Report</string>
+    <string name="income_group_report">Income Group Report</string>
+
+    <!-- Attendance Reports -->
+    <string name="attendance_report">Attendance Report</string>
+    <string name="student_attendance_type_report">Student Attendance Type Report</string>
+    <string name="daily_attendance_report">Daily Attendance Report</string>
+    <string name="staff_attendance_report">Staff Attendance Report</string>
+    <string name="biometric_attendance_log">Biometric Attendance Log</string>
+
+    <!-- Examinations Reports -->
+    <string name="rank_report">Rank Report</string>
+
+    <!-- Online Examinations Reports -->
+    <string name="result_report">Result Report</string>
+    <string name="exams_report">Exams Report</string>
+    <string name="student_exams_attempt_report">Student Exams Attempt Report</string>
+    <string name="exams_rank_report">Exams Rank Report</string>
+
+    <!-- Lesson Plan Reports -->
+    <string name="syllabus_status_report">Syllabus Status Report</string>
+    <string name="subject_lesson_plan_report">Subject Lesson Plan Report</string>
+
+    <!-- Human Resource Reports -->
+    <string name="staff_report">Staff Report</string>
+
+    <!-- Homework Reports -->
+    <string name="homework_report">Homework Report</string>
+    <string name="homework_evaluation_report">Homework Evaluation Report</string>
+    <string name="daily_assignment_report">Daily Assignment Report</string>
+
     <!--LOGIN PAGE-->
 
 
