@@ -2005,6 +2005,7 @@ id adapter_studentexam_schedule
 id adapter_studentleave_headLayout
 id adapter_studentlibrary_headLayout
 id adapter_subjectNameTV
+id adapter_submenu_item
 id adapter_submissiondateTV
 id adapter_tags
 id adapter_teacher_module
@@ -3103,6 +3104,11 @@ id subject3
 id subjectlist_spinner
 id subjectname
 id subjectwise_layout
+id submenu_item_icon
+id submenu_item_layout
+id submenu_item_name
+id submenu_recyclerView
+id submenu_title
 id submenuarrow
 id submissionDate
 id submit
@@ -3423,6 +3429,7 @@ layout activity_teacher_dashboard
 layout activity_teacher_login
 layout activity_teacher_report_category
 layout activity_teacher_reports
+layout activity_teacher_submenu
 layout adapter_content_upload_detail
 layout adapter_course_curriculum
 layout adapter_course_curriculum_lesson
@@ -3488,6 +3495,7 @@ layout adapter_student_transport
 layout adapter_student_transport_route
 layout adapter_student_transport_vehicle
 layout adapter_student_visitorbook
+layout adapter_submenu_item
 layout adapter_teacher_module
 layout adapter_test
 layout add_assignment

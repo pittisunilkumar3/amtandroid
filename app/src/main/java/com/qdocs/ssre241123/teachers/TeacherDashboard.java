@@ -398,13 +398,16 @@ public class TeacherDashboard extends AppCompatActivity implements NavigationVie
                             List<com.qdocs.ssre241123.model.MenuItem> menus = menuResponse.getData().getMenus();
                             if (menus != null && !menus.isEmpty()) {
                                 Log.d("TeacherMenuAPI", "✓ Success: Received " + menus.size() + " menu items");
-                                
+
                                 // Log first few menu items for debugging
                                 for (int i = 0; i < Math.min(3, menus.size()); i++) {
                                     com.qdocs.ssre241123.model.MenuItem item = menus.get(i);
                                     Log.d("TeacherMenuAPI", "Menu " + (i+1) + ": " + item.getMenu() + " | Icon: " + item.getIcon());
                                 }
-                                
+
+                                // Cache menu data for submenu activities
+                                TeacherSubmenuActivity.cacheMenuData(menus);
+
                                 setupModulesFromAPI(menus);
                             } else {
                                 Log.e("TeacherMenuAPI", "✗ Error: No menu items in data.menus array");

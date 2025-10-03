@@ -59,6 +59,9 @@
             android:name=".teachers.TeacherReportCategoryActivity"
             android:exported="false" />
         <activity
+            android:name=".teachers.TeacherSubmenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".teachers.TeacherLogin"
             android:exported="false" />
         <activity
