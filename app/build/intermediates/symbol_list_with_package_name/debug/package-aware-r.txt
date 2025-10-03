@@ -430,6 +430,24 @@ attr hintTextAppearance
 attr homeAsUpIndicator
 attr homeLayout
 attr hoveredFocusedTranslationZ
+attr ico_animations
+attr ico_automirror
+attr ico_background_color
+attr ico_background_contour_color
+attr ico_background_contour_width
+attr ico_color
+attr ico_contour_color
+attr ico_contour_width
+attr ico_corner_radius
+attr ico_icon
+attr ico_offset_x
+attr ico_offset_y
+attr ico_padding
+attr ico_shadow_color
+attr ico_shadow_dx
+attr ico_shadow_dy
+attr ico_shadow_radius
+attr ico_size
 attr icon
 attr iconEndPadding
 attr iconGravity
@@ -1539,6 +1557,27 @@ drawable ic_edit
 drawable ic_email
 drawable ic_email_filled
 drawable ic_events
+drawable ic_fa_archive
+drawable ic_fa_book
+drawable ic_fa_building
+drawable ic_fa_bus
+drawable ic_fa_calendar_check
+drawable ic_fa_certificate
+drawable ic_fa_check
+drawable ic_fa_cogs
+drawable ic_fa_credit_card
+drawable ic_fa_dollar
+drawable ic_fa_exclamation_triangle
+drawable ic_fa_file_text
+drawable ic_fa_graduation_cap
+drawable ic_fa_list_alt
+drawable ic_fa_money
+drawable ic_fa_percent
+drawable ic_fa_plus
+drawable ic_fa_sitemap
+drawable ic_fa_tasks
+drawable ic_fa_upload
+drawable ic_fa_user
 drawable ic_file
 drawable ic_file_download
 drawable ic_file_upload
@@ -1685,6 +1724,7 @@ drawable yellow_curve_border
 drawable yellow_select
 drawable youtube_icon
 font font
+font fontawesome_font_v5_9_0
 font poppins_medium
 font poppins_regular
 font poppins_semibold
@@ -1941,6 +1981,7 @@ id adapter_studentlibrary_headLayout
 id adapter_subjectNameTV
 id adapter_submissiondateTV
 id adapter_tags
+id adapter_teacher_module
 id adapter_titleTV
 id adapter_viewContainer
 id add
@@ -2438,6 +2479,7 @@ id icon_group
 id icon_only
 id icon_password_login
 id icon_username_login
+id iconics_tag_id
 id id
 id ifRoom
 id ifscCode
@@ -2535,7 +2577,9 @@ id middle
 id mini
 id mobile_layout
 id mobileno
+id module_layout
 id moduleiamge
+id moduleicon
 id modulename
 id mondayNoData
 id mondaylayout
@@ -3401,6 +3445,7 @@ layout adapter_student_transport
 layout adapter_student_transport_route
 layout adapter_student_transport_vehicle
 layout adapter_student_visitorbook
+layout adapter_teacher_module
 layout adapter_test
 layout add_assignment
 layout add_course_assignment
@@ -3779,6 +3824,9 @@ string datetime
 string dateto
 string day
 string deduction
+string define_AndroidIconics
+string define_FontAwesome
+string define_font_fontawesome
 string delete
 string deleteMsg
 string department
@@ -3856,6 +3904,7 @@ string feesgroup
 string fileselected
 string fine
 string finished
+string fontawesome_version
 string forgotPassword
 string free
 string friday
@@ -3903,6 +3952,8 @@ string hostelRoomNo
 string hostelRoomType
 string hostelheading
 string iAm
+string iconics_lib_version
+string iconics_typeface_api_version
 string idcard
 string ifscCode
 string incomplete
@@ -3927,6 +3978,27 @@ string lessons
 string library
 string libraryBookIssued
 string libraryStatus
+string library_AndroidIconics_author
+string library_AndroidIconics_authorWebsite
+string library_AndroidIconics_isOpenSource
+string library_AndroidIconics_libraryDescription
+string library_AndroidIconics_libraryName
+string library_AndroidIconics_libraryVersion
+string library_AndroidIconics_libraryWebsite
+string library_AndroidIconics_licenseId
+string library_AndroidIconics_owner
+string library_AndroidIconics_repositoryLink
+string library_AndroidIconics_year
+string library_FontAwesome_author
+string library_FontAwesome_authorWebsite
+string library_FontAwesome_isOpenSource
+string library_FontAwesome_libraryDescription
+string library_FontAwesome_libraryName
+string library_FontAwesome_libraryVersion
+string library_FontAwesome_libraryWebsite
+string library_FontAwesome_licenseId
+string library_FontAwesome_repositoryLink
+string library_FontAwesome_year
 string linkedin
 string liveclasses
 string livegmeetclasses
@@ -4804,6 +4876,7 @@ styleable Fragment android_name android_id android_tag
 styleable FragmentContainerView android_name android_tag
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
+styleable Iconics ico_animations ico_automirror ico_background_color ico_background_contour_color ico_background_contour_width ico_color ico_contour_color ico_contour_width ico_corner_radius ico_icon ico_offset_x ico_offset_y ico_padding ico_shadow_color ico_shadow_dx ico_shadow_dy ico_shadow_radius ico_size
 styleable ImageFilterView altSrc blendSrc brightness contrast crossfade imagePanX imagePanY imageRotate imageZoom overlay round roundPercent saturation warmth
 styleable KeyAttribute android_alpha android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation curveFit framePosition motionProgress motionTarget transformPivotTarget transitionEasing transitionPathRotate
 styleable KeyCycle android_alpha android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_translationZ android_elevation curveFit framePosition motionProgress motionTarget transitionEasing transitionPathRotate waveOffset wavePeriod wavePhase waveShape waveVariesBy

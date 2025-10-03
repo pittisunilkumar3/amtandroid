@@ -24,12 +24,16 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.qdocs.ssre241123.AboutSchool;
 import com.qdocs.ssre241123.Login;
 import com.qdocs.ssre241123.R;
 import com.qdocs.ssre241123.SettingActivity;
+import com.qdocs.ssre241123.adapters.TeacherModuleAdapter;
+import com.qdocs.ssre241123.model.TeacherModule;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.DrawerArrowDrawable;
 import com.qdocs.ssre241123.utils.TeacherAuthHelper;
@@ -39,6 +43,9 @@ import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class TeacherDashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -58,6 +65,18 @@ public class TeacherDashboard extends AppCompatActivity implements NavigationVie
     TextView name, admissionno, classdata;
     ImageView profileImageview;
     LinearLayout profilelinear;
+    
+    // RecyclerViews for teacher modules
+    private RecyclerView teacherManagementRecyclerView;
+    private RecyclerView teacherAcademicRecyclerView;
+    private RecyclerView teacherCommunicationRecyclerView;
+    private RecyclerView teacherToolsRecyclerView;
+    
+    // Adapters
+    private TeacherModuleAdapter managementAdapter;
+    private TeacherModuleAdapter academicAdapter;
+    private TeacherModuleAdapter communicationAdapter;
+    private TeacherModuleAdapter toolsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +97,7 @@ public class TeacherDashboard extends AppCompatActivity implements NavigationVie
         setupDrawer();
         decorate();
         loadTeacherProfile();
+        setupModules();
     }
 
     private void initializeViews() {
@@ -92,6 +112,12 @@ public class TeacherDashboard extends AppCompatActivity implements NavigationVie
         admissionno = findViewById(R.id.admissionno);
         classdata = findViewById(R.id.classdata);
         profileImageview = findViewById(R.id.studentProfile_profileImageview);
+
+        // Initialize RecyclerViews
+        teacherManagementRecyclerView = findViewById(R.id.teacher_management_recyclerView);
+        teacherAcademicRecyclerView = findViewById(R.id.teacher_academic_recyclerView);
+        teacherCommunicationRecyclerView = findViewById(R.id.teacher_communication_recyclerView);
+        teacherToolsRecyclerView = findViewById(R.id.teacher_tools_recyclerView);
 
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -309,5 +335,69 @@ public class TeacherDashboard extends AppCompatActivity implements NavigationVie
         } else {
             super.onBackPressed();
         }
+    }
+
+    private void setupModules() {
+        // Setup Management Modules
+        List<TeacherModule> managementModules = new ArrayList<>();
+        managementModules.add(new TeacherModule("student_information", "Student Information", "fa-user", R.drawable.ic_fa_user, true));
+        managementModules.add(new TeacherModule("fees_collection", "Fees Collection", "fa-money", R.drawable.ic_fa_money, true));
+        managementModules.add(new TeacherModule("income", "Income", "fa-dollar", R.drawable.ic_fa_dollar, true));
+        managementModules.add(new TeacherModule("expenses", "Expenses", "fa-credit-card-alt", R.drawable.ic_fa_credit_card, true));
+        managementModules.add(new TeacherModule("accounting", "Accounting", "fa-calculator", R.drawable.ic_fa_credit_card, true));
+        managementModules.add(new TeacherModule("front_office", "Front Office", "fa-address-book", R.drawable.ic_nav_about, true));
+        managementModules.add(new TeacherModule("human_resource", "Human Resource", "fa-users", R.drawable.ic_nav_teachers, true));
+        managementModules.add(new TeacherModule("multi_branch", "Multi Branch", "fa-sitemap", R.drawable.ic_fa_sitemap, true));
+
+        // Setup Academic Modules
+        List<TeacherModule> academicModules = new ArrayList<>();
+        academicModules.add(new TeacherModule("attendance", "Attendance", "fa-calendar-check-o", R.drawable.ic_fa_calendar_check, true));
+        academicModules.add(new TeacherModule("examinations", "Examinations", "fa-file-text", R.drawable.ic_fa_file_text, true));
+        academicModules.add(new TeacherModule("online_examinations", "Online Examinations", "fa-rss", R.drawable.ic_online_exams, true));
+        academicModules.add(new TeacherModule("cbse_examination", "CBSE Examination", "fa-book", R.drawable.ic_fa_book, true));
+        academicModules.add(new TeacherModule("lesson_plan", "Lesson Plan", "fa-book", R.drawable.ic_fa_book, true));
+        academicModules.add(new TeacherModule("academics", "Academics", "fa-graduation-cap", R.drawable.ic_fa_graduation_cap, true));
+        academicModules.add(new TeacherModule("homework", "Homework", "fa-tasks", R.drawable.ic_fa_tasks, true));
+        academicModules.add(new TeacherModule("library", "Library", "fa-book", R.drawable.ic_fa_book, true));
+
+        // Setup Communication & Services Modules
+        List<TeacherModule> communicationModules = new ArrayList<>();
+        communicationModules.add(new TeacherModule("communicate", "Communicate", "fa-envelope", R.drawable.ic_email, true));
+        communicationModules.add(new TeacherModule("zoom_live_classes", "Zoom Live Classes", "fa-video-camera", R.drawable.ic_videocam, true));
+        communicationModules.add(new TeacherModule("gmeet_live_classes", "Gmeet Live Classes", "fa-video-camera", R.drawable.ic_videocam, true));
+        communicationModules.add(new TeacherModule("behaviour_records", "Behaviour Records", "fa-exclamation-triangle", R.drawable.ic_fa_exclamation_triangle, true));
+        communicationModules.add(new TeacherModule("inventory", "Inventory", "fa-archive", R.drawable.ic_fa_archive, true));
+        communicationModules.add(new TeacherModule("transport", "Transport", "fa-bus", R.drawable.ic_fa_bus, true));
+        communicationModules.add(new TeacherModule("hostel", "Hostel", "fa-building", R.drawable.ic_fa_building, true));
+        communicationModules.add(new TeacherModule("alumni", "Alumni", "fa-graduation-cap", R.drawable.ic_fa_graduation_cap, true));
+
+        // Setup Tools & Reports Modules
+        List<TeacherModule> toolsModules = new ArrayList<>();
+        toolsModules.add(new TeacherModule("results", "Results", "fa-list-alt", R.drawable.ic_fa_list_alt, true));
+        toolsModules.add(new TeacherModule("reports", "Reports", "fa-bar-chart", R.drawable.ic_fa_list_alt, true));
+        toolsModules.add(new TeacherModule("tc_generation", "TC Generation", "fa-certificate", R.drawable.ic_fa_certificate, true));
+        toolsModules.add(new TeacherModule("hall_ticket_generation", "Hall Ticket Generation", "fa-ticket", R.drawable.ic_fa_certificate, true));
+        toolsModules.add(new TeacherModule("certificate", "Certificate", "fa-certificate", R.drawable.ic_fa_certificate, true));
+        toolsModules.add(new TeacherModule("importing", "Importing", "fa-upload", R.drawable.ic_fa_upload, true));
+        toolsModules.add(new TeacherModule("download_center", "Download Center", "fa-download", R.drawable.ic_download, true));
+        toolsModules.add(new TeacherModule("system_setting", "System Settings", "fa-cogs", R.drawable.ic_fa_cogs, true));
+
+        // Setup RecyclerViews with GridLayoutManager
+        teacherManagementRecyclerView.setLayoutManager(new GridLayoutManager(this, 4));
+        teacherAcademicRecyclerView.setLayoutManager(new GridLayoutManager(this, 4));
+        teacherCommunicationRecyclerView.setLayoutManager(new GridLayoutManager(this, 4));
+        teacherToolsRecyclerView.setLayoutManager(new GridLayoutManager(this, 4));
+
+        // Initialize adapters
+        managementAdapter = new TeacherModuleAdapter(this, managementModules);
+        academicAdapter = new TeacherModuleAdapter(this, academicModules);
+        communicationAdapter = new TeacherModuleAdapter(this, communicationModules);
+        toolsAdapter = new TeacherModuleAdapter(this, toolsModules);
+
+        // Set adapters
+        teacherManagementRecyclerView.setAdapter(managementAdapter);
+        teacherAcademicRecyclerView.setAdapter(academicAdapter);
+        teacherCommunicationRecyclerView.setAdapter(communicationAdapter);
+        teacherToolsRecyclerView.setAdapter(toolsAdapter);
     }
 }

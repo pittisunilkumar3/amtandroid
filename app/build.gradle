@@ -57,6 +57,9 @@ dependencies {
     implementation 'com.github.blackfizz:eazegraph:1.2.5l@aar'
     implementation 'com.nineoldandroids:library:2.4.0+'
     implementation 'com.itextpdf:itext7-core:7.1.15'
+    // FontAwesome for Android
+    implementation 'com.mikepenz:fontawesome-typeface:5.9.0.0-kotlin@aar'
+    implementation 'com.mikepenz:iconics-core:5.3.4'
 
 
 }
