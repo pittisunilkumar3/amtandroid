@@ -338,31 +338,35 @@ public class TeacherDashboard extends AppCompatActivity implements NavigationVie
     }
 
     private void setupModules() {
-        // Setup Management Modules
+        // Setup Management & Administrative Modules (10 modules)
         List<TeacherModule> managementModules = new ArrayList<>();
         managementModules.add(new TeacherModule("student_information", "Student Information", "fa-user", R.drawable.ic_fa_user, true));
         managementModules.add(new TeacherModule("fees_collection", "Fees Collection", "fa-money", R.drawable.ic_fa_money, true));
         managementModules.add(new TeacherModule("income", "Income", "fa-dollar", R.drawable.ic_fa_dollar, true));
-        managementModules.add(new TeacherModule("expenses", "Expenses", "fa-credit-card-alt", R.drawable.ic_fa_credit_card, true));
-        managementModules.add(new TeacherModule("accounting", "Accounting", "fa-calculator", R.drawable.ic_fa_credit_card, true));
-        managementModules.add(new TeacherModule("front_office", "Front Office", "fa-address-book", R.drawable.ic_nav_about, true));
-        managementModules.add(new TeacherModule("human_resource", "Human Resource", "fa-users", R.drawable.ic_nav_teachers, true));
+        managementModules.add(new TeacherModule("other_fees", "Other Fees", "fa-credit-card", R.drawable.ic_fa_credit_card, true));
+        managementModules.add(new TeacherModule("expenses", "Expenses", "fa-credit-card-alt", R.drawable.ic_fa_credit_card_alt, true));
+        managementModules.add(new TeacherModule("accounting", "Accounting", "fa-calculator", R.drawable.ic_fa_calculator, true));
+        managementModules.add(new TeacherModule("front_office", "Front Office", "fa-address-book", R.drawable.ic_fa_address_book, true));
+        managementModules.add(new TeacherModule("human_resource", "Human Resource", "fa-users", R.drawable.ic_fa_users, true));
         managementModules.add(new TeacherModule("multi_branch", "Multi Branch", "fa-sitemap", R.drawable.ic_fa_sitemap, true));
+        managementModules.add(new TeacherModule("fee_discount", "Fee Discount", "fa-percent", R.drawable.ic_fa_percent, true));
 
-        // Setup Academic Modules
+        // Setup Academic & Examination Modules (10 modules)
         List<TeacherModule> academicModules = new ArrayList<>();
         academicModules.add(new TeacherModule("attendance", "Attendance", "fa-calendar-check-o", R.drawable.ic_fa_calendar_check, true));
         academicModules.add(new TeacherModule("examinations", "Examinations", "fa-file-text", R.drawable.ic_fa_file_text, true));
-        academicModules.add(new TeacherModule("online_examinations", "Online Examinations", "fa-rss", R.drawable.ic_online_exams, true));
+        academicModules.add(new TeacherModule("online_examinations", "Online Examinations", "fa-rss", R.drawable.ic_fa_rss, true));
         academicModules.add(new TeacherModule("cbse_examination", "CBSE Examination", "fa-book", R.drawable.ic_fa_book, true));
         academicModules.add(new TeacherModule("lesson_plan", "Lesson Plan", "fa-book", R.drawable.ic_fa_book, true));
         academicModules.add(new TeacherModule("academics", "Academics", "fa-graduation-cap", R.drawable.ic_fa_graduation_cap, true));
         academicModules.add(new TeacherModule("homework", "Homework", "fa-tasks", R.drawable.ic_fa_tasks, true));
         academicModules.add(new TeacherModule("library", "Library", "fa-book", R.drawable.ic_fa_book, true));
+        academicModules.add(new TeacherModule("results", "Results", "fa-list-alt", R.drawable.ic_fa_list_alt, true));
+        academicModules.add(new TeacherModule("hall_ticket_generation", "Hall Ticket Generation", "fa-ticket", R.drawable.ic_fa_ticket, true));
 
-        // Setup Communication & Services Modules
+        // Setup Communication & Services Modules (9 modules)
         List<TeacherModule> communicationModules = new ArrayList<>();
-        communicationModules.add(new TeacherModule("communicate", "Communicate", "fa-envelope", R.drawable.ic_email, true));
+        communicationModules.add(new TeacherModule("communicate", "Communicate", "fa-envelope", R.drawable.ic_fa_envelope, true));
         communicationModules.add(new TeacherModule("zoom_live_classes", "Zoom Live Classes", "fa-video-camera", R.drawable.ic_videocam, true));
         communicationModules.add(new TeacherModule("gmeet_live_classes", "Gmeet Live Classes", "fa-video-camera", R.drawable.ic_videocam, true));
         communicationModules.add(new TeacherModule("behaviour_records", "Behaviour Records", "fa-exclamation-triangle", R.drawable.ic_fa_exclamation_triangle, true));
@@ -370,19 +374,21 @@ public class TeacherDashboard extends AppCompatActivity implements NavigationVie
         communicationModules.add(new TeacherModule("transport", "Transport", "fa-bus", R.drawable.ic_fa_bus, true));
         communicationModules.add(new TeacherModule("hostel", "Hostel", "fa-building", R.drawable.ic_fa_building, true));
         communicationModules.add(new TeacherModule("alumni", "Alumni", "fa-graduation-cap", R.drawable.ic_fa_graduation_cap, true));
+        communicationModules.add(new TeacherModule("referral_application", "Referral Application", "fa-share-alt", R.drawable.ic_fa_share_alt, true));
 
-        // Setup Tools & Reports Modules
+        // Setup Tools, Reports & Admin Modules (9 modules)
         List<TeacherModule> toolsModules = new ArrayList<>();
-        toolsModules.add(new TeacherModule("results", "Results", "fa-list-alt", R.drawable.ic_fa_list_alt, true));
-        toolsModules.add(new TeacherModule("reports", "Reports", "fa-bar-chart", R.drawable.ic_fa_list_alt, true));
+        toolsModules.add(new TeacherModule("reports", "Reports", "fa-bar-chart", R.drawable.ic_fa_bar_chart, true));
         toolsModules.add(new TeacherModule("tc_generation", "TC Generation", "fa-certificate", R.drawable.ic_fa_certificate, true));
-        toolsModules.add(new TeacherModule("hall_ticket_generation", "Hall Ticket Generation", "fa-ticket", R.drawable.ic_fa_certificate, true));
         toolsModules.add(new TeacherModule("certificate", "Certificate", "fa-certificate", R.drawable.ic_fa_certificate, true));
+        toolsModules.add(new TeacherModule("admission_no", "Admission No", "fa-id-card", R.drawable.ic_fa_id_card, true));
+        toolsModules.add(new TeacherModule("hallticket_no", "HallTicket No", "fa-ticket", R.drawable.ic_fa_ticket, true));
         toolsModules.add(new TeacherModule("importing", "Importing", "fa-upload", R.drawable.ic_fa_upload, true));
         toolsModules.add(new TeacherModule("download_center", "Download Center", "fa-download", R.drawable.ic_download, true));
+        toolsModules.add(new TeacherModule("front_cms", "Front CMS", "fa-desktop", R.drawable.ic_fa_desktop, true));
         toolsModules.add(new TeacherModule("system_setting", "System Settings", "fa-cogs", R.drawable.ic_fa_cogs, true));
 
-        // Setup RecyclerViews with GridLayoutManager
+        // Setup RecyclerViews with GridLayoutManager (4 columns each)
         teacherManagementRecyclerView.setLayoutManager(new GridLayoutManager(this, 4));
         teacherAcademicRecyclerView.setLayoutManager(new GridLayoutManager(this, 4));
         teacherCommunicationRecyclerView.setLayoutManager(new GridLayoutManager(this, 4));
