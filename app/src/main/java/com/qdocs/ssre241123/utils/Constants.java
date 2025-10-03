@@ -14,6 +14,7 @@ public class Constants {
     public static final String teacherLoginUrl = "teacher/login";
     public static final String teacherLogoutUrl = "teacher/logout";
     public static final String teacherProfileUrl = "teacher/profile";
+    public static final String teacherMenuUrl = "teacher/menu";
 
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";

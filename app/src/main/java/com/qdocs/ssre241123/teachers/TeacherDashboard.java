@@ -27,12 +27,23 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.VolleyLog;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.material.navigation.NavigationView;
+import com.google.gson.Gson;
 import com.qdocs.ssre241123.AboutSchool;
 import com.qdocs.ssre241123.Login;
 import com.qdocs.ssre241123.R;
 import com.qdocs.ssre241123.SettingActivity;
 import com.qdocs.ssre241123.adapters.TeacherModuleAdapter;
+// Removed conflicting import - will use fully qualified names
+import com.qdocs.ssre241123.model.MenuResponse;
 import com.qdocs.ssre241123.model.TeacherModule;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.DrawerArrowDrawable;
@@ -44,8 +55,14 @@ import com.squareup.picasso.Picasso;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class TeacherDashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -97,7 +114,7 @@ public class TeacherDashboard extends AppCompatActivity implements NavigationVie
         setupDrawer();
         decorate();
         loadTeacherProfile();
-        setupModules();
+        loadTeacherMenus();
     }
 
     private void initializeViews() {
@@ -337,57 +354,241 @@ public class TeacherDashboard extends AppCompatActivity implements NavigationVie
         }
     }
 
-    private void setupModules() {
-        // Setup Management & Administrative Modules (10 modules)
+    private void loadTeacherMenus() {
+        // Use consistent URL building like other API calls
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.teacherMenuUrl);
+        
+        // Get staff ID from shared preferences with proper fallback
+        String staffId = Utility.getSharedPreferences(getApplicationContext(), Constants.teacherStaffId);
+        if (staffId == null || staffId.isEmpty()) {
+            staffId = Utility.getSharedPreferences(getApplicationContext(), Constants.userId);
+        }
+        if (staffId == null || staffId.isEmpty()) {
+            staffId = "1"; // Default fallback for testing
+        }
+        
+        // Create JSON request body
+        Map<String, String> params = new HashMap<>();
+        params.put("staff_id", staffId);
+        
+        JSONObject jsonBody = new JSONObject(params);
+        final String requestBody = jsonBody.toString();
+        
+        Log.d("TeacherMenuAPI", "=== API REQUEST ===");
+        Log.d("TeacherMenuAPI", "URL: " + url);
+        Log.d("TeacherMenuAPI", "Method: POST");
+        Log.d("TeacherMenuAPI", "Staff ID: " + staffId);
+        Log.d("TeacherMenuAPI", "Request Body: " + requestBody);
+        Log.d("TeacherMenuAPI", "==================");
+        
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+            new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
+                    Log.d("TeacherMenuAPI", "=== API RESPONSE ===");
+                    Log.d("TeacherMenuAPI", "Response Length: " + response.length());
+                    Log.d("TeacherMenuAPI", "Response: " + response.substring(0, Math.min(500, response.length())));
+                    Log.d("TeacherMenuAPI", "==================");
+                    
+                    try {
+                        Gson gson = new Gson();
+                        MenuResponse menuResponse = gson.fromJson(response, MenuResponse.class);
+                        
+                        if (menuResponse != null && menuResponse.getStatus() == 1 && menuResponse.getData() != null) {
+                            List<com.qdocs.ssre241123.model.MenuItem> menus = menuResponse.getData().getMenus();
+                            if (menus != null && !menus.isEmpty()) {
+                                Log.d("TeacherMenuAPI", "✓ Success: Received " + menus.size() + " menu items");
+                                
+                                // Log first few menu items for debugging
+                                for (int i = 0; i < Math.min(3, menus.size()); i++) {
+                                    com.qdocs.ssre241123.model.MenuItem item = menus.get(i);
+                                    Log.d("TeacherMenuAPI", "Menu " + (i+1) + ": " + item.getMenu() + " | Icon: " + item.getIcon());
+                                }
+                                
+                                setupModulesFromAPI(menus);
+                            } else {
+                                Log.e("TeacherMenuAPI", "✗ Error: No menu items in data.menus array");
+                                setupDefaultModules();
+                            }
+                        } else {
+                            String errorMsg = menuResponse != null ? menuResponse.getMessage() : "Unknown error";
+                            Log.e("TeacherMenuAPI", "✗ Error: " + errorMsg);
+                            setupDefaultModules();
+                        }
+                    } catch (Exception e) {
+                        Log.e("TeacherMenuAPI", "✗ JSON parsing error: " + e.getMessage());
+                        e.printStackTrace();
+                        setupDefaultModules();
+                    }
+                }
+            },
+            new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Log.e("TeacherMenuAPI", "=== API ERROR ===");
+                    String errorMsg = "Network error";
+                    if (error.networkResponse != null) {
+                        errorMsg += " - Status Code: " + error.networkResponse.statusCode;
+                        try {
+                            String responseBody = new String(error.networkResponse.data, "utf-8");
+                            Log.e("TeacherMenuAPI", "Error Response: " + responseBody);
+                        } catch (Exception e) {
+                            Log.e("TeacherMenuAPI", "Could not parse error response");
+                        }
+                    }
+                    if (error.getMessage() != null) {
+                        Log.e("TeacherMenuAPI", "Error Message: " + error.getMessage());
+                    }
+                    Log.e("TeacherMenuAPI", "=================");
+                    setupDefaultModules();
+                }
+            }) {
+            
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                Map<String, String> headers = new HashMap<>();
+                headers.put("Client-Service", Constants.clientService);
+                headers.put("Auth-Key", Constants.authKey);
+                headers.put("Content-Type", Constants.contentType);
+                headers.put("User-ID", Utility.getSharedPreferences(getApplicationContext(), Constants.userId));
+                
+                // Add JWT token if available
+                String token = Utility.getSharedPreferences(getApplicationContext(), Constants.teacherJwtToken);
+                if (token != null && !token.isEmpty()) {
+                    headers.put("Authorization", "Bearer " + token);
+                }
+                
+                Log.d("TeacherMenuAPI", "Request Headers: " + headers.toString());
+                return headers;
+            }
+            
+            @Override
+            public String getBodyContentType() {
+                return "application/json; charset=utf-8";
+            }
+            
+            @Override
+            public byte[] getBody() throws AuthFailureError {
+                try {
+                    return requestBody == null ? null : requestBody.getBytes("utf-8");
+                } catch (UnsupportedEncodingException uee) {
+                    VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", requestBody, "utf-8");
+                    return null;
+                }
+            }
+        };
+        
+        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+        requestQueue.add(stringRequest);
+    }
+
+    private void setupModulesFromAPI(List<com.qdocs.ssre241123.model.MenuItem> menuItems) {
+        if (menuItems == null || menuItems.isEmpty()) {
+            setupDefaultModules();
+            return;
+        }
+
+        // Convert MenuItems to TeacherModules
+        List<TeacherModule> allModules = new ArrayList<>();
+        for (com.qdocs.ssre241123.model.MenuItem menuItem : menuItems) {
+            TeacherModule module = TeacherModule.fromMenuItem(menuItem);
+            allModules.add(module);
+        }
+
+        // Organize modules by categories based on level and system_level
+        List<TeacherModule> managementModules = new ArrayList<>();
+        List<TeacherModule> academicModules = new ArrayList<>();
+        List<TeacherModule> communicationModules = new ArrayList<>();
+        List<TeacherModule> toolsModules = new ArrayList<>();
+
+        for (TeacherModule module : allModules) {
+            String activateMenu = module.getActivateMenu();
+            
+            // Categorize based on activate_menu or level
+            if (isManagementModule(activateMenu)) {
+                managementModules.add(module);
+            } else if (isAcademicModule(activateMenu)) {
+                academicModules.add(module);
+            } else if (isCommunicationModule(activateMenu)) {
+                communicationModules.add(module);
+            } else {
+                toolsModules.add(module);
+            }
+        }
+
+        // Setup RecyclerViews and adapters
+        setupRecyclerViews(managementModules, academicModules, communicationModules, toolsModules);
+    }
+
+    private boolean isManagementModule(String activateMenu) {
+        return activateMenu != null && (
+            activateMenu.contains("student_information") ||
+            activateMenu.contains("fees_collection") ||
+            activateMenu.contains("income") ||
+            activateMenu.contains("expense") ||
+            activateMenu.contains("account_module") ||
+            activateMenu.contains("other_fees") ||
+            activateMenu.contains("human_resource")
+        );
+    }
+
+    private boolean isAcademicModule(String activateMenu) {
+        return activateMenu != null && (
+            activateMenu.contains("attendance") ||
+            activateMenu.contains("academics") ||
+            activateMenu.contains("examination") ||
+            activateMenu.contains("library") ||
+            activateMenu.contains("results") ||
+            activateMenu.contains("hallticketgeneration") ||
+            activateMenu.contains("tc_generation")
+        );
+    }
+
+    private boolean isCommunicationModule(String activateMenu) {
+        return activateMenu != null && (
+            activateMenu.contains("communicate") ||
+            activateMenu.contains("online_classes") ||
+            activateMenu.contains("gmeet") ||
+            activateMenu.contains("behaviour_records") ||
+            activateMenu.contains("inventory") ||
+            activateMenu.contains("transport") ||
+            activateMenu.contains("hostel") ||
+            activateMenu.contains("referral_branch")
+        );
+    }
+
+    private void setupDefaultModules() {
+        // Fallback to hardcoded modules if API fails
         List<TeacherModule> managementModules = new ArrayList<>();
         managementModules.add(new TeacherModule("student_information", "Student Information", "fa-user", R.drawable.ic_fa_user, true));
         managementModules.add(new TeacherModule("fees_collection", "Fees Collection", "fa-money", R.drawable.ic_fa_money, true));
         managementModules.add(new TeacherModule("income", "Income", "fa-dollar", R.drawable.ic_fa_dollar, true));
-        managementModules.add(new TeacherModule("other_fees", "Other Fees", "fa-credit-card", R.drawable.ic_fa_credit_card, true));
-        managementModules.add(new TeacherModule("expenses", "Expenses", "fa-credit-card-alt", R.drawable.ic_fa_credit_card_alt, true));
-        managementModules.add(new TeacherModule("accounting", "Accounting", "fa-calculator", R.drawable.ic_fa_calculator, true));
-        managementModules.add(new TeacherModule("front_office", "Front Office", "fa-address-book", R.drawable.ic_fa_address_book, true));
-        managementModules.add(new TeacherModule("human_resource", "Human Resource", "fa-users", R.drawable.ic_fa_users, true));
-        managementModules.add(new TeacherModule("multi_branch", "Multi Branch", "fa-sitemap", R.drawable.ic_fa_sitemap, true));
-        managementModules.add(new TeacherModule("fee_discount", "Fee Discount", "fa-percent", R.drawable.ic_fa_percent, true));
+        managementModules.add(new TeacherModule("expense", "Expenses", "fa-credit-card", R.drawable.ic_fa_credit_card, true));
 
-        // Setup Academic & Examination Modules (10 modules)
         List<TeacherModule> academicModules = new ArrayList<>();
         academicModules.add(new TeacherModule("attendance", "Attendance", "fa-calendar-check-o", R.drawable.ic_fa_calendar_check, true));
-        academicModules.add(new TeacherModule("examinations", "Examinations", "fa-file-text", R.drawable.ic_fa_file_text, true));
-        academicModules.add(new TeacherModule("online_examinations", "Online Examinations", "fa-rss", R.drawable.ic_fa_rss, true));
-        academicModules.add(new TeacherModule("cbse_examination", "CBSE Examination", "fa-book", R.drawable.ic_fa_book, true));
-        academicModules.add(new TeacherModule("lesson_plan", "Lesson Plan", "fa-book", R.drawable.ic_fa_book, true));
         academicModules.add(new TeacherModule("academics", "Academics", "fa-graduation-cap", R.drawable.ic_fa_graduation_cap, true));
-        academicModules.add(new TeacherModule("homework", "Homework", "fa-tasks", R.drawable.ic_fa_tasks, true));
         academicModules.add(new TeacherModule("library", "Library", "fa-book", R.drawable.ic_fa_book, true));
-        academicModules.add(new TeacherModule("results", "Results", "fa-list-alt", R.drawable.ic_fa_list_alt, true));
-        academicModules.add(new TeacherModule("hall_ticket_generation", "Hall Ticket Generation", "fa-ticket", R.drawable.ic_fa_ticket, true));
+        academicModules.add(new TeacherModule("reports", "Reports", "fa-bar-chart", R.drawable.ic_fa_bar_chart, true));
 
-        // Setup Communication & Services Modules (9 modules)
         List<TeacherModule> communicationModules = new ArrayList<>();
         communicationModules.add(new TeacherModule("communicate", "Communicate", "fa-envelope", R.drawable.ic_fa_envelope, true));
-        communicationModules.add(new TeacherModule("zoom_live_classes", "Zoom Live Classes", "fa-video-camera", R.drawable.ic_videocam, true));
-        communicationModules.add(new TeacherModule("gmeet_live_classes", "Gmeet Live Classes", "fa-video-camera", R.drawable.ic_videocam, true));
-        communicationModules.add(new TeacherModule("behaviour_records", "Behaviour Records", "fa-exclamation-triangle", R.drawable.ic_fa_exclamation_triangle, true));
-        communicationModules.add(new TeacherModule("inventory", "Inventory", "fa-archive", R.drawable.ic_fa_archive, true));
         communicationModules.add(new TeacherModule("transport", "Transport", "fa-bus", R.drawable.ic_fa_bus, true));
         communicationModules.add(new TeacherModule("hostel", "Hostel", "fa-building", R.drawable.ic_fa_building, true));
-        communicationModules.add(new TeacherModule("alumni", "Alumni", "fa-graduation-cap", R.drawable.ic_fa_graduation_cap, true));
-        communicationModules.add(new TeacherModule("referral_application", "Referral Application", "fa-share-alt", R.drawable.ic_fa_share_alt, true));
+        communicationModules.add(new TeacherModule("inventory", "Inventory", "fa-archive", R.drawable.ic_fa_archive, true));
 
-        // Setup Tools, Reports & Admin Modules (9 modules)
         List<TeacherModule> toolsModules = new ArrayList<>();
-        toolsModules.add(new TeacherModule("reports", "Reports", "fa-bar-chart", R.drawable.ic_fa_bar_chart, true));
-        toolsModules.add(new TeacherModule("tc_generation", "TC Generation", "fa-certificate", R.drawable.ic_fa_certificate, true));
         toolsModules.add(new TeacherModule("certificate", "Certificate", "fa-certificate", R.drawable.ic_fa_certificate, true));
-        toolsModules.add(new TeacherModule("admission_no", "Admission No", "fa-id-card", R.drawable.ic_fa_id_card, true));
-        toolsModules.add(new TeacherModule("hallticket_no", "HallTicket No", "fa-ticket", R.drawable.ic_fa_ticket, true));
-        toolsModules.add(new TeacherModule("importing", "Importing", "fa-upload", R.drawable.ic_fa_upload, true));
-        toolsModules.add(new TeacherModule("download_center", "Download Center", "fa-download", R.drawable.ic_download, true));
-        toolsModules.add(new TeacherModule("front_cms", "Front CMS", "fa-desktop", R.drawable.ic_fa_desktop, true));
-        toolsModules.add(new TeacherModule("system_setting", "System Settings", "fa-cogs", R.drawable.ic_fa_cogs, true));
+        toolsModules.add(new TeacherModule("system_settings", "System Settings", "fa-cogs", R.drawable.ic_fa_cogs, true));
 
+        setupRecyclerViews(managementModules, academicModules, communicationModules, toolsModules);
+    }
+
+    private void setupRecyclerViews(List<TeacherModule> managementModules, 
+                                   List<TeacherModule> academicModules,
+                                   List<TeacherModule> communicationModules, 
+                                   List<TeacherModule> toolsModules) {
+        
         // Setup RecyclerViews with GridLayoutManager (4 columns each)
         teacherManagementRecyclerView.setLayoutManager(new GridLayoutManager(this, 4));
         teacherAcademicRecyclerView.setLayoutManager(new GridLayoutManager(this, 4));
