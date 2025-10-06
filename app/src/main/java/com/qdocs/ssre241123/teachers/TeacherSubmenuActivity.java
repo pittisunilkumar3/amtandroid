@@ -168,7 +168,9 @@ public class TeacherSubmenuActivity extends BaseActivity {
             staffId = "1"; // Default for testing
         }
 
-        String url = Utility.getSharedPreferences(getApplicationContext(), Constants.apiUrl) + "/api/teacher/menu";
+        // Use buildApiUrl() to ensure consistent URL construction with configured domain
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.teacherMenuUrl);
+        Log.d(TAG, "Teacher Menu API URL: " + url);
 
         JSONObject requestBody = new JSONObject();
         try {

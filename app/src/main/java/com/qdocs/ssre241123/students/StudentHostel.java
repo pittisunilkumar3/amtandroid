@@ -84,8 +84,9 @@ public class StudentHostel extends BaseActivity {
         pd.setCancelable(false);
         pd.show();
         final String requestBody = bodyParams;
-        String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl")+ Constants.getHostelListUrl;
-        Log.e("URL", url);
+        // Use buildApiUrl() to ensure consistent URL construction with configured domain
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.getHostelListUrl);
+        Log.e("Hostel List URL", url);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {

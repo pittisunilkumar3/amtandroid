@@ -426,17 +426,13 @@ public class Login extends Activity {
                                  Utility.setSharedPreference(getApplicationContext(), Constants.studentId, data.getString("student_id"));
                                  Utility.setSharedPreference(getApplicationContext(), Constants.admission_no, data.getString("admission_no"));
                                   setLocale(data.getJSONObject("language").getString("short_code"));
-                                 if (Utility.isConnectingToInternet(getApplicationContext())) {
-                                     params.put("student_id", Utility.getSharedPreferences(getApplicationContext(), Constants.studentId));
-                                     JSONObject currobject=new JSONObject(params);
-                                     Log.e("params ", currobject.toString());
-                                     getCurrencyDataFromApi(currobject.toString());
-                                 } else {
-                                     makeText(getApplicationContext(),R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
-                                 }
+
+                                 // Call profile lock check directly - this will navigate to dashboard
+                                 // Currency data will be fetched in the background (not blocking navigation)
                                  if(Utility.isConnectingToInternet(Login.this)){
-                                     params.put("student_id", Utility.getSharedPreferences(getApplicationContext(), "studentId"));
+                                     params.put("student_id", Utility.getSharedPreferences(getApplicationContext(), Constants.studentId));
                                      JSONObject obj=new JSONObject(params);
+                                     Log.e("Student Login", "Checking profile lock status...");
                                      Log.e("params ", obj.toString());
                                      System.out.println("Details=="+obj.toString());
                                      isProfileLock(obj.toString());
@@ -575,38 +571,54 @@ public class Login extends Activity {
         // Always use the configured domain to ensure consistency
         String url = Utility.buildApiUrl(getApplicationContext(), Constants.lock_student_panelUrl);
         Log.e("Profile Lock API URL", "Using configured domain: " + url);
+        Log.e("Profile Lock", "Checking if student profile is locked...");
+
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String result) {
+                Log.e("Profile Lock Response", result);
                 try {
                     JSONObject object = new JSONObject(result);
                     String is_lock = object.getString("is_lock");
+                    Log.e("Profile Lock Status", "is_lock = " + is_lock);
                     System.out.println("is_lock"+is_lock.toString());
+
                     if(is_lock.equals("0")){
                         Utility.setSharedPreferenceBoolean(getApplicationContext(), "isLock", false);
+                        Log.e("Navigation", "Profile not locked - navigating to NewDashboard");
                         pd.dismiss();
                         Intent asd = new Intent(getApplicationContext(), NewDashboard.class);
                         startActivity(asd);
                         finish();
                     } else{
                         Utility.setSharedPreferenceBoolean(getApplicationContext(), "isLock", true);
+                        Log.e("Navigation", "Profile locked - navigating to StudentFees");
                         pd.dismiss();
                         Intent asd = new Intent(getApplicationContext(), StudentFees.class);
                         startActivity(asd);
                         finish();
                     }
                 } catch (JSONException e) {
+                    Log.e("Profile Lock Error", "JSON parsing error: " + e.getMessage());
                     e.printStackTrace();
+                    pd.dismiss();
+                    // Navigate to dashboard anyway on error
+                    Log.e("Navigation", "Error occurred - navigating to NewDashboard anyway");
+                    Intent asd = new Intent(getApplicationContext(), NewDashboard.class);
+                    startActivity(asd);
+                    finish();
                 }
-
-
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError volleyError) {
                 pd.dismiss();
-                Log.e("Volley Error", volleyError.toString());
-                Toast.makeText(Login.this, R.string.apiErrorMsg, Toast.LENGTH_LONG).show();
+                Log.e("Volley Error", "Profile lock API error: " + volleyError.toString());
+                // Navigate to dashboard anyway on error
+                Log.e("Navigation", "API error - navigating to NewDashboard anyway");
+                Intent asd = new Intent(getApplicationContext(), NewDashboard.class);
+                startActivity(asd);
+                finish();
             }
         })
         {

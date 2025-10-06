@@ -268,7 +268,8 @@ public class TeacherStudentDetailsActivity extends BaseActivity {
         pd.setCancelable(false);
         pd.show();
 
-        String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.teacherSessionsWithClassesSectionsUrl;
+        // Use buildApiUrl() to ensure consistent URL construction with configured domain
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.teacherSessionsWithClassesSectionsUrl);
         Log.d(TAG, "Sessions API URL: " + url);
 
         JSONObject requestBody = new JSONObject();
@@ -439,7 +440,8 @@ public class TeacherStudentDetailsActivity extends BaseActivity {
 
         showLoading();
 
-        String url = Utility.getSharedPreferences(getApplicationContext(), "apiUrl") + Constants.teacherStudentsUrl;
+        // Use buildApiUrl() to ensure consistent URL construction with configured domain
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.teacherStudentsUrl);
         Log.d(TAG, "Students API URL: " + url);
 
         JSONObject requestBody = new JSONObject();

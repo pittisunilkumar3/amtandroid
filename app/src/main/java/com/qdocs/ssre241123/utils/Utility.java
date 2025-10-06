@@ -112,14 +112,44 @@ public class Utility {
 		System.out.println("Actual Amount=="+amount);
 		System.out.println("Actual base price=="+base_price);
 		System.out.println("Actual currency=="+currency);
-		double amounts = 0;
-		double USD = Double.parseDouble(amount);
-		double price = Double.parseDouble(base_price);
-		amounts = price * USD;
 
-		System.out.println("converted amount= "+amounts);
-		//return new DecimalFormat("####0.00").format(Double.parseDouble(String.valueOf(amounts)));
-		return String.valueOf(amounts);
+		// Handle null or empty values
+		if (amount == null || amount.trim().isEmpty()) {
+			Log.e("Utility", "changeAmount: amount is null or empty, returning 0.00");
+			return "0.00";
+		}
+
+		if (base_price == null || base_price.trim().isEmpty()) {
+			Log.e("Utility", "changeAmount: base_price is null or empty, returning original amount");
+			// If base_price is not available, return the original amount
+			try {
+				double originalAmount = Double.parseDouble(amount);
+				return String.format("%.2f", originalAmount);
+			} catch (NumberFormatException e) {
+				Log.e("Utility", "changeAmount: Error parsing amount: " + e.getMessage());
+				return "0.00";
+			}
+		}
+
+		try {
+			double amounts = 0;
+			double USD = Double.parseDouble(amount);
+			double price = Double.parseDouble(base_price);
+			amounts = price * USD;
+
+			System.out.println("converted amount= "+amounts);
+			//return new DecimalFormat("####0.00").format(Double.parseDouble(String.valueOf(amounts)));
+			return String.format("%.2f", amounts);
+		} catch (NumberFormatException e) {
+			Log.e("Utility", "changeAmount: Error parsing numbers: " + e.getMessage());
+			// Return original amount on error
+			try {
+				double originalAmount = Double.parseDouble(amount);
+				return String.format("%.2f", originalAmount);
+			} catch (NumberFormatException ex) {
+				return "0.00";
+			}
+		}
 	}
 
 
@@ -127,13 +157,50 @@ public class Utility {
 		System.out.println("Actual Amount=="+amount);
 		System.out.println("Actual base price=="+base_price);
 		System.out.println("Actual currency=="+currency);
-		double amounts = 0;
-		double USD = Double.parseDouble(amount);
-		double price = Double.parseDouble(base_price);
-		amounts = USD / price;
 
-		System.out.println("converted amount= "+amounts);
-		return String.valueOf(amounts);
+		// Handle null or empty values
+		if (amount == null || amount.trim().isEmpty()) {
+			Log.e("Utility", "changeAmounttousd: amount is null or empty, returning 0.00");
+			return "0.00";
+		}
+
+		if (base_price == null || base_price.trim().isEmpty()) {
+			Log.e("Utility", "changeAmounttousd: base_price is null or empty, returning original amount");
+			// If base_price is not available, return the original amount
+			try {
+				double originalAmount = Double.parseDouble(amount);
+				return String.format("%.2f", originalAmount);
+			} catch (NumberFormatException e) {
+				Log.e("Utility", "changeAmounttousd: Error parsing amount: " + e.getMessage());
+				return "0.00";
+			}
+		}
+
+		try {
+			double amounts = 0;
+			double USD = Double.parseDouble(amount);
+			double price = Double.parseDouble(base_price);
+
+			// Avoid division by zero
+			if (price == 0) {
+				Log.e("Utility", "changeAmounttousd: base_price is zero, returning original amount");
+				return String.format("%.2f", USD);
+			}
+
+			amounts = USD / price;
+
+			System.out.println("converted amount= "+amounts);
+			return String.format("%.2f", amounts);
+		} catch (NumberFormatException e) {
+			Log.e("Utility", "changeAmounttousd: Error parsing numbers: " + e.getMessage());
+			// Return original amount on error
+			try {
+				double originalAmount = Double.parseDouble(amount);
+				return String.format("%.2f", originalAmount);
+			} catch (NumberFormatException ex) {
+				return "0.00";
+			}
+		}
 	}
 	public static long beginDownload(Context context, String filePath, String urlStr){
 

@@ -82,30 +82,46 @@ public class SplashActivity extends Activity {
                 Log.e("isLock", isLock.toString());
                 Log.e("isUrlTaken", isUrlTaken.toString());
 
-                if(Constants.askUrlFromUser) {
-                    if(isUrlTaken) {
+                // Set API URL first
+                String apiUrl = Utility.getApiUrl(getApplicationContext());
+                Utility.setSharedPreferenceBoolean(getApplicationContext(), "isUrlTaken", false);
+                Log.e("API URL Set", "Using configured domain: " + apiUrl);
+
+                // Check if maintenance mode check is enabled
+                if(Constants.checkMaintenanceMode) {
+                    // Maintenance check is ENABLED - call the API
+                    Log.e("SplashActivity", "Maintenance check ENABLED - calling API");
+
+                    if(Constants.askUrlFromUser) {
+                        if(isUrlTaken) {
+                            if(Utility.isConnectingToInternet(SplashActivity.this)){
+                                ismaintenancemode(apiUrl);
+                            }else{
+                                makeText(getApplicationContext(), R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
+                            }
+                        } else {
+                            Intent asd = new Intent(getApplicationContext(), TakeUrl.class);
+                            startActivity(asd);
+                            finish();
+                        }
+                    } else {
                         if(Utility.isConnectingToInternet(SplashActivity.this)){
-                            ismaintenancemode(Utility.getSharedPreferences(getApplicationContext(), "apiUrl"));
+                            ismaintenancemode(apiUrl);
                         }else{
                             makeText(getApplicationContext(), R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
                         }
-                    } else {
-                        Intent asd = new Intent(getApplicationContext(), TakeUrl.class);
-                        startActivity(asd);
-                        finish();
                     }
                 } else {
-                    // When askUrlFromUser is false, always use Constants.domain and clear any stored URL
-                    String defaultApiUrl = Constants.domain + "/api/";
-                    Utility.setSharedPreference(getApplicationContext(), Constants.apiUrl, defaultApiUrl);
-                    Utility.setSharedPreferenceBoolean(getApplicationContext(), "isUrlTaken", false);
-                    Log.e("API URL Reset", "Using default domain: " + defaultApiUrl);
+                    // Maintenance check is DISABLED - skip API call and go directly to next screen
+                    Log.e("SplashActivity", "Maintenance check DISABLED - skipping API call");
+                    Log.e("SplashActivity", "Reason: Backend has PHP error (language_model not loaded)");
+                    Log.e("SplashActivity", "Going directly to next screen...");
 
-                    if(Utility.isConnectingToInternet(SplashActivity.this)){
-                        ismaintenancemode(defaultApiUrl);
-                    }else{
-                        makeText(getApplicationContext(), R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
-                    }
+                    // Set maintenance mode to false (not in maintenance)
+                    Utility.setSharedPreferenceBoolean(getApplicationContext(), "maintenance_mode", false);
+
+                    // Navigate to next screen
+                    navigateToNextScreen();
                 }
             }
         }, SPLASH_TIME_OUT);
@@ -282,12 +298,8 @@ public class SplashActivity extends Activity {
 
         builder.setPositiveButton("Retry", (dialog, which) -> {
             dialog.dismiss();
-            // Retry the API call
-            String apiUrl = Utility.getSharedPreferences(getApplicationContext(), Constants.apiUrl);
-            if (apiUrl == null || apiUrl.isEmpty()) {
-                apiUrl = Constants.domain + "/api/";
-            }
-            ismaintenancemode(apiUrl);
+            // Retry the API call - getApiUrl() always returns the configured domain
+            ismaintenancemode(Utility.getApiUrl(getApplicationContext()));
         });
 
         builder.setNeutralButton("Continue to Login", (dialog, which) -> {
@@ -317,12 +329,8 @@ public class SplashActivity extends Activity {
 
         builder.setPositiveButton("Retry", (dialog, which) -> {
             dialog.dismiss();
-            // Retry the API call
-            String apiUrl = Utility.getSharedPreferences(getApplicationContext(), Constants.apiUrl);
-            if (apiUrl == null || apiUrl.isEmpty()) {
-                apiUrl = Constants.domain + "/api/";
-            }
-            ismaintenancemode(apiUrl);
+            // Retry the API call - getApiUrl() always returns the configured domain
+            ismaintenancemode(Utility.getApiUrl(getApplicationContext()));
         });
 
         builder.setNeutralButton("Continue Anyway", (dialog, which) -> {

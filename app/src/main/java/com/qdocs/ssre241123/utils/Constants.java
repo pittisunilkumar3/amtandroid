@@ -3,6 +3,7 @@ package com.qdocs.ssre241123.utils;
 public class Constants {
     public static final Boolean isDemoModeOn = false;
     public static final Boolean askUrlFromUser = false;
+    public static final Boolean checkMaintenanceMode = false; // Set to false to skip maintenance check (backend has error)
     public static final String clientService = "smartschool";
     public static final String authKey = "schoolAdmin@";
     public static final String appKey = "schoolAdmin@1234";
