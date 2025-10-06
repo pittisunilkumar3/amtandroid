@@ -61,18 +61,8 @@ public class StudentCategoryAdapter extends RecyclerView.Adapter<StudentCategory
               ", is_active: '" + category.getIsActive() +
               "', isActiveCategory(): " + category.isActiveCategory());
 
-        // Set status
-        if (category.isActiveCategory()) {
-            holder.statusTV.setText("Active");
-            holder.statusTV.setTextColor(Color.parseColor("#4CAF50"));
-            holder.statusTV.setBackgroundResource(R.drawable.bg_status_active);
-            Log.d(TAG, "Setting ACTIVE badge for: " + category.getCategoryName());
-        } else {
-            holder.statusTV.setText("Inactive");
-            holder.statusTV.setTextColor(Color.parseColor("#F44336"));
-            holder.statusTV.setBackgroundResource(R.drawable.bg_status_inactive);
-            Log.d(TAG, "Setting INACTIVE badge for: " + category.getCategoryName());
-        }
+        // Status badge is hidden - no need to set it
+        holder.statusTV.setVisibility(View.GONE);
 
         // Set created date
         if (category.getCreatedAt() != null && !category.getCreatedAt().isEmpty()) {

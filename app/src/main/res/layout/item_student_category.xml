@@ -36,7 +36,7 @@
                 android:ellipsize="end"
                 android:maxLines="1" />
 
-            <!-- Status Badge -->
+            <!-- Status Badge - HIDDEN -->
             <TextView
                 android:id="@+id/category_status_tv"
                 android:layout_width="wrap_content"
@@ -50,7 +50,8 @@
                 android:paddingEnd="12dp"
                 android:paddingTop="4dp"
                 android:paddingBottom="4dp"
-                android:layout_marginStart="8dp" />
+                android:layout_marginStart="8dp"
+                android:visibility="gone" />
         </LinearLayout>
 
         <!-- Category ID -->

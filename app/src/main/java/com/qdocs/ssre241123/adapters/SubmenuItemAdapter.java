@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.qdocs.ssre241123.R;
 import com.qdocs.ssre241123.model.MenuSubmenuItem;
 import com.qdocs.ssre241123.teachers.StudentCategoriesActivity;
+import com.qdocs.ssre241123.teachers.StudentHousesActivity;
 import com.qdocs.ssre241123.teachers.TeacherStudentDetailsActivity;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.Utility;
@@ -102,6 +103,16 @@ public class SubmenuItemAdapter extends RecyclerView.Adapter<SubmenuItemAdapter.
         if ("student_categories".equals(itemName) || "categories".equals(itemName)) {
             // Navigate to Student Categories Activity
             Intent intent = new Intent(context, StudentCategoriesActivity.class);
+            context.startActivity(intent);
+            if (context instanceof android.app.Activity) {
+                ((android.app.Activity) context).overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
+            }
+            return;
+        }
+
+        if ("student_house".equals(itemName) || "house".equals(itemName)) {
+            // Navigate to Student Houses Activity
+            Intent intent = new Intent(context, StudentHousesActivity.class);
             context.startActivity(intent);
             if (context instanceof android.app.Activity) {
                 ((android.app.Activity) context).overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);

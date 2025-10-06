@@ -2528,6 +2528,21 @@ id hostel_bottomSheet_listview
 id hostel_layout
 id hour_layout
 id hourlayout
+id house_active_switch
+id house_cardView
+id house_count_tv
+id house_created_tv
+id house_delete_btn
+id house_description_input
+id house_description_input_layout
+id house_description_tv
+id house_edit_btn
+id house_id_tv
+id house_name_input
+id house_name_input_layout
+id house_name_tv
+id house_updated_tv
+id houses_recyclerView
 id icon
 id icon_group
 id icon_only
@@ -3447,6 +3462,7 @@ layout activity_student_course_performance
 layout activity_student_examlist
 layout activity_student_gmeet_live_classes
 layout activity_student_homework_new
+layout activity_student_houses
 layout activity_student_live_classes
 layout activity_student_offline_payment
 layout activity_student_online_course
@@ -3618,6 +3634,7 @@ layout fragment_transport_route_bottom_sheet
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_student_category
+layout item_student_house
 layout item_student_list
 layout item_teacher_document
 layout item_teacher_leave

@@ -2527,6 +2527,21 @@ int id hostel_bottomSheet_listview 0x7f0902ff
 int id hostel_layout 0x7f090300
 int id hour_layout 0x7f090301
 int id hourlayout 0x7f090302
+int id house_active_switch 0x7f09064e
+int id house_cardView 0x7f09064f
+int id house_count_tv 0x7f090650
+int id house_created_tv 0x7f090651
+int id house_delete_btn 0x7f090652
+int id house_description_input 0x7f090653
+int id house_description_input_layout 0x7f090654
+int id house_description_tv 0x7f090655
+int id house_edit_btn 0x7f090656
+int id house_id_tv 0x7f090657
+int id house_name_input 0x7f090658
+int id house_name_input_layout 0x7f090659
+int id house_name_tv 0x7f09065a
+int id house_updated_tv 0x7f09065b
+int id houses_recyclerView 0x7f09065c
 int id icon 0x7f090303
 int id icon_group 0x7f090304
 int id icon_only 0x7f090305
@@ -3446,6 +3461,7 @@ int layout activity_student_course_performance 0x7f0c002d
 int layout activity_student_examlist 0x7f0c002e
 int layout activity_student_gmeet_live_classes 0x7f0c002f
 int layout activity_student_homework_new 0x7f0c0030
+int layout activity_student_houses 0x7f0c0136
 int layout activity_student_live_classes 0x7f0c0031
 int layout activity_student_offline_payment 0x7f0c0032
 int layout activity_student_online_course 0x7f0c0033
@@ -3617,6 +3633,7 @@ int layout fragment_transport_route_bottom_sheet 0x7f0c00d8
 int layout ime_base_split_test_activity 0x7f0c00d9
 int layout ime_secondary_split_test_activity 0x7f0c00da
 int layout item_student_category 0x7f0c00db
+int layout item_student_house 0x7f0c0137
 int layout item_student_list 0x7f0c00dc
 int layout item_teacher_document 0x7f0c00dd
 int layout item_teacher_leave 0x7f0c00de

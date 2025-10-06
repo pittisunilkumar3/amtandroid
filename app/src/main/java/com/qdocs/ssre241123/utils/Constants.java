@@ -26,6 +26,13 @@ public class Constants {
     public static final String teacherStudentCategoryUpdateUrl = "teacher/student-category/update";
     public static final String teacherStudentCategoryDeleteUrl = "teacher/student-category/delete";
 
+    // Student House API endpoints
+    public static final String studentHouseListUrl = "student-house/list";
+    public static final String studentHouseGetUrl = "student-house/get";
+    public static final String studentHouseCreateUrl = "student-house/create";
+    public static final String studentHouseUpdateUrl = "student-house/update";
+    public static final String studentHouseDeleteUrl = "student-house/delete";
+
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";
     public static final String uploadHomeworkUrl = "webservice/addaa";
