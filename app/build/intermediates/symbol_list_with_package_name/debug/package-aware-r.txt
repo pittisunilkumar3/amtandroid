@@ -1425,6 +1425,8 @@ drawable badge_background
 drawable badge_greenbackground
 drawable baseline_done
 drawable baseline_receipt
+drawable bg_status_active
+drawable bg_status_inactive
 drawable blue_curve_border
 drawable blue_select
 drawable bottom_img
@@ -1437,6 +1439,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_primary
 drawable button_style_accent
 drawable button_style_grey
 drawable button_text_color
@@ -1528,6 +1531,7 @@ drawable ic_attach_file_black
 drawable ic_back
 drawable ic_briefcase
 drawable ic_bus
+drawable ic_calendar
 drawable ic_calender
 drawable ic_calender_cross
 drawable ic_calender_time
@@ -2122,16 +2126,30 @@ id calendar_card
 id callMeasure
 id cancelBtn
 id cancel_action
+id cancel_button
 id cardViewGraph
 id card_view_inner
 id card_view_outer
 id carryVelocity
 id caste
+id categories_recyclerView
 id category
+id category_active_switch
+id category_cardView
+id category_count_tv
+id category_created_tv
+id category_delete_btn
+id category_edit_btn
 id category_icon
+id category_id_tv
 id category_layout
 id category_name
+id category_name_input
+id category_name_input_layout
+id category_name_tv
+id category_status_tv
 id category_title
+id category_updated_tv
 id cbesetimetable
 id center
 id center_horizontal
@@ -2439,6 +2457,8 @@ id flip
 id forever
 id forgotPassword_emailLayout
 id forgotPassword_layout
+id form_card
+id form_title_tv
 id fp_logo
 id fragment_container_view_tag
 id fragment_root_layout
@@ -2870,6 +2890,7 @@ id rte
 id rte_layout
 id saturdayNoData
 id saturdaylayout
+id save_button
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -3227,6 +3248,7 @@ id title
 id titleDividerNoCustom
 id titleET
 id title_template
+id title_textview
 id titlename
 id todate
 id toggle
@@ -3419,6 +3441,7 @@ layout activity_setting
 layout activity_start_lesson
 layout activity_student_apply_leave
 layout activity_student_behaviour_report
+layout activity_student_categories
 layout activity_student_course_detail
 layout activity_student_course_performance
 layout activity_student_examlist
@@ -3594,6 +3617,7 @@ layout fragment_teacher_timeline
 layout fragment_transport_route_bottom_sheet
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_student_category
 layout item_student_list
 layout item_teacher_document
 layout item_teacher_leave

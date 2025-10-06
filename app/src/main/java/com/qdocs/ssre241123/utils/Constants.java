@@ -19,6 +19,13 @@ public class Constants {
     public static final String teacherSessionsWithClassesSectionsUrl = "teacher/sessions-with-classes-sections";
     public static final String teacherStudentsUrl = "teacher/students";
 
+    // Student Categories API endpoints
+    public static final String teacherStudentCategoriesUrl = "teacher/student-categories";
+    public static final String teacherStudentCategoryGetUrl = "teacher/student-category/get";
+    public static final String teacherStudentCategoryCreateUrl = "teacher/student-category/create";
+    public static final String teacherStudentCategoryUpdateUrl = "teacher/student-category/update";
+    public static final String teacherStudentCategoryDeleteUrl = "teacher/student-category/delete";
+
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";
     public static final String uploadHomeworkUrl = "webservice/addaa";

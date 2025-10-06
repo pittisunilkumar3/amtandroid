@@ -76,6 +76,9 @@
             android:name="com.qdocs.ssre241123.teachers.TeacherStudentDetailsActivity"
             android:exported="false" />
         <activity
+            android:name="com.qdocs.ssre241123.teachers.StudentCategoriesActivity"
+            android:exported="false" />
+        <activity
             android:name="com.qdocs.ssre241123.teachers.TeacherReportCategoryActivity"
             android:exported="false" />
         <activity

@@ -428,12 +428,12 @@
         "source": "com.qdocs.ssre241123.app-main-7:/drawable/ic_onlineexam.png"
     },
     {
-        "merged": "com.qdocs.ssre241123.app-merged_res-5:/drawable_ic_onlinecourse.png.flat",
-        "source": "com.qdocs.ssre241123.app-main-7:/drawable/ic_onlinecourse.png"
-    },
-    {
         "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_adapter_report_card_exam_gparesult.xml.flat",
         "source": "com.qdocs.ssre241123.app-main-7:/layout/adapter_report_card_exam_gparesult.xml"
+    },
+    {
+        "merged": "com.qdocs.ssre241123.app-merged_res-5:/drawable_ic_onlinecourse.png.flat",
+        "source": "com.qdocs.ssre241123.app-main-7:/drawable/ic_onlinecourse.png"
     },
     {
         "merged": "com.qdocs.ssre241123.app-merged_res-5:/drawable_ic_fullscreen_open.png.flat",
@@ -1220,6 +1220,10 @@
         "source": "com.qdocs.ssre241123.app-main-7:/drawable/no_data.png"
     },
     {
+        "merged": "com.qdocs.ssre241123.app-merged_res-5:/drawable_button_primary.xml.flat",
+        "source": "com.qdocs.ssre241123.app-main-7:/drawable/button_primary.xml"
+    },
+    {
         "merged": "com.qdocs.ssre241123.app-merged_res-5:/xml_network_security_config.xml.flat",
         "source": "com.qdocs.ssre241123.app-main-7:/xml/network_security_config.xml"
     },
@@ -1258,6 +1262,10 @@
     {
         "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_student_syllabus_timetable_activity.xml.flat",
         "source": "com.qdocs.ssre241123.app-main-7:/layout/student_syllabus_timetable_activity.xml"
+    },
+    {
+        "merged": "com.qdocs.ssre241123.app-merged_res-5:/drawable_bg_status_active.xml.flat",
+        "source": "com.qdocs.ssre241123.app-main-7:/drawable/bg_status_active.xml"
     },
     {
         "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_adapter_student_lesson_topics.xml.flat",
@@ -1466,6 +1474,10 @@
     {
         "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_quiz_layout.xml.flat",
         "source": "com.qdocs.ssre241123.app-main-7:/layout/quiz_layout.xml"
+    },
+    {
+        "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_item_student_category.xml.flat",
+        "source": "com.qdocs.ssre241123.app-main-7:/layout/item_student_category.xml"
     },
     {
         "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_add_course_assignment.xml.flat",
@@ -1688,6 +1700,10 @@
         "source": "com.qdocs.ssre241123.app-main-7:/drawable/ic_fa_share_alt.xml"
     },
     {
+        "merged": "com.qdocs.ssre241123.app-merged_res-5:/drawable_bg_status_inactive.xml.flat",
+        "source": "com.qdocs.ssre241123.app-main-7:/drawable/bg_status_inactive.xml"
+    },
+    {
         "merged": "com.qdocs.ssre241123.app-merged_res-5:/drawable_grey_curve_border.xml.flat",
         "source": "com.qdocs.ssre241123.app-main-7:/drawable/grey_curve_border.xml"
     },
@@ -1884,6 +1900,10 @@
         "source": "com.qdocs.ssre241123.app-main-7:/layout/student_teacher_activity_new.xml"
     },
     {
+        "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_activity_student_categories.xml.flat",
+        "source": "com.qdocs.ssre241123.app-main-7:/layout/activity_student_categories.xml"
+    },
+    {
         "merged": "com.qdocs.ssre241123.app-merged_res-5:/drawable_ic_lessonplan.png.flat",
         "source": "com.qdocs.ssre241123.app-main-7:/drawable/ic_lessonplan.png"
     },
@@ -2070,6 +2090,10 @@
     {
         "merged": "com.qdocs.ssre241123.app-merged_res-5:/drawable_ic_quiz.png.flat",
         "source": "com.qdocs.ssre241123.app-main-7:/drawable/ic_quiz.png"
+    },
+    {
+        "merged": "com.qdocs.ssre241123.app-merged_res-5:/drawable_ic_calendar.xml.flat",
+        "source": "com.qdocs.ssre241123.app-main-7:/drawable/ic_calendar.xml"
     },
     {
         "merged": "com.qdocs.ssre241123.app-merged_res-5:/drawable_play_button.png.flat",
