@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.qdocs.ssre241123.R;
 import com.qdocs.ssre241123.model.MenuSubmenuItem;
+import com.qdocs.ssre241123.teachers.TeacherStudentDetailsActivity;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.Utility;
 
@@ -84,11 +85,23 @@ public class SubmenuItemAdapter extends RecyclerView.Adapter<SubmenuItemAdapter.
     }
 
     private void handleSubmenuItemClick(MenuSubmenuItem submenuItem) {
-        // For now, show a coming soon message
-        // Later this will launch the specific functionality activity
+        // Check for specific submenu items that have custom implementations
+        String itemName = submenuItem.getName();
+
+        if ("student_details".equals(itemName)) {
+            // Navigate to Student Details Activity
+            Intent intent = new Intent(context, TeacherStudentDetailsActivity.class);
+            context.startActivity(intent);
+            if (context instanceof android.app.Activity) {
+                ((android.app.Activity) context).overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
+            }
+            return;
+        }
+
+        // For other items, show a coming soon message
         Toast.makeText(context, submenuItem.getDisplayName() + " - Coming Soon", Toast.LENGTH_SHORT).show();
-        
-        // TODO: Implement navigation to specific functionality screens
+
+        // TODO: Implement navigation to other specific functionality screens
         // This will be implemented based on the submenu item type
         /*
         Intent intent = new Intent(context, TeacherSubmenuDetailActivity.class);

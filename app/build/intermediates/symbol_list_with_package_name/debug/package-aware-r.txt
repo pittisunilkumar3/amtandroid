@@ -2056,6 +2056,7 @@ id answerwordcount
 id antiClockwise
 id anticipate
 id applied_date
+id apply_filter_button
 id arrow
 id asConfigured
 id assigned
@@ -2171,6 +2172,7 @@ id classTimetable_tuesdayHeader
 id classTimetable_tuesdayList
 id classTimetable_wednesdayHeader
 id classTimetable_wednesdayList
+id class_spinner
 id classdata
 id classduration
 id classes
@@ -2896,11 +2898,13 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id sectionNameTV
+id section_spinner
 id select
 id select_dialog_listview
 id selected
 id selected_currency
 id selected_lang
+id session_spinner
 id shareby
 id sharedValueSet
 id sharedValueUnset
@@ -3042,6 +3046,9 @@ id studentTransportAdapter_vehicleIcon
 id studentTransportAdapter_vehicleTV
 id studentTransportAdapter_vehicleTable
 id studentTransport_listView
+id student_admission_no
+id student_class_section
+id student_count
 id student_dashboard_fragment_attendance
 id student_dashboard_fragment_attendanceCard
 id student_dashboard_fragment_attendanceView
@@ -3060,6 +3067,7 @@ id student_dashboard_fragment_pendingTaskView
 id student_dashboard_fragment_pendingTaskView_icon
 id student_dashboard_fragment_pendingTask_head
 id student_dashboard_fragment_pendingTask_value
+id student_guardian_name
 id student_homeworkDetails_createdByTV
 id student_homeworkDetails_descriptionWV
 id student_homeworkDetails_downloadBtn
@@ -3072,9 +3080,11 @@ id student_homeworkDetails_submissionDateTV
 id student_homeworkDetails_summeryCard
 id student_homeworkDetails_summeryIndicator
 id student_homeworkDetails_summeryLayout
+id student_image
 id student_libraryBookIssued_listview
 id student_libraryBook_listview
 id student_listview
+id student_name
 id student_profile_parent_fatherContact
 id student_profile_parent_fatherHead
 id student_profile_parent_fatherImage
@@ -3093,10 +3103,13 @@ id student_profile_parent_motherHead
 id student_profile_parent_motherImage
 id student_profile_parent_motherName
 id student_profile_parent_motherOccupation
+id student_roll_no
 id student_subjects_listview
 id student_timeline_listview
+id student_view_details
 id studentbehaviour_listview
 id studentsDownloads_tabContainer
+id students_recyclerView
 id subject
 id subject1
 id subject2
@@ -3429,6 +3442,7 @@ layout activity_teacher_dashboard
 layout activity_teacher_login
 layout activity_teacher_report_category
 layout activity_teacher_reports
+layout activity_teacher_student_details
 layout activity_teacher_submenu
 layout adapter_content_upload_detail
 layout adapter_course_curriculum
@@ -3580,6 +3594,7 @@ layout fragment_teacher_timeline
 layout fragment_transport_route_bottom_sheet
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_student_list
 layout item_teacher_document
 layout item_teacher_leave
 layout item_teacher_payroll
@@ -3728,6 +3743,7 @@ string addtimelineheading
 string admDate
 string admin
 string admissionNo
+string admission_number
 string admission_report
 string all
 string alumni_reports
@@ -3745,6 +3761,7 @@ string applied
 string appliedleaveheading
 string applyDateError
 string applyLang
+string apply_filter
 string applyleave
 string approved
 string asOnDate
@@ -3980,6 +3997,7 @@ string feescode
 string feesdiscount
 string feesgroup
 string fileselected
+string filter_students
 string finance_reports
 string fine
 string finished
@@ -4128,6 +4146,7 @@ string noInternetMsg
 string noLimit
 string noQuestionFound
 string noStatus
+string no_students_found
 string noduedate
 string noofbed
 string noofperson
@@ -4256,6 +4275,7 @@ string result_report
 string returnDate
 string returned
 string review
+string roll_number
 string room
 string routeName
 string routepickuppoint
@@ -4275,8 +4295,13 @@ string selectChild
 string selectDate
 string selectDateError
 string selectTitleError
+string select_all_filters
+string select_class
 string select_currency
+string select_filters_message
 string select_language
+string select_section
+string select_session
 string selectfile
 string send
 string sessionStartMonth
@@ -4302,15 +4327,18 @@ string stock_report
 string student
 string studentHouse
 string student_attendance_type_report
+string student_details
 string student_exams_attempt_report
 string student_gender_ratio_report
 string student_history
 string student_information_reports
+string student_list
 string student_login_credential
 string student_profile_report
 string student_report
 string student_teacher_ratio_report
 string studentbehaviour
+string students_count
 string studyMaterial
 string subject
 string subject_lesson_plan_report
@@ -4420,6 +4448,7 @@ string verificationMessage
 string version
 string videoTutorial
 string view
+string view_details
 string visitorbook
 string visitorbookheading
 string wednesday

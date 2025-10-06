@@ -766,4 +766,20 @@
     <!-- Teacher Leaves -->
     <string name="leaves">Leaves</string>
 
+    <!-- Student Details -->
+    <string name="student_details">Student Details</string>
+    <string name="filter_students">Filter Students</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="student_list">Student List</string>
+    <string name="no_students_found">No students found</string>
+    <string name="select_filters_message">Please select filters and apply to view students</string>
+    <string name="select_all_filters">Please select all filters</string>
+    <string name="admission_number">Admission No</string>
+    <string name="roll_number">Roll No</string>
+    <string name="select_session">Select Session</string>
+    <string name="select_class">Select Class</string>
+    <string name="select_section">Select Section</string>
+    <string name="students_count">%d Student(s)</string>
+    <string name="view_details">View Details</string>
+
 </resources>
