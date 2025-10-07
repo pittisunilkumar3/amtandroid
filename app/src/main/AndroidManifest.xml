@@ -65,6 +65,9 @@
             android:name=".teachers.StudentHousesActivity"
             android:exported="false" />
         <activity
+            android:name=".teachers.DisableReasonsActivity"
+            android:exported="false" />
+        <activity
             android:name=".teachers.TeacherReportCategoryActivity"
             android:exported="false" />
         <activity

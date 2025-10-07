@@ -33,6 +33,13 @@ public class Constants {
     public static final String studentHouseUpdateUrl = "student-house/update";
     public static final String studentHouseDeleteUrl = "student-house/delete";
 
+    // Disable Reason API endpoints
+    public static final String disableReasonListUrl = "disable-reason/list";
+    public static final String disableReasonGetUrl = "disable-reason/get";
+    public static final String disableReasonCreateUrl = "disable-reason/create";
+    public static final String disableReasonUpdateUrl = "disable-reason/update";
+    public static final String disableReasonDeleteUrl = "disable-reason/delete";
+
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";
     public static final String uploadHomeworkUrl = "webservice/addaa";
