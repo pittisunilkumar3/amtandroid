@@ -65,6 +65,18 @@
             android:name=".teachers.StudentReportActivity"
             android:exported="false" />
         <activity
+            android:name=".teachers.ClassSectionReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.OnlineAdmissionReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.StudentTeacherRatioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.ClassSubjectReportActivity"
+            android:exported="false" />
+        <activity
             android:name=".teachers.StudentHistoryActivity"
             android:exported="false" />
         <activity
@@ -72,6 +84,9 @@
             android:exported="false" />
         <activity
             android:name=".teachers.StudentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.GuardianReportActivity"
             android:exported="false" />
         <activity
             android:name=".teachers.TeacherStudentDetailsActivity"

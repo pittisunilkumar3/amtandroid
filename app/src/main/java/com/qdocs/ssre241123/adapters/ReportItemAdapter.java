@@ -17,10 +17,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.qdocs.ssre241123.R;
 import com.qdocs.ssre241123.model.ReportItem;
+import com.qdocs.ssre241123.teachers.ClassSectionReportActivity;
+import com.qdocs.ssre241123.teachers.ClassSubjectReportActivity;
+import com.qdocs.ssre241123.teachers.GuardianReportActivity;
+import com.qdocs.ssre241123.teachers.OnlineAdmissionReportActivity;
 import com.qdocs.ssre241123.teachers.ParentLoginActivity;
 import com.qdocs.ssre241123.teachers.StudentHistoryActivity;
 import com.qdocs.ssre241123.teachers.StudentLoginActivity;
 import com.qdocs.ssre241123.teachers.StudentReportActivity;
+import com.qdocs.ssre241123.teachers.StudentTeacherRatioActivity;
 import com.qdocs.ssre241123.teachers.TeacherReportDetailActivity;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.Utility;
@@ -94,6 +99,26 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch StudentLoginActivity for Student Login Credential Report
             Log.d(TAG, "Launching StudentLoginActivity");
             intent = new Intent(context, StudentLoginActivity.class);
+        } else if ("guardian_report".equals(reportItem.getId())) {
+            // Launch GuardianReportActivity for Guardian Report
+            Log.d(TAG, "Launching GuardianReportActivity");
+            intent = new Intent(context, GuardianReportActivity.class);
+        } else if ("class_section_report".equals(reportItem.getId())) {
+            // Launch ClassSectionReportActivity for Class Section Report
+            Log.d(TAG, "Launching ClassSectionReportActivity");
+            intent = new Intent(context, ClassSectionReportActivity.class);
+        } else if ("student_teacher_ratio_report".equals(reportItem.getId())) {
+            // Launch StudentTeacherRatioActivity for Student Teacher Ratio Report
+            Log.d(TAG, "Launching StudentTeacherRatioActivity");
+            intent = new Intent(context, StudentTeacherRatioActivity.class);
+        } else if ("class_subject_report".equals(reportItem.getId())) {
+            // Launch ClassSubjectReportActivity for Class Subject Report
+            Log.d(TAG, "Launching ClassSubjectReportActivity");
+            intent = new Intent(context, ClassSubjectReportActivity.class);
+        } else if ("online_admission_report".equals(reportItem.getId())) {
+            // Launch OnlineAdmissionReportActivity for Online Admission Report
+            Log.d(TAG, "Launching OnlineAdmissionReportActivity");
+            intent = new Intent(context, OnlineAdmissionReportActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");

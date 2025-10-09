@@ -82,6 +82,18 @@
             android:name="com.qdocs.ssre241123.teachers.StudentReportActivity"
             android:exported="false" />
         <activity
+            android:name="com.qdocs.ssre241123.teachers.ClassSectionReportActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.OnlineAdmissionReportActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.StudentTeacherRatioActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.ClassSubjectReportActivity"
+            android:exported="false" />
+        <activity
             android:name="com.qdocs.ssre241123.teachers.StudentHistoryActivity"
             android:exported="false" />
         <activity
@@ -89,6 +101,9 @@
             android:exported="false" />
         <activity
             android:name="com.qdocs.ssre241123.teachers.StudentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.GuardianReportActivity"
             android:exported="false" />
         <activity
             android:name="com.qdocs.ssre241123.teachers.TeacherStudentDetailsActivity"

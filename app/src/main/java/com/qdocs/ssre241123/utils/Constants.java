@@ -48,6 +48,10 @@ public class Constants {
     public static final String loginDetailReportFilterUrl = "login-detail-report/filter";
     public static final String loginDetailReportListUrl = "login-detail-report/list";
 
+    // Guardian Report API endpoints
+    public static final String guardianReportFilterUrl = "guardian-report/filter";
+    public static final String guardianReportListUrl = "guardian-report/list";
+
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";
     public static final String uploadHomeworkUrl = "webservice/addaa";

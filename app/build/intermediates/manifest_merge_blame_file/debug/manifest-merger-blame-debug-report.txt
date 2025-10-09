@@ -95,7 +95,7 @@
 46-->[androidx.core:core:1.13.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\5989a7b1e32e07494c63ee224d9b7dac\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 47
 48    <application
-48-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:34:5-346:19
+48-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:34:5-361:19
 49        android:name="com.qdocs.ssre241123.utils.MyApp"
 49-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:35:9-36
 50        android:allowBackup="false"
@@ -165,712 +165,742 @@
 83-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:66:13-37
 84        <activity
 84-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:67:9-69:40
-85            android:name="com.qdocs.ssre241123.teachers.StudentHistoryActivity"
-85-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:68:13-60
+85            android:name="com.qdocs.ssre241123.teachers.ClassSectionReportActivity"
+85-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:68:13-64
 86            android:exported="false" />
 86-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:69:13-37
 87        <activity
 87-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:70:9-72:40
-88            android:name="com.qdocs.ssre241123.teachers.ParentLoginActivity"
-88-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:71:13-57
+88            android:name="com.qdocs.ssre241123.teachers.OnlineAdmissionReportActivity"
+88-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:71:13-67
 89            android:exported="false" />
 89-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:72:13-37
 90        <activity
 90-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:73:9-75:40
-91            android:name="com.qdocs.ssre241123.teachers.StudentLoginActivity"
-91-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:74:13-58
+91            android:name="com.qdocs.ssre241123.teachers.StudentTeacherRatioActivity"
+91-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:74:13-65
 92            android:exported="false" />
 92-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:75:13-37
 93        <activity
 93-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:76:9-78:40
-94            android:name="com.qdocs.ssre241123.teachers.TeacherStudentDetailsActivity"
-94-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:77:13-67
+94            android:name="com.qdocs.ssre241123.teachers.ClassSubjectReportActivity"
+94-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:77:13-64
 95            android:exported="false" />
 95-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:78:13-37
 96        <activity
 96-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:79:9-81:40
-97            android:name="com.qdocs.ssre241123.teachers.StudentCategoriesActivity"
-97-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:80:13-63
+97            android:name="com.qdocs.ssre241123.teachers.StudentHistoryActivity"
+97-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:80:13-60
 98            android:exported="false" />
 98-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:81:13-37
 99        <activity
 99-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:82:9-84:40
-100            android:name="com.qdocs.ssre241123.teachers.StudentHousesActivity"
-100-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:83:13-59
+100            android:name="com.qdocs.ssre241123.teachers.ParentLoginActivity"
+100-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:83:13-57
 101            android:exported="false" />
 101-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:84:13-37
 102        <activity
 102-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:85:9-87:40
-103            android:name="com.qdocs.ssre241123.teachers.DisableReasonsActivity"
-103-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:86:13-60
+103            android:name="com.qdocs.ssre241123.teachers.StudentLoginActivity"
+103-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:86:13-58
 104            android:exported="false" />
 104-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:87:13-37
 105        <activity
 105-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:88:9-90:40
-106            android:name="com.qdocs.ssre241123.teachers.TeacherSubmenuActivity"
+106            android:name="com.qdocs.ssre241123.teachers.GuardianReportActivity"
 106-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:89:13-60
 107            android:exported="false" />
 107-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:90:13-37
 108        <activity
 108-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:91:9-93:40
-109            android:name="com.qdocs.ssre241123.teachers.TeacherLogin"
-109-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:92:13-50
+109            android:name="com.qdocs.ssre241123.teachers.TeacherStudentDetailsActivity"
+109-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:92:13-67
 110            android:exported="false" />
 110-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:93:13-37
 111        <activity
 111-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:94:9-96:40
-112            android:name="com.qdocs.ssre241123.students.CbseExaminationActivity"
-112-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:95:13-61
+112            android:name="com.qdocs.ssre241123.teachers.StudentCategoriesActivity"
+112-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:95:13-63
 113            android:exported="false" />
 113-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:96:13-37
 114        <activity
 114-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:97:9-99:40
-115            android:name="com.qdocs.ssre241123.students.CbseTimeTableActivity"
+115            android:name="com.qdocs.ssre241123.teachers.StudentHousesActivity"
 115-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:98:13-59
 116            android:exported="false" />
 116-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:99:13-37
 117        <activity
 117-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:100:9-102:40
-118            android:name="com.qdocs.ssre241123.students.StudentOfflinePayment"
-118-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:101:13-59
+118            android:name="com.qdocs.ssre241123.teachers.DisableReasonsActivity"
+118-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:101:13-60
 119            android:exported="false" />
 119-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:102:13-37
 120        <activity
-120-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:103:9-105:39
-121            android:name="com.qdocs.ssre241123.students.BehaviourComment"
-121-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:104:13-54
-122            android:exported="true" />
-122-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:105:13-36
+120-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:103:9-105:40
+121            android:name="com.qdocs.ssre241123.teachers.TeacherSubmenuActivity"
+121-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:104:13-60
+122            android:exported="false" />
+122-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:105:13-37
 123        <activity
-123-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:106:9-108:39
-124            android:name="com.qdocs.ssre241123.students.StudentVideoTutorialPlay"
-124-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:107:13-62
-125            android:exported="true" />
-125-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:108:13-36
+123-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:106:9-108:40
+124            android:name="com.qdocs.ssre241123.teachers.TeacherLogin"
+124-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:107:13-50
+125            android:exported="false" />
+125-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:108:13-37
 126        <activity
-126-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:109:9-111:39
-127            android:name="com.qdocs.ssre241123.students.StudentHomeworkNew"
-127-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:110:13-56
-128            android:exported="true" />
-128-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:111:13-36
+126-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:109:9-111:40
+127            android:name="com.qdocs.ssre241123.students.CbseExaminationActivity"
+127-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:110:13-61
+128            android:exported="false" />
+128-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:111:13-37
 129        <activity
-129-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:112:9-114:39
-130            android:name="com.qdocs.ssre241123.students.NewDashboard"
-130-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:113:13-50
-131            android:exported="true" />
-131-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:114:13-36
+129-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:112:9-114:40
+130            android:name="com.qdocs.ssre241123.students.CbseTimeTableActivity"
+130-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:113:13-59
+131            android:exported="false" />
+131-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:114:13-37
 132        <activity
-132-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:115:9-117:39
-133            android:name="com.qdocs.ssre241123.students.StudentCoursePerformance"
-133-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:116:13-62
-134            android:exported="true" />
-134-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:117:13-36
+132-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:115:9-117:40
+133            android:name="com.qdocs.ssre241123.students.StudentOfflinePayment"
+133-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:116:13-59
+134            android:exported="false" />
+134-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:117:13-37
 135        <activity
 135-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:118:9-120:39
-136            android:name="com.qdocs.ssre241123.students.StudentUploadDocument"
-136-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:119:13-59
+136            android:name="com.qdocs.ssre241123.students.BehaviourComment"
+136-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:119:13-54
 137            android:exported="true" />
 137-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:120:13-36
 138        <activity
 138-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:121:9-123:39
-139            android:name="com.qdocs.ssre241123.students.StudentDailyAssignment"
-139-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:122:13-60
+139            android:name="com.qdocs.ssre241123.students.StudentVideoTutorialPlay"
+139-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:122:13-62
 140            android:exported="true" />
 140-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:123:13-36
 141        <activity
 141-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:124:9-126:39
-142            android:name="com.qdocs.ssre241123.students.StudentProcessingFees"
-142-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:125:13-59
+142            android:name="com.qdocs.ssre241123.students.StudentHomeworkNew"
+142-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:125:13-56
 143            android:exported="true" />
 143-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:126:13-36
 144        <activity
-144-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:127:9-130:39
-145            android:name="com.qdocs.ssre241123.students.StudentCourseDetail"
-145-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:128:13-57
-146            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
-146-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:129:13-90
-147            android:exported="true" />
-147-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:130:13-36
-148        <activity
-148-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:131:9-133:39
-149            android:name="com.qdocs.ssre241123.students.StudentOnlineCourse"
-149-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:132:13-57
-150            android:exported="true" />
-150-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:133:13-36
-151        <activity
-151-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:134:9-137:39
-152            android:name="com.qdocs.ssre241123.students.StudentStartLessonActivity"
-152-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:135:13-64
-153            android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection|uiMode"
-153-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:136:13-97
-154            android:exported="true" />
-154-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:137:13-36
-155        <activity
-155-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:138:9-140:39
-156            android:name="com.qdocs.ssre241123.students.StudentLiveClasses"
-156-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:139:13-56
-157            android:exported="true" />
-157-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:140:13-36
-158        <activity
-158-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:141:9-143:39
-159            android:name="com.qdocs.ssre241123.students.CourseExamResult"
-159-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:142:13-54
-160            android:exported="true" />
-160-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:143:13-36
-161        <activity
-161-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:144:9-146:39
-162            android:name="com.qdocs.ssre241123.students.StudentOfflinePaymentList"
-162-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:145:13-63
-163            android:exported="true" />
-163-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:146:13-36
-164        <activity
-164-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:147:9-149:39
-165            android:name="com.qdocs.ssre241123.students.StudentGmeetLiveClasses"
-165-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:148:13-61
-166            android:exported="true" />
-166-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:149:13-36
-167        <activity
-167-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:150:9-152:39
-168            android:name="com.qdocs.ssre241123.students.StudentBehaviourReport"
-168-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:151:13-60
+144-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:127:9-129:39
+145            android:name="com.qdocs.ssre241123.students.NewDashboard"
+145-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:128:13-50
+146            android:exported="true" />
+146-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:129:13-36
+147        <activity
+147-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:130:9-132:39
+148            android:name="com.qdocs.ssre241123.students.StudentCoursePerformance"
+148-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:131:13-62
+149            android:exported="true" />
+149-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:132:13-36
+150        <activity
+150-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:133:9-135:39
+151            android:name="com.qdocs.ssre241123.students.StudentUploadDocument"
+151-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:134:13-59
+152            android:exported="true" />
+152-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:135:13-36
+153        <activity
+153-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:136:9-138:39
+154            android:name="com.qdocs.ssre241123.students.StudentDailyAssignment"
+154-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:137:13-60
+155            android:exported="true" />
+155-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:138:13-36
+156        <activity
+156-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:139:9-141:39
+157            android:name="com.qdocs.ssre241123.students.StudentProcessingFees"
+157-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:140:13-59
+158            android:exported="true" />
+158-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:141:13-36
+159        <activity
+159-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:142:9-145:39
+160            android:name="com.qdocs.ssre241123.students.StudentCourseDetail"
+160-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:143:13-57
+161            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+161-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:144:13-90
+162            android:exported="true" />
+162-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:145:13-36
+163        <activity
+163-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:146:9-148:39
+164            android:name="com.qdocs.ssre241123.students.StudentOnlineCourse"
+164-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:147:13-57
+165            android:exported="true" />
+165-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:148:13-36
+166        <activity
+166-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:149:9-152:39
+167            android:name="com.qdocs.ssre241123.students.StudentStartLessonActivity"
+167-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:150:13-64
+168            android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection|uiMode"
+168-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:151:13-97
 169            android:exported="true" />
 169-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:152:13-36
 170        <activity
 170-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:153:9-155:39
-171            android:name="com.qdocs.ssre241123.students.NotificationList"
-171-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:154:13-54
+171            android:name="com.qdocs.ssre241123.students.StudentLiveClasses"
+171-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:154:13-56
 172            android:exported="true" />
 172-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:155:13-36
 173        <activity
 173-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:156:9-158:39
-174            android:name="com.qdocs.ssre241123.students.AddCourseAssignment"
-174-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:157:13-57
+174            android:name="com.qdocs.ssre241123.students.CourseExamResult"
+174-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:157:13-54
 175            android:exported="true" />
 175-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:158:13-36
 176        <activity
 176-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:159:9-161:39
-177            android:name="com.qdocs.ssre241123.students.OnlineCourseExam"
-177-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:160:13-54
+177            android:name="com.qdocs.ssre241123.students.StudentOfflinePaymentList"
+177-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:160:13-63
 178            android:exported="true" />
 178-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:161:13-36
 179        <activity
-179-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:162:9-165:39
-180            android:name="com.qdocs.ssre241123.students.StudentOnlineExamQuestionsNew"
-180-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:163:13-67
-181            android:configChanges="orientation|screenSize"
-181-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:164:13-59
-182            android:exported="true" />
-182-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:165:13-36
-183        <activity
-183-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:166:9-168:39
-184            android:name="com.qdocs.ssre241123.students.StudentOnlineExamResult"
-184-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:167:13-61
-185            android:exported="true" />
-185-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:168:13-36
-186        <activity
-186-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:169:9-171:39
-187            android:name="com.qdocs.ssre241123.students.StudentOnlineExam"
-187-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:170:13-55
-188            android:exported="true" />
-188-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:171:13-36
-189        <activity
-189-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:172:9-174:39
-190            android:name="com.qdocs.ssre241123.AboutSchool"
-190-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:173:13-40
-191            android:exported="true" />
-191-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:174:13-36
-192        <activity
-192-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:175:9-177:39
-193            android:name="com.qdocs.ssre241123.students.StudentTimeline"
-193-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:176:13-53
-194            android:exported="true" />
-194-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:177:13-36
-195        <activity
-195-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:178:9-180:39
-196            android:name="com.qdocs.ssre241123.students.StudentAddTimeLine"
-196-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:179:13-56
+179-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:162:9-164:39
+180            android:name="com.qdocs.ssre241123.students.StudentGmeetLiveClasses"
+180-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:163:13-61
+181            android:exported="true" />
+181-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:164:13-36
+182        <activity
+182-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:165:9-167:39
+183            android:name="com.qdocs.ssre241123.students.StudentBehaviourReport"
+183-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:166:13-60
+184            android:exported="true" />
+184-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:167:13-36
+185        <activity
+185-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:168:9-170:39
+186            android:name="com.qdocs.ssre241123.students.NotificationList"
+186-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:169:13-54
+187            android:exported="true" />
+187-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:170:13-36
+188        <activity
+188-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:171:9-173:39
+189            android:name="com.qdocs.ssre241123.students.AddCourseAssignment"
+189-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:172:13-57
+190            android:exported="true" />
+190-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:173:13-36
+191        <activity
+191-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:174:9-176:39
+192            android:name="com.qdocs.ssre241123.students.OnlineCourseExam"
+192-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:175:13-54
+193            android:exported="true" />
+193-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:176:13-36
+194        <activity
+194-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:177:9-180:39
+195            android:name="com.qdocs.ssre241123.students.StudentOnlineExamQuestionsNew"
+195-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:178:13-67
+196            android:configChanges="orientation|screenSize"
+196-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:179:13-59
 197            android:exported="true" />
 197-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:180:13-36
 198        <activity
 198-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:181:9-183:39
-199            android:name="com.qdocs.ssre241123.students.StudentEditTimeLine"
-199-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:182:13-57
+199            android:name="com.qdocs.ssre241123.students.StudentOnlineExamResult"
+199-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:182:13-61
 200            android:exported="true" />
 200-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:183:13-36
 201        <activity
 201-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:184:9-186:39
-202            android:name="com.qdocs.ssre241123.students.StudentDocuments"
-202-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:185:13-54
+202            android:name="com.qdocs.ssre241123.students.StudentOnlineExam"
+202-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:185:13-55
 203            android:exported="true" />
 203-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:186:13-36
 204        <activity
-204-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:187:9-195:20
-205            android:name="com.qdocs.ssre241123.SplashActivity"
-205-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:188:13-43
-206            android:exported="true" >
+204-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:187:9-189:39
+205            android:name="com.qdocs.ssre241123.AboutSchool"
+205-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:188:13-40
+206            android:exported="true" />
 206-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:189:13-36
-207            <intent-filter>
-207-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:190:13-194:29
-208                <action android:name="android.intent.action.MAIN" />
-208-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:191:17-69
-208-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:191:25-66
-209
-210                <category android:name="android.intent.category.LAUNCHER" />
-210-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:193:17-77
-210-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:193:27-74
-211            </intent-filter>
-212        </activity>
+207        <activity
+207-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:190:9-192:39
+208            android:name="com.qdocs.ssre241123.students.StudentTimeline"
+208-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:191:13-53
+209            android:exported="true" />
+209-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:192:13-36
+210        <activity
+210-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:193:9-195:39
+211            android:name="com.qdocs.ssre241123.students.StudentAddTimeLine"
+211-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:194:13-56
+212            android:exported="true" />
+212-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:195:13-36
 213        <activity
 213-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:196:9-198:39
-214            android:name="com.qdocs.ssre241123.Login"
-214-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:197:13-34
+214            android:name="com.qdocs.ssre241123.students.StudentEditTimeLine"
+214-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:197:13-57
 215            android:exported="true" />
 215-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:198:13-36
 216        <activity
 216-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:199:9-201:39
-217            android:name="com.qdocs.ssre241123.students.StudentProfileDetailsNew"
-217-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:200:13-62
+217            android:name="com.qdocs.ssre241123.students.StudentDocuments"
+217-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:200:13-54
 218            android:exported="true" />
 218-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:201:13-36
 219        <activity
-219-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:202:9-204:39
-220            android:name="com.qdocs.ssre241123.students.StudentAddAssignment"
-220-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:203:13-58
-221            android:exported="true" />
+219-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:202:9-210:20
+220            android:name="com.qdocs.ssre241123.SplashActivity"
+220-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:203:13-43
+221            android:exported="true" >
 221-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:204:13-36
-222        <activity
-222-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:205:9-207:39
-223            android:name="com.qdocs.ssre241123.students.StudentEditAssignment"
-223-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:206:13-59
-224            android:exported="true" />
-224-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:207:13-36
-225        <activity
-225-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:208:9-210:39
-226            android:name="com.qdocs.ssre241123.students.StudentUploadHomework"
-226-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:209:13-59
-227            android:exported="true" />
-227-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:210:13-36
+222            <intent-filter>
+222-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:205:13-209:29
+223                <action android:name="android.intent.action.MAIN" />
+223-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:206:17-69
+223-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:206:25-66
+224
+225                <category android:name="android.intent.category.LAUNCHER" />
+225-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:208:17-77
+225-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:208:27-74
+226            </intent-filter>
+227        </activity>
 228        <activity
 228-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:211:9-213:39
-229            android:name="com.qdocs.ssre241123.ForgotPassword"
-229-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:212:13-43
+229            android:name="com.qdocs.ssre241123.Login"
+229-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:212:13-34
 230            android:exported="true" />
 230-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:213:13-36
 231        <activity
 231-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:214:9-216:39
-232            android:name="com.qdocs.ssre241123.BaseActivity"
-232-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:215:13-41
+232            android:name="com.qdocs.ssre241123.students.StudentProfileDetailsNew"
+232-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:215:13-62
 233            android:exported="true" />
 233-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:216:13-36
 234        <activity
 234-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:217:9-219:39
-235            android:name="com.qdocs.ssre241123.students.StudentFees"
-235-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:218:13-49
+235            android:name="com.qdocs.ssre241123.students.StudentAddAssignment"
+235-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:218:13-58
 236            android:exported="true" />
 236-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:219:13-36
 237        <activity
 237-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:220:9-222:39
-238            android:name="com.qdocs.ssre241123.students.StudentNoticeBoard"
-238-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:221:13-56
+238            android:name="com.qdocs.ssre241123.students.StudentEditAssignment"
+238-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:221:13-59
 239            android:exported="true" />
 239-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:222:13-36
 240        <activity
 240-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:223:9-225:39
-241            android:name="com.qdocs.ssre241123.students.StudentExaminationList"
-241-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:224:13-60
+241            android:name="com.qdocs.ssre241123.students.StudentUploadHomework"
+241-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:224:13-59
 242            android:exported="true" />
 242-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:225:13-36
 243        <activity
 243-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:226:9-228:39
-244            android:name="com.qdocs.ssre241123.students.StudentReportCard_ExamListResult"
-244-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:227:13-70
+244            android:name="com.qdocs.ssre241123.ForgotPassword"
+244-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:227:13-43
 245            android:exported="true" />
 245-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:228:13-36
 246        <activity
 246-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:229:9-231:39
-247            android:name="com.qdocs.ssre241123.students.StudentSubjectList"
-247-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:230:13-56
+247            android:name="com.qdocs.ssre241123.BaseActivity"
+247-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:230:13-41
 248            android:exported="true" />
 248-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:231:13-36
 249        <activity
 249-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:232:9-234:39
-250            android:name="com.qdocs.ssre241123.students.StudentTeachersList"
-250-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:233:13-57
+250            android:name="com.qdocs.ssre241123.students.StudentFees"
+250-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:233:13-49
 251            android:exported="true" />
 251-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:234:13-36
 252        <activity
 252-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:235:9-237:39
-253            android:name="com.qdocs.ssre241123.students.StudentTransportRoutes"
-253-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:236:13-60
+253            android:name="com.qdocs.ssre241123.students.StudentNoticeBoard"
+253-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:236:13-56
 254            android:exported="true" />
 254-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:237:13-36
 255        <activity
 255-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:238:9-240:39
-256            android:name="com.qdocs.ssre241123.students.StudentDownloads"
-256-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:239:13-54
+256            android:name="com.qdocs.ssre241123.students.StudentExaminationList"
+256-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:239:13-60
 257            android:exported="true" />
 257-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:240:13-36
 258        <activity
 258-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:241:9-243:39
-259            android:name="com.qdocs.ssre241123.students.StudentAttendance"
-259-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:242:13-55
+259            android:name="com.qdocs.ssre241123.students.StudentReportCard_ExamListResult"
+259-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:242:13-70
 260            android:exported="true" />
 260-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:243:13-36
 261        <activity
 261-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:244:9-246:39
-262            android:name="com.qdocs.ssre241123.students.StudentReportCard_ExamList"
-262-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:245:13-64
+262            android:name="com.qdocs.ssre241123.students.StudentSubjectList"
+262-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:245:13-56
 263            android:exported="true" />
 263-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:246:13-36
 264        <activity
 264-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:247:9-249:39
-265            android:name="com.qdocs.ssre241123.students.StudentExamSchedule_ExamList"
-265-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:248:13-66
+265            android:name="com.qdocs.ssre241123.students.StudentTeachersList"
+265-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:248:13-57
 266            android:exported="true" />
 266-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:249:13-36
 267        <activity
 267-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:250:9-252:39
-268            android:name="com.qdocs.ssre241123.students.StudentExamSchedule"
-268-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:251:13-57
+268            android:name="com.qdocs.ssre241123.students.StudentTransportRoutes"
+268-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:251:13-60
 269            android:exported="true" />
 269-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:252:13-36
 270        <activity
 270-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:253:9-255:39
-271            android:name="com.qdocs.ssre241123.students.StudentVisitorBook"
-271-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:254:13-56
+271            android:name="com.qdocs.ssre241123.students.StudentDownloads"
+271-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:254:13-54
 272            android:exported="true" />
 272-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:255:13-36
 273        <activity
 273-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:256:9-258:39
-274            android:name="com.qdocs.ssre241123.students.StudentHostel"
-274-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:257:13-51
+274            android:name="com.qdocs.ssre241123.students.StudentAttendance"
+274-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:257:13-55
 275            android:exported="true" />
 275-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:258:13-36
 276        <activity
 276-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:259:9-261:39
-277            android:name="com.qdocs.ssre241123.students.StudentLibraryBook"
-277-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:260:13-56
+277            android:name="com.qdocs.ssre241123.students.StudentReportCard_ExamList"
+277-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:260:13-64
 278            android:exported="true" />
 278-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:261:13-36
 279        <activity
 279-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:262:9-264:39
-280            android:name="com.qdocs.ssre241123.students.StudentClassTimetable"
-280-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:263:13-59
+280            android:name="com.qdocs.ssre241123.students.StudentExamSchedule_ExamList"
+280-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:263:13-66
 281            android:exported="true" />
 281-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:264:13-36
 282        <activity
 282-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:265:9-267:39
-283            android:name="com.qdocs.ssre241123.students.StudentSyllabusTimetable"
-283-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:266:13-62
+283            android:name="com.qdocs.ssre241123.students.StudentExamSchedule"
+283-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:266:13-57
 284            android:exported="true" />
 284-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:267:13-36
 285        <activity
 285-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:268:9-270:39
-286            android:name="com.qdocs.ssre241123.students.StudentSyllabusStatus"
-286-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:269:13-59
+286            android:name="com.qdocs.ssre241123.students.StudentVisitorBook"
+286-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:269:13-56
 287            android:exported="true" />
 287-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:270:13-36
 288        <activity
 288-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:271:9-273:39
-289            android:name="com.qdocs.ssre241123.students.StudentLibraryBookIssued"
-289-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:272:13-62
+289            android:name="com.qdocs.ssre241123.students.StudentHostel"
+289-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:272:13-51
 290            android:exported="true" />
 290-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:273:13-36
 291        <activity
 291-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:274:9-276:39
-292            android:name="com.qdocs.ssre241123.students.StudentAppyLeave"
-292-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:275:13-54
+292            android:name="com.qdocs.ssre241123.students.StudentLibraryBook"
+292-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:275:13-56
 293            android:exported="true" />
 293-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:276:13-36
 294        <activity
 294-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:277:9-279:39
-295            android:name="com.qdocs.ssre241123.students.StudentAddLeave"
-295-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:278:13-53
+295            android:name="com.qdocs.ssre241123.students.StudentClassTimetable"
+295-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:278:13-59
 296            android:exported="true" />
 296-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:279:13-36
 297        <activity
 297-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:280:9-282:39
-298            android:name="com.qdocs.ssre241123.students.StudentEditLeave"
-298-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:281:13-54
+298            android:name="com.qdocs.ssre241123.students.StudentSyllabusTimetable"
+298-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:281:13-62
 299            android:exported="true" />
 299-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:282:13-36
 300        <activity
 300-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:283:9-285:39
-301            android:name="com.qdocs.ssre241123.students.StudentSyllabus"
-301-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:284:13-53
+301            android:name="com.qdocs.ssre241123.students.StudentSyllabusStatus"
+301-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:284:13-59
 302            android:exported="true" />
 302-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:285:13-36
 303        <activity
 303-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:286:9-288:39
-304            android:name="com.qdocs.ssre241123.students.StudentOnlineQuizResult"
-304-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:287:13-61
+304            android:name="com.qdocs.ssre241123.students.StudentLibraryBookIssued"
+304-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:287:13-62
 305            android:exported="true" />
 305-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:288:13-36
 306        <activity
 306-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:289:9-291:39
-307            android:name="com.qdocs.ssre241123.students.StudentSyllabuslesson"
-307-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:290:13-59
+307            android:name="com.qdocs.ssre241123.students.StudentAppyLeave"
+307-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:290:13-54
 308            android:exported="true" />
 308-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:291:13-36
 309        <activity
 309-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:292:9-294:39
-310            android:name="com.qdocs.ssre241123.students.StudentOnlineCourseQuiz"
-310-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:293:13-61
+310            android:name="com.qdocs.ssre241123.students.StudentAddLeave"
+310-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:293:13-53
 311            android:exported="true" />
 311-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:294:13-36
 312        <activity
 312-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:295:9-297:39
-313            android:name="com.qdocs.ssre241123.SettingActivity"
-313-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:296:13-44
+313            android:name="com.qdocs.ssre241123.students.StudentEditLeave"
+313-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:296:13-54
 314            android:exported="true" />
 314-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:297:13-36
 315        <activity
-315-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:298:9-301:40
-316            android:name="com.qdocs.ssre241123.TakeUrl"
-316-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:299:13-36
-317            android:configChanges="orientation|screenSize"
-317-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:300:13-59
-318            android:exported="false" />
-318-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:301:13-37
-319        <activity
-319-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:302:9-304:39
-320            android:name="com.qdocs.ssre241123.OpenPdf"
+315-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:298:9-300:39
+316            android:name="com.qdocs.ssre241123.students.StudentSyllabus"
+316-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:299:13-53
+317            android:exported="true" />
+317-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:300:13-36
+318        <activity
+318-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:301:9-303:39
+319            android:name="com.qdocs.ssre241123.students.StudentOnlineQuizResult"
+319-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:302:13-61
+320            android:exported="true" />
 320-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:303:13-36
-321            android:exported="true" />
-321-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:304:13-36
-322        <activity
-322-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:305:9-307:39
-323            android:name="com.qdocs.ssre241123.students.StudentTasks"
-323-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:306:13-50
-324            android:exported="true" />
-324-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:307:13-36
-325        <activity
-325-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:308:9-310:39
-326            android:name="com.qdocs.ssre241123.students.StudentTasksEdit"
-326-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:309:13-54
-327            android:exported="true" />
-327-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:310:13-36
-328        <activity
-328-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:311:9-313:39
-329            android:name="com.qdocs.ssre241123.students.Payment"
-329-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:312:13-45
-330            android:exported="true" />
-330-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:313:13-36
-331        <activity
-331-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:314:9-316:39
-332            android:name="com.qdocs.ssre241123.students.MultiplePayment"
-332-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:315:13-53
-333            android:exported="true" />
-333-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:316:13-36
+321        <activity
+321-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:304:9-306:39
+322            android:name="com.qdocs.ssre241123.students.StudentSyllabuslesson"
+322-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:305:13-59
+323            android:exported="true" />
+323-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:306:13-36
+324        <activity
+324-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:307:9-309:39
+325            android:name="com.qdocs.ssre241123.students.StudentOnlineCourseQuiz"
+325-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:308:13-61
+326            android:exported="true" />
+326-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:309:13-36
+327        <activity
+327-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:310:9-312:39
+328            android:name="com.qdocs.ssre241123.SettingActivity"
+328-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:311:13-44
+329            android:exported="true" />
+329-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:312:13-36
+330        <activity
+330-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:313:9-316:40
+331            android:name="com.qdocs.ssre241123.TakeUrl"
+331-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:314:13-36
+332            android:configChanges="orientation|screenSize"
+332-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:315:13-59
+333            android:exported="false" />
+333-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:316:13-37
 334        <activity
 334-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:317:9-319:39
-335            android:name="com.qdocs.ssre241123.students.CoursePayment"
-335-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:318:13-51
+335            android:name="com.qdocs.ssre241123.OpenPdf"
+335-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:318:13-36
 336            android:exported="true" />
 336-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:319:13-36
 337        <activity
-337-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:320:9-324:53
-338            android:name="com.qdocs.ssre241123.students.CourseVideoPlay"
-338-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:321:13-53
-339            android:configChanges="orientation|screenSize"
-339-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:322:13-59
-340            android:exported="false"
-340-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:323:13-37
-341            android:screenOrientation="landscape" />
-341-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:324:13-50
-342        <activity
-342-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:325:9-327:40
-343            android:name="com.qdocs.ssre241123.students.LiveClasses"
-343-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:326:13-49
-344            android:exported="false" />
-344-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:327:13-37
-345
-346        <service
-346-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:329:9-335:19
-347            android:name="com.qdocs.ssre241123.utils.MyFirebaseMessagingService"
-347-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:330:13-61
-348            android:exported="true" >
+337-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:320:9-322:39
+338            android:name="com.qdocs.ssre241123.students.StudentTasks"
+338-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:321:13-50
+339            android:exported="true" />
+339-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:322:13-36
+340        <activity
+340-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:323:9-325:39
+341            android:name="com.qdocs.ssre241123.students.StudentTasksEdit"
+341-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:324:13-54
+342            android:exported="true" />
+342-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:325:13-36
+343        <activity
+343-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:326:9-328:39
+344            android:name="com.qdocs.ssre241123.students.Payment"
+344-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:327:13-45
+345            android:exported="true" />
+345-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:328:13-36
+346        <activity
+346-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:329:9-331:39
+347            android:name="com.qdocs.ssre241123.students.MultiplePayment"
+347-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:330:13-53
+348            android:exported="true" />
 348-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:331:13-36
-349            <intent-filter>
-349-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:332:13-334:29
-350                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-350-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:333:17-78
-350-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:333:25-75
-351            </intent-filter>
-352        </service>
-353
-354        <provider
-355            android:name="androidx.core.content.FileProvider"
-355-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:338:13-62
-356            android:authorities="com.qdocs.ssre241123.provider"
-356-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:339:13-60
-357            android:exported="false"
-357-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:340:13-37
-358            android:grantUriPermissions="true" >
-358-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:341:13-47
-359            <meta-data
-359-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:342:13-344:58
-360                android:name="android.support.FILE_PROVIDER_PATHS"
-360-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:343:17-67
-361                android:resource="@xml/provider_paths" />
-361-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:344:17-55
-362        </provider>
-363        <provider
-363-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:26:9-40:20
-364            android:name="androidx.startup.InitializationProvider"
-364-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:27:13-67
-365            android:authorities="com.qdocs.ssre241123.androidx-startup"
-365-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:28:13-68
-366            android:exported="false" >
-366-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:29:13-37
-367            <meta-data
-367-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:31:13-33:52
-368                android:name="com.mikepenz.iconics.animation.SpinProcessor"
-368-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:32:17-76
-369                android:value="androidx.startup" />
-369-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:33:17-49
-370            <meta-data
-370-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:34:13-36:52
-371                android:name="com.mikepenz.iconics.animation.BlinkAlphaProcessor"
-371-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:35:17-82
-372                android:value="androidx.startup" />
-372-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:36:17-49
-373            <meta-data
-373-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:37:13-39:52
-374                android:name="com.mikepenz.iconics.animation.BlinkScaleProcessor"
-374-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:38:17-82
-375                android:value="androidx.startup" />
-375-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:39:17-49
-376            <meta-data
-376-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\6ea8a986cfedfc5b51e34fad0b49b568\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-377                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-377-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\6ea8a986cfedfc5b51e34fad0b49b568\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-378                android:value="androidx.startup" />
-378-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\6ea8a986cfedfc5b51e34fad0b49b568\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-379            <meta-data
-379-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\dd455ac6eb7e533b2b586c35c51748b7\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-380                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-380-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\dd455ac6eb7e533b2b586c35c51748b7\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-381                android:value="androidx.startup" />
-381-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\dd455ac6eb7e533b2b586c35c51748b7\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+349        <activity
+349-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:332:9-334:39
+350            android:name="com.qdocs.ssre241123.students.CoursePayment"
+350-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:333:13-51
+351            android:exported="true" />
+351-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:334:13-36
+352        <activity
+352-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:335:9-339:53
+353            android:name="com.qdocs.ssre241123.students.CourseVideoPlay"
+353-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:336:13-53
+354            android:configChanges="orientation|screenSize"
+354-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:337:13-59
+355            android:exported="false"
+355-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:338:13-37
+356            android:screenOrientation="landscape" />
+356-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:339:13-50
+357        <activity
+357-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:340:9-342:40
+358            android:name="com.qdocs.ssre241123.students.LiveClasses"
+358-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:341:13-49
+359            android:exported="false" />
+359-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:342:13-37
+360
+361        <service
+361-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:344:9-350:19
+362            android:name="com.qdocs.ssre241123.utils.MyFirebaseMessagingService"
+362-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:345:13-61
+363            android:exported="true" >
+363-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:346:13-36
+364            <intent-filter>
+364-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:347:13-349:29
+365                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+365-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:348:17-78
+365-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:348:25-75
+366            </intent-filter>
+367        </service>
+368
+369        <provider
+370            android:name="androidx.core.content.FileProvider"
+370-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:353:13-62
+371            android:authorities="com.qdocs.ssre241123.provider"
+371-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:354:13-60
+372            android:exported="false"
+372-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:355:13-37
+373            android:grantUriPermissions="true" >
+373-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:356:13-47
+374            <meta-data
+374-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:357:13-359:58
+375                android:name="android.support.FILE_PROVIDER_PATHS"
+375-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:358:17-67
+376                android:resource="@xml/provider_paths" />
+376-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:359:17-55
+377        </provider>
+378        <provider
+378-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:26:9-40:20
+379            android:name="androidx.startup.InitializationProvider"
+379-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:27:13-67
+380            android:authorities="com.qdocs.ssre241123.androidx-startup"
+380-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:28:13-68
+381            android:exported="false" >
+381-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:29:13-37
 382            <meta-data
-382-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-383                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-383-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+382-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:31:13-33:52
+383                android:name="com.mikepenz.iconics.animation.SpinProcessor"
+383-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:32:17-76
 384                android:value="androidx.startup" />
-384-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-385        </provider>
-386        <!--
-387             FirebaseMessagingService performs security checks at runtime,
-388             but set to not exported to explicitly avoid allowing another app to call it.
-389        -->
-390        <service
-390-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\1ef4ec9a0b5e9c4f3d7aa1d928ff3626\transformed\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:28:9-34:19
-391            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-391-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\1ef4ec9a0b5e9c4f3d7aa1d928ff3626\transformed\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:29:13-82
-392            android:exported="false" >
-392-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\1ef4ec9a0b5e9c4f3d7aa1d928ff3626\transformed\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:30:13-37
-393            <intent-filter android:priority="-500" >
-393-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:332:13-334:29
-394                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-394-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:333:17-78
-394-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:333:25-75
-395            </intent-filter>
-396        </service>
-397        <service
-397-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:29:9-35:19
-398            android:name="com.google.firebase.components.ComponentDiscoveryService"
-398-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:30:13-84
-399            android:exported="false" >
-399-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:31:13-37
-400            <meta-data
-400-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:32:13-34:85
-401                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-401-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:33:17-96
-402                android:value="com.google.firebase.components.ComponentRegistrar" />
-402-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:34:17-82
-403        </service>
-404
-405        <receiver
-405-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:37:9-44:20
-406            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-406-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:38:13-78
-407            android:exported="true"
-407-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:39:13-36
-408            android:permission="com.google.android.c2dm.permission.SEND" >
-408-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:40:13-73
-409            <intent-filter>
-409-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:41:13-43:29
-410                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-410-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:42:17-81
-410-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:42:25-78
-411            </intent-filter>
-412        </receiver>
-413
-414        <provider
-414-->[com.google.firebase:firebase-common:19.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\22eb54344a02b945622b7085177017f1\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:12:9-16:39
-415            android:name="com.google.firebase.provider.FirebaseInitProvider"
-415-->[com.google.firebase:firebase-common:19.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\22eb54344a02b945622b7085177017f1\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:13:13-77
-416            android:authorities="com.qdocs.ssre241123.firebaseinitprovider"
-416-->[com.google.firebase:firebase-common:19.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\22eb54344a02b945622b7085177017f1\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:14:13-72
-417            android:exported="false"
-417-->[com.google.firebase:firebase-common:19.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\22eb54344a02b945622b7085177017f1\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:15:13-37
-418            android:initOrder="100" />
-418-->[com.google.firebase:firebase-common:19.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\22eb54344a02b945622b7085177017f1\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:16:13-36
+384-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:33:17-49
+385            <meta-data
+385-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:34:13-36:52
+386                android:name="com.mikepenz.iconics.animation.BlinkAlphaProcessor"
+386-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:35:17-82
+387                android:value="androidx.startup" />
+387-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:36:17-49
+388            <meta-data
+388-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:37:13-39:52
+389                android:name="com.mikepenz.iconics.animation.BlinkScaleProcessor"
+389-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:38:17-82
+390                android:value="androidx.startup" />
+390-->[com.mikepenz:iconics-core:5.3.4] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\9d3ad330df7932ab580ad71b9cd22840\transformed\jetified-iconics-core-5.3.4\AndroidManifest.xml:39:17-49
+391            <meta-data
+391-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\6ea8a986cfedfc5b51e34fad0b49b568\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+392                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+392-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\6ea8a986cfedfc5b51e34fad0b49b568\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+393                android:value="androidx.startup" />
+393-->[androidx.emoji2:emoji2:1.2.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\6ea8a986cfedfc5b51e34fad0b49b568\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+394            <meta-data
+394-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\dd455ac6eb7e533b2b586c35c51748b7\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+395                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+395-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\dd455ac6eb7e533b2b586c35c51748b7\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+396                android:value="androidx.startup" />
+396-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\dd455ac6eb7e533b2b586c35c51748b7\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+397            <meta-data
+397-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+398                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+398-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+399                android:value="androidx.startup" />
+399-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+400        </provider>
+401        <!--
+402             FirebaseMessagingService performs security checks at runtime,
+403             but set to not exported to explicitly avoid allowing another app to call it.
+404        -->
+405        <service
+405-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\1ef4ec9a0b5e9c4f3d7aa1d928ff3626\transformed\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:28:9-34:19
+406            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+406-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\1ef4ec9a0b5e9c4f3d7aa1d928ff3626\transformed\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:29:13-82
+407            android:exported="false" >
+407-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\1ef4ec9a0b5e9c4f3d7aa1d928ff3626\transformed\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:30:13-37
+408            <intent-filter android:priority="-500" >
+408-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:347:13-349:29
+409                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+409-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:348:17-78
+409-->C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app\src\main\AndroidManifest.xml:348:25-75
+410            </intent-filter>
+411        </service>
+412        <service
+412-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:29:9-35:19
+413            android:name="com.google.firebase.components.ComponentDiscoveryService"
+413-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:30:13-84
+414            android:exported="false" >
+414-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:31:13-37
+415            <meta-data
+415-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:32:13-34:85
+416                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+416-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:33:17-96
+417                android:value="com.google.firebase.components.ComponentRegistrar" />
+417-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:34:17-82
+418        </service>
 419
-420        <activity
-420-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\606f15818b3c72e09b853f05657cd24a\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-421            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-421-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\606f15818b3c72e09b853f05657cd24a\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-422            android:exported="false"
-422-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\606f15818b3c72e09b853f05657cd24a\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-423            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-423-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\606f15818b3c72e09b853f05657cd24a\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-424
-425        <meta-data
-425-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\ad4264cdb41315b7bda407fec3d497c3\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-426            android:name="com.google.android.gms.version"
-426-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\ad4264cdb41315b7bda407fec3d497c3\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-427            android:value="@integer/google_play_services_version" />
-427-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\ad4264cdb41315b7bda407fec3d497c3\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+420        <receiver
+420-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:37:9-44:20
+421            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+421-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:38:13-78
+422            android:exported="true"
+422-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:39:13-36
+423            android:permission="com.google.android.c2dm.permission.SEND" >
+423-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:40:13-73
+424            <intent-filter>
+424-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:41:13-43:29
+425                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+425-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:42:17-81
+425-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\e346872624acf6b7a582aa5510dc978b\transformed\jetified-firebase-iid-20.0.0\AndroidManifest.xml:42:25-78
+426            </intent-filter>
+427        </receiver>
 428
-429        <receiver
-429-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-430            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-430-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-431            android:directBootAware="false"
-431-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-432            android:enabled="true"
-432-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-433            android:exported="true"
-433-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-434            android:permission="android.permission.DUMP" >
-434-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-435            <intent-filter>
-435-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-436                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-436-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-436-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-437            </intent-filter>
-438            <intent-filter>
-438-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-439                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-439-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-439-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-440            </intent-filter>
-441            <intent-filter>
-441-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-442                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-442-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-442-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
-443            </intent-filter>
-444            <intent-filter>
-444-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-445                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-445-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-445-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
-446            </intent-filter>
-447        </receiver>
-448    </application>
-449
-450</manifest>
+429        <provider
+429-->[com.google.firebase:firebase-common:19.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\22eb54344a02b945622b7085177017f1\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:12:9-16:39
+430            android:name="com.google.firebase.provider.FirebaseInitProvider"
+430-->[com.google.firebase:firebase-common:19.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\22eb54344a02b945622b7085177017f1\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:13:13-77
+431            android:authorities="com.qdocs.ssre241123.firebaseinitprovider"
+431-->[com.google.firebase:firebase-common:19.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\22eb54344a02b945622b7085177017f1\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:14:13-72
+432            android:exported="false"
+432-->[com.google.firebase:firebase-common:19.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\22eb54344a02b945622b7085177017f1\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:15:13-37
+433            android:initOrder="100" />
+433-->[com.google.firebase:firebase-common:19.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\22eb54344a02b945622b7085177017f1\transformed\jetified-firebase-common-19.0.0\AndroidManifest.xml:16:13-36
+434
+435        <activity
+435-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\606f15818b3c72e09b853f05657cd24a\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+436            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+436-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\606f15818b3c72e09b853f05657cd24a\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+437            android:exported="false"
+437-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\606f15818b3c72e09b853f05657cd24a\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+438            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+438-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\606f15818b3c72e09b853f05657cd24a\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+439
+440        <meta-data
+440-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\ad4264cdb41315b7bda407fec3d497c3\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+441            android:name="com.google.android.gms.version"
+441-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\ad4264cdb41315b7bda407fec3d497c3\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+442            android:value="@integer/google_play_services_version" />
+442-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\ad4264cdb41315b7bda407fec3d497c3\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+443
+444        <receiver
+444-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+445            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+445-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+446            android:directBootAware="false"
+446-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+447            android:enabled="true"
+447-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+448            android:exported="true"
+448-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+449            android:permission="android.permission.DUMP" >
+449-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+450            <intent-filter>
+450-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+451                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+451-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+451-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+452            </intent-filter>
+453            <intent-filter>
+453-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+454                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+454-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+454-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+455            </intent-filter>
+456            <intent-filter>
+456-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+457                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+457-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+457-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+458            </intent-filter>
+459            <intent-filter>
+459-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+460                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+460-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+460-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\pitti\scoop\apps\gradle\current\.gradle\caches\transforms-3\f21cbe12ea7d6dc24ebfaeef6cef3649\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+461            </intent-filter>
+462        </receiver>
+463    </application>
+464
+465</manifest>
