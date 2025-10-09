@@ -56,6 +56,12 @@
             android:name=".teachers.TeacherReportsActivity"
             android:exported="false" />
         <activity
+            android:name=".teachers.TeacherReportCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.TeacherReportDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".teachers.TeacherStudentDetailsActivity"
             android:exported="false" />
         <activity
@@ -66,9 +72,6 @@
             android:exported="false" />
         <activity
             android:name=".teachers.DisableReasonsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".teachers.TeacherReportCategoryActivity"
             android:exported="false" />
         <activity
             android:name=".teachers.TeacherSubmenuActivity"

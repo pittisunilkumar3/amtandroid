@@ -1425,6 +1425,7 @@ drawable badge_background
 drawable badge_greenbackground
 drawable baseline_done
 drawable baseline_receipt
+drawable bg_circle_primary
 drawable bg_status_active
 drawable bg_status_inactive
 drawable blue_curve_border
@@ -2318,6 +2319,7 @@ id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
 id delete
+id delete_button
 id delete_icon
 id deltaRelative
 id dependency_ordering
@@ -2386,6 +2388,7 @@ id easeInOut
 id easeOut
 id east
 id edit
+id edit_button
 id edit_query
 id edit_text_id
 id elearning_card
@@ -2472,6 +2475,7 @@ id gallery
 id gender
 id gender_layout
 id generalobjective
+id generate_report_button
 id ghost_view
 id glide_custom_view_target_tag
 id gmeet_class_host
@@ -2862,6 +2866,14 @@ id ratio
 id rb_Parent_fp
 id rb_Student_fp
 id reason
+id reason_count_tv
+id reason_created_tv
+id reason_id_tv
+id reason_input
+id reason_input_layout
+id reason_name_tv
+id reason_updated_tv
+id reasons_recyclerView
 id rectangles
 id recyclerview
 id reference
@@ -2871,6 +2883,7 @@ id religion_layout
 id remark
 id remark_layout
 id reportCard_examResult
+id report_content_recyclerView
 id report_drawn
 id report_item_arrow
 id report_item_card
@@ -3329,6 +3342,7 @@ id unlabeled
 id unread_count
 id up
 id updateDateTV
+id updated_date_container
 id upload_file
 id upload_image
 id upload_layout
@@ -3446,6 +3460,7 @@ layout activity_behaviour_comment
 layout activity_cbse_examination
 layout activity_cbsetimetable
 layout activity_course_exam_result
+layout activity_disable_reasons
 layout activity_file_save
 layout activity_listview
 layout activity_new_dashboard
@@ -3480,6 +3495,7 @@ layout activity_student_visitor_book
 layout activity_teacher_dashboard
 layout activity_teacher_login
 layout activity_teacher_report_category
+layout activity_teacher_report_detail
 layout activity_teacher_reports
 layout activity_teacher_student_details
 layout activity_teacher_submenu
@@ -3633,6 +3649,7 @@ layout fragment_teacher_timeline
 layout fragment_transport_route_bottom_sheet
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_disable_reason
 layout item_student_category
 layout item_student_house
 layout item_student_list

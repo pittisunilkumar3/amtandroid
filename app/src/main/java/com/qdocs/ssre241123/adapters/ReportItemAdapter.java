@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.qdocs.ssre241123.R;
 import com.qdocs.ssre241123.model.ReportItem;
-// import com.qdocs.ssre241123.teachers.TeacherReportDetailActivity; // TODO: Uncomment when detail activity is created
+import com.qdocs.ssre241123.teachers.TeacherReportDetailActivity;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.Utility;
 
@@ -64,12 +64,7 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
     }
 
     private void handleReportItemClick(ReportItem reportItem) {
-        // For now, show a coming soon message
-        // Later this will launch the specific report activity
-        Toast.makeText(context, reportItem.getDisplayName() + " - Coming Soon", Toast.LENGTH_SHORT).show();
-        
-        // Uncomment when TeacherReportDetailActivity is implemented
-        /*
+        // Launch the report detail activity with filters
         Intent intent = new Intent(context, TeacherReportDetailActivity.class);
         intent.putExtra("report_id", reportItem.getId());
         intent.putExtra("report_name", reportItem.getDisplayName());
@@ -78,7 +73,6 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
         if (context instanceof android.app.Activity) {
             ((android.app.Activity) context).overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
         }
-        */
     }
 
     @Override
