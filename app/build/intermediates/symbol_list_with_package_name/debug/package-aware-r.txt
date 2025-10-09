@@ -2044,6 +2044,7 @@ id adjust_width
 id admDate
 id admDate_layout
 id admin_remark_layout
+id admission_no_tv
 id admissionno
 id afterresult_layout
 id alertTitle
@@ -2129,6 +2130,7 @@ id cancelBtn
 id cancel_action
 id cancel_button
 id cardViewGraph
+id card_view
 id card_view_inner
 id card_view_outer
 id carryVelocity
@@ -2150,6 +2152,7 @@ id category_name_input_layout
 id category_name_tv
 id category_status_tv
 id category_title
+id category_tv
 id category_updated_tv
 id cbesetimetable
 id center
@@ -2191,6 +2194,7 @@ id classTimetable_tuesdayHeader
 id classTimetable_tuesdayList
 id classTimetable_wednesdayHeader
 id classTimetable_wednesdayList
+id class_section_tv
 id class_spinner
 id classdata
 id classduration
@@ -2346,6 +2350,7 @@ id discountTV
 id discountamountTV
 id dob
 id dob_layout
+id dob_tv
 id doc_name
 id document
 id document_download_button
@@ -2395,6 +2400,7 @@ id elearning_card
 id elearning_recyclerView
 id email
 id email_layout
+id email_tv
 id end
 id end_padder
 id enddate_slider
@@ -2422,6 +2428,7 @@ id false_image
 id false_value
 id false_value_option
 id father_layout
+id father_name_tv
 id fathercontact_layout
 id fathername_layout
 id fatheroccup_layout
@@ -2474,6 +2481,7 @@ id frost
 id gallery
 id gender
 id gender_layout
+id gender_tv
 id generalobjective
 id generate_report_button
 id ghost_view
@@ -2649,6 +2657,7 @@ id messageET
 id middle
 id mini
 id mobile_layout
+id mobile_no_tv
 id mobileno
 id module_layout
 id moduleiamge
@@ -2905,6 +2914,7 @@ id right_icon
 id right_side
 id robotoCalendarDateTitleContainer
 id robotoCalendarPicker
+id roll_no_tv
 id rollno_layout
 id roomno
 id roomno1
@@ -3134,6 +3144,7 @@ id student_libraryBookIssued_listview
 id student_libraryBook_listview
 id student_listview
 id student_name
+id student_name_tv
 id student_profile_parent_fatherContact
 id student_profile_parent_fatherHead
 id student_profile_parent_fatherImage
@@ -3653,6 +3664,7 @@ layout item_disable_reason
 layout item_student_category
 layout item_student_house
 layout item_student_list
+layout item_student_report
 layout item_teacher_document
 layout item_teacher_leave
 layout item_teacher_payroll

@@ -2,6 +2,7 @@ package com.qdocs.ssre241123.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.qdocs.ssre241123.R;
 import com.qdocs.ssre241123.model.ReportItem;
+import com.qdocs.ssre241123.teachers.StudentReportActivity;
 import com.qdocs.ssre241123.teachers.TeacherReportDetailActivity;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.Utility;
@@ -24,6 +26,7 @@ import java.util.List;
 
 public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.ReportItemViewHolder> {
 
+    private static final String TAG = "ReportItemAdapter";
     private Context context;
     private List<ReportItem> reportItems;
 
@@ -64,11 +67,31 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
     }
 
     private void handleReportItemClick(ReportItem reportItem) {
-        // Launch the report detail activity with filters
-        Intent intent = new Intent(context, TeacherReportDetailActivity.class);
+        Log.d(TAG, "=== Report Item Clicked ===");
+        Log.d(TAG, "Report ID: " + reportItem.getId());
+        Log.d(TAG, "Report Name: " + reportItem.getDisplayName());
+        Log.d(TAG, "Category ID: " + reportItem.getCategoryId());
+
+        Intent intent;
+
+        // Check if this is the Student Report
+        // The ID can be either "1" (numeric) or "student_report" (string identifier)
+        if ("1".equals(reportItem.getId()) || "student_report".equals(reportItem.getId())) {
+            // Launch StudentReportActivity for Student Report
+            Log.d(TAG, "Launching StudentReportActivity");
+            intent = new Intent(context, StudentReportActivity.class);
+        } else {
+            // Launch generic TeacherReportDetailActivity for other reports
+            Log.d(TAG, "Launching TeacherReportDetailActivity");
+            intent = new Intent(context, TeacherReportDetailActivity.class);
+        }
+
         intent.putExtra("report_id", reportItem.getId());
         intent.putExtra("report_name", reportItem.getDisplayName());
         intent.putExtra("category_id", reportItem.getCategoryId());
+
+        Log.d(TAG, "Starting activity: " + intent.getComponent().getClassName());
+
         context.startActivity(intent);
         if (context instanceof android.app.Activity) {
             ((android.app.Activity) context).overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);
