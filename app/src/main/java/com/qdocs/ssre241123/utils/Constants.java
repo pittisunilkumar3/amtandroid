@@ -40,6 +40,14 @@ public class Constants {
     public static final String disableReasonUpdateUrl = "disable-reason/update";
     public static final String disableReasonDeleteUrl = "disable-reason/delete";
 
+    // Parent Login Detail Report API endpoints
+    public static final String parentLoginDetailReportFilterUrl = "parent-login-detail-report/filter";
+    public static final String parentLoginDetailReportListUrl = "parent-login-detail-report/list";
+
+    // Student Login Detail Report API endpoints
+    public static final String loginDetailReportFilterUrl = "login-detail-report/filter";
+    public static final String loginDetailReportListUrl = "login-detail-report/list";
+
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";
     public static final String uploadHomeworkUrl = "webservice/addaa";

@@ -1577,6 +1577,7 @@ drawable ic_fa_certificate
 drawable ic_fa_check
 drawable ic_fa_check_circle
 drawable ic_fa_cogs
+drawable ic_fa_copy
 drawable ic_fa_credit_card
 drawable ic_fa_credit_card_alt
 drawable ic_fa_desktop
@@ -1721,6 +1722,7 @@ drawable red_curve_border
 drawable rightarrow
 drawable ring
 drawable round_grey
+drawable rounded_border_bg
 drawable rounded_rect
 drawable rounded_square
 drawable selected_file
@@ -2117,6 +2119,8 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btn_changeUrl_login
+id btn_copy_password
+id btn_copy_username
 id btn_login
 id btn_submit_fp
 id btn_submit_takeUrl
@@ -2236,6 +2240,8 @@ id content
 id contentPanel
 id continuousVelocity
 id coordinator
+id copy_password_btn
+id copy_username_btn
 id correct
 id correct_count
 id correct_mark
@@ -2507,6 +2513,7 @@ id groups
 id guardianName_layout
 id guardian_info_tv
 id guardian_layout
+id guardian_name_tv
 id guardian_phone_tv
 id guardianaddress_layout
 id guardiancontact_layout
@@ -2792,6 +2799,8 @@ id parent_studentList_studentNameTV
 id parent_studentList_viewContainer
 id passing_per
 id passwordLayout
+id password_container
+id password_tv
 id path
 id pathRelative
 id patientProfile_profileImageview
@@ -3349,7 +3358,16 @@ id true_value_option
 id truefalse_layout
 id tuesdayNoData
 id tuesdaylayout
+id tv_active_status
+id tv_admission_no
+id tv_class_section
+id tv_email
+id tv_mobile
+id tv_password
 id tv_passwordReset_login
+id tv_session
+id tv_student_name
+id tv_username
 id tv_who_login
 id type
 id unchecked
@@ -3366,6 +3384,8 @@ id uploaddate
 id useLogo
 id userImage
 id user_list
+id username_container
+id username_tv
 id valid_upto
 id value
 id vehicleModel
@@ -3666,10 +3686,12 @@ layout fragment_transport_route_bottom_sheet
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_disable_reason
+layout item_parent_login
 layout item_student_category
 layout item_student_history
 layout item_student_house
 layout item_student_list
+layout item_student_login
 layout item_student_report
 layout item_teacher_document
 layout item_teacher_leave

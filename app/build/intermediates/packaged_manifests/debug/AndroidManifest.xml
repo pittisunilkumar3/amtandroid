@@ -85,6 +85,12 @@
             android:name="com.qdocs.ssre241123.teachers.StudentHistoryActivity"
             android:exported="false" />
         <activity
+            android:name="com.qdocs.ssre241123.teachers.ParentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.StudentLoginActivity"
+            android:exported="false" />
+        <activity
             android:name="com.qdocs.ssre241123.teachers.TeacherStudentDetailsActivity"
             android:exported="false" />
         <activity

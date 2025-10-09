@@ -17,7 +17,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.qdocs.ssre241123.R;
 import com.qdocs.ssre241123.model.ReportItem;
+import com.qdocs.ssre241123.teachers.ParentLoginActivity;
 import com.qdocs.ssre241123.teachers.StudentHistoryActivity;
+import com.qdocs.ssre241123.teachers.StudentLoginActivity;
 import com.qdocs.ssre241123.teachers.StudentReportActivity;
 import com.qdocs.ssre241123.teachers.TeacherReportDetailActivity;
 import com.qdocs.ssre241123.utils.Constants;
@@ -84,6 +86,14 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch StudentHistoryActivity for Student History (Admission Report)
             Log.d(TAG, "Launching StudentHistoryActivity");
             intent = new Intent(context, StudentHistoryActivity.class);
+        } else if ("parent_login_credential".equals(reportItem.getId())) {
+            // Launch ParentLoginActivity for Parent Login Credential Report
+            Log.d(TAG, "Launching ParentLoginActivity");
+            intent = new Intent(context, ParentLoginActivity.class);
+        } else if ("student_login_credential".equals(reportItem.getId())) {
+            // Launch StudentLoginActivity for Student Login Credential Report
+            Log.d(TAG, "Launching StudentLoginActivity");
+            intent = new Intent(context, StudentLoginActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");

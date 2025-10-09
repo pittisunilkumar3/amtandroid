@@ -68,6 +68,12 @@
             android:name=".teachers.StudentHistoryActivity"
             android:exported="false" />
         <activity
+            android:name=".teachers.ParentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.StudentLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".teachers.TeacherStudentDetailsActivity"
             android:exported="false" />
         <activity
