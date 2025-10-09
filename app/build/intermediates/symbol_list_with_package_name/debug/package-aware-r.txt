@@ -2044,6 +2044,7 @@ id adjust_width
 id admDate
 id admDate_layout
 id admin_remark_layout
+id admission_date_tv
 id admission_no_tv
 id admissionno
 id afterresult_layout
@@ -2504,7 +2505,9 @@ id group_divider
 id grouping
 id groups
 id guardianName_layout
+id guardian_info_tv
 id guardian_layout
+id guardian_phone_tv
 id guardianaddress_layout
 id guardiancontact_layout
 id guardianemail_layout
@@ -2964,6 +2967,7 @@ id selected
 id selected_currency
 id selected_lang
 id session_spinner
+id session_tv
 id shareby
 id sharedValueSet
 id sharedValueUnset
@@ -3006,6 +3010,7 @@ id staticLayout
 id staticPostLayout
 id status
 id status_bar_latest_event_content
+id status_tv
 id statusdate
 id stop
 id stretch
@@ -3662,6 +3667,7 @@ layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_disable_reason
 layout item_student_category
+layout item_student_history
 layout item_student_house
 layout item_student_list
 layout item_student_report

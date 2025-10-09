@@ -2043,6 +2043,7 @@ int id adjust_width 0x7f09011a
 int id admDate 0x7f09011b
 int id admDate_layout 0x7f09011c
 int id admin_remark_layout 0x7f09011d
+int id admission_date_tv 0x7f090675
 int id admission_no_tv 0x7f09011e
 int id admissionno 0x7f09011f
 int id afterresult_layout 0x7f090120
@@ -2503,7 +2504,9 @@ int id group_divider 0x7f0902e6
 int id grouping 0x7f0902e7
 int id groups 0x7f0902e8
 int id guardianName_layout 0x7f0902e9
+int id guardian_info_tv 0x7f090676
 int id guardian_layout 0x7f0902ea
+int id guardian_phone_tv 0x7f090677
 int id guardianaddress_layout 0x7f0902eb
 int id guardiancontact_layout 0x7f0902ec
 int id guardianemail_layout 0x7f0902ed
@@ -2963,6 +2966,7 @@ int id selected 0x7f0904b2
 int id selected_currency 0x7f0904b3
 int id selected_lang 0x7f0904b4
 int id session_spinner 0x7f0904b5
+int id session_tv 0x7f090678
 int id shareby 0x7f0904b6
 int id sharedValueSet 0x7f0904b7
 int id sharedValueUnset 0x7f0904b8
@@ -3005,6 +3009,7 @@ int id staticLayout 0x7f0904dc
 int id staticPostLayout 0x7f0904dd
 int id status 0x7f0904de
 int id status_bar_latest_event_content 0x7f0904df
+int id status_tv 0x7f090679
 int id statusdate 0x7f0904e0
 int id stop 0x7f0904e1
 int id stretch 0x7f0904e2
@@ -3661,6 +3666,7 @@ int layout ime_base_split_test_activity 0x7f0c00dc
 int layout ime_secondary_split_test_activity 0x7f0c00dd
 int layout item_disable_reason 0x7f0c00de
 int layout item_student_category 0x7f0c00df
+int layout item_student_history 0x7f0c013c
 int layout item_student_house 0x7f0c00e0
 int layout item_student_list 0x7f0c00e1
 int layout item_student_report 0x7f0c00e2

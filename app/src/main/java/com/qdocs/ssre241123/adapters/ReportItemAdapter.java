@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.qdocs.ssre241123.R;
 import com.qdocs.ssre241123.model.ReportItem;
+import com.qdocs.ssre241123.teachers.StudentHistoryActivity;
 import com.qdocs.ssre241123.teachers.StudentReportActivity;
 import com.qdocs.ssre241123.teachers.TeacherReportDetailActivity;
 import com.qdocs.ssre241123.utils.Constants;
@@ -74,12 +75,15 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
 
         Intent intent;
 
-        // Check if this is the Student Report
-        // The ID can be either "1" (numeric) or "student_report" (string identifier)
+        // Route to specific activities based on report ID
         if ("1".equals(reportItem.getId()) || "student_report".equals(reportItem.getId())) {
             // Launch StudentReportActivity for Student Report
             Log.d(TAG, "Launching StudentReportActivity");
             intent = new Intent(context, StudentReportActivity.class);
+        } else if ("2".equals(reportItem.getId()) || "student_history".equals(reportItem.getId())) {
+            // Launch StudentHistoryActivity for Student History (Admission Report)
+            Log.d(TAG, "Launching StudentHistoryActivity");
+            intent = new Intent(context, StudentHistoryActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");
