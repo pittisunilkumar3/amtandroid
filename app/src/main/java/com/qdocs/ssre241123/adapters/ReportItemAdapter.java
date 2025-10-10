@@ -24,6 +24,7 @@ import com.qdocs.ssre241123.teachers.OnlineAdmissionReportActivity;
 import com.qdocs.ssre241123.teachers.ParentLoginActivity;
 import com.qdocs.ssre241123.teachers.StudentHistoryActivity;
 import com.qdocs.ssre241123.teachers.StudentLoginActivity;
+import com.qdocs.ssre241123.teachers.StudentProfileReportActivity;
 import com.qdocs.ssre241123.teachers.StudentReportActivity;
 import com.qdocs.ssre241123.teachers.StudentTeacherRatioActivity;
 import com.qdocs.ssre241123.teachers.TeacherReportDetailActivity;
@@ -119,6 +120,10 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch OnlineAdmissionReportActivity for Online Admission Report
             Log.d(TAG, "Launching OnlineAdmissionReportActivity");
             intent = new Intent(context, OnlineAdmissionReportActivity.class);
+        } else if ("student_profile_report".equals(reportItem.getId()) || "student_profile".equals(reportItem.getId())) {
+            // Launch StudentProfileReportActivity for Student Profile Report
+            Log.d(TAG, "Launching StudentProfileReportActivity");
+            intent = new Intent(context, StudentProfileReportActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");

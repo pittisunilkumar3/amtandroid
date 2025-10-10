@@ -65,6 +65,9 @@
             android:name=".teachers.StudentReportActivity"
             android:exported="false" />
         <activity
+            android:name=".teachers.StudentProfileReportActivity"
+            android:exported="false" />
+        <activity
             android:name=".teachers.ClassSectionReportActivity"
             android:exported="false" />
         <activity

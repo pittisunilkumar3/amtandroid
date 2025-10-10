@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <!-- Student Name -->
+            <TextView
+                android:id="@+id/student_name_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Student Name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <!-- Active Status Badge -->
+            <TextView
+                android:id="@+id/active_status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_background"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp" />
+        </LinearLayout>
+
+        <!-- Admission Number & Roll Number -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adm No: "
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/admission_no_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ADM2024001"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Roll: "
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:paddingStart="8dp" />
+
+            <TextView
+                android:id="@+id/roll_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="101"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Class & Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class: "
+                android:textSize="14sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/class_section_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class 10 - Section A"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Gender & DOB -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: "
+                android:textSize="14sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/gender_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Male"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOB: "
+                android:textSize="14sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/dob_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2010-05-15"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Contact Information -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact: "
+                android:textSize="14sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/contact_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9876543210"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Email -->
+        <LinearLayout
+            android:id="@+id/email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="14sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/email_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="student@example.com"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:ellipsize="end"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <!-- Father Name -->
+        <LinearLayout
+            android:id="@+id/father_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Father: "
+                android:textSize="14sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/father_name_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Father Name"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/father_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9876543210"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Mother Name -->
+        <LinearLayout
+            android:id="@+id/mother_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mother: "
+                android:textSize="14sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/mother_name_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mother Name"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/mother_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9876543210"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Bottom Section - Additional Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Admission Date -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admission Date"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/admission_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2024-01-15"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Category -->
+            <LinearLayout
+                android:id="@+id/category_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/category_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

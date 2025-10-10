@@ -1854,6 +1854,7 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id active_status_tv
 id activity_chooser_view_content
 id adapter_costperbedTV
 id adapter_dateLayout
@@ -2447,6 +2448,7 @@ id false_value
 id false_value_option
 id father_layout
 id father_name_tv
+id father_phone_tv
 id father_section
 id fathercontact_layout
 id fathername_layout
@@ -2711,6 +2713,8 @@ id moptionc
 id moptiond
 id moptione
 id mother_layout
+id mother_name_tv
+id mother_phone_tv
 id mother_section
 id mothercontact_layout
 id mothername_layout
@@ -3737,6 +3741,7 @@ layout item_student_history
 layout item_student_house
 layout item_student_list
 layout item_student_login
+layout item_student_profile_report
 layout item_student_report
 layout item_student_teacher_ratio
 layout item_teacher_document
