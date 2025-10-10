@@ -58,4 +58,10 @@
     <color name="textHeading">#212121</color>
     <color name="divider">#E0E0E0</color>
 
+    <!-- Additional Colors for Student Academic Report -->
+    <color name="light_blue">#E3F2FD</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="blue">#2196F3</color>
+    <color name="orange">#FF9800</color>
+
 </resources>

@@ -68,73 +68,158 @@
                         android:textColor="@color/black"
                         android:layout_marginBottom="12dp" />
 
-                    <!-- Session Spinner -->
+                    <!-- Search Type Radio Group -->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Session"
+                        android:text="Search By"
                         android:textSize="14sp"
                         android:textColor="@color/black"
                         android:layout_marginTop="8dp" />
 
-                    <Spinner
-                        android:id="@+id/sessionSpinner"
+                    <RadioGroup
+                        android:id="@+id/searchByRadioGroup"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:minHeight="48dp"
-                        android:layout_marginTop="4dp"
-                        android:background="@drawable/spinner_background" />
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
 
-                    <!-- Class Spinner -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Class"
-                        android:textSize="14sp"
-                        android:textColor="@color/black"
-                        android:layout_marginTop="12dp" />
+                        <RadioButton
+                            android:id="@+id/searchByClassRadio"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Class"
+                            android:checked="true" />
 
-                    <Spinner
-                        android:id="@+id/classSpinner"
+                        <RadioButton
+                            android:id="@+id/searchByStudentIdRadio"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Student ID" />
+
+                        <RadioButton
+                            android:id="@+id/searchByAdmissionNoRadio"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Admission No" />
+                    </RadioGroup>
+
+                    <!-- Student ID Input (Hidden by default) -->
+                    <LinearLayout
+                        android:id="@+id/studentIdLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:minHeight="48dp"
-                        android:layout_marginTop="4dp"
-                        android:background="@drawable/spinner_background" />
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="12dp">
 
-                    <!-- Section Spinner -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Section"
-                        android:textSize="14sp"
-                        android:textColor="@color/black"
-                        android:layout_marginTop="12dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Student ID"
+                            android:textSize="14sp"
+                            android:textColor="@color/black" />
 
-                    <Spinner
-                        android:id="@+id/sectionSpinner"
+                        <EditText
+                            android:id="@+id/studentIdEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:layout_marginTop="4dp"
+                            android:hint="Enter Student ID"
+                            android:inputType="number"
+                            android:background="@drawable/spinner_background"
+                            android:padding="12dp" />
+                    </LinearLayout>
+
+                    <!-- Admission Number Input (Hidden by default) -->
+                    <LinearLayout
+                        android:id="@+id/admissionNoLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:minHeight="48dp"
-                        android:layout_marginTop="4dp"
-                        android:background="@drawable/spinner_background" />
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_marginTop="12dp">
 
-                    <!-- Search Type Spinner -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Search Type"
-                        android:textSize="14sp"
-                        android:textColor="@color/black"
-                        android:layout_marginTop="12dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Admission Number"
+                            android:textSize="14sp"
+                            android:textColor="@color/black" />
 
-                    <Spinner
-                        android:id="@+id/searchTypeSpinner"
+                        <EditText
+                            android:id="@+id/admissionNoEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:layout_marginTop="4dp"
+                            android:hint="Enter Admission Number"
+                            android:inputType="text"
+                            android:background="@drawable/spinner_background"
+                            android:padding="12dp" />
+                    </LinearLayout>
+
+                    <!-- Session Spinner (For Class search) -->
+                    <LinearLayout
+                        android:id="@+id/classFiltersLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:minHeight="48dp"
-                        android:layout_marginTop="4dp"
-                        android:background="@drawable/spinner_background" />
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Session"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="12dp" />
+
+                        <Spinner
+                            android:id="@+id/sessionSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/spinner_background" />
+
+                        <!-- Class Spinner -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Class"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="12dp" />
+
+                        <Spinner
+                            android:id="@+id/classSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/spinner_background" />
+
+                        <!-- Section Spinner -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Section"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="12dp" />
+
+                        <Spinner
+                            android:id="@+id/sectionSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/spinner_background" />
+                    </LinearLayout>
 
                     <!-- Generate Report Button -->
                     <Button
