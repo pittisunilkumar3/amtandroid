@@ -101,6 +101,30 @@
             android:name=".teachers.FeeCollectionReportColumnWiseActivity"
             android:exported="false" />
         <activity
+            android:name=".teachers.TotalBalanceFeesReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teachers.TotalFeeCollectionReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teachers.FeesCollectionReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teachers.OtherFeesCollectionReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teachers.OtherFeeAndCollectionFeeCombinedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".teachers.BalanceFeesReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".teachers.ParentLoginActivity"
             android:exported="false" />
         <activity

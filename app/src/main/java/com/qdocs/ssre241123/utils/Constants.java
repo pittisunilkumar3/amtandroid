@@ -81,6 +81,18 @@ public class Constants {
     // Fee Collection Report Column Wise API endpoints
     public static final String feeCollectionReportColumnWiseFilterUrl = "fee-collection-report-column-wise/filter";
 
+    // Fee Collection Filters API endpoints (Hierarchical)
+    public static final String feeCollectionFiltersGetUrl = "fee-collection-filters/get";
+    public static final String feeCollectionFiltersGetHierarchyUrl = "fee-collection-filters/get-hierarchy";
+
+    // Finance Reports API endpoints
+    public static final String totalBalanceFeesReportFilterUrl = "total-balance-fees-report/filter";
+    public static final String totalFeeCollectionReportFilterUrl = "total-fee-collection-report/filter";
+    public static final String feesCollectionReportFilterUrl = "fees-collection-report/filter";
+    public static final String otherFeesCollectionReportFilterUrl = "other-fees-collection-report/filter";
+    public static final String otherFeeAndCollectionFeeCombinedFilterUrl = "other-fee-and-collection-fee-combined/filter";
+    public static final String balanceFeesReportFilterUrl = "balance-fees-report/filter";
+
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";
     public static final String uploadHomeworkUrl = "webservice/addaa";

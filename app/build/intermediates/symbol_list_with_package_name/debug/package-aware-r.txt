@@ -1442,6 +1442,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_background
 drawable button_primary
 drawable button_style_accent
 drawable button_style_grey
@@ -1644,6 +1645,7 @@ drawable ic_nav_timeline
 drawable ic_nav_transport
 drawable ic_navigate_next
 drawable ic_navigate_previous
+drawable ic_no_data
 drawable ic_notice
 drawable ic_notification
 drawable ic_online_exams
@@ -1731,6 +1733,7 @@ drawable rounded_square
 drawable selected_file
 drawable settingpage
 drawable shadowfile
+drawable spinner_background
 drawable splash_logo
 drawable status_approved_bg
 drawable status_generated_bg
@@ -1829,7 +1832,9 @@ id accessibility_custom_action_8
 id accessibility_custom_action_9
 id action0
 id actionBar
+id actionBarBackBtn
 id actionBarSecondary
+id actionBarTitleTV
 id actionBar_backBtn
 id actionBar_logo
 id actionBar_title
@@ -2178,6 +2183,7 @@ id checkBox
 id checkbox
 id checked
 id chronometer
+id classSpinner
 id classSubject_englishList
 id classSubject_hindiList
 id classSubject_mathsList
@@ -2223,6 +2229,7 @@ id clockwise
 id closest
 id collapseActionView
 id collapsing_toolbar
+id collectBySpinner
 id comment
 id commentET
 id comment_layout
@@ -2460,6 +2467,7 @@ id father_section
 id fathercontact_layout
 id fathername_layout
 id fatheroccup_layout
+id feeTypeSpinner
 id fee_details_tv
 id fee_group_spinner
 id fee_group_tv
@@ -2495,6 +2503,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id filtersCard
 id filters_card
 id fineTV
 id fine_row
@@ -2514,6 +2523,7 @@ id fragment_studentDownload_assignment_listview
 id fragment_student_classtimetable_listview
 id fridayNoData
 id fridaylayout
+id fromDateEditText
 id from_date_edit_text
 id from_date_et
 id fromdate
@@ -2523,6 +2533,7 @@ id gender
 id gender_layout
 id gender_tv
 id generalobjective
+id generateReportButton
 id generate_report_button
 id ghost_view
 id glide_custom_view_target_tag
@@ -2540,6 +2551,7 @@ id grade
 id gradepoint
 id graph
 id graph_wrap
+id groupBySpinner
 id group_divider
 id grouping
 id groups
@@ -2777,6 +2789,7 @@ id nextweek
 id noState
 id noanswer_count
 id nodata
+id nodataLayout
 id nodata_layout
 id none
 id normal
@@ -2946,6 +2959,7 @@ id religion_layout
 id remark
 id remark_layout
 id reportCard_examResult
+id reportContentRecyclerView
 id report_content_recyclerView
 id report_drawn
 id report_item_arrow
@@ -3001,6 +3015,8 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchDurationSpinner
+id searchTypeSpinner
 id search_badge
 id search_bar
 id search_button
@@ -3012,6 +3028,7 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id sectionNameTV
+id sectionSpinner
 id section_id_tv
 id section_name_tv
 id section_spinner
@@ -3020,6 +3037,7 @@ id select_dialog_listview
 id selected
 id selected_currency
 id selected_lang
+id sessionSpinner
 id session_spinner
 id session_tv
 id shareby
@@ -3354,6 +3372,7 @@ id titleET
 id title_template
 id title_textview
 id titlename
+id toDateEditText
 id to_date_edit_text
 id to_date_et
 id todate
@@ -3567,6 +3586,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout about_school_activity
+layout activity_balance_fees_report
 layout activity_behaviour_comment
 layout activity_cbse_examination
 layout activity_cbsetimetable
@@ -3574,12 +3594,15 @@ layout activity_course_exam_result
 layout activity_daily_collection_report
 layout activity_disable_reasons
 layout activity_fee_collection_report_column_wise
+layout activity_fees_collection_report
 layout activity_file_save
 layout activity_listview
 layout activity_new_dashboard
 layout activity_notification_list
 layout activity_offlinepayment
 layout activity_open_pdf
+layout activity_other_fee_and_collection_fee_combined
+layout activity_other_fees_collection_report
 layout activity_setting
 layout activity_start_lesson
 layout activity_student_apply_leave
@@ -3612,6 +3635,8 @@ layout activity_teacher_report_detail
 layout activity_teacher_reports
 layout activity_teacher_student_details
 layout activity_teacher_submenu
+layout activity_total_balance_fees_report
+layout activity_total_fee_collection_report
 layout activity_type_wise_balance_report
 layout adapter_content_upload_detail
 layout adapter_course_curriculum
@@ -3966,6 +3991,7 @@ string audit_trail_reports
 string author
 string availablecount
 string awaited
+string back
 string balance
 string balanceAmt
 string balance_fees_report

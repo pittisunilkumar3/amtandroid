@@ -118,6 +118,30 @@
             android:name="com.qdocs.ssre241123.teachers.FeeCollectionReportColumnWiseActivity"
             android:exported="false" />
         <activity
+            android:name="com.qdocs.ssre241123.teachers.TotalBalanceFeesReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.TotalFeeCollectionReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.FeesCollectionReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.OtherFeesCollectionReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.OtherFeeAndCollectionFeeCombinedActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.BalanceFeesReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.qdocs.ssre241123.teachers.ParentLoginActivity"
             android:exported="false" />
         <activity

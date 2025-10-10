@@ -18,13 +18,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.qdocs.ssre241123.R;
 import com.qdocs.ssre241123.model.ReportItem;
 import com.qdocs.ssre241123.teachers.AdmissionReportActivity;
+import com.qdocs.ssre241123.teachers.BalanceFeesReportActivity;
 import com.qdocs.ssre241123.teachers.ClassSectionReportActivity;
 import com.qdocs.ssre241123.teachers.ClassSubjectReportActivity;
 import com.qdocs.ssre241123.teachers.DailyCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.DueFeeReportActivity;
 import com.qdocs.ssre241123.teachers.FeeCollectionReportColumnWiseActivity;
+import com.qdocs.ssre241123.teachers.FeesCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.GuardianReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineAdmissionReportActivity;
+import com.qdocs.ssre241123.teachers.OtherFeeAndCollectionFeeCombinedActivity;
+import com.qdocs.ssre241123.teachers.OtherFeesCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.ParentLoginActivity;
 import com.qdocs.ssre241123.teachers.StudentHistoryActivity;
 import com.qdocs.ssre241123.teachers.StudentLoginActivity;
@@ -32,6 +36,8 @@ import com.qdocs.ssre241123.teachers.StudentProfileReportActivity;
 import com.qdocs.ssre241123.teachers.StudentReportActivity;
 import com.qdocs.ssre241123.teachers.StudentTeacherRatioActivity;
 import com.qdocs.ssre241123.teachers.TeacherReportDetailActivity;
+import com.qdocs.ssre241123.teachers.TotalBalanceFeesReportActivity;
+import com.qdocs.ssre241123.teachers.TotalFeeCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.TypeWiseBalanceReportActivity;
 import com.qdocs.ssre241123.teachers.YearReportDueFeeActivity;
 import com.qdocs.ssre241123.utils.Constants;
@@ -154,6 +160,30 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch FeeCollectionReportColumnWiseActivity for Fee Collection Report Column Wise
             Log.d(TAG, "Launching FeeCollectionReportColumnWiseActivity");
             intent = new Intent(context, FeeCollectionReportColumnWiseActivity.class);
+        } else if ("total_balance_fees_report".equals(reportItem.getId())) {
+            // Launch TotalBalanceFeesReportActivity for Total Balance Fees Report
+            Log.d(TAG, "Launching TotalBalanceFeesReportActivity");
+            intent = new Intent(context, TotalBalanceFeesReportActivity.class);
+        } else if ("total_fee_collection_report".equals(reportItem.getId())) {
+            // Launch TotalFeeCollectionReportActivity for Total Fee Collection Report
+            Log.d(TAG, "Launching TotalFeeCollectionReportActivity");
+            intent = new Intent(context, TotalFeeCollectionReportActivity.class);
+        } else if ("fees_collection_report".equals(reportItem.getId())) {
+            // Launch FeesCollectionReportActivity for Fees Collection Report
+            Log.d(TAG, "Launching FeesCollectionReportActivity");
+            intent = new Intent(context, FeesCollectionReportActivity.class);
+        } else if ("other_fees_collection_report".equals(reportItem.getId())) {
+            // Launch OtherFeesCollectionReportActivity for Other Fees Collection Report
+            Log.d(TAG, "Launching OtherFeesCollectionReportActivity");
+            intent = new Intent(context, OtherFeesCollectionReportActivity.class);
+        } else if ("other_fee_and_collection_fee_combined".equals(reportItem.getId())) {
+            // Launch OtherFeeAndCollectionFeeCombinedActivity for Other Fee and Collection Fee Combined
+            Log.d(TAG, "Launching OtherFeeAndCollectionFeeCombinedActivity");
+            intent = new Intent(context, OtherFeeAndCollectionFeeCombinedActivity.class);
+        } else if ("balance_fees_report".equals(reportItem.getId())) {
+            // Launch BalanceFeesReportActivity for Balance Fees Report
+            Log.d(TAG, "Launching BalanceFeesReportActivity");
+            intent = new Intent(context, BalanceFeesReportActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");
