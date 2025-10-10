@@ -83,6 +83,9 @@
             android:name=".teachers.StudentHistoryActivity"
             android:exported="false" />
         <activity
+            android:name=".teachers.AdmissionReportActivity"
+            android:exported="false" />
+        <activity
             android:name=".teachers.ParentLoginActivity"
             android:exported="false" />
         <activity

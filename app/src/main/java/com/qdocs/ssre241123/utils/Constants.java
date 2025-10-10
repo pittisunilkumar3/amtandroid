@@ -56,6 +56,10 @@ public class Constants {
     public static final String studentProfileReportFilterUrl = "student-profile-report/filter";
     public static final String studentProfileReportListUrl = "student-profile-report/list";
 
+    // Admission Report API endpoints
+    public static final String admissionReportFilterUrl = "admission-report/filter";
+    public static final String admissionReportListUrl = "admission-report/list";
+
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";
     public static final String uploadHomeworkUrl = "webservice/addaa";

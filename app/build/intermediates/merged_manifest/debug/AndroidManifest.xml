@@ -100,6 +100,9 @@
             android:name="com.qdocs.ssre241123.teachers.StudentHistoryActivity"
             android:exported="false" />
         <activity
+            android:name="com.qdocs.ssre241123.teachers.AdmissionReportActivity"
+            android:exported="false" />
+        <activity
             android:name="com.qdocs.ssre241123.teachers.ParentLoginActivity"
             android:exported="false" />
         <activity

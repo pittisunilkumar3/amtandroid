@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.qdocs.ssre241123.R;
 import com.qdocs.ssre241123.model.ReportItem;
+import com.qdocs.ssre241123.teachers.AdmissionReportActivity;
 import com.qdocs.ssre241123.teachers.ClassSectionReportActivity;
 import com.qdocs.ssre241123.teachers.ClassSubjectReportActivity;
 import com.qdocs.ssre241123.teachers.GuardianReportActivity;
@@ -124,6 +125,10 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch StudentProfileReportActivity for Student Profile Report
             Log.d(TAG, "Launching StudentProfileReportActivity");
             intent = new Intent(context, StudentProfileReportActivity.class);
+        } else if ("admission_report".equals(reportItem.getId())) {
+            // Launch AdmissionReportActivity for Admission Report
+            Log.d(TAG, "Launching AdmissionReportActivity");
+            intent = new Intent(context, AdmissionReportActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");
