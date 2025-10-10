@@ -26,6 +26,7 @@ import com.qdocs.ssre241123.teachers.DailyCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.DueFeeReportActivity;
 import com.qdocs.ssre241123.teachers.FeeCollectionReportColumnWiseActivity;
 import com.qdocs.ssre241123.teachers.FeesCollectionReportActivity;
+import com.qdocs.ssre241123.teachers.FeesStatementActivity;
 import com.qdocs.ssre241123.teachers.GuardianReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineAdmissionReportActivity;
 import com.qdocs.ssre241123.teachers.OtherFeeAndCollectionFeeCombinedActivity;
@@ -189,6 +190,10 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch BalanceFeesReportWithRemarkActivity for Balance Fees Report With Remark
             Log.d(TAG, "Launching BalanceFeesReportWithRemarkActivity");
             intent = new Intent(context, BalanceFeesReportWithRemarkActivity.class);
+        } else if ("fees_statement".equals(reportItem.getId())) {
+            // Launch FeesStatementActivity for Fees Statement
+            Log.d(TAG, "Launching FeesStatementActivity");
+            intent = new Intent(context, FeesStatementActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");

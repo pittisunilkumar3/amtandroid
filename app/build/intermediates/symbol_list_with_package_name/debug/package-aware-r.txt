@@ -3160,6 +3160,7 @@ id studentReportCard_gradeTV
 id studentReportCard_percentageTV
 id studentReportCard_qualitypoints
 id studentReportCard_statusTV
+id studentSpinner
 id studentSubjectAdapter_nameTV
 id studentSubjectAdapter_subjectIconIV
 id studentSubjectAdapter_subjectType
@@ -3596,6 +3597,7 @@ layout activity_daily_collection_report
 layout activity_disable_reasons
 layout activity_fee_collection_report_column_wise
 layout activity_fees_collection_report
+layout activity_fees_statement
 layout activity_file_save
 layout activity_listview
 layout activity_new_dashboard

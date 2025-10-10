@@ -146,6 +146,10 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
+            android:name="com.qdocs.ssre241123.teachers.FeesStatementActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.qdocs.ssre241123.teachers.ParentLoginActivity"
             android:exported="false" />
         <activity

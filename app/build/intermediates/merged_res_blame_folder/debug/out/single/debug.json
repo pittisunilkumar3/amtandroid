@@ -384,10 +384,6 @@
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\adapter_student_gmeetliveclass.xml"
     },
     {
-        "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_activity_other_fees_collection_report.xml.flat",
-        "source": "com.qdocs.ssre241123.app-main-7:/layout/activity_other_fees_collection_report.xml"
-    },
-    {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_default_image.jpg.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\default_image.jpg"
     },
@@ -788,6 +784,10 @@
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\ic_attach_file_black.xml"
     },
     {
+        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_activity_fees_statement.xml.flat",
+        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\activity_fees_statement.xml"
+    },
+    {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_app_icon.png.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\app_icon.png"
     },
@@ -802,6 +802,10 @@
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_add_course_rating.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\add_course_rating.xml"
+    },
+    {
+        "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_activity_fees_statement.xml.flat",
+        "source": "com.qdocs.ssre241123.app-main-7:/layout/activity_fees_statement.xml"
     },
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_ic_fa_desktop.xml.flat",
@@ -1292,6 +1296,10 @@
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\adapter_download_videolist.xml"
     },
     {
+        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_activity_balance_fees_report_with_remark.xml.flat",
+        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\activity_balance_fees_report_with_remark.xml"
+    },
+    {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_fragment_teacher_documents.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\fragment_teacher_documents.xml"
     },
@@ -1506,10 +1514,6 @@
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_fragment_teacher_leaves.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\fragment_teacher_leaves.xml"
-    },
-    {
-        "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_activity_balance_fees_report_with_remark.xml.flat",
-        "source": "com.qdocs.ssre241123.app-main-7:/layout/activity_balance_fees_report_with_remark.xml"
     },
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_bg_status_active.xml.flat",
@@ -1842,10 +1846,6 @@
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_fragment_teacher_profile.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\fragment_teacher_profile.xml"
-    },
-    {
-        "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_activity_other_fee_and_collection_fee_combined.xml.flat",
-        "source": "com.qdocs.ssre241123.app-main-7:/layout/activity_other_fee_and_collection_fee_combined.xml"
     },
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_fragment_student_download_videos.xml.flat",
