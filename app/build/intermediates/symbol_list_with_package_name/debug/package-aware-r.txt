@@ -2227,8 +2227,10 @@ id classTimetable_wednesdayHeader
 id classTimetable_wednesdayList
 id class_id_tv
 id class_name_tv
+id class_sec_tv
 id class_section_tv
 id class_spinner
+id class_tv
 id classdata
 id classduration
 id classes
@@ -2243,6 +2245,8 @@ id closest
 id collapseActionView
 id collapsing_toolbar
 id collectBySpinner
+id collected_by_layout
+id collected_by_tv
 id comment
 id commentET
 id comment_layout
@@ -2344,6 +2348,7 @@ id date6
 id date7
 id dateET
 id dateTV
+id date_range_layout
 id date_range_tv
 id date_tv
 id datefrom
@@ -2391,6 +2396,7 @@ id discountLayout
 id discountRow
 id discountTV
 id discountTextView
+id discount_layout
 id discount_row
 id discount_tv
 id discountamountTV
@@ -2488,14 +2494,20 @@ id fatheroccup_layout
 id feeDetailsRecyclerView
 id feeGroupNameTextView
 id feeNameTextView
+id feeTypeBreakdownLayout
 id feeTypeNameTextView
 id feeTypeSpinner
 id feeTypesContainer
+id fee_code_layout
+id fee_code_tv
 id fee_details_tv
 id fee_group_spinner
 id fee_group_tv
 id fee_items_count_tv
+id fee_type_count_tv
+id fee_type_name_tv
 id fee_type_spinner
+id fee_type_total_tv
 id fee_type_tv
 id feefineamount
 id fees
@@ -2531,6 +2543,7 @@ id filters_card
 id fineRow
 id fineTV
 id fineTextView
+id fine_layout
 id fine_row
 id fine_tv
 id finelayout
@@ -2658,6 +2671,7 @@ id included
 id info
 id instruction
 id invisible
+id invoice_no_tv
 id italic
 id item_line
 id item_subtitle
@@ -2805,6 +2819,7 @@ id neg_marks_layout
 id negative
 id negativeamountTV
 id nested_scroll
+id net_amount_tv
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -2824,6 +2839,7 @@ id not_answer
 id notattempt
 id note
 id note_layout
+id note_tv
 id notification_alert
 id notification_background
 id notification_main_column
@@ -2891,6 +2907,8 @@ id paymentDate
 id paymentFrom
 id paymentId
 id paymentMode
+id payment_date_tv
+id payment_mode_tv
 id payment_status_tv
 id paymentdate
 id paymentid
@@ -3064,6 +3082,7 @@ id search_go_btn
 id search_mag_icon
 id search_plate
 id search_src_text
+id search_type_spinner
 id search_voice_btn
 id sectionNameTV
 id sectionSpinner
@@ -3316,6 +3335,7 @@ id submitdialoug
 id submitted_status_layout
 id subtopic
 id summary
+id summaryCard
 id summary_card
 id sundayNoData
 id sundaylayout
@@ -3426,6 +3446,7 @@ id topPanel
 id topic
 id topic_count
 id topimage
+id totalAmountTv
 id totalBalanceTextView
 id totalDiscountRow
 id totalDiscountTextView
@@ -3433,6 +3454,7 @@ id totalFeeTextView
 id totalFineRow
 id totalFineTextView
 id totalPaidTextView
+id totalRecordsTv
 id total_amount_tv
 id total_answerwordcount
 id total_balance_tv
@@ -3447,6 +3469,7 @@ id total_paid_tv
 id total_ques
 id total_quest
 id total_question
+id total_records_tv
 id total_scored_marks
 id total_students_tv
 id total_teachers_tv
@@ -3653,6 +3676,7 @@ layout activity_listview
 layout activity_new_dashboard
 layout activity_notification_list
 layout activity_offlinepayment
+layout activity_online_fees_report
 layout activity_open_pdf
 layout activity_other_fee_and_collection_fee_combined
 layout activity_other_fees_collection_report
@@ -3853,8 +3877,10 @@ layout item_fee_statement_group
 layout item_fee_statement_header
 layout item_fee_statement_summary
 layout item_fee_statement_type
+layout item_fee_type_breakdown
 layout item_guardian_report
 layout item_online_admission
+layout item_online_fees_report
 layout item_parent_login
 layout item_search_result
 layout item_student_academic_report
@@ -3869,6 +3895,7 @@ layout item_student_teacher_ratio
 layout item_teacher_document
 layout item_teacher_leave
 layout item_teacher_payroll
+layout item_total_fee_collection_report
 layout item_type_wise_balance_report
 layout lesson_description
 layout lesson_topic_dialoug
