@@ -2667,6 +2667,8 @@ int id image_layout 0x7f09037d
 int id imageview 0x7f09037e
 int id immediateStop 0x7f09037f
 int id included 0x7f090380
+int id income_head_tv 0x7f090729
+int id income_name_tv 0x7f09072a
 int id info 0x7f090381
 int id instruction 0x7f090382
 int id invisible 0x7f090383
@@ -3671,6 +3673,7 @@ int layout activity_fee_collection_report_column_wise 0x7f0c0025
 int layout activity_fees_collection_report 0x7f0c0026
 int layout activity_fees_statement 0x7f0c0027
 int layout activity_file_save 0x7f0c0028
+int layout activity_income_report 0x7f0c0160
 int layout activity_listview 0x7f0c0029
 int layout activity_new_dashboard 0x7f0c002a
 int layout activity_notification_list 0x7f0c002b
@@ -3878,6 +3881,7 @@ int layout item_fee_statement_summary 0x7f0c00f4
 int layout item_fee_statement_type 0x7f0c00f5
 int layout item_fee_type_breakdown 0x7f0c00f6
 int layout item_guardian_report 0x7f0c00f7
+int layout item_income_report 0x7f0c0161
 int layout item_online_admission 0x7f0c00f8
 int layout item_online_fees_report 0x7f0c00f9
 int layout item_parent_login 0x7f0c00fa

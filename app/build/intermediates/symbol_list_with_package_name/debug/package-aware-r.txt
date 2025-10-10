@@ -2668,6 +2668,8 @@ id image_layout
 id imageview
 id immediateStop
 id included
+id income_head_tv
+id income_name_tv
 id info
 id instruction
 id invisible
@@ -3672,6 +3674,7 @@ layout activity_fee_collection_report_column_wise
 layout activity_fees_collection_report
 layout activity_fees_statement
 layout activity_file_save
+layout activity_income_report
 layout activity_listview
 layout activity_new_dashboard
 layout activity_notification_list
@@ -3879,6 +3882,7 @@ layout item_fee_statement_summary
 layout item_fee_statement_type
 layout item_fee_type_breakdown
 layout item_guardian_report
+layout item_income_report
 layout item_online_admission
 layout item_online_fees_report
 layout item_parent_login

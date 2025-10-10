@@ -28,6 +28,7 @@ import com.qdocs.ssre241123.teachers.FeeCollectionReportColumnWiseActivity;
 import com.qdocs.ssre241123.teachers.FeesCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.FeesStatementActivity;
 import com.qdocs.ssre241123.teachers.GuardianReportActivity;
+import com.qdocs.ssre241123.teachers.IncomeReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineAdmissionReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineFeesReportActivity;
 import com.qdocs.ssre241123.teachers.OtherFeeAndCollectionFeeCombinedActivity;
@@ -199,6 +200,14 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch FeesStatementActivity for Fees Statement
             Log.d(TAG, "Launching FeesStatementActivity");
             intent = new Intent(context, FeesStatementActivity.class);
+        } else if ("income_report".equals(reportItem.getId())) {
+            // Launch IncomeReportActivity for Income Report
+            Log.d(TAG, "Launching IncomeReportActivity");
+            intent = new Intent(context, IncomeReportActivity.class);
+        } else if ("income_group_report".equals(reportItem.getId())) {
+            // Launch IncomeReportActivity for Income Group Report (will be implemented separately)
+            Log.d(TAG, "Launching IncomeReportActivity (Income Group Report - TODO)");
+            intent = new Intent(context, IncomeReportActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");
