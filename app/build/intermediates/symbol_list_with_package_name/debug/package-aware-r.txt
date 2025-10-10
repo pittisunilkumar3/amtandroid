@@ -2095,6 +2095,7 @@ id autoCompleteToStart
 id availablecount
 id average_layout
 id back_button
+id balance_tv
 id bankAcNo
 id bankAcNo_layout
 id bankName
@@ -2369,6 +2370,7 @@ id disableScroll
 id discountLayout
 id discountTV
 id discount_row
+id discount_tv
 id discountamountTV
 id dob
 id dob_layout
@@ -2459,7 +2461,11 @@ id fathercontact_layout
 id fathername_layout
 id fatheroccup_layout
 id fee_details_tv
+id fee_group_spinner
+id fee_group_tv
 id fee_items_count_tv
+id fee_type_spinner
+id fee_type_tv
 id feefineamount
 id fees
 id feesAdapter_containerCV
@@ -2489,8 +2495,10 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id filters_card
 id fineTV
 id fine_row
+id fine_tv
 id finelayout
 id fixed
 id flip
@@ -2506,6 +2514,7 @@ id fragment_studentDownload_assignment_listview
 id fragment_student_classtimetable_listview
 id fridayNoData
 id fridaylayout
+id from_date_edit_text
 id from_date_et
 id fromdate
 id frost
@@ -3345,6 +3354,7 @@ id titleET
 id title_template
 id title_textview
 id titlename
+id to_date_edit_text
 id to_date_et
 id todate
 id toggle
@@ -3563,6 +3573,7 @@ layout activity_cbsetimetable
 layout activity_course_exam_result
 layout activity_daily_collection_report
 layout activity_disable_reasons
+layout activity_fee_collection_report_column_wise
 layout activity_file_save
 layout activity_listview
 layout activity_new_dashboard
@@ -3601,6 +3612,7 @@ layout activity_teacher_report_detail
 layout activity_teacher_reports
 layout activity_teacher_student_details
 layout activity_teacher_submenu
+layout activity_type_wise_balance_report
 layout adapter_content_upload_detail
 layout adapter_course_curriculum
 layout adapter_course_curriculum_lesson
@@ -3771,6 +3783,7 @@ layout item_student_teacher_ratio
 layout item_teacher_document
 layout item_teacher_leave
 layout item_teacher_payroll
+layout item_type_wise_balance_report
 layout lesson_description
 layout lesson_topic_dialoug
 layout list_row

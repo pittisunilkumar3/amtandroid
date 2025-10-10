@@ -112,6 +112,12 @@
             android:name="com.qdocs.ssre241123.teachers.DailyCollectionReportActivity"
             android:exported="false" />
         <activity
+            android:name="com.qdocs.ssre241123.teachers.TypeWiseBalanceReportActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.FeeCollectionReportColumnWiseActivity"
+            android:exported="false" />
+        <activity
             android:name="com.qdocs.ssre241123.teachers.ParentLoginActivity"
             android:exported="false" />
         <activity

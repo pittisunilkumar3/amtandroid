@@ -95,6 +95,12 @@
             android:name=".teachers.DailyCollectionReportActivity"
             android:exported="false" />
         <activity
+            android:name=".teachers.TypeWiseBalanceReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.FeeCollectionReportColumnWiseActivity"
+            android:exported="false" />
+        <activity
             android:name=".teachers.ParentLoginActivity"
             android:exported="false" />
         <activity

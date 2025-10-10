@@ -71,6 +71,16 @@ public class Constants {
     // Daily Collection Report API endpoints
     public static final String dailyCollectionReportFilterUrl = "daily-collection-report/filter";
 
+    // Session Fee Structure API endpoints
+    public static final String sessionFeeStructureFilterUrl = "session-fee-structure/filter";
+    public static final String sessionFeeStructureListUrl = "session-fee-structure/list";
+
+    // Type Wise Balance Report API endpoints
+    public static final String typeWiseBalanceReportFilterUrl = "type-wise-balance-report/filter";
+
+    // Fee Collection Report Column Wise API endpoints
+    public static final String feeCollectionReportColumnWiseFilterUrl = "fee-collection-report-column-wise/filter";
+
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";
     public static final String uploadHomeworkUrl = "webservice/addaa";

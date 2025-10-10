@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- Action Bar -->
+    <FrameLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/drawer_selector"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/textHeading" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/fee_collection_report_column_wise"
+                    android:textColor="@color/textHeading"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </FrameLayout>
+
+    <!-- Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Filters Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/filters_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Filters"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textHeading"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Date Range Section -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search Duration"
+                        android:textSize="14sp"
+                        android:textColor="@color/textHeading"
+                        android:layout_marginBottom="8dp"
+                        android:textStyle="bold" />
+
+                    <!-- From Date -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From Date"
+                        android:textSize="14sp"
+                        android:textColor="@color/textHeading"
+                        android:layout_marginBottom="4dp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/grey_outline">
+
+                        <EditText
+                            android:id="@+id/from_date_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:hint="Select From Date (Optional)"
+                            android:textSize="14sp"
+                            android:background="@android:color/transparent"
+                            android:drawableEnd="@drawable/ic_fa_calendar"
+                            android:drawablePadding="8dp" />
+
+                    </FrameLayout>
+
+                    <!-- To Date -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To Date"
+                        android:textSize="14sp"
+                        android:textColor="@color/textHeading"
+                        android:layout_marginBottom="4dp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/grey_outline">
+
+                        <EditText
+                            android:id="@+id/to_date_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:hint="Select To Date (Optional)"
+                            android:textSize="14sp"
+                            android:background="@android:color/transparent"
+                            android:drawableEnd="@drawable/ic_fa_calendar"
+                            android:drawablePadding="8dp" />
+
+                    </FrameLayout>
+
+                    <!-- Session Spinner -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Session"
+                        android:textSize="14sp"
+                        android:textColor="@color/textHeading"
+                        android:layout_marginBottom="4dp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/grey_outline">
+
+                        <Spinner
+                            android:id="@+id/session_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp" />
+
+                    </FrameLayout>
+
+                    <!-- Class Spinner -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class"
+                        android:textSize="14sp"
+                        android:textColor="@color/textHeading"
+                        android:layout_marginBottom="4dp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/grey_outline">
+
+                        <Spinner
+                            android:id="@+id/class_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp" />
+
+                    </FrameLayout>
+
+                    <!-- Section Spinner -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Section"
+                        android:textSize="14sp"
+                        android:textColor="@color/textHeading"
+                        android:layout_marginBottom="4dp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/grey_outline">
+
+                        <Spinner
+                            android:id="@+id/section_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp" />
+
+                    </FrameLayout>
+
+                    <!-- Fee Type Spinner -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fee Type"
+                        android:textSize="14sp"
+                        android:textColor="@color/textHeading"
+                        android:layout_marginBottom="4dp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/grey_outline">
+
+                        <Spinner
+                            android:id="@+id/fee_type_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp" />
+
+                    </FrameLayout>
+
+                    <!-- Generate Report Button -->
+                    <Button
+                        android:id="@+id/generate_report_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Generate Report"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginTop="8dp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <!-- No Data Layout -->
+            <LinearLayout
+                android:id="@+id/nodata_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="32dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_fa_file_text"
+                    android:tint="@android:color/darker_gray"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No data available"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/darker_gray" />
+
+            </LinearLayout>
+
+            <!-- Report Content RecyclerView -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/report_content_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

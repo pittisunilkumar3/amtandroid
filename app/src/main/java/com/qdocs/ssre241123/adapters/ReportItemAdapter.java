@@ -22,6 +22,7 @@ import com.qdocs.ssre241123.teachers.ClassSectionReportActivity;
 import com.qdocs.ssre241123.teachers.ClassSubjectReportActivity;
 import com.qdocs.ssre241123.teachers.DailyCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.DueFeeReportActivity;
+import com.qdocs.ssre241123.teachers.FeeCollectionReportColumnWiseActivity;
 import com.qdocs.ssre241123.teachers.GuardianReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineAdmissionReportActivity;
 import com.qdocs.ssre241123.teachers.ParentLoginActivity;
@@ -31,6 +32,7 @@ import com.qdocs.ssre241123.teachers.StudentProfileReportActivity;
 import com.qdocs.ssre241123.teachers.StudentReportActivity;
 import com.qdocs.ssre241123.teachers.StudentTeacherRatioActivity;
 import com.qdocs.ssre241123.teachers.TeacherReportDetailActivity;
+import com.qdocs.ssre241123.teachers.TypeWiseBalanceReportActivity;
 import com.qdocs.ssre241123.teachers.YearReportDueFeeActivity;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.Utility;
@@ -144,6 +146,14 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch DailyCollectionReportActivity for Daily Collection Report
             Log.d(TAG, "Launching DailyCollectionReportActivity");
             intent = new Intent(context, DailyCollectionReportActivity.class);
+        } else if ("type_wise_balance_report".equals(reportItem.getId())) {
+            // Launch TypeWiseBalanceReportActivity for Type Wise Balance Report
+            Log.d(TAG, "Launching TypeWiseBalanceReportActivity");
+            intent = new Intent(context, TypeWiseBalanceReportActivity.class);
+        } else if ("fee_collection_report_column_wise".equals(reportItem.getId())) {
+            // Launch FeeCollectionReportColumnWiseActivity for Fee Collection Report Column Wise
+            Log.d(TAG, "Launching FeeCollectionReportColumnWiseActivity");
+            intent = new Intent(context, FeeCollectionReportColumnWiseActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");
