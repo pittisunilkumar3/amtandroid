@@ -3587,6 +3587,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout about_school_activity
 layout activity_balance_fees_report
+layout activity_balance_fees_report_with_remark
 layout activity_behaviour_comment
 layout activity_cbse_examination
 layout activity_cbsetimetable
