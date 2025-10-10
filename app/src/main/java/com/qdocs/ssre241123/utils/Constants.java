@@ -60,6 +60,17 @@ public class Constants {
     public static final String admissionReportFilterUrl = "admission-report/filter";
     public static final String admissionReportListUrl = "admission-report/list";
 
+    // Due Fee Report API endpoints
+    public static final String dueFeeReportFilterUrl = "due-fees-report/filter";
+    public static final String dueFeeReportListUrl = "due-fees-report/list";
+
+    // Year Report Due Fee API endpoints (Balance Fees Statement)
+    public static final String yearReportDueFeeFilterUrl = "year-report-due-fees/filter";
+    public static final String yearReportDueFeeListUrl = "year-report-due-fees/list";
+
+    // Daily Collection Report API endpoints
+    public static final String dailyCollectionReportFilterUrl = "daily-collection-report/filter";
+
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";
     public static final String uploadHomeworkUrl = "webservice/addaa";

@@ -20,6 +20,8 @@ import com.qdocs.ssre241123.model.ReportItem;
 import com.qdocs.ssre241123.teachers.AdmissionReportActivity;
 import com.qdocs.ssre241123.teachers.ClassSectionReportActivity;
 import com.qdocs.ssre241123.teachers.ClassSubjectReportActivity;
+import com.qdocs.ssre241123.teachers.DailyCollectionReportActivity;
+import com.qdocs.ssre241123.teachers.DueFeeReportActivity;
 import com.qdocs.ssre241123.teachers.GuardianReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineAdmissionReportActivity;
 import com.qdocs.ssre241123.teachers.ParentLoginActivity;
@@ -29,6 +31,7 @@ import com.qdocs.ssre241123.teachers.StudentProfileReportActivity;
 import com.qdocs.ssre241123.teachers.StudentReportActivity;
 import com.qdocs.ssre241123.teachers.StudentTeacherRatioActivity;
 import com.qdocs.ssre241123.teachers.TeacherReportDetailActivity;
+import com.qdocs.ssre241123.teachers.YearReportDueFeeActivity;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.Utility;
 
@@ -129,6 +132,18 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch AdmissionReportActivity for Admission Report
             Log.d(TAG, "Launching AdmissionReportActivity");
             intent = new Intent(context, AdmissionReportActivity.class);
+        } else if ("total_balance_fees_statement".equals(reportItem.getId())) {
+            // Launch DueFeeReportActivity for Total Balance Fees Statement
+            Log.d(TAG, "Launching DueFeeReportActivity");
+            intent = new Intent(context, DueFeeReportActivity.class);
+        } else if ("balance_fees_statement".equals(reportItem.getId())) {
+            // Launch YearReportDueFeeActivity for Balance Fees Statement (Year Report)
+            Log.d(TAG, "Launching YearReportDueFeeActivity");
+            intent = new Intent(context, YearReportDueFeeActivity.class);
+        } else if ("daily_collection_report".equals(reportItem.getId())) {
+            // Launch DailyCollectionReportActivity for Daily Collection Report
+            Log.d(TAG, "Launching DailyCollectionReportActivity");
+            intent = new Intent(context, DailyCollectionReportActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");
