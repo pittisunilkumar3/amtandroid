@@ -70,6 +70,76 @@
                         android:textColor="@color/black"
                         android:layout_marginBottom="16dp" />
 
+                    <!-- Search Section -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search Student"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="16dp">
+
+                        <EditText
+                            android:id="@+id/searchEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:hint="Search by name or admission no"
+                            android:padding="8dp"
+                            android:background="@drawable/spinner_background"
+                            android:inputType="text"
+                            android:maxLines="1" />
+
+                        <Button
+                            android:id="@+id/searchButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:text="Search"
+                            android:textColor="@color/white"
+                            android:background="@drawable/button_background"
+                            android:layout_marginStart="8dp"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp" />
+
+                    </LinearLayout>
+
+                    <!-- OR Divider -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="OR"
+                            android:textSize="12sp"
+                            android:textColor="@color/gray"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/gray" />
+
+                    </LinearLayout>
+
                     <!-- Session Spinner -->
                     <TextView
                         android:layout_width="wrap_content"

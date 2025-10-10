@@ -95,6 +95,10 @@ public class Constants {
     public static final String balanceFeesReportWithRemarkFilterUrl = "balance-fees-report-with-remark/filter";
     public static final String feesStatementFilterUrl = "fees-statement/filter";
 
+    // Report By Name API endpoints
+    public static final String reportByNameFilterUrl = "report-by-name/filter";
+    public static final String reportByNameListUrl = "report-by-name/list";
+
     public static final String getStudentProfileUrl = "webservice/getStudentProfile";
     public static final String getHomeworkUrl = "webservice/getHomework";
     public static final String uploadHomeworkUrl = "webservice/addaa";

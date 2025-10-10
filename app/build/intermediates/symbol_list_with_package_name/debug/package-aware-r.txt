@@ -2055,6 +2055,7 @@ id adjust_width
 id admDate
 id admDate_layout
 id admin_remark_layout
+id admissionNoTextView
 id admission_date_tv
 id admission_no_layout
 id admission_no_tv
@@ -2068,6 +2069,7 @@ id always
 id amount
 id amountTV
 id amountTextInputLayout
+id amountTextView
 id amount_tv
 id animateToEnd
 id animateToStart
@@ -2100,6 +2102,7 @@ id autoCompleteToStart
 id availablecount
 id average_layout
 id back_button
+id balanceTextView
 id balance_tv
 id bankAcNo
 id bankAcNo_layout
@@ -2188,6 +2191,7 @@ id classSubject_englishList
 id classSubject_hindiList
 id classSubject_mathsList
 id classSubject_scienceHeader
+id classTextView
 id classTimetable_Header1
 id classTimetable_Header2
 id classTimetable_Header3
@@ -2226,6 +2230,7 @@ id classteacher
 id clip_horizontal
 id clip_vertical
 id clockwise
+id closeButton
 id closest
 id collapseActionView
 id collapsing_toolbar
@@ -2375,7 +2380,9 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id discountLayout
+id discountRow
 id discountTV
+id discountTextView
 id discount_row
 id discount_tv
 id discountamountTV
@@ -2417,6 +2424,8 @@ id driverContact_layout
 id driverLicence
 id driverName
 id driverName_layout
+id dueDateRow
+id dueDateTextView
 id duration
 id durationTV
 id easeIn
@@ -2460,6 +2469,7 @@ id expanded_menu
 id false_image
 id false_value
 id false_value_option
+id fatherNameTextView
 id father_layout
 id father_name_tv
 id father_phone_tv
@@ -2467,7 +2477,10 @@ id father_section
 id fathercontact_layout
 id fathername_layout
 id fatheroccup_layout
+id feeGroupNameTextView
+id feeTypeNameTextView
 id feeTypeSpinner
+id feeTypesContainer
 id fee_details_tv
 id fee_group_spinner
 id fee_group_tv
@@ -2505,7 +2518,9 @@ id fill_vertical
 id filled
 id filtersCard
 id filters_card
+id fineRow
 id fineTV
+id fineTextView
 id fine_row
 id fine_tv
 id finelayout
@@ -2786,6 +2801,7 @@ id neverCompleteToStart
 id next
 id next_TV
 id nextweek
+id noResultsLayout
 id noState
 id noanswer_count
 id nodata
@@ -2840,6 +2856,8 @@ id other_recyclerView
 id outline
 id overshoot
 id packed
+id paidAmountTextView
+id paidTextView
 id paid_status_layout
 id parallax
 id parent
@@ -2982,6 +3000,7 @@ id right_icon
 id right_side
 id robotoCalendarDateTitleContainer
 id robotoCalendarPicker
+id rollNoTextView
 id roll_no_tv
 id rollno_layout
 id room_no_tv
@@ -3015,7 +3034,12 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchButton
 id searchDurationSpinner
+id searchEditText
+id searchInfoTextView
+id searchProgressBar
+id searchResultsRecyclerView
 id searchTypeSpinner
 id search_badge
 id search_bar
@@ -3125,6 +3149,7 @@ id studentHouse_layout
 id studentLeave_fab
 id studentLesson_listView
 id studentLiveclass_listview
+id studentNameTextView
 id studentNotice_listview
 id studentNotificationAdapter_createdbyTV
 id studentNotificationAdapter_dateTV
@@ -3384,6 +3409,13 @@ id topPanel
 id topic
 id topic_count
 id topimage
+id totalBalanceTextView
+id totalDiscountRow
+id totalDiscountTextView
+id totalFeeTextView
+id totalFineRow
+id totalFineTextView
+id totalPaidTextView
 id total_amount_tv
 id total_answerwordcount
 id total_balance_tv
@@ -3497,6 +3529,7 @@ id videotitlename
 id view
 id viewBtn
 id viewContainer
+id viewPaymentsButton
 id view_background
 id view_details_btn
 id view_foreground
@@ -3757,6 +3790,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout dialog_payslip_view
+layout dialog_search_results
 layout discountgrouplist
 layout edit_assignment
 layout edit_task_dialog
@@ -3797,9 +3831,14 @@ layout item_class_subject_report
 layout item_daily_collection_report
 layout item_disable_reason
 layout item_due_fee_report
+layout item_fee_statement_group
+layout item_fee_statement_header
+layout item_fee_statement_summary
+layout item_fee_statement_type
 layout item_guardian_report
 layout item_online_admission
 layout item_parent_login
+layout item_search_result
 layout item_student_category
 layout item_student_history
 layout item_student_house

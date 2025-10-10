@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/spinner_background"
+    android:layout_marginBottom="8dp">
+
+    <!-- Fee Type Name -->
+    <TextView
+        android:id="@+id/feeTypeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fee Type"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Fee Details Grid -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Row 1: Amount & Due Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Amount:"
+                android:textSize="13sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/amountTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="₹0.00"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Row 2: Paid Amount -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paid:"
+                android:textSize="13sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/paidAmountTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="₹0.00"
+                android:textSize="13sp"
+                android:textColor="#4CAF50"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Row 3: Discount -->
+        <LinearLayout
+            android:id="@+id/discountRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Discount:"
+                android:textSize="13sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/discountTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="₹0.00"
+                android:textSize="13sp"
+                android:textColor="#FF9800"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Row 4: Fine -->
+        <LinearLayout
+            android:id="@+id/fineRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fine:"
+                android:textSize="13sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/fineTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="₹0.00"
+                android:textSize="13sp"
+                android:textColor="#F44336"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Row 5: Balance -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Balance:"
+                android:textSize="13sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/balanceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="₹0.00"
+                android:textSize="13sp"
+                android:textColor="#F44336"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Due Date -->
+        <LinearLayout
+            android:id="@+id/dueDateRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Due Date:"
+                android:textSize="13sp"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/dueDateTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="N/A"
+                android:textSize="13sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Payment History Button -->
+    <Button
+        android:id="@+id/viewPaymentsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="View Payments"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>
+
