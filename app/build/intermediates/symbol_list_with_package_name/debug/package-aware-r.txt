@@ -1687,6 +1687,7 @@ drawable ic_web_yellow
 drawable ic_wrong
 drawable img_background_main
 drawable img_login_background
+drawable info_background
 drawable key
 drawable language
 drawable leavepage
@@ -2055,6 +2056,7 @@ id add_dialog_submitBtn
 id add_dialog_todateTV
 id add_leave
 id add_rating
+id additional_info_tv
 id adjust_height
 id adjust_width
 id admDate
@@ -2084,6 +2086,7 @@ id answer_limit
 id answerwordcount
 id antiClockwise
 id anticipate
+id applicant_name_tv
 id applied_date
 id apply_filter_button
 id arrow
@@ -2763,6 +2766,7 @@ id middle
 id mini
 id mobile_layout
 id mobile_no_tv
+id mobile_tv
 id mobileno
 id module_layout
 id moduleiamge
@@ -2917,6 +2921,7 @@ id paymentFrom
 id paymentId
 id paymentMode
 id payment_date_tv
+id payment_id_tv
 id payment_mode_tv
 id payment_status_tv
 id paymentdate
@@ -3692,6 +3697,7 @@ layout activity_listview
 layout activity_new_dashboard
 layout activity_notification_list
 layout activity_offlinepayment
+layout activity_online_admission_fee_report
 layout activity_online_fees_report
 layout activity_open_pdf
 layout activity_other_fee_and_collection_fee_combined
@@ -3899,6 +3905,7 @@ layout item_fee_type_breakdown
 layout item_guardian_report
 layout item_income_report
 layout item_online_admission
+layout item_online_admission_report
 layout item_online_fees_report
 layout item_parent_login
 layout item_payroll_report

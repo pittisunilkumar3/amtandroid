@@ -97,6 +97,10 @@ public class Constants {
     public static final String onlineFeesReportFilterUrl = "online-fees-report/filter";
     public static final String onlineFeesReportListUrl = "online-fees-report/list";
 
+    // Online Admission Fee Report API endpoints
+    public static final String onlineAdmissionReportFilterUrl = "online-admission-report/filter";
+    public static final String onlineAdmissionReportListUrl = "online-admission-report/list";
+
     // Income Report API endpoints
     public static final String incomeReportFilterUrl = "income-report/filter";
     public static final String incomeReportListUrl = "income-report/list";
