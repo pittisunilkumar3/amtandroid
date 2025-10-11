@@ -91,6 +91,7 @@
     <string name="type_wise_balance_report">Type Wise Balance Report</string>
     <string name="total_balance_fees_report">Total Balance Fees Report</string>
     <string name="other_fees_collection_report">Other Fees Collection Report</string>
+    <string name="other_collection_report">Other Collection Report</string>
     <string name="online_fees_collection_report">Online Fees Collection Report</string>
     <string name="expense_report">Expense Report</string>
     <string name="expense_group_report">Expense Group Report</string>

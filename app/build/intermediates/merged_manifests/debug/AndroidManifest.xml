@@ -149,6 +149,10 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
+            android:name="com.qdocs.ssre241123.teachers.OtherCollectionReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name="com.qdocs.ssre241123.teachers.OtherFeeAndCollectionFeeCombinedActivity"
             android:exported="false"
             android:screenOrientation="portrait" />

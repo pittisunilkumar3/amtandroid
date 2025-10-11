@@ -385,6 +385,7 @@ public class TeacherReportsActivity extends BaseActivity {
             new ReportItem("type_wise_balance_report", "type_wise_balance_report", getString(R.string.type_wise_balance_report), "finance", R.drawable.ic_fa_bar_chart),
             new ReportItem("total_balance_fees_report", "total_balance_fees_report", getString(R.string.total_balance_fees_report), "finance", R.drawable.ic_fa_money),
             new ReportItem("other_fees_collection_report", "other_fees_collection_report", getString(R.string.other_fees_collection_report), "finance", R.drawable.ic_fa_credit_card),
+            new ReportItem("other_collection_report", "other_collection_report", getString(R.string.other_collection_report), "finance", R.drawable.ic_fa_credit_card),
             new ReportItem("online_fees_collection_report", "online_fees_collection_report", getString(R.string.online_fees_collection_report), "finance", R.drawable.ic_fa_globe),
             new ReportItem("expense_report", "expense_report", getString(R.string.expense_report), "finance", R.drawable.ic_fa_credit_card),
             new ReportItem("expense_group_report", "expense_group_report", getString(R.string.expense_group_report), "finance", R.drawable.ic_fa_credit_card),

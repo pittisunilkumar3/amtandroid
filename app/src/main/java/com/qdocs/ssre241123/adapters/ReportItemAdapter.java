@@ -36,6 +36,7 @@ import com.qdocs.ssre241123.teachers.OnlineAdmissionFeeReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineFeesReportActivity;
 import com.qdocs.ssre241123.teachers.OtherFeeAndCollectionFeeCombinedActivity;
 import com.qdocs.ssre241123.teachers.OtherFeesCollectionReportActivity;
+import com.qdocs.ssre241123.teachers.OtherCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.ParentLoginActivity;
 import com.qdocs.ssre241123.teachers.StudentHistoryActivity;
 import com.qdocs.ssre241123.teachers.StudentLoginActivity;
@@ -192,6 +193,10 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch OtherFeesCollectionReportActivity for Other Fees Collection Report
             Log.d(TAG, "Launching OtherFeesCollectionReportActivity");
             intent = new Intent(context, OtherFeesCollectionReportActivity.class);
+        } else if ("other_collection_report".equals(reportItem.getId())) {
+            // Launch OtherCollectionReportActivity for Other Collection Report
+            Log.d(TAG, "Launching OtherCollectionReportActivity");
+            intent = new Intent(context, OtherCollectionReportActivity.class);
         } else if ("other_fee_and_collection_fee_combined".equals(reportItem.getId())) {
             // Launch OtherFeeAndCollectionFeeCombinedActivity for Other Fee and Collection Fee Combined
             Log.d(TAG, "Launching OtherFeeAndCollectionFeeCombinedActivity");

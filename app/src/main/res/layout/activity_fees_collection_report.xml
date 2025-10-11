@@ -165,6 +165,23 @@
                         android:layout_marginTop="4dp"
                         android:background="@drawable/spinner_background" />
 
+                    <!-- Section Spinner -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Section"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="12dp" />
+
+                    <Spinner
+                        android:id="@+id/sectionSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/spinner_background" />
+
                     <!-- Fee Type Spinner -->
                     <TextView
                         android:layout_width="wrap_content"

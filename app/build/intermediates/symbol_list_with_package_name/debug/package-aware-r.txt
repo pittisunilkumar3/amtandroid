@@ -2390,6 +2390,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id details_tv
 id dialog_button
 id dimensions
 id direct
@@ -3010,6 +3011,7 @@ id reason_input_layout
 id reason_name_tv
 id reason_updated_tv
 id reasons_recyclerView
+id received_by_tv
 id rectangles
 id recyclerview
 id reference
@@ -3700,6 +3702,7 @@ layout activity_offlinepayment
 layout activity_online_admission_fee_report
 layout activity_online_fees_report
 layout activity_open_pdf
+layout activity_other_collection_report
 layout activity_other_fee_and_collection_fee_combined
 layout activity_other_fees_collection_report
 layout activity_payroll_report
@@ -3907,6 +3910,7 @@ layout item_income_report
 layout item_online_admission
 layout item_online_admission_report
 layout item_online_fees_report
+layout item_other_collection_report
 layout item_parent_login
 layout item_payroll_report
 layout item_search_result
@@ -4507,6 +4511,7 @@ string onlineexamresult
 string onlineresultheading
 string otherDetails
 string otherDownload
+string other_collection_report
 string other_fee_and_collection_fee_combined
 string other_fees_collection_report
 string others

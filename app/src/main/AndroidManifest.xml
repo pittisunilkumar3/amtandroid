@@ -132,6 +132,10 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".teachers.OtherCollectionReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".teachers.OtherFeeAndCollectionFeeCombinedActivity"
             android:exported="false"
             android:screenOrientation="portrait" />

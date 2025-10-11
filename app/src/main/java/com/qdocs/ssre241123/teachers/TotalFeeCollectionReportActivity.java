@@ -350,19 +350,38 @@ public class TotalFeeCollectionReportActivity extends BaseFinanceReportActivity 
 
             // Basic information
             model.setId(item.optString("id", ""));
-            model.setInvoiceNo(item.optString("invoice_no", ""));
             model.setAdmissionNo(item.optString("admission_no", ""));
 
-            // Student information
-            model.setStudentName(item.optString("student_name", ""));
+            // Student information - Build full name from firstname, middlename, lastname
+            String firstname = item.optString("firstname", "");
+            String middlename = item.optString("middlename", "");
+            String lastname = item.optString("lastname", "");
+
+            StringBuilder fullName = new StringBuilder();
+            if (!firstname.isEmpty()) {
+                fullName.append(firstname);
+            }
+            if (!middlename.isEmpty() && !"null".equals(middlename)) {
+                if (fullName.length() > 0) fullName.append(" ");
+                fullName.append(middlename);
+            }
+            if (!lastname.isEmpty() && !"null".equals(lastname)) {
+                if (fullName.length() > 0) fullName.append(" ");
+                fullName.append(lastname);
+            }
+            model.setStudentName(fullName.toString());
+
+            // Class and section information
             model.setClassName(item.optString("class", ""));
             model.setSectionName(item.optString("section", ""));
-            model.setFatherName(item.optString("father_name", ""));
-            model.setMobileNo(item.optString("mobileno", ""));
 
-            // Fee information
-            model.setFeeType(item.optString("fee_type", ""));
-            model.setFeeCode(item.optString("fee_code", ""));
+            // Fee information - "type" field contains the fee type name
+            model.setFeeType(item.optString("type", ""));
+            model.setFeeCode(item.optString("code", ""));
+
+            // Fee source (regular or other)
+            String feeSource = item.optString("fee_source", "regular");
+            model.setType(feeSource);
 
             // Parse amount_detail JSON string to get correct amounts
             double amount = 0;
@@ -375,7 +394,7 @@ public class TotalFeeCollectionReportActivity extends BaseFinanceReportActivity 
 
             if (item.has("amount_detail") && !item.isNull("amount_detail")) {
                 String amountDetailStr = item.optString("amount_detail", "");
-                if (!amountDetailStr.isEmpty()) {
+                if (!amountDetailStr.isEmpty() && !"null".equals(amountDetailStr)) {
                     try {
                         JSONObject amountDetailObj = new JSONObject(amountDetailStr);
 
@@ -457,8 +476,28 @@ public class TotalFeeCollectionReportActivity extends BaseFinanceReportActivity 
                 model.setNote(item.optString("note", ""));
             }
 
-            // Type (fees, other_fees, transport_fees)
-            model.setType(item.optString("type", "fees"));
+            // Invoice number from amount_detail
+            if (item.has("amount_detail") && !item.isNull("amount_detail")) {
+                String amountDetailStr = item.optString("amount_detail", "");
+                if (!amountDetailStr.isEmpty() && !"null".equals(amountDetailStr)) {
+                    try {
+                        JSONObject amountDetailObj = new JSONObject(amountDetailStr);
+                        java.util.Iterator<String> keys = amountDetailObj.keys();
+                        if (keys.hasNext()) {
+                            String key = keys.next();
+                            JSONObject paymentDetail = amountDetailObj.getJSONObject(key);
+                            String invNo = paymentDetail.optString("inv_no", "");
+                            if (!invNo.isEmpty()) {
+                                model.setInvoiceNo(invNo);
+                            }
+                        }
+                    } catch (JSONException e) {
+                        // Ignore
+                    }
+                }
+            }
+
+            Log.d(TAG, "Parsed item: " + model.getStudentName() + " - " + model.getFeeType() + " - " + netAmount);
 
             return model;
 

@@ -101,6 +101,10 @@ public class Constants {
     public static final String onlineAdmissionReportFilterUrl = "online-admission-report/filter";
     public static final String onlineAdmissionReportListUrl = "online-admission-report/list";
 
+    // Other Collection Report API endpoints
+    public static final String otherCollectionReportFilterUrl = "other-collection-report/filter";
+    public static final String otherCollectionReportListUrl = "other-collection-report/list";
+
     // Income Report API endpoints
     public static final String incomeReportFilterUrl = "income-report/filter";
     public static final String incomeReportListUrl = "income-report/list";
