@@ -154,9 +154,10 @@ public class DueFeeReportAdapter extends RecyclerView.Adapter<DueFeeReportAdapte
         
         // Build fee details text
         StringBuilder feeDetailsText = new StringBuilder();
-        
+
         // Add regular fees
         if (dueFee.getFeesList() != null && !dueFee.getFeesList().isEmpty()) {
+            android.util.Log.d("DueFeeReportAdapter", "Position " + position + " - Regular fees count: " + dueFee.getFeesList().size());
             for (DueFeeReportModel.FeeDetail fee : dueFee.getFeesList()) {
                 if (feeDetailsText.length() > 0) {
                     feeDetailsText.append("\n");
@@ -166,11 +167,15 @@ public class DueFeeReportAdapter extends RecyclerView.Adapter<DueFeeReportAdapte
                     feeDetailsText.append(" (").append(fee.getFeeCode()).append(")");
                 }
                 feeDetailsText.append(": ").append(currency).append(" ").append(fee.getBalanceAmount());
+                android.util.Log.d("DueFeeReportAdapter", "  Added fee: " + fee.getFeeType() + " - " + fee.getBalanceAmount());
             }
+        } else {
+            android.util.Log.d("DueFeeReportAdapter", "Position " + position + " - No regular fees");
         }
-        
+
         // Add transport fees
         if (dueFee.getTransportFeesList() != null && !dueFee.getTransportFeesList().isEmpty()) {
+            android.util.Log.d("DueFeeReportAdapter", "Position " + position + " - Transport fees count: " + dueFee.getTransportFeesList().size());
             for (DueFeeReportModel.FeeDetail fee : dueFee.getTransportFeesList()) {
                 if (feeDetailsText.length() > 0) {
                     feeDetailsText.append("\n");
@@ -180,22 +185,35 @@ public class DueFeeReportAdapter extends RecyclerView.Adapter<DueFeeReportAdapte
                     feeDetailsText.append(" (").append(fee.getFeeCode()).append(")");
                 }
                 feeDetailsText.append(": ").append(currency).append(" ").append(fee.getBalanceAmount());
+                android.util.Log.d("DueFeeReportAdapter", "  Added transport fee: " + fee.getFeeType() + " - " + fee.getBalanceAmount());
             }
+        } else {
+            android.util.Log.d("DueFeeReportAdapter", "Position " + position + " - No transport fees");
         }
-        
+
         if (feeDetailsText.length() > 0) {
             holder.feeDetailsTv.setText(feeDetailsText.toString());
             holder.feeDetailsTv.setVisibility(View.VISIBLE);
+            android.util.Log.d("DueFeeReportAdapter", "Position " + position + " - Fee details text set: " + feeDetailsText.toString());
         } else {
             holder.feeDetailsTv.setVisibility(View.GONE);
+            android.util.Log.d("DueFeeReportAdapter", "Position " + position + " - No fee details to display");
+        }
+
+        // Set remark
+        if (dueFee.getRemark() != null && !dueFee.getRemark().isEmpty()) {
+            holder.remarkTv.setText(dueFee.getRemark());
+            holder.remarkLayout.setVisibility(View.VISIBLE);
+        } else {
+            holder.remarkLayout.setVisibility(View.GONE);
         }
     }
-    
+
     @Override
     public int getItemCount() {
         return dueFeeList.size();
     }
-    
+
     public static class ViewHolder extends RecyclerView.ViewHolder {
         CardView cardView;
         LinearLayout headerLayout;
@@ -215,6 +233,8 @@ public class DueFeeReportAdapter extends RecyclerView.Adapter<DueFeeReportAdapte
         TextView feeDetailsTv;
         LinearLayout fineRow;
         LinearLayout discountRow;
+        LinearLayout remarkLayout;
+        TextView remarkTv;
         
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -236,6 +256,8 @@ public class DueFeeReportAdapter extends RecyclerView.Adapter<DueFeeReportAdapte
             feeDetailsTv = itemView.findViewById(R.id.fee_details_tv);
             fineRow = itemView.findViewById(R.id.fine_row);
             discountRow = itemView.findViewById(R.id.discount_row);
+            remarkLayout = itemView.findViewById(R.id.remark_layout);
+            remarkTv = itemView.findViewById(R.id.remark_tv);
         }
     }
 }

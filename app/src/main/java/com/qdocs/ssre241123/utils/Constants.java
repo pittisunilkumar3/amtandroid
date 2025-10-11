@@ -92,7 +92,7 @@ public class Constants {
     public static final String otherFeesCollectionReportFilterUrl = "other-fees-collection-report/filter";
     public static final String otherFeeAndCollectionFeeCombinedFilterUrl = "other-fee-and-collection-fee-combined/filter";
     public static final String balanceFeesReportFilterUrl = "balance-fees-report/filter";
-    public static final String balanceFeesReportWithRemarkFilterUrl = "balance-fees-report-with-remark/filter";
+    public static final String balanceFeesReportWithRemarkFilterUrl = "due-fees-remark-report/filter";
     public static final String feesStatementFilterUrl = "fees-statement/filter";
     public static final String onlineFeesReportFilterUrl = "online-fees-report/filter";
     public static final String onlineFeesReportListUrl = "online-fees-report/list";

@@ -3020,6 +3020,7 @@ int id religion 0x7f0904dd
 int id religion_layout 0x7f0904de
 int id remark 0x7f0904df
 int id remark_layout 0x7f0904e0
+int id remark_tv 0x7f09073d
 int id reportCard_examResult 0x7f0904e1
 int id reportContentRecyclerView 0x7f0904e2
 int id report_content_recyclerView 0x7f0904e3
@@ -3469,11 +3470,13 @@ int id totalAmountTv 0x7f09069e
 int id totalBalanceTextView 0x7f09069f
 int id totalDiscountRow 0x7f0906a0
 int id totalDiscountTextView 0x7f0906a1
+int id totalDueAmountTextView 0x7f09073e
 int id totalFeeTextView 0x7f0906a2
 int id totalFineRow 0x7f0906a3
 int id totalFineTextView 0x7f0906a4
 int id totalPaidTextView 0x7f0906a5
 int id totalRecordsTv 0x7f0906a6
+int id totalStudentsTextView 0x7f09073f
 int id total_amount_tv 0x7f0906a7
 int id total_answerwordcount 0x7f0906a8
 int id total_balance_tv 0x7f0906a9

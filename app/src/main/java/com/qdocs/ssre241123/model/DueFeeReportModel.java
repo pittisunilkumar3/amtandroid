@@ -28,7 +28,10 @@ public class DueFeeReportModel {
     private String totalBalance;
     private String totalFine;
     private String totalDiscount;
-    
+
+    // Remark
+    private String remark;
+
     // Fee Details List
     private List<FeeDetail> feesList;
     private List<FeeDetail> transportFeesList;
@@ -183,9 +186,17 @@ public class DueFeeReportModel {
     public void setTransportFeesList(List<FeeDetail> transportFeesList) {
         this.transportFeesList = transportFeesList;
     }
-    
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
     // Helper Methods
-    
+
     /**
      * Get full name of student
      */

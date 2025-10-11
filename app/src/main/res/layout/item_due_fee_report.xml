@@ -315,6 +315,37 @@
                 android:textColor="@android:color/darker_gray"
                 android:lineSpacingExtra="4dp" />
 
+            <!-- Remark Section -->
+            <LinearLayout
+                android:id="@+id/remark_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp"
+                android:padding="8dp"
+                android:background="#E3F2FD"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remark:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/remark_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment pending since last month"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black"
+                    android:lineSpacingExtra="2dp" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>

@@ -3021,6 +3021,7 @@ id religion
 id religion_layout
 id remark
 id remark_layout
+id remark_tv
 id reportCard_examResult
 id reportContentRecyclerView
 id report_content_recyclerView
@@ -3470,11 +3471,13 @@ id totalAmountTv
 id totalBalanceTextView
 id totalDiscountRow
 id totalDiscountTextView
+id totalDueAmountTextView
 id totalFeeTextView
 id totalFineRow
 id totalFineTextView
 id totalPaidTextView
 id totalRecordsTv
+id totalStudentsTextView
 id total_amount_tv
 id total_answerwordcount
 id total_balance_tv
