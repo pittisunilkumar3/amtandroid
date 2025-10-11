@@ -95,6 +95,10 @@ public class Constants {
     public static final String balanceFeesReportWithRemarkFilterUrl = "due-fees-remark-report/filter";
     public static final String feesStatementFilterUrl = "fees-statement/filter";
     public static final String onlineFeesReportFilterUrl = "online-fees-report/filter";
+
+    // Collection Report API endpoints
+    public static final String collectionReportFilterUrl = "collection-report/filter";
+    public static final String collectionReportListUrl = "collection-report/list";
     public static final String onlineFeesReportListUrl = "online-fees-report/list";
 
     // Online Admission Fee Report API endpoints

@@ -2065,6 +2065,7 @@ id admin_remark_layout
 id admissionNoEditText
 id admissionNoLayout
 id admissionNoTextView
+id admissionNoTv
 id admission_date_tv
 id admission_no_layout
 id admission_no_tv
@@ -2079,6 +2080,7 @@ id amount
 id amountTV
 id amountTextInputLayout
 id amountTextView
+id amountTv
 id amount_tv
 id animateToEnd
 id animateToStart
@@ -2229,6 +2231,7 @@ id classTimetable_tuesdayHeader
 id classTimetable_tuesdayList
 id classTimetable_wednesdayHeader
 id classTimetable_wednesdayList
+id classTv
 id class_id_tv
 id class_name_tv
 id class_sec_tv
@@ -2352,6 +2355,7 @@ id date6
 id date7
 id dateET
 id dateTV
+id dateTv
 id date_range_layout
 id date_range_tv
 id date_tv
@@ -2381,6 +2385,7 @@ id deltaRelative
 id dependency_ordering
 id description
 id descriptionET
+id descriptionTv
 id descriptive
 id descriptive_answer
 id descriptive_layout
@@ -2402,6 +2407,7 @@ id discountLayout
 id discountRow
 id discountTV
 id discountTextView
+id discountTv
 id discount_layout
 id discount_row
 id discount_tv
@@ -2500,12 +2506,17 @@ id father_section
 id fathercontact_layout
 id fathername_layout
 id fatheroccup_layout
+id feeCodeLayout
+id feeCodeTv
 id feeDetailsRecyclerView
+id feeGroupLayout
 id feeGroupNameTextView
+id feeGroupTv
 id feeNameTextView
 id feeTypeBreakdownLayout
 id feeTypeNameTextView
 id feeTypeSpinner
+id feeTypeTv
 id feeTypesContainer
 id fee_code_layout
 id fee_code_tv
@@ -2549,9 +2560,11 @@ id fill_vertical
 id filled
 id filtersCard
 id filters_card
+id fineLayout
 id fineRow
 id fineTV
 id fineTextView
+id fineTv
 id fine_layout
 id fine_row
 id fine_tv
@@ -2614,6 +2627,7 @@ id guardianemail_layout
 id guardianrelation_layout
 id guardiaoccup_layout
 id headLayout
+id headerLayout
 id header_layout
 id headerlayout
 id headingTV
@@ -2682,6 +2696,7 @@ id income_name_tv
 id info
 id instruction
 id invisible
+id invoiceNoTv
 id invoice_no_tv
 id italic
 id item_line
@@ -2921,6 +2936,7 @@ id paymentDate
 id paymentFrom
 id paymentId
 id paymentMode
+id paymentModeTv
 id payment_date_tv
 id payment_id_tv
 id payment_mode_tv
@@ -3011,6 +3027,8 @@ id reason_input_layout
 id reason_name_tv
 id reason_updated_tv
 id reasons_recyclerView
+id receivedByLayout
+id receivedByTv
 id received_by_tv
 id rectangles
 id recyclerview
@@ -3207,6 +3225,7 @@ id studentLeave_fab
 id studentLesson_listView
 id studentLiveclass_listview
 id studentNameTextView
+id studentNameTv
 id studentNotice_listview
 id studentNotificationAdapter_createdbyTV
 id studentNotificationAdapter_dateTV
@@ -3898,6 +3917,7 @@ layout ime_secondary_split_test_activity
 layout item_admission_report
 layout item_class_section_report
 layout item_class_subject_report
+layout item_collection_report
 layout item_daily_collection_report
 layout item_disable_reason
 layout item_due_fee_report

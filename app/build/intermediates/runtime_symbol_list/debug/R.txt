@@ -2064,6 +2064,7 @@ int id admin_remark_layout 0x7f090121
 int id admissionNoEditText 0x7f090122
 int id admissionNoLayout 0x7f090123
 int id admissionNoTextView 0x7f090124
+int id admissionNoTv 0x7f090740
 int id admission_date_tv 0x7f090125
 int id admission_no_layout 0x7f090126
 int id admission_no_tv 0x7f090127
@@ -2078,6 +2079,7 @@ int id amount 0x7f09012f
 int id amountTV 0x7f090130
 int id amountTextInputLayout 0x7f090131
 int id amountTextView 0x7f090132
+int id amountTv 0x7f090741
 int id amount_tv 0x7f090133
 int id animateToEnd 0x7f090134
 int id animateToStart 0x7f090135
@@ -2228,6 +2230,7 @@ int id classTimetable_tuesdayHeader 0x7f0901c5
 int id classTimetable_tuesdayList 0x7f0901c6
 int id classTimetable_wednesdayHeader 0x7f0901c7
 int id classTimetable_wednesdayList 0x7f0901c8
+int id classTv 0x7f090742
 int id class_id_tv 0x7f0901c9
 int id class_name_tv 0x7f0901ca
 int id class_sec_tv 0x7f0901cb
@@ -2351,6 +2354,7 @@ int id date6 0x7f090240
 int id date7 0x7f090241
 int id dateET 0x7f090242
 int id dateTV 0x7f090243
+int id dateTv 0x7f090743
 int id date_range_layout 0x7f090244
 int id date_range_tv 0x7f090245
 int id date_tv 0x7f090246
@@ -2380,6 +2384,7 @@ int id deltaRelative 0x7f09025d
 int id dependency_ordering 0x7f09025e
 int id description 0x7f09025f
 int id descriptionET 0x7f090260
+int id descriptionTv 0x7f090744
 int id descriptive 0x7f090261
 int id descriptive_answer 0x7f090262
 int id descriptive_layout 0x7f090263
@@ -2401,6 +2406,7 @@ int id discountLayout 0x7f090272
 int id discountRow 0x7f090273
 int id discountTV 0x7f090274
 int id discountTextView 0x7f090275
+int id discountTv 0x7f090745
 int id discount_layout 0x7f090276
 int id discount_row 0x7f090277
 int id discount_tv 0x7f090278
@@ -2499,12 +2505,17 @@ int id father_section 0x7f0902d4
 int id fathercontact_layout 0x7f0902d5
 int id fathername_layout 0x7f0902d6
 int id fatheroccup_layout 0x7f0902d7
+int id feeCodeLayout 0x7f090746
+int id feeCodeTv 0x7f090747
 int id feeDetailsRecyclerView 0x7f0902d8
+int id feeGroupLayout 0x7f090748
 int id feeGroupNameTextView 0x7f0902d9
+int id feeGroupTv 0x7f090749
 int id feeNameTextView 0x7f0902da
 int id feeTypeBreakdownLayout 0x7f0902db
 int id feeTypeNameTextView 0x7f0902dc
 int id feeTypeSpinner 0x7f0902dd
+int id feeTypeTv 0x7f09074a
 int id feeTypesContainer 0x7f0902de
 int id fee_code_layout 0x7f0902df
 int id fee_code_tv 0x7f0902e0
@@ -2548,9 +2559,11 @@ int id fill_vertical 0x7f090305
 int id filled 0x7f090306
 int id filtersCard 0x7f090307
 int id filters_card 0x7f090308
+int id fineLayout 0x7f09074b
 int id fineRow 0x7f090309
 int id fineTV 0x7f09030a
 int id fineTextView 0x7f09030b
+int id fineTv 0x7f09074c
 int id fine_layout 0x7f09030c
 int id fine_row 0x7f09030d
 int id fine_tv 0x7f09030e
@@ -2613,6 +2626,7 @@ int id guardianemail_layout 0x7f090346
 int id guardianrelation_layout 0x7f090347
 int id guardiaoccup_layout 0x7f090348
 int id headLayout 0x7f090349
+int id headerLayout 0x7f09074d
 int id header_layout 0x7f09034a
 int id headerlayout 0x7f09034b
 int id headingTV 0x7f09034c
@@ -2681,6 +2695,7 @@ int id income_name_tv 0x7f09038a
 int id info 0x7f09038b
 int id instruction 0x7f09038c
 int id invisible 0x7f09038d
+int id invoiceNoTv 0x7f09074e
 int id invoice_no_tv 0x7f09038e
 int id italic 0x7f09038f
 int id item_line 0x7f090390
@@ -2920,6 +2935,7 @@ int id paymentDate 0x7f090479
 int id paymentFrom 0x7f09047a
 int id paymentId 0x7f09047b
 int id paymentMode 0x7f09047c
+int id paymentModeTv 0x7f09074f
 int id payment_date_tv 0x7f09047d
 int id payment_id_tv 0x7f09047e
 int id payment_mode_tv 0x7f09047f
@@ -3010,6 +3026,8 @@ int id reason_input_layout 0x7f0904d3
 int id reason_name_tv 0x7f0904d4
 int id reason_updated_tv 0x7f0904d5
 int id reasons_recyclerView 0x7f0904d6
+int id receivedByLayout 0x7f090750
+int id receivedByTv 0x7f090751
 int id received_by_tv 0x7f0904d7
 int id rectangles 0x7f0904d8
 int id recyclerview 0x7f0904d9
@@ -3206,6 +3224,7 @@ int id studentLeave_fab 0x7f090596
 int id studentLesson_listView 0x7f090597
 int id studentLiveclass_listview 0x7f090598
 int id studentNameTextView 0x7f090599
+int id studentNameTv 0x7f090752
 int id studentNotice_listview 0x7f09059a
 int id studentNotificationAdapter_createdbyTV 0x7f09059b
 int id studentNotificationAdapter_dateTV 0x7f09059c
@@ -3897,6 +3916,7 @@ int layout ime_secondary_split_test_activity 0x7f0c00ef
 int layout item_admission_report 0x7f0c00f0
 int layout item_class_section_report 0x7f0c00f1
 int layout item_class_subject_report 0x7f0c00f2
+int layout item_collection_report 0x7f0c016a
 int layout item_daily_collection_report 0x7f0c00f3
 int layout item_disable_reason 0x7f0c00f4
 int layout item_due_fee_report 0x7f0c00f5
