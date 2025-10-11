@@ -24,9 +24,11 @@ import com.qdocs.ssre241123.teachers.ClassSectionReportActivity;
 import com.qdocs.ssre241123.teachers.ClassSubjectReportActivity;
 import com.qdocs.ssre241123.teachers.DailyCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.DueFeeReportActivity;
+import com.qdocs.ssre241123.teachers.ExpenseGroupReportActivity;
 import com.qdocs.ssre241123.teachers.FeeCollectionReportColumnWiseActivity;
 import com.qdocs.ssre241123.teachers.FeesCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.FeesStatementActivity;
+import com.qdocs.ssre241123.teachers.IncomeGroupReportActivity;
 import com.qdocs.ssre241123.teachers.GuardianReportActivity;
 import com.qdocs.ssre241123.teachers.IncomeReportActivity;
 import com.qdocs.ssre241123.teachers.ExpenseReportActivity;
@@ -218,13 +220,17 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             Log.d(TAG, "Launching IncomeReportActivity");
             intent = new Intent(context, IncomeReportActivity.class);
         } else if ("income_group_report".equals(reportItem.getId())) {
-            // Launch IncomeReportActivity for Income Group Report (will be implemented separately)
-            Log.d(TAG, "Launching IncomeReportActivity (Income Group Report - TODO)");
-            intent = new Intent(context, IncomeReportActivity.class);
+            // Launch IncomeGroupReportActivity for Income Group Report
+            Log.d(TAG, "Launching IncomeGroupReportActivity");
+            intent = new Intent(context, IncomeGroupReportActivity.class);
         } else if ("expense_report".equals(reportItem.getId())) {
             // Launch ExpenseReportActivity for Expense Report
             Log.d(TAG, "Launching ExpenseReportActivity");
             intent = new Intent(context, ExpenseReportActivity.class);
+        } else if ("expense_group_report".equals(reportItem.getId())) {
+            // Launch ExpenseGroupReportActivity for Expense Group Report
+            Log.d(TAG, "Launching ExpenseGroupReportActivity");
+            intent = new Intent(context, ExpenseGroupReportActivity.class);
         } else if ("payroll_report".equals(reportItem.getId())) {
             // Launch PayrollReportActivity for Payroll Report
             Log.d(TAG, "Launching PayrollReportActivity");

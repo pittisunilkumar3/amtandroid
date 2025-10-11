@@ -129,6 +129,15 @@ public class Constants {
     public static final String payrollReportFilterUrl = "payroll-report/filter";
     public static final String payrollReportListUrl = "payroll-report/list";
 
+    // Expense Group Report API endpoints
+    public static final String expenseGroupReportFilterUrl = "expense-group-report/filter";
+    public static final String expenseGroupReportListUrl = "expense-group-report/list";
+
+    // List APIs for dropdowns (Note: base URL already includes /api/)
+    public static final String incomeHeadListUrl = "income-head-list/list";
+    public static final String expenseHeadListUrl = "expense-head-list/list";
+    public static final String rolesListUrl = "roles-list/list";
+
     // Student Academic Report API endpoints
     public static final String studentAcademicReportFilterUrl = "student-academic-report/filter";
     public static final String studentAcademicReportListUrl = "student-academic-report/list";

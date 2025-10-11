@@ -199,20 +199,28 @@ public class PayrollReportActivity extends AppCompatActivity {
     }
 
     private void loadFilterOptions() {
-        Log.d(TAG, "=== Loading Filter Options ===");
+        Log.d(TAG, "=== Loading Filter Options (Roles) ===");
 
-        String baseUrl = Utility.getSharedPreferences(getApplicationContext(), "apiUrl");
-        String url = baseUrl + Constants.payrollReportListUrl;
+        if (!Utility.isConnectingToInternet(getApplicationContext())) {
+            Toast.makeText(this, R.string.noInternetMsg, Toast.LENGTH_SHORT).show();
+            setupDefaultRoleSpinner();
+            return;
+        }
 
-        Log.d(TAG, "Filter Options URL: " + url);
+        // Use buildApiUrl to ensure correct URL construction
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.rolesListUrl);
+
+        Log.d(TAG, "Roles List API Endpoint: " + Constants.rolesListUrl);
+        Log.d(TAG, "Roles List Full URL: " + url);
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 response -> {
-                    Log.d(TAG, "Filter Options Response: " + response);
+                    Log.d(TAG, "Roles List Response: " + response);
                     parseFilterOptions(response);
                 },
                 error -> {
-                    Log.e(TAG, "Error loading filter options: " + error.toString());
+                    Log.e(TAG, "Error loading roles: " + error.toString());
+                    Toast.makeText(this, "Failed to load roles", Toast.LENGTH_SHORT).show();
                     // Use default role list if API fails
                     setupDefaultRoleSpinner();
                 }) {
@@ -222,19 +230,13 @@ public class PayrollReportActivity extends AppCompatActivity {
                 Map<String, String> headers = new HashMap<>();
                 headers.put("Client-Service", Constants.clientService);
                 headers.put("Auth-Key", Constants.authKey);
-                headers.put("Content-Type", "application/json");
+                headers.put("Content-Type", Constants.contentType);
                 return headers;
             }
 
             @Override
             public byte[] getBody() {
-                try {
-                    JSONObject jsonBody = new JSONObject();
-                    return jsonBody.toString().getBytes("UTF-8");
-                } catch (UnsupportedEncodingException e) {
-                    Log.e(TAG, "Error creating request body", e);
-                    return null;
-                }
+                return "{}".getBytes();
             }
         };
 
@@ -245,35 +247,44 @@ public class PayrollReportActivity extends AppCompatActivity {
     private void parseFilterOptions(String response) {
         try {
             JSONObject jsonObject = new JSONObject(response);
-            int status = jsonObject.optInt("status", 0);
 
-            if (status == 1) {
-                JSONObject data = jsonObject.optJSONObject("data");
-                if (data != null) {
-                    // Parse roles
-                    JSONArray rolesArray = data.optJSONArray("roles");
-                    if (rolesArray != null) {
-                        roleList.clear();
-                        roleIdList.clear();
-                        roleList.add("All Roles");
-                        roleIdList.add("");
+            // Clear existing lists
+            roleList.clear();
+            roleIdList.clear();
 
-                        for (int i = 0; i < rolesArray.length(); i++) {
-                            JSONObject roleObj = rolesArray.getJSONObject(i);
-                            String roleName = roleObj.optString("name", "");
-                            String roleId = roleObj.optString("id", "");
-                            roleList.add(roleName);
-                            roleIdList.add(roleId);
-                        }
+            // Add "All Roles" option at the top
+            roleList.add("All Roles");
+            roleIdList.add("");
 
-                        setupRoleSpinner();
+            // Check if response has data array
+            if (jsonObject.has("data")) {
+                JSONArray dataArray = jsonObject.getJSONArray("data");
+                Log.d(TAG, "Roles count: " + dataArray.length());
+
+                for (int i = 0; i < dataArray.length(); i++) {
+                    JSONObject roleObj = dataArray.getJSONObject(i);
+
+                    String roleId = roleObj.optString("id", "");
+                    String roleName = roleObj.optString("name", "");
+                    String isActive = roleObj.optString("is_active", "0");
+
+                    // Add all roles regardless of is_active status (as per API response, all have is_active = "0")
+                    // The API returns is_active as "0" for all roles, so we'll include all roles
+                    if (!roleName.isEmpty()) {
+                        roleList.add(roleName);
+                        roleIdList.add(roleId);
+                        Log.d(TAG, "Added role: " + roleName + " (ID: " + roleId + ")");
                     }
                 }
-            } else {
-                setupDefaultRoleSpinner();
+
+                Log.d(TAG, "Loaded " + (roleList.size() - 1) + " roles");
             }
+
+            // Setup spinner with loaded data
+            setupRoleSpinner();
+
         } catch (JSONException e) {
-            Log.e(TAG, "Error parsing filter options", e);
+            Log.e(TAG, "Error parsing roles response", e);
             setupDefaultRoleSpinner();
         }
     }

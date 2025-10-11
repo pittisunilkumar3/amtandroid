@@ -2497,6 +2497,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id expense_category_tv
+id expense_head_spinner
 id expense_name_tv
 id false_image
 id false_value
@@ -2695,6 +2696,7 @@ id image_layout
 id imageview
 id immediateStop
 id included
+id income_head_spinner
 id income_head_tv
 id income_name_tv
 id info
@@ -3717,11 +3719,13 @@ layout activity_cbsetimetable
 layout activity_course_exam_result
 layout activity_daily_collection_report
 layout activity_disable_reasons
+layout activity_expense_group_report
 layout activity_expense_report
 layout activity_fee_collection_report_column_wise
 layout activity_fees_collection_report
 layout activity_fees_statement
 layout activity_file_save
+layout activity_income_group_report
 layout activity_income_report
 layout activity_listview
 layout activity_new_dashboard
