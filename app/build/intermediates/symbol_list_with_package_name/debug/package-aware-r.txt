@@ -2115,6 +2115,7 @@ id availablecount
 id average_layout
 id back_button
 id balanceTextView
+id balanceTv
 id balance_tv
 id bankAcNo
 id bankAcNo_layout
@@ -2200,6 +2201,7 @@ id checkbox
 id checked
 id chronometer
 id classFiltersLayout
+id classSecTv
 id classSpinner
 id classSubject_englishList
 id classSubject_hindiList
@@ -2383,6 +2385,7 @@ id delete_button
 id delete_icon
 id deltaRelative
 id dependency_ordering
+id depositTv
 id description
 id descriptionET
 id descriptionTv
@@ -2499,6 +2502,7 @@ id false_image
 id false_value
 id false_value_option
 id fatherNameTextView
+id fatherNameTv
 id father_layout
 id father_name_tv
 id father_phone_tv
@@ -3067,6 +3071,7 @@ id robotoCalendarPicker
 id role_designation_tv
 id role_spinner
 id rollNoTextView
+id rollNoTv
 id roll_no_tv
 id rollno_layout
 id room_no_tv
@@ -3492,6 +3497,7 @@ id totalDiscountRow
 id totalDiscountTextView
 id totalDueAmountTextView
 id totalFeeTextView
+id totalFeeTv
 id totalFineRow
 id totalFineTextView
 id totalPaidTextView
@@ -3950,6 +3956,7 @@ layout item_teacher_document
 layout item_teacher_leave
 layout item_teacher_payroll
 layout item_total_fee_collection_report
+layout item_total_student_academic_report
 layout item_type_wise_balance_report
 layout lesson_description
 layout lesson_topic_dialoug
