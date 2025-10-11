@@ -118,6 +118,12 @@
             android:name="com.qdocs.ssre241123.teachers.IncomeReportActivity"
             android:exported="false" />
         <activity
+            android:name="com.qdocs.ssre241123.teachers.ExpenseReportActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.PayrollReportActivity"
+            android:exported="false" />
+        <activity
             android:name="com.qdocs.ssre241123.teachers.TypeWiseBalanceReportActivity"
             android:exported="false" />
         <activity

@@ -29,6 +29,8 @@ import com.qdocs.ssre241123.teachers.FeesCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.FeesStatementActivity;
 import com.qdocs.ssre241123.teachers.GuardianReportActivity;
 import com.qdocs.ssre241123.teachers.IncomeReportActivity;
+import com.qdocs.ssre241123.teachers.ExpenseReportActivity;
+import com.qdocs.ssre241123.teachers.PayrollReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineAdmissionReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineFeesReportActivity;
 import com.qdocs.ssre241123.teachers.OtherFeeAndCollectionFeeCombinedActivity;
@@ -208,6 +210,14 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch IncomeReportActivity for Income Group Report (will be implemented separately)
             Log.d(TAG, "Launching IncomeReportActivity (Income Group Report - TODO)");
             intent = new Intent(context, IncomeReportActivity.class);
+        } else if ("expense_report".equals(reportItem.getId())) {
+            // Launch ExpenseReportActivity for Expense Report
+            Log.d(TAG, "Launching ExpenseReportActivity");
+            intent = new Intent(context, ExpenseReportActivity.class);
+        } else if ("payroll_report".equals(reportItem.getId())) {
+            // Launch PayrollReportActivity for Payroll Report
+            Log.d(TAG, "Launching PayrollReportActivity");
+            intent = new Intent(context, PayrollReportActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");

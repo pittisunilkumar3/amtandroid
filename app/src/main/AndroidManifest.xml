@@ -101,6 +101,12 @@
             android:name=".teachers.IncomeReportActivity"
             android:exported="false" />
         <activity
+            android:name=".teachers.ExpenseReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.PayrollReportActivity"
+            android:exported="false" />
+        <activity
             android:name=".teachers.TypeWiseBalanceReportActivity"
             android:exported="false" />
         <activity

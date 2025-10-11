@@ -2125,6 +2125,7 @@ id baseline
 id basic_adapterlayout
 id basic_bottom_layout
 id basic_layout
+id basic_salary_tv
 id beginOnFirstDraw
 id beginning
 id behaviourscore
@@ -2368,6 +2369,7 @@ id daysContainer
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
+id deductions_tv
 id default_activity_button
 id delete
 id delete_button
@@ -2442,6 +2444,7 @@ id dueDateRow
 id dueDateTextView
 id duration
 id durationTV
+id earnings_tv
 id easeIn
 id easeInOut
 id easeOut
@@ -2480,6 +2483,8 @@ id examto
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id expense_category_tv
+id expense_name_tv
 id false_image
 id false_value
 id false_value_option
@@ -2766,6 +2771,7 @@ id modulename
 id mondayNoData
 id mondaylayout
 id monthText
+id month_spinner
 id moption3_layout
 id moption4_layout
 id moption5_layout
@@ -2822,6 +2828,7 @@ id negative
 id negativeamountTV
 id nested_scroll
 id net_amount_tv
+id net_salary_tv
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -2937,6 +2944,7 @@ id pending
 id pending_status_layout
 id percent
 id percentage
+id period_tv
 id permanentAdd
 id permanentAdd_layout
 id pickup_point
@@ -3030,6 +3038,8 @@ id right_icon
 id right_side
 id robotoCalendarDateTitleContainer
 id robotoCalendarPicker
+id role_designation_tv
+id role_spinner
 id rollNoTextView
 id roll_no_tv
 id rollno_layout
@@ -3130,6 +3140,7 @@ id src_atop
 id src_in
 id src_over
 id staff
+id staff_name_tv
 id standard
 id start
 id startBtn
@@ -3604,6 +3615,7 @@ id wrong
 id wrong_count
 id x_left
 id x_right
+id year_spinner
 id youtube_layout
 id youtubeurl
 integer abc_config_activityDefaultDur
@@ -3670,6 +3682,7 @@ layout activity_cbsetimetable
 layout activity_course_exam_result
 layout activity_daily_collection_report
 layout activity_disable_reasons
+layout activity_expense_report
 layout activity_fee_collection_report_column_wise
 layout activity_fees_collection_report
 layout activity_fees_statement
@@ -3683,6 +3696,7 @@ layout activity_online_fees_report
 layout activity_open_pdf
 layout activity_other_fee_and_collection_fee_combined
 layout activity_other_fees_collection_report
+layout activity_payroll_report
 layout activity_setting
 layout activity_start_lesson
 layout activity_student_apply_leave
@@ -3875,6 +3889,7 @@ layout item_class_subject_report
 layout item_daily_collection_report
 layout item_disable_reason
 layout item_due_fee_report
+layout item_expense_report
 layout item_fee_detail
 layout item_fee_statement_group
 layout item_fee_statement_header
@@ -3886,6 +3901,7 @@ layout item_income_report
 layout item_online_admission
 layout item_online_fees_report
 layout item_parent_login
+layout item_payroll_report
 layout item_search_result
 layout item_student_academic_report
 layout item_student_category
