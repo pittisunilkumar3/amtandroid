@@ -79,9 +79,9 @@ public class IncomeGroupReportActivity extends AppCompatActivity {
     private String selectedSearchType = "";
     private String selectedIncomeHeadId = "";
 
-    // Search type options
-    private final String[] searchTypes = {"Today", "Month", "Year", "Custom"};
-    private final String[] searchTypeKeys = {"today", "month", "year", "period"};
+    // Search type options - Updated to match API specification
+    private final String[] searchTypes = {"Today", "This Week", "This Month", "Last Month", "This Year", "Custom Period"};
+    private final String[] searchTypeKeys = {"today", "this_week", "this_month", "last_month", "this_year", "period"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -279,10 +279,10 @@ public class IncomeGroupReportActivity extends AppCompatActivity {
             return;
         }
 
-        // Use buildApiUrl to ensure correct URL construction
-        String url = Utility.buildApiUrl(getApplicationContext(), Constants.incomeHeadListUrl);
+        // Use the income-group-report/list endpoint to get income heads
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.incomeGroupReportListUrl);
 
-        Log.d(TAG, "Income Head List API Endpoint: " + Constants.incomeHeadListUrl);
+        Log.d(TAG, "Income Head List API Endpoint: " + Constants.incomeGroupReportListUrl);
         Log.d(TAG, "Income Head List Full URL: " + url);
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
@@ -327,29 +327,38 @@ public class IncomeGroupReportActivity extends AppCompatActivity {
             incomeHeadNameList.add("All");
             incomeHeadIdList.add("");
 
-            // Check if response has data array
+            // Check status
+            int status = jsonObject.optInt("status", 0);
+            if (status != 1) {
+                Log.e(TAG, "Failed to load income heads: " + jsonObject.optString("message", "Unknown error"));
+                setupIncomeHeadSpinner();
+                return;
+            }
+
+            // Check if response has data object with income_heads array
             if (jsonObject.has("data")) {
-                JSONArray dataArray = jsonObject.getJSONArray("data");
-                Log.d(TAG, "Income heads count: " + dataArray.length());
+                JSONObject dataObj = jsonObject.getJSONObject("data");
 
-                for (int i = 0; i < dataArray.length(); i++) {
-                    JSONObject headObj = dataArray.getJSONObject(i);
+                if (dataObj.has("income_heads")) {
+                    JSONArray incomeHeadsArray = dataObj.getJSONArray("income_heads");
+                    Log.d(TAG, "Income heads count: " + incomeHeadsArray.length());
 
-                    IncomeHeadModel head = new IncomeHeadModel();
-                    head.setId(headObj.optString("id", ""));
-                    head.setIncomeCategory(headObj.optString("income_category", ""));
-                    head.setIsActive(headObj.optString("is_active", "yes"));
+                    for (int i = 0; i < incomeHeadsArray.length(); i++) {
+                        JSONObject headObj = incomeHeadsArray.getJSONObject(i);
 
-                    // Only add active income heads (is_active = "yes")
-                    if ("yes".equalsIgnoreCase(head.getIsActive())) {
+                        IncomeHeadModel head = new IncomeHeadModel();
+                        head.setId(headObj.optString("id", ""));
+                        head.setIncomeCategory(headObj.optString("income_category", ""));
+
+                        // Add all income heads from the list API
                         incomeHeadList.add(head);
                         incomeHeadNameList.add(head.getIncomeCategory());
                         incomeHeadIdList.add(head.getId());
                         Log.d(TAG, "Added income head: " + head.getIncomeCategory() + " (ID: " + head.getId() + ")");
                     }
-                }
 
-                Log.d(TAG, "Loaded " + incomeHeadList.size() + " active income heads");
+                    Log.d(TAG, "Loaded " + incomeHeadList.size() + " income heads");
+                }
             }
 
             // Setup spinner with loaded data
@@ -420,14 +429,15 @@ public class IncomeGroupReportActivity extends AppCompatActivity {
                         String toDate = toDateEt.getText().toString().trim();
                         jsonBody.put("date_from", fromDate);
                         jsonBody.put("date_to", toDate);
-                    } else {
+                    } else if (!selectedSearchType.isEmpty()) {
                         // Predefined search type
                         jsonBody.put("search_type", selectedSearchType);
                     }
 
                     // Add income head ID if selected (not "All")
+                    // API expects parameter name "head" not "income_head_id"
                     if (!selectedIncomeHeadId.isEmpty()) {
-                        jsonBody.put("income_head_id", selectedIncomeHeadId);
+                        jsonBody.put("head", selectedIncomeHeadId);
                     }
 
                     String requestBody = jsonBody.toString();
@@ -450,16 +460,39 @@ public class IncomeGroupReportActivity extends AppCompatActivity {
         try {
             JSONObject jsonObject = new JSONObject(response);
 
+            // Check status
+            int status = jsonObject.optInt("status", 0);
+            if (status != 1) {
+                String message = jsonObject.optString("message", "Failed to fetch report");
+                Log.e(TAG, "API Error: " + message);
+                showNoData();
+                Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             // Clear existing data
             incomeList.clear();
+
+            // Get totals from summary if available
+            int totalRecords = 0;
+            double totalAmount = 0.0;
+
+            if (jsonObject.has("summary")) {
+                JSONObject summary = jsonObject.getJSONObject("summary");
+                totalRecords = summary.optInt("total_records", 0);
+                String totalAmountStr = summary.optString("total_amount", "0");
+                try {
+                    totalAmount = Double.parseDouble(totalAmountStr);
+                } catch (NumberFormatException e) {
+                    Log.e(TAG, "Error parsing total amount from summary: " + totalAmountStr);
+                }
+                Log.d(TAG, "Summary - Total Records: " + totalRecords + ", Total Amount: " + totalAmount);
+            }
 
             // Parse income records
             if (jsonObject.has("data")) {
                 JSONArray dataArray = jsonObject.getJSONArray("data");
                 Log.d(TAG, "Income records count: " + dataArray.length());
-
-                int totalRecords = 0;
-                double totalAmount = 0.0;
 
                 for (int i = 0; i < dataArray.length(); i++) {
                     JSONObject incomeObj = dataArray.getJSONObject(i);
@@ -470,25 +503,31 @@ public class IncomeGroupReportActivity extends AppCompatActivity {
                     income.setInvoiceNo(incomeObj.optString("invoice_no", ""));
                     income.setDate(incomeObj.optString("date", ""));
                     income.setAmount(incomeObj.optString("amount", "0"));
-                    income.setIncomeHead(incomeObj.optString("income_head", ""));
-                    income.setIncomeHeadId(incomeObj.optString("income_head_id", ""));
+
+                    // API returns "income_category" instead of "income_head"
+                    String incomeCategory = incomeObj.optString("income_category", "");
+                    income.setIncomeHead(incomeCategory);
+                    income.setIncomeHeadId(incomeObj.optString("head_id", ""));
+
                     income.setNote(incomeObj.optString("note", ""));
                     income.setDocuments(incomeObj.optString("documents", ""));
 
                     incomeList.add(income);
-
-                    // Calculate totals
-                    totalRecords++;
-                    try {
-                        totalAmount += Double.parseDouble(income.getAmount());
-                    } catch (NumberFormatException e) {
-                        Log.e(TAG, "Error parsing amount: " + income.getAmount());
-                    }
                 }
 
                 Log.d(TAG, "Income list size: " + incomeList.size());
-                Log.d(TAG, "Total Records: " + totalRecords);
-                Log.d(TAG, "Total Amount: " + totalAmount);
+
+                // If summary was not available, calculate from data
+                if (totalRecords == 0 && !incomeList.isEmpty()) {
+                    totalRecords = incomeList.size();
+                    for (IncomeReportModel income : incomeList) {
+                        try {
+                            totalAmount += Double.parseDouble(income.getAmount());
+                        } catch (NumberFormatException e) {
+                            Log.e(TAG, "Error parsing amount: " + income.getAmount());
+                        }
+                    }
+                }
 
                 if (!incomeList.isEmpty()) {
                     // Update adapter

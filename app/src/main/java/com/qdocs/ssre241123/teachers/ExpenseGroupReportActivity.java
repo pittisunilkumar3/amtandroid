@@ -79,9 +79,15 @@ public class ExpenseGroupReportActivity extends AppCompatActivity {
     private String selectedSearchType = "";
     private String selectedExpenseHeadId = "";
 
-    // Search type options
-    private final String[] searchTypes = {"Today", "Month", "Year", "Custom"};
-    private final String[] searchTypeKeys = {"today", "month", "year", "period"};
+    // Search type options - Updated to match API specification
+    private final String[] searchTypes = {
+            "Today", "This Week", "Last Week", "This Month", "Last Month",
+            "Last 3 Months", "Last 6 Months", "Last 12 Months", "This Year", "Last Year", "Custom Period"
+    };
+    private final String[] searchTypeKeys = {
+            "today", "this_week", "last_week", "this_month", "last_month",
+            "last_3_month", "last_6_month", "last_12_month", "this_year", "last_year", "period"
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -279,10 +285,10 @@ public class ExpenseGroupReportActivity extends AppCompatActivity {
             return;
         }
 
-        // Use buildApiUrl to ensure correct URL construction
-        String url = Utility.buildApiUrl(getApplicationContext(), Constants.expenseHeadListUrl);
+        // Use the expense-group-report/list endpoint to get expense heads
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.expenseGroupReportListUrl);
 
-        Log.d(TAG, "Expense Head List API Endpoint: " + Constants.expenseHeadListUrl);
+        Log.d(TAG, "Expense Head List API Endpoint: " + Constants.expenseGroupReportListUrl);
         Log.d(TAG, "Expense Head List Full URL: " + url);
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
@@ -327,29 +333,38 @@ public class ExpenseGroupReportActivity extends AppCompatActivity {
             expenseHeadNameList.add("All");
             expenseHeadIdList.add("");
 
-            // Check if response has data array
+            // Check status
+            int status = jsonObject.optInt("status", 0);
+            if (status != 1) {
+                Log.e(TAG, "Failed to load expense heads: " + jsonObject.optString("message", "Unknown error"));
+                setupExpenseHeadSpinner();
+                return;
+            }
+
+            // Check if response has data object with expense_heads array
             if (jsonObject.has("data")) {
-                JSONArray dataArray = jsonObject.getJSONArray("data");
-                Log.d(TAG, "Expense heads count: " + dataArray.length());
+                JSONObject dataObj = jsonObject.getJSONObject("data");
 
-                for (int i = 0; i < dataArray.length(); i++) {
-                    JSONObject headObj = dataArray.getJSONObject(i);
+                if (dataObj.has("expense_heads")) {
+                    JSONArray expenseHeadsArray = dataObj.getJSONArray("expense_heads");
+                    Log.d(TAG, "Expense heads count: " + expenseHeadsArray.length());
 
-                    ExpenseHeadModel head = new ExpenseHeadModel();
-                    head.setId(headObj.optString("id", ""));
-                    head.setExpCategory(headObj.optString("exp_category", ""));
-                    head.setIsActive(headObj.optString("is_active", "yes"));
+                    for (int i = 0; i < expenseHeadsArray.length(); i++) {
+                        JSONObject headObj = expenseHeadsArray.getJSONObject(i);
 
-                    // Only add active expense heads (is_active = "yes")
-                    if ("yes".equalsIgnoreCase(head.getIsActive())) {
+                        ExpenseHeadModel head = new ExpenseHeadModel();
+                        head.setId(headObj.optString("id", ""));
+                        head.setExpCategory(headObj.optString("exp_category", ""));
+
+                        // Add all expense heads from the list API
                         expenseHeadList.add(head);
                         expenseHeadNameList.add(head.getExpCategory());
                         expenseHeadIdList.add(head.getId());
                         Log.d(TAG, "Added expense head: " + head.getExpCategory() + " (ID: " + head.getId() + ")");
                     }
-                }
 
-                Log.d(TAG, "Loaded " + expenseHeadList.size() + " active expense heads");
+                    Log.d(TAG, "Loaded " + expenseHeadList.size() + " expense heads");
+                }
             }
 
             // Setup spinner with loaded data
@@ -420,14 +435,15 @@ public class ExpenseGroupReportActivity extends AppCompatActivity {
                         String toDate = toDateEt.getText().toString().trim();
                         jsonBody.put("date_from", fromDate);
                         jsonBody.put("date_to", toDate);
-                    } else {
+                    } else if (!selectedSearchType.isEmpty()) {
                         // Predefined search type
                         jsonBody.put("search_type", selectedSearchType);
                     }
 
                     // Add expense head ID if selected (not "All")
+                    // API expects parameter name "head_id" not "expense_head_id"
                     if (!selectedExpenseHeadId.isEmpty()) {
-                        jsonBody.put("expense_head_id", selectedExpenseHeadId);
+                        jsonBody.put("head_id", selectedExpenseHeadId);
                     }
 
                     String requestBody = jsonBody.toString();
@@ -450,16 +466,43 @@ public class ExpenseGroupReportActivity extends AppCompatActivity {
         try {
             JSONObject jsonObject = new JSONObject(response);
 
+            // Check status
+            int status = jsonObject.optInt("status", 0);
+            if (status != 1) {
+                String message = jsonObject.optString("message", "Failed to fetch report");
+                Log.e(TAG, "API Error: " + message);
+                showNoData();
+                Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             // Clear existing data
             expenseList.clear();
+
+            // Get totals from summary if available
+            int totalRecords = 0;
+            double totalAmount = 0.0;
+
+            if (jsonObject.has("summary")) {
+                JSONObject summary = jsonObject.getJSONObject("summary");
+                totalRecords = summary.optInt("total_expenses", 0);
+
+                // Parse total_amount which may have commas
+                String totalAmountStr = summary.optString("total_amount", "0");
+                try {
+                    // Remove commas before parsing
+                    totalAmountStr = totalAmountStr.replace(",", "");
+                    totalAmount = Double.parseDouble(totalAmountStr);
+                } catch (NumberFormatException e) {
+                    Log.e(TAG, "Error parsing total amount from summary: " + totalAmountStr);
+                }
+                Log.d(TAG, "Summary - Total Expenses: " + totalRecords + ", Total Amount: " + totalAmount);
+            }
 
             // Parse expense records
             if (jsonObject.has("data")) {
                 JSONArray dataArray = jsonObject.getJSONArray("data");
                 Log.d(TAG, "Expense records count: " + dataArray.length());
-
-                int totalRecords = 0;
-                double totalAmount = 0.0;
 
                 for (int i = 0; i < dataArray.length(); i++) {
                     JSONObject expenseObj = dataArray.getJSONObject(i);
@@ -476,19 +519,21 @@ public class ExpenseGroupReportActivity extends AppCompatActivity {
                     expense.setDocuments(expenseObj.optString("documents", ""));
 
                     expenseList.add(expense);
-
-                    // Calculate totals
-                    totalRecords++;
-                    try {
-                        totalAmount += Double.parseDouble(expense.getAmount());
-                    } catch (NumberFormatException e) {
-                        Log.e(TAG, "Error parsing amount: " + expense.getAmount());
-                    }
                 }
 
                 Log.d(TAG, "Expense list size: " + expenseList.size());
-                Log.d(TAG, "Total Records: " + totalRecords);
-                Log.d(TAG, "Total Amount: " + totalAmount);
+
+                // If summary was not available, calculate from data
+                if (totalRecords == 0 && !expenseList.isEmpty()) {
+                    totalRecords = expenseList.size();
+                    for (ExpenseReportModel expense : expenseList) {
+                        try {
+                            totalAmount += Double.parseDouble(expense.getAmount());
+                        } catch (NumberFormatException e) {
+                            Log.e(TAG, "Error parsing amount: " + expense.getAmount());
+                        }
+                    }
+                }
 
                 if (!expenseList.isEmpty()) {
                     // Update adapter
