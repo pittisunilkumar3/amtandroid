@@ -176,43 +176,43 @@ public class AlumniModel {
 
     // Helper methods for formatted display
     public String getFormattedName() {
-        return studentName != null && !studentName.isEmpty() ? studentName : "-";
+        return studentName != null && !studentName.trim().isEmpty() ? studentName.trim() : "N/A";
     }
 
     public String getFormattedAdmissionNo() {
-        return admissionNo != null && !admissionNo.isEmpty() ? admissionNo : "-";
+        return admissionNo != null && !admissionNo.trim().isEmpty() ? admissionNo.trim() : "N/A";
     }
 
     public String getFormattedClassSection() {
-        return classSection != null && !classSection.isEmpty() ? classSection : "-";
+        return classSection != null && !classSection.trim().isEmpty() ? classSection.trim() : "N/A";
     }
 
     public String getFormattedPassOutYear() {
-        return passOutYear != null && !passOutYear.isEmpty() ? passOutYear : "-";
+        return passOutYear != null && !passOutYear.trim().isEmpty() ? passOutYear.trim() : "N/A";
     }
 
     public String getFormattedEmail() {
-        return currentEmail != null && !currentEmail.isEmpty() ? currentEmail : "Not provided";
+        return currentEmail != null && !currentEmail.trim().isEmpty() ? currentEmail.trim() : "Not provided";
     }
 
     public String getFormattedPhone() {
-        return currentPhone != null && !currentPhone.isEmpty() ? currentPhone : "Not provided";
+        return currentPhone != null && !currentPhone.trim().isEmpty() ? currentPhone.trim() : "Not provided";
     }
 
     public String getFormattedOccupation() {
-        return occupation != null && !occupation.isEmpty() ? occupation : "Not specified";
+        return occupation != null && !occupation.trim().isEmpty() ? occupation.trim() : "Not specified";
     }
 
     public String getFormattedAddress() {
-        return currentAddress != null && !currentAddress.isEmpty() ? currentAddress : "Not provided";
+        return currentAddress != null && !currentAddress.trim().isEmpty() ? currentAddress.trim() : "Not provided";
     }
 
     public String getFormattedGuardianName() {
-        return guardianName != null && !guardianName.isEmpty() ? guardianName : "-";
+        return guardianName != null && !guardianName.trim().isEmpty() ? guardianName.trim() : "N/A";
     }
 
     public String getFormattedGuardianPhone() {
-        return guardianPhone != null && !guardianPhone.isEmpty() ? guardianPhone : "-";
+        return guardianPhone != null && !guardianPhone.trim().isEmpty() ? guardianPhone.trim() : "N/A";
     }
 
     public String getFormattedGender() {

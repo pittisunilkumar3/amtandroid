@@ -349,6 +349,19 @@ public class AlumniReportActivity extends BaseActivity {
                         Log.d(TAG, "Loaded " + sessionsList.size() + " sessions");
                     }
 
+                    // Parse sections
+                    JSONArray sectionsArray = data.optJSONArray("sections");
+                    if (sectionsArray != null) {
+                        sectionsList.clear();
+                        for (int i = 0; i < sectionsArray.length(); i++) {
+                            JSONObject sectionObj = sectionsArray.getJSONObject(i);
+                            String id = sectionObj.optString("id", "");
+                            String name = sectionObj.optString("section", "");
+                            sectionsList.add(new SectionData(id, name));
+                        }
+                        Log.d(TAG, "Loaded " + sectionsList.size() + " sections");
+                    }
+
                     // Parse categories
                     JSONArray categoriesArray = data.optJSONArray("categories");
                     if (categoriesArray != null) {
@@ -501,62 +514,155 @@ public class AlumniReportActivity extends BaseActivity {
 
     private void parseAlumniResponse(String response) {
         try {
+            Log.d(TAG, "=== Parsing Alumni Response ===");
+            Log.d(TAG, "Response length: " + response.length());
+            
             JSONObject jsonObject = new JSONObject(response);
             int status = jsonObject.optInt("status", 0);
+            String message = jsonObject.optString("message", "");
+            
+            Log.d(TAG, "API Status: " + status);
+            Log.d(TAG, "API Message: " + message);
 
             if (status == 1) {
                 JSONArray dataArray = jsonObject.optJSONArray("data");
                 int totalRecords = jsonObject.optInt("total_records", 0);
+                
+                Log.d(TAG, "Total records from API: " + totalRecords);
+                Log.d(TAG, "Data array length: " + (dataArray != null ? dataArray.length() : "null"));
 
                 alumniList.clear();
 
                 if (dataArray != null && dataArray.length() > 0) {
+                    Log.d(TAG, "Processing " + dataArray.length() + " alumni records");
+                    
                     for (int i = 0; i < dataArray.length(); i++) {
                         JSONObject alumniObj = dataArray.getJSONObject(i);
+                        Log.d(TAG, "Processing alumni " + (i + 1) + ": " + alumniObj.optString("student_name", ""));
 
                         AlumniModel alumni = new AlumniModel();
+                        
+                        // Basic Information
                         alumni.setId(alumniObj.optString("id", ""));
-                        alumni.setStudentName(alumniObj.optString("student_name", ""));
                         alumni.setAdmissionNo(alumniObj.optString("admission_no", ""));
+                        
+                        // Student name - try multiple field variations
+                        String studentName = alumniObj.optString("student_name", "");
+                        if (studentName.isEmpty()) {
+                            // Construct name from firstname, middlename, lastname
+                            String firstName = alumniObj.optString("firstname", "");
+                            String middleName = alumniObj.optString("middlename", "");
+                            String lastName = alumniObj.optString("lastname", "");
+                            
+                            StringBuilder nameBuilder = new StringBuilder();
+                            if (!firstName.isEmpty()) nameBuilder.append(firstName);
+                            if (!middleName.isEmpty()) {
+                                if (nameBuilder.length() > 0) nameBuilder.append(" ");
+                                nameBuilder.append(middleName);
+                            }
+                            if (!lastName.isEmpty()) {
+                                if (nameBuilder.length() > 0) nameBuilder.append(" ");
+                                nameBuilder.append(lastName);
+                            }
+                            studentName = nameBuilder.toString();
+                        }
+                        alumni.setStudentName(studentName);
+                        
+                        // Class and Section
                         alumni.setClassSection(alumniObj.optString("class_section", ""));
                         alumni.setPassOutYear(alumniObj.optString("pass_out_year", ""));
+                        
+                        // Contact Information
                         alumni.setCurrentEmail(alumniObj.optString("current_email", ""));
                         alumni.setCurrentPhone(alumniObj.optString("current_phone", ""));
+                        
+                        // If current contact is empty, try regular contact fields
+                        if (alumni.getCurrentEmail().isEmpty()) {
+                            alumni.setCurrentEmail(alumniObj.optString("email", ""));
+                        }
+                        if (alumni.getCurrentPhone().isEmpty()) {
+                            alumni.setCurrentPhone(alumniObj.optString("mobileno", ""));
+                        }
+                        
+                        // Career Information
                         alumni.setOccupation(alumniObj.optString("occupation", ""));
                         alumni.setCurrentAddress(alumniObj.optString("current_address_alumni", ""));
+                        
+                        // If current address is empty, try other address fields
+                        if (alumni.getCurrentAddress().isEmpty()) {
+                            alumni.setCurrentAddress(alumniObj.optString("current_address", ""));
+                            if (alumni.getCurrentAddress().isEmpty()) {
+                                alumni.setCurrentAddress(alumniObj.optString("permanent_address", ""));
+                            }
+                        }
+                        
+                        // Guardian Information
                         alumni.setGuardianName(alumniObj.optString("guardian_name", ""));
                         alumni.setGuardianPhone(alumniObj.optString("guardian_phone", ""));
+                        
+                        // Personal Information
                         alumni.setDateOfBirth(alumniObj.optString("dob", ""));
                         alumni.setGender(alumniObj.optString("gender", ""));
                         alumni.setCategory(alumniObj.optString("category", ""));
-                        alumni.setBloodGroup(alumniObj.optString("blood_group", ""));
                         alumni.setReligion(alumniObj.optString("religion", ""));
+                        
+                        // Optional fields that might not be in all responses
+                        alumni.setBloodGroup(alumniObj.optString("blood_group", ""));
                         alumni.setCaste(alumniObj.optString("cast", ""));
                         alumni.setMotherTongue(alumniObj.optString("mother_tongue", ""));
                         alumni.setStudentImage(alumniObj.optString("image", ""));
+                        
+                        Log.d(TAG, "Parsed alumni: " + alumni.getStudentName() + 
+                              " - " + alumni.getClassSection() + 
+                              " - " + alumni.getPassOutYear());
 
                         alumniList.add(alumni);
                     }
+                    
+                    Log.d(TAG, "Successfully parsed " + alumniList.size() + " alumni records");
 
                     // Update UI
                     adapter.notifyDataSetChanged();
                     showData();
 
-                    // Update summary
-                    totalRecordsTv.setText("Total Alumni: " + totalRecords);
+                    // Update summary with detailed information
+                    JSONObject summary = jsonObject.optJSONObject("summary");
+                    if (summary != null) {
+                        int totalAlumni = summary.optInt("total_alumni", totalRecords);
+                        int totalClasses = summary.optInt("total_classes", 0);
+                        int totalSessions = summary.optInt("total_sessions", 0);
+                        
+                        Log.d(TAG, "Summary - Alumni: " + totalAlumni + ", Classes: " + totalClasses + ", Sessions: " + totalSessions);
+                        
+                        StringBuilder summaryText = new StringBuilder();
+                        summaryText.append("Total Alumni: ").append(totalAlumni);
+                        if (totalClasses > 0) {
+                            summaryText.append("\nClasses: ").append(totalClasses);
+                        }
+                        if (totalSessions > 0) {
+                            summaryText.append("\nSessions: ").append(totalSessions);
+                        }
+                        
+                        totalRecordsTv.setText(summaryText.toString());
+                    } else {
+                        totalRecordsTv.setText("Total Alumni: " + totalRecords);
+                    }
 
                     Toast.makeText(this, "Found " + totalRecords + " alumni records", Toast.LENGTH_SHORT).show();
                 } else {
+                    Log.d(TAG, "No alumni data found");
                     showNoData();
                     Toast.makeText(this, "No alumni records found", Toast.LENGTH_SHORT).show();
                 }
             } else {
-                String message = jsonObject.optString("message", "Failed to load alumni report");
-                Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+                String errorMessage = jsonObject.optString("message", "Failed to load alumni report");
+                Log.e(TAG, "API returned error status. Message: " + errorMessage);
+                Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show();
                 showNoData();
             }
         } catch (Exception e) {
             Log.e(TAG, "Error parsing alumni response", e);
+            Log.e(TAG, "Response that failed to parse: " + response);
             Toast.makeText(this, "Error parsing response", Toast.LENGTH_SHORT).show();
             showNoData();
         }
