@@ -1000,6 +1000,7 @@ color iconColours
 color lightGrey
 color light_blue
 color light_gray
+color light_gray_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -2202,6 +2203,7 @@ id checked
 id chronometer
 id classFiltersLayout
 id classSecTv
+id classSectionTv
 id classSpinner
 id classSubject_englishList
 id classSubject_hindiList
@@ -3932,6 +3934,7 @@ layout item_daily_collection_report
 layout item_disable_reason
 layout item_due_fee_report
 layout item_expense_report
+layout item_fee_collection_report_column_wise
 layout item_fee_detail
 layout item_fee_statement_group
 layout item_fee_statement_header

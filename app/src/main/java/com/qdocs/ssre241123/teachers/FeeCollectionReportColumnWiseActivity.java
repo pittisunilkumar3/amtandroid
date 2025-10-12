@@ -25,6 +25,8 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.qdocs.ssre241123.R;
+import com.qdocs.ssre241123.adapters.FeeCollectionReportColumnWiseAdapter;
+import com.qdocs.ssre241123.adapters.FeeCollectionReportColumnWiseAdapter.CollectionReportColumnWiseModel;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.Utility;
 
@@ -540,7 +542,8 @@ public class FeeCollectionReportColumnWiseActivity extends AppCompatActivity {
         }
 
         String baseUrl = Utility.getSharedPreferences(getApplicationContext(), "apiUrl");
-        String url = baseUrl + Constants.feeCollectionReportColumnWiseFilterUrl;
+        // Use the same API endpoint as regular fees collection report
+        String url = baseUrl + Constants.collectionReportFilterUrl;
 
         Log.d(TAG, "Fetching report from: " + url);
         Log.d(TAG, "Filters - FromDate: " + selectedFromDate + ", ToDate: " + selectedToDate +
@@ -611,19 +614,99 @@ public class FeeCollectionReportColumnWiseActivity extends AppCompatActivity {
             int status = jsonObject.optInt("status", 0);
             String message = jsonObject.optString("message", "");
 
+            Log.d(TAG, "API Response: " + response);
+
             if (status == 1) {
-                // TODO: Parse report data and display in RecyclerView
-                // For now, just show success message
-                showContent();
-                Toast.makeText(this, "Report generated successfully", Toast.LENGTH_SHORT).show();
+                // Parse data array
+                JSONArray dataArray = jsonObject.optJSONArray("data");
+
+                if (dataArray != null && dataArray.length() > 0) {
+                    List<CollectionReportColumnWiseModel> reportList = new ArrayList<>();
+
+                    for (int i = 0; i < dataArray.length(); i++) {
+                        JSONObject item = dataArray.getJSONObject(i);
+                        CollectionReportColumnWiseModel model = parseCollectionItem(item);
+                        if (model != null) {
+                            reportList.add(model);
+                        }
+                    }
+
+                    if (!reportList.isEmpty()) {
+                        displayReport(reportList);
+                        Toast.makeText(this, "Report loaded: " + reportList.size() + " records", Toast.LENGTH_SHORT).show();
+                    } else {
+                        showNoData();
+                        Toast.makeText(this, "No records found", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    showNoData();
+                    Toast.makeText(this, "No data available", Toast.LENGTH_SHORT).show();
+                }
             } else {
                 showNoData();
-                Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, message.isEmpty() ? "No data found" : message, Toast.LENGTH_SHORT).show();
             }
         } catch (JSONException e) {
             Log.e(TAG, "Error parsing report response", e);
             showNoData();
             Toast.makeText(this, "Error parsing report data", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    /**
+     * Parse individual collection item from JSON
+     */
+    private CollectionReportColumnWiseModel parseCollectionItem(JSONObject item) {
+        try {
+            CollectionReportColumnWiseModel model = new CollectionReportColumnWiseModel();
+
+            // Basic IDs
+            model.id = item.optString("id", "");
+            model.invNo = item.optString("inv_no", "");
+            model.date = item.optString("date", "");
+
+            // Student Information
+            model.admissionNo = item.optString("admission_no", "");
+            model.firstname = item.optString("firstname", "");
+            model.middlename = item.optString("middlename", "");
+            model.lastname = item.optString("lastname", "");
+
+            // Class Information
+            model.className = item.optString("class", "");
+            model.section = item.optString("section", "");
+
+            // Fee Information
+            model.feeType = item.optString("type", "");
+            model.feeCode = item.optString("code", "");
+            model.feeGroup = item.optString("name", "");
+
+            // Payment Information
+            model.amount = item.optString("amount", "0");
+            model.amountDiscount = item.optString("amount_discount", "0");
+            model.amountFine = item.optString("amount_fine", "0");
+            model.paymentMode = item.optString("payment_mode", "");
+            model.receivedBy = item.optString("received_by", "");
+            model.description = item.optString("description", "");
+
+            return model;
+        } catch (Exception e) {
+            Log.e(TAG, "Error parsing collection item", e);
+            return null;
+        }
+    }
+
+    /**
+     * Display report in RecyclerView with column-wise layout
+     */
+    private void displayReport(List<CollectionReportColumnWiseModel> reportList) {
+        if (reportContentRecyclerView != null) {
+            FeeCollectionReportColumnWiseAdapter adapter = new FeeCollectionReportColumnWiseAdapter(this, reportList);
+            reportContentRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+            reportContentRecyclerView.setAdapter(adapter);
+            showContent();
+            Log.d(TAG, "RecyclerView adapter set successfully with " + reportList.size() + " items");
+        } else {
+            Log.e(TAG, "reportContentRecyclerView is NULL!");
         }
     }
 
