@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_adapter_user_log_item.xml.flat",
+        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\adapter_user_log_item.xml"
+    },
+    {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_videoplay_activity.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\videoplay_activity.xml"
     },
@@ -168,12 +172,12 @@
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\ic_nav_fees.png"
     },
     {
-        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_radiobutton_black.png.flat",
-        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\radiobutton_black.png"
-    },
-    {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_adapter_submenu_item.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\adapter_submenu_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_radiobutton_black.png.flat",
+        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\radiobutton_black.png"
     },
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_splash_logo.png.flat",
@@ -358,10 +362,6 @@
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_upload_homework.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\upload_homework.xml"
-    },
-    {
-        "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_item_fee_collection_report_column_wise.xml.flat",
-        "source": "com.qdocs.ssre241123.app-main-7:/layout/item_fee_collection_report_column_wise.xml"
     },
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_fees_balance_dialoug.xml.flat",
@@ -988,6 +988,10 @@
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\assissment_type_layout.xml"
     },
     {
+        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_activity_user_log_report.xml.flat",
+        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\activity_user_log_report.xml"
+    },
+    {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_ic_phone_filled.png.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\ic_phone_filled.png"
     },
@@ -1432,6 +1436,10 @@
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\ic_documents_certificate.png"
     },
     {
+        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_adapter_alumni_item.xml.flat",
+        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\adapter_alumni_item.xml"
+    },
+    {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_item_student_report.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\item_student_report.xml"
     },
@@ -1454,6 +1462,10 @@
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_ic_fa_sitemap.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\ic_fa_sitemap.xml"
+    },
+    {
+        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_item_fee_collection_report_column_wise.xml.flat",
+        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\item_fee_collection_report_column_wise.xml"
     },
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_bottom_img.png.flat",
@@ -1798,6 +1810,10 @@
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_ic_arrow_back.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\ic_arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_activity_alumni_report.xml.flat",
+        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\activity_alumni_report.xml"
     },
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_uploadfile.jpg.flat",
@@ -2206,6 +2222,10 @@
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_ic_arrow_up.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\ic_arrow_up.xml"
+    },
+    {
+        "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_activity_user_log_report.xml.flat",
+        "source": "com.qdocs.ssre241123.app-main-7:/layout/activity_user_log_report.xml"
     },
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_activity_open_pdf.xml.flat",

@@ -193,8 +193,20 @@ public class TeacherReportCategoryActivity extends BaseActivity {
                 );
                 break;
 
+            case "user_log":
+                reportItems = Arrays.asList(
+                    new ReportItem("user_log_report", "user_log_report", getString(R.string.user_log_report), "user_log", R.drawable.ic_fa_list_alt)
+                );
+                break;
+
+            case "alumni":
+                reportItems = Arrays.asList(
+                    new ReportItem("alumni_report", "alumni_report", getString(R.string.alumni_report), "alumni", R.drawable.ic_fa_graduation_cap)
+                );
+                break;
+
             default:
-                // For categories without specific reports yet (transport, hostel, alumni, user_log, audit_trail)
+                // For categories without specific reports yet (transport, hostel, audit_trail)
                 reportItems = new ArrayList<>();
                 break;
         }

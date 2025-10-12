@@ -485,11 +485,15 @@ public class TeacherReportsActivity extends BaseActivity {
         categories.add(new ReportCategory("hostel", "hostel", getString(R.string.hostel_reports), R.drawable.ic_fa_home, hostelReports));
 
         // Alumni Reports
-        List<ReportItem> alumniReports = new ArrayList<>();
+        List<ReportItem> alumniReports = Arrays.asList(
+            new ReportItem("alumni", "alumni_report", getString(R.string.alumni_report), "alumni", R.drawable.ic_fa_graduation_cap)
+        );
         categories.add(new ReportCategory("alumni", "alumni", getString(R.string.alumni_reports), R.drawable.ic_fa_graduation_cap, alumniReports));
 
         // User Log Reports
-        List<ReportItem> userLogReports = new ArrayList<>();
+        List<ReportItem> userLogReports = Arrays.asList(
+            new ReportItem("user_log", "user_log", getString(R.string.user_log_report), "user_log", R.drawable.ic_fa_list_alt)
+        );
         categories.add(new ReportCategory("user_log", "user_log", getString(R.string.user_log_reports), R.drawable.ic_fa_list_alt, userLogReports));
 
         // Audit Trail Reports

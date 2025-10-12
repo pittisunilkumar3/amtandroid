@@ -49,7 +49,9 @@ import com.qdocs.ssre241123.teachers.TeacherReportDetailActivity;
 import com.qdocs.ssre241123.teachers.TotalBalanceFeesReportActivity;
 import com.qdocs.ssre241123.teachers.TotalFeeCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.TypeWiseBalanceReportActivity;
+import com.qdocs.ssre241123.teachers.UserLogReportActivity;
 import com.qdocs.ssre241123.teachers.YearReportDueFeeActivity;
+import com.qdocs.ssre241123.teachers.AlumniReportActivity;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.Utility;
 
@@ -235,6 +237,14 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch PayrollReportActivity for Payroll Report
             Log.d(TAG, "Launching PayrollReportActivity");
             intent = new Intent(context, PayrollReportActivity.class);
+        } else if ("user_log".equals(reportItem.getId()) || "user_log_report".equals(reportItem.getId())) {
+            // Launch UserLogReportActivity for User Log Report
+            Log.d(TAG, "Launching UserLogReportActivity");
+            intent = new Intent(context, UserLogReportActivity.class);
+        } else if ("alumni".equals(reportItem.getId()) || "alumni_report".equals(reportItem.getId())) {
+            // Launch AlumniReportActivity for Alumni Report
+            Log.d(TAG, "Launching AlumniReportActivity");
+            intent = new Intent(context, AlumniReportActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");

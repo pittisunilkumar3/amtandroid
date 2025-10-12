@@ -68,7 +68,9 @@
     <string name="transport_reports">Transport</string>
     <string name="hostel_reports">Hostel</string>
     <string name="alumni_reports">Alumni</string>
+    <string name="alumni_report">Alumni Report</string>
     <string name="user_log_reports">User Log</string>
+    <string name="user_log_report">User Log Report</string>
     <string name="audit_trail_reports">Audit Trail Report</string>
 
     <!-- Student Information Reports -->

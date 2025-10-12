@@ -139,6 +139,14 @@ public class Constants {
     public static final String expenseHeadListUrl = "expense-head-list/list";
     public static final String rolesListUrl = "roles-list/list";
 
+    // User Log API endpoints
+    public static final String userLogFilterUrl = "user-log/filter";
+    public static final String userLogListUrl = "user-log/list";
+
+    // Alumni Report API endpoints
+    public static final String alumniReportFilterUrl = "alumni-report/filter";
+    public static final String alumniReportListUrl = "alumni-report/list";
+
     // Student Academic Report API endpoints
     public static final String studentAcademicReportFilterUrl = "student-academic-report/filter";
     public static final String studentAcademicReportListUrl = "student-academic-report/list";

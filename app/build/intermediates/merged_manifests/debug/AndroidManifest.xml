@@ -133,6 +133,12 @@
             android:name="com.qdocs.ssre241123.teachers.PayrollReportActivity"
             android:exported="false" />
         <activity
+            android:name="com.qdocs.ssre241123.teachers.AlumniReportActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.qdocs.ssre241123.teachers.UserLogReportActivity"
+            android:exported="false" />
+        <activity
             android:name="com.qdocs.ssre241123.teachers.TypeWiseBalanceReportActivity"
             android:exported="false" />
         <activity

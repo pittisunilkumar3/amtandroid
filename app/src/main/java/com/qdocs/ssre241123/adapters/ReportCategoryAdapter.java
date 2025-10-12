@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.qdocs.ssre241123.R;
 import com.qdocs.ssre241123.model.ReportCategory;
 import com.qdocs.ssre241123.teachers.TeacherReportCategoryActivity;
+import com.qdocs.ssre241123.teachers.UserLogReportActivity;
+import com.qdocs.ssre241123.teachers.AlumniReportActivity;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.Utility;
 
@@ -59,9 +61,22 @@ public class ReportCategoryAdapter extends RecyclerView.Adapter<ReportCategoryAd
     }
 
     private void handleCategoryClick(ReportCategory category) {
-        Intent intent = new Intent(context, TeacherReportCategoryActivity.class);
-        intent.putExtra("category_id", category.getId());
-        intent.putExtra("category_name", category.getDisplayName());
+        Intent intent;
+        
+        // Handle special categories that should go directly to their report screens
+        if ("user_log".equals(category.getId())) {
+            // For User Log, go directly to UserLogReportActivity
+            intent = new Intent(context, UserLogReportActivity.class);
+        } else if ("alumni".equals(category.getId())) {
+            // For Alumni, go directly to AlumniReportActivity  
+            intent = new Intent(context, AlumniReportActivity.class);
+        } else {
+            // For other categories, go to the category screen
+            intent = new Intent(context, TeacherReportCategoryActivity.class);
+            intent.putExtra("category_id", category.getId());
+            intent.putExtra("category_name", category.getDisplayName());
+        }
+        
         context.startActivity(intent);
         if (context instanceof android.app.Activity) {
             ((android.app.Activity) context).overridePendingTransition(R.anim.slide_leftright, R.anim.no_animation);

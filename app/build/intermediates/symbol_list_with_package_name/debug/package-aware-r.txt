@@ -2076,6 +2076,7 @@ id alertTitle
 id aligned
 id all
 id allStates
+id alumniRecyclerView
 id always
 id amount
 id amountTV
@@ -2173,6 +2174,7 @@ id carryVelocity
 id caste
 id categories_recyclerView
 id category
+id categorySpinner
 id category_active_switch
 id category_cardView
 id category_count_tv
@@ -2239,6 +2241,7 @@ id classTv
 id class_id_tv
 id class_name_tv
 id class_sec_tv
+id class_section_layout
 id class_section_tv
 id class_spinner
 id class_tv
@@ -2362,6 +2365,7 @@ id dateTV
 id dateTv
 id date_range_layout
 id date_range_tv
+id date_time_tv
 id date_tv
 id datefrom
 id dateofPayment
@@ -2401,6 +2405,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id details_tv
+id device_info_tv
 id dialog_button
 id dimensions
 id direct
@@ -2471,6 +2476,7 @@ id edit_text_id
 id elearning_card
 id elearning_recyclerView
 id email
+id emailTv
 id email_layout
 id email_tv
 id employee_id_tv
@@ -2706,6 +2712,7 @@ id instruction
 id invisible
 id invoiceNoTv
 id invoice_no_tv
+id ip_address_tv
 id italic
 id item_line
 id item_subtitle
@@ -2881,6 +2888,7 @@ id notification_alert
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id occupationTv
 id off
 id offlinePayment
 id on
@@ -2931,6 +2939,7 @@ id parent_studentList_studentClassTV
 id parent_studentList_studentImage
 id parent_studentList_studentNameTV
 id parent_studentList_viewContainer
+id passOutYearBadge
 id passing_per
 id passwordLayout
 id password_container
@@ -2977,6 +2986,7 @@ id percentage
 id period_tv
 id permanentAdd
 id permanentAdd_layout
+id phoneTv
 id pickup_point
 id pickup_point_layout
 id piechart
@@ -3072,6 +3082,8 @@ id right_icon
 id right_side
 id robotoCalendarDateTitleContainer
 id robotoCalendarPicker
+id roleTypeSpinner
+id role_badge_tv
 id role_designation_tv
 id role_spinner
 id rollNoTextView
@@ -3601,7 +3613,9 @@ id upload_layout
 id uploaddate
 id useLogo
 id userImage
+id userLogRecyclerView
 id user_list
+id user_name_tv
 id username_container
 id username_tv
 id valid_upto
@@ -3713,6 +3727,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout about_school_activity
+layout activity_alumni_report
 layout activity_balance_fees_report
 layout activity_balance_fees_report_with_remark
 layout activity_behaviour_comment
@@ -3775,6 +3790,8 @@ layout activity_teacher_submenu
 layout activity_total_balance_fees_report
 layout activity_total_fee_collection_report
 layout activity_type_wise_balance_report
+layout activity_user_log_report
+layout adapter_alumni_item
 layout adapter_content_upload_detail
 layout adapter_course_curriculum
 layout adapter_course_curriculum_lesson
@@ -3843,6 +3860,7 @@ layout adapter_student_visitorbook
 layout adapter_submenu_item
 layout adapter_teacher_module
 layout adapter_test
+layout adapter_user_log_item
 layout add_assignment
 layout add_course_assignment
 layout add_course_rating
@@ -4113,6 +4131,7 @@ string admissionNo
 string admission_number
 string admission_report
 string all
+string alumni_report
 string alumni_reports
 string amount
 string amount_per
@@ -4802,6 +4821,7 @@ string uploaded_documents
 string uploadhomeworkheading
 string userNameHint
 string userPasswordHint
+string user_log_report
 string user_log_reports
 string username
 string usernamePasswordHint
