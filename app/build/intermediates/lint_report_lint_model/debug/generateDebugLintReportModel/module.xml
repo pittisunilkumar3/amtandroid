@@ -1,0 +1,25 @@
+<lint-module
+    format="1"
+    dir="C:\Users\pitti\Downloads\smartschoolapp-42\codecanyon-23664144-smart-school-android-app-mobile-application-for-smart-school\smart_school_android_app_src\app"
+    name=":app"
+    type="APP"
+    maven="smart_school_android_app_src:app:"
+    agpVersion="8.2.0"
+    buildFolder="build"
+    bootClassPath="C:\Users\pitti\AppData\Local\Android\Sdk\platforms\android-35\android.jar;C:\Users\pitti\AppData\Local\Android\Sdk\build-tools\34.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-35"
+    neverShrinking="true">
+  <lintOptions
+      disable="RestrictedApi"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="RestrictedApi"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="debug"/>
+</lint-module>

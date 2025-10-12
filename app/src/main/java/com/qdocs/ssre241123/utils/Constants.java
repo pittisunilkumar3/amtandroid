@@ -151,6 +151,10 @@ public class Constants {
     public static final String studentAcademicReportFilterUrl = "student-academic-report/filter";
     public static final String studentAcademicReportListUrl = "student-academic-report/list";
 
+    // Class Attendance Report API endpoints
+    public static final String classAttendanceReportFilterUrl = "class-attendance-report/filter";
+    public static final String classAttendanceReportListUrl = "class-attendance-report/list";
+
     // Report By Name API endpoints
     public static final String reportByNameFilterUrl = "report-by-name/filter";
     public static final String reportByNameListUrl = "report-by-name/list";

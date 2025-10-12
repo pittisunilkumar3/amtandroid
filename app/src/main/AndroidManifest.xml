@@ -119,6 +119,9 @@
             android:name=".teachers.AlumniReportActivity"
             android:exported="false" />
         <activity
+            android:name=".teachers.ClassAttendanceReportActivity"
+            android:exported="false" />
+        <activity
             android:name=".teachers.UserLogReportActivity"
             android:exported="false" />
         <activity
