@@ -1802,6 +1802,7 @@ id about_phoneTV
 id about_schoolCodeTV
 id about_sessionMonthTV
 id absentCountTv
+id absentPercentTv
 id absentTv
 id academic_card
 id academic_recyclerView
@@ -2109,6 +2110,7 @@ id attachmentdetail
 id attempt
 id attempted
 id attendancePercentageTv
+id attendanceProgressBar
 id attendanceRecyclerView
 id attendanceTypeCard
 id attendanceTypeTv
@@ -2371,6 +2373,8 @@ id date5
 id date6
 id date7
 id dateET
+id datePickerTv
+id dateSummaryTv
 id dateTV
 id dateTv
 id date_range_layout
@@ -2665,6 +2669,7 @@ id guardiancontact_layout
 id guardianemail_layout
 id guardianrelation_layout
 id guardiaoccup_layout
+id halfDayCountTv
 id halfDayTv
 id headLayout
 id headerLayout
@@ -2956,6 +2961,7 @@ id option_e_value
 id other_card
 id other_recyclerView
 id outline
+id overallPercentageTv
 id overshoot
 id packed
 id paidAmountTextView
@@ -3029,6 +3035,7 @@ id point
 id position
 id postLayout
 id presentCountTv
+id presentPercentTv
 id presentTv
 id presentation
 id previous
@@ -3548,6 +3555,7 @@ id topPanel
 id topic
 id topic_count
 id topimage
+id totalAbsentSummaryTv
 id totalAmountTv
 id totalBalanceTextView
 id totalDaysTv
@@ -3559,8 +3567,12 @@ id totalFeeTv
 id totalFineRow
 id totalFineTextView
 id totalPaidTextView
+id totalPresentSummaryTv
+id totalPresentTv
 id totalRecordsTv
+id totalStudentsSummaryTv
 id totalStudentsTextView
+id totalStudentsTv
 id total_amount_tv
 id total_answerwordcount
 id total_balance_tv
@@ -3779,6 +3791,7 @@ layout activity_cbse_examination
 layout activity_cbsetimetable
 layout activity_class_attendance_report
 layout activity_course_exam_result
+layout activity_daily_attendance_report
 layout activity_daily_collection_report
 layout activity_disable_reasons
 layout activity_expense_group_report
@@ -3998,6 +4011,7 @@ layout item_admission_report
 layout item_class_section_report
 layout item_class_subject_report
 layout item_collection_report
+layout item_daily_attendance_report
 layout item_daily_collection_report
 layout item_disable_reason
 layout item_due_fee_report

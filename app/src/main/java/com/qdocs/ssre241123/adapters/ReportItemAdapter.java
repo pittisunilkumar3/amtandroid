@@ -23,6 +23,7 @@ import com.qdocs.ssre241123.teachers.BalanceFeesReportWithRemarkActivity;
 import com.qdocs.ssre241123.teachers.ClassAttendanceReportActivity;
 import com.qdocs.ssre241123.teachers.ClassSectionReportActivity;
 import com.qdocs.ssre241123.teachers.ClassSubjectReportActivity;
+import com.qdocs.ssre241123.teachers.DailyAttendanceReportActivity;
 import com.qdocs.ssre241123.teachers.DailyCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.DueFeeReportActivity;
 import com.qdocs.ssre241123.teachers.ExpenseGroupReportActivity;
@@ -251,6 +252,10 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch ClassAttendanceReportActivity for Class Attendance Report
             Log.d(TAG, "Launching ClassAttendanceReportActivity");
             intent = new Intent(context, ClassAttendanceReportActivity.class);
+        } else if ("daily_attendance_report".equals(reportItem.getId())) {
+            // Launch DailyAttendanceReportActivity for Daily Attendance Report
+            Log.d(TAG, "Launching DailyAttendanceReportActivity");
+            intent = new Intent(context, DailyAttendanceReportActivity.class);
         } else if ("staff_attendance_report".equals(reportItem.getId())) {
             // Launch StaffAttendanceReportActivity for Staff Attendance Report
             Log.d(TAG, "Launching StaffAttendanceReportActivity");
