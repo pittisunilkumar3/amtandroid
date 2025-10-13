@@ -101,6 +101,18 @@ public class Constants {
     public static final String totalStudentAcademicReportFilterUrl = "total-student-academic-report/filter";
     public static final String totalStudentAcademicReportListUrl = "total-student-academic-report/list";
 
+    // Staff Attendance Report API endpoints (OLD - replaced with monthly report)
+    public static final String staffAttendanceReportFilterUrl = "staff-attendance-report/filter";
+    public static final String staffAttendanceReportListUrl = "staff-attendance-report/list";
+    public static final String staffAttendanceYearsListUrl = "staff-attendance-years/list";
+    
+    // Monthly Staff Attendance Report API endpoints (NEW)
+    public static final String monthlyStaffAttendanceReportUrl = "monthly-staff-attendance/report";
+    public static final String monthlyStaffAttendanceAvailablePeriodsUrl = "monthly-staff-attendance/available-periods";
+
+    // Class Attendance Years API endpoint
+    public static final String classAttendanceYearsListUrl = "class-attendance-years/list";
+
     // Collection Report API endpoints
     public static final String collectionReportFilterUrl = "collection-report/filter";
     public static final String collectionReportListUrl = "collection-report/list";

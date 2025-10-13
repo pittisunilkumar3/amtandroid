@@ -37,6 +37,7 @@ import com.qdocs.ssre241123.teachers.PayrollReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineAdmissionReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineAdmissionFeeReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineFeesReportActivity;
+import com.qdocs.ssre241123.teachers.StaffAttendanceReportActivity;
 import com.qdocs.ssre241123.teachers.OtherFeeAndCollectionFeeCombinedActivity;
 import com.qdocs.ssre241123.teachers.OtherFeesCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.OtherCollectionReportActivity;
@@ -250,6 +251,10 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch ClassAttendanceReportActivity for Class Attendance Report
             Log.d(TAG, "Launching ClassAttendanceReportActivity");
             intent = new Intent(context, ClassAttendanceReportActivity.class);
+        } else if ("staff_attendance_report".equals(reportItem.getId())) {
+            // Launch StaffAttendanceReportActivity for Staff Attendance Report
+            Log.d(TAG, "Launching StaffAttendanceReportActivity");
+            intent = new Intent(context, StaffAttendanceReportActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");

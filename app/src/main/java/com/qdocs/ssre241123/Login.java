@@ -262,7 +262,7 @@ public class Login extends Activity {
                             // Always use the configured domain instead of server-returned URL
                             String configuredApiUrl = Utility.getApiUrl(getApplicationContext());
                             Utility.setSharedPreference(MyApp.getContext(), Constants.imagesUrl, object.getString("site_url"));
-                            Log.e("API URL Override", "Using configured domain: " + configuredApiUrl + " instead of server URL: " + object.getString("url"));
+                            Log.i("API URL", "Using configured domain: " + configuredApiUrl + " (server returned: " + object.getString("url") + ")");
                             String app_ver= object.getString("app_ver");
                             Utility.setSharedPreference(getApplicationContext(), Constants.app_ver, app_ver);
                             String appLogo = object.getString("site_url") + "uploads/school_content/logo/app_logo/" + object.getString("app_logo");
@@ -279,7 +279,7 @@ public class Login extends Activity {
                                 Utility.setSharedPreference(getApplicationContext(), Constants.secondaryColour, Constants.defaultSecondaryColour);
                                 Utility.setSharedPreference(getApplicationContext(), Constants.primaryColour, Constants.defaultPrimaryColour);
                             }
-                            Log.e("apiUrl Utility", Utility.getSharedPreferences(getApplicationContext(), "apiUrl"));
+                            Log.i("apiUrl", "Active API URL: " + Utility.getSharedPreferences(getApplicationContext(), "apiUrl"));
 
                         } else {
                             Toast.makeText(getApplicationContext(), "Invalid Domain.", Toast.LENGTH_SHORT).show();

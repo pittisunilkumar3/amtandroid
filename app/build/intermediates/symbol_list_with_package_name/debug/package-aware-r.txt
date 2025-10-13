@@ -1802,6 +1802,7 @@ id about_phoneTV
 id about_schoolCodeTV
 id about_sessionMonthTV
 id absentCountTv
+id absentTv
 id academic_card
 id academic_recyclerView
 id accelerate
@@ -2109,6 +2110,8 @@ id attempt
 id attempted
 id attendancePercentageTv
 id attendanceRecyclerView
+id attendanceTypeCard
+id attendanceTypeTv
 id attendance_mainLay
 id attendence
 id attendence_date
@@ -2164,11 +2167,13 @@ id buttonSelectImage
 id buttonUploadImage
 id buy_now_btn
 id cache_measures
+id calendarGrid
 id calendar_card
 id callMeasure
 id cancelBtn
 id cancel_action
 id cancel_button
+id cardView
 id cardViewGraph
 id card_view
 id card_view_inner
@@ -2254,6 +2259,7 @@ id classes
 id classhost
 id classsection
 id classteacher
+id clearFiltersButton
 id clip_horizontal
 id clip_vertical
 id clockwise
@@ -2348,6 +2354,7 @@ id currentState
 id curriculum_layout
 id custom
 id customPanel
+id dailyAttendanceContainer
 id dark
 id dashboardViewPager
 id dashboard_bottomSheet_crossBtn
@@ -2393,6 +2400,7 @@ id delete
 id delete_button
 id delete_icon
 id deltaRelative
+id departmentTv
 id dependency_ordering
 id depositTv
 id description
@@ -2407,8 +2415,19 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id designationTv
 id details_tv
 id device_info_tv
+id dialogAbsent
+id dialogEmployeeId
+id dialogHalfDay
+id dialogHoliday
+id dialogLate
+id dialogPercentage
+id dialogPresent
+id dialogRole
+id dialogStaffName
+id dialogStatus
 id dialog_button
 id dimensions
 id direct
@@ -2482,6 +2501,7 @@ id email
 id emailTv
 id email_layout
 id email_tv
+id employeeIdTv
 id employee_id_tv
 id end
 id end_padder
@@ -2575,6 +2595,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id filtersAppliedTv
 id filtersCard
 id filters_card
 id fineLayout
@@ -2644,6 +2665,7 @@ id guardiancontact_layout
 id guardianemail_layout
 id guardianrelation_layout
 id guardiaoccup_layout
+id halfDayTv
 id headLayout
 id headerLayout
 id header_layout
@@ -2654,6 +2676,7 @@ id headlayout
 id height
 id height_layout
 id hide_ime_id
+id holidayTv
 id home
 id homeAsUp
 id homedoc_name
@@ -2732,6 +2755,7 @@ id langTV
 id lang_spinner
 id largeLabel
 id lateCountTv
+id lateTv
 id lay_down
 id layout
 id layout1
@@ -2990,6 +3014,8 @@ id pending
 id pending_status_layout
 id percent
 id percentage
+id percentageTv
+id periodTv
 id period_tv
 id permanentAdd
 id permanentAdd_layout
@@ -3003,6 +3029,7 @@ id point
 id position
 id postLayout
 id presentCountTv
+id presentTv
 id presentation
 id previous
 id previousSchool
@@ -3064,6 +3091,7 @@ id refresh
 id religion
 id religion_layout
 id remark
+id remarkTv
 id remark_layout
 id remark_tv
 id reportCard_examResult
@@ -3090,6 +3118,8 @@ id right_icon
 id right_side
 id robotoCalendarDateTitleContainer
 id robotoCalendarPicker
+id roleSpinner
+id roleTv
 id roleTypeSpinner
 id role_badge_tv
 id role_designation_tv
@@ -3195,6 +3225,7 @@ id src_atop
 id src_in
 id src_over
 id staff
+id staffNameTv
 id staff_name_tv
 id standard
 id start
@@ -3206,6 +3237,7 @@ id starttime
 id staticLayout
 id staticPostLayout
 id status
+id statusTv
 id status_bar_latest_event_content
 id status_tv
 id statusdate
@@ -3671,6 +3703,7 @@ id weight_layout
 id west
 id wide
 id withText
+id workingDaysTv
 id wrap
 id wrap_content
 id wrap_content_constrained
@@ -3768,6 +3801,7 @@ layout activity_other_fee_and_collection_fee_combined
 layout activity_other_fees_collection_report
 layout activity_payroll_report
 layout activity_setting
+layout activity_staff_attendance_report
 layout activity_start_lesson
 layout activity_student_apply_leave
 layout activity_student_behaviour_report
@@ -3814,6 +3848,7 @@ layout adapter_discount_details_fees
 layout adapter_download_videolist
 layout adapter_fragment_studentdownload
 layout adapter_module_selection
+layout adapter_monthly_staff_attendance_item
 layout adapter_offlinepayment
 layout adapter_onlinecourse_exam_result
 layout adapter_onlineexam_questions
@@ -3824,6 +3859,7 @@ layout adapter_report_card_exam_list
 layout adapter_report_card_exam_result
 layout adapter_report_category
 layout adapter_report_item
+layout adapter_staff_attendance_item
 layout adapter_start_lesson
 layout adapter_start_section
 layout adapter_student_applyleave
@@ -3921,6 +3957,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_monthly_calendar
 layout dialog_payslip_view
 layout dialog_search_results
 layout discountgrouplist

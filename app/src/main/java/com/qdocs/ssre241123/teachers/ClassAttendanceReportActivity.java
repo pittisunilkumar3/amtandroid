@@ -30,6 +30,7 @@ import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.Utility;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
@@ -319,6 +320,95 @@ public class ClassAttendanceReportActivity extends BaseActivity {
     }
 
     private void setupYearSpinner() {
+        // Load years dynamically from sessions API
+        loadYearsFromSessionsAPI();
+    }
+
+    private void loadYearsFromSessionsAPI() {
+        if (!Utility.isConnectingToInternet(getApplicationContext())) {
+            Log.w(TAG, "No internet connection, using default years");
+            setupDefaultYearSpinner();
+            return;
+        }
+
+        String url = Utility.buildApiUrl(getApplicationContext(), Constants.classAttendanceYearsListUrl);
+        Log.d(TAG, "Loading years from class-attendance-years API: " + url);
+
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                response -> {
+                    Log.d(TAG, "Class Attendance Years API Response received");
+                    Log.d(TAG, "Response: " + response);
+                    parseYearsFromAPI(response);
+                },
+                error -> {
+                    Log.e(TAG, "Error loading class attendance years: " + error.toString());
+                    // Fallback to default year list
+                    setupDefaultYearSpinner();
+                }) {
+            @Override
+            public Map<String, String> getHeaders() {
+                Map<String, String> headers = new HashMap<>();
+                headers.put("Client-Service", Constants.clientService);
+                headers.put("Auth-Key", Constants.authKey);
+                headers.put("Content-Type", "application/json");
+                return headers;
+            }
+
+            @Override
+            public byte[] getBody() {
+                return "{}".getBytes();
+            }
+        };
+
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+    }
+
+    private void parseYearsFromAPI(String response) {
+        try {
+            JSONObject jsonObject = new JSONObject(response);
+            int status = jsonObject.optInt("status", 0);
+
+            if (status == 1) {
+                JSONArray dataArray = jsonObject.optJSONArray("data");
+                List<String> yearList = new ArrayList<>();
+                yearList.add("All Years");
+
+                if (dataArray != null && dataArray.length() > 0) {
+                    for (int i = 0; i < dataArray.length(); i++) {
+                        JSONObject yearObj = dataArray.getJSONObject(i);
+                        String year = yearObj.optString("year", "");
+                        
+                        if (!year.isEmpty()) {
+                            yearList.add(year);
+                        }
+                    }
+                }
+
+                int totalYears = jsonObject.optInt("total_years", 0);
+                Log.d(TAG, "Loaded " + totalYears + " years from class-attendance-years API");
+
+                if (yearList.size() > 1) {
+                    // Setup spinner with API years
+                    setupYearSpinnerWithData(yearList);
+                } else {
+                    Log.w(TAG, "No years found in API response, using default years");
+                    setupDefaultYearSpinner();
+                }
+            } else {
+                String message = jsonObject.optString("message", "Failed to load years");
+                Log.w(TAG, "API returned status 0: " + message);
+                setupDefaultYearSpinner();
+            }
+        } catch (JSONException e) {
+            Log.e(TAG, "Error parsing class attendance years response: " + e.getMessage());
+            setupDefaultYearSpinner();
+        }
+    }
+
+    private void setupDefaultYearSpinner() {
+        Log.d(TAG, "Setting up default year spinner (current + 9 years)");
+        
         List<String> years = new ArrayList<>();
         years.add("All Years");
 
@@ -327,6 +417,10 @@ public class ClassAttendanceReportActivity extends BaseActivity {
             years.add(String.valueOf(currentYear - i));
         }
 
+        setupYearSpinnerWithData(years);
+    }
+
+    private void setupYearSpinnerWithData(List<String> years) {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, years);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         yearSpinner.setAdapter(adapter);
