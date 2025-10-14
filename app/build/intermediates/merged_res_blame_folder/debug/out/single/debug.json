@@ -40,6 +40,10 @@
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\ic_fa_check.xml"
     },
     {
+        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_activity_biometric_attlog_report.xml.flat",
+        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\activity_biometric_attlog_report.xml"
+    },
+    {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_activity_cbse_examination.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\activity_cbse_examination.xml"
     },
@@ -62,6 +66,10 @@
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_activity_other_fee_and_collection_fee_combined.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\activity_other_fee_and_collection_fee_combined.xml"
+    },
+    {
+        "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_login_activity.xml.flat",
+        "source": "com.qdocs.ssre241123.app-main-7:/layout/login_activity.xml"
     },
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_activity_teacher_login.xml.flat",
@@ -676,6 +684,10 @@
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\item_class_subject_report.xml"
     },
     {
+        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_activity_daily_attendance_report.xml.flat",
+        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\activity_daily_attendance_report.xml"
+    },
+    {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\xml_network_security_config.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\xml\\network_security_config.xml"
     },
@@ -798,6 +810,10 @@
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_student_attendance_activity.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\student_attendance_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_list_item_biometric_attlog_report.xml.flat",
+        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\list_item_biometric_attlog_report.xml"
     },
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_empty_divider.xml.flat",
@@ -1276,6 +1292,10 @@
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\item_type_wise_balance_report.xml"
     },
     {
+        "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_item_daily_attendance_report.xml.flat",
+        "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\item_daily_attendance_report.xml"
+    },
+    {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_ic_library.png.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\ic_library.png"
     },
@@ -1450,10 +1470,6 @@
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_adapter_alumni_item.xml.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\layout\\adapter_alumni_item.xml"
-    },
-    {
-        "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_activity_daily_attendance_report.xml.flat",
-        "source": "com.qdocs.ssre241123.app-main-7:/layout/activity_daily_attendance_report.xml"
     },
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_item_student_report.xml.flat",
@@ -2322,10 +2338,6 @@
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\drawable_ic_calender.png.flat",
         "source": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-main-7:\\drawable\\ic_calender.png"
-    },
-    {
-        "merged": "com.qdocs.ssre241123.app-merged_res-5:/layout_item_daily_attendance_report.xml.flat",
-        "source": "com.qdocs.ssre241123.app-main-7:/layout/item_daily_attendance_report.xml"
     },
     {
         "merged": "C:\\Users\\pitti\\scoop\\apps\\gradle\\current\\.gradle\\daemon\\8.2\\com.qdocs.ssre241123.app-merged_res-5:\\layout_choose_file.xml.flat",

@@ -2112,11 +2112,13 @@ id attempted
 id attendancePercentageTv
 id attendanceProgressBar
 id attendanceRecyclerView
+id attendanceStatusTv
 id attendanceTypeCard
 id attendanceTypeTv
 id attendance_mainLay
 id attendence
 id attendence_date
+id attlogRecyclerView
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -2146,6 +2148,8 @@ id beginOnFirstDraw
 id beginning
 id behaviourscore
 id bestChoice
+id biometricDeviceLayout
+id biometricDeviceTv
 id blocking
 id blood_layout
 id bloodgroup
@@ -2374,6 +2378,7 @@ id date6
 id date7
 id dateET
 id datePickerTv
+id dateRangeTv
 id dateSummaryTv
 id dateTV
 id dateTv
@@ -2626,6 +2631,7 @@ id fragment_student_classtimetable_listview
 id fridayNoData
 id fridaylayout
 id fromDateEditText
+id fromDateTv
 id from_date_edit_text
 id from_date_et
 id fromdate
@@ -2802,6 +2808,7 @@ id listMode
 id list_item
 id liveclass_webview
 id ll_checkBox
+id loadMoreButton
 id localIdNo
 id localIdNo_layout
 id location
@@ -3098,6 +3105,7 @@ id refresh
 id religion
 id religion_layout
 id remark
+id remarkLayout
 id remarkTv
 id remark_layout
 id remark_tv
@@ -3116,6 +3124,7 @@ id reports_recyclerView
 id reset_quiz
 id resultBtn
 id resultTV
+id returnedRecordsTv
 id reverseSawtooth
 id review
 id review_layout
@@ -3190,6 +3199,7 @@ id search_type_spinner
 id search_voice_btn
 id sectionNameTV
 id sectionSpinner
+id sectionTv
 id section_id_tv
 id section_name_tv
 id section_spinner
@@ -3545,6 +3555,7 @@ id title_template
 id title_textview
 id titlename
 id toDateEditText
+id toDateTv
 id to_date_edit_text
 id to_date_et
 id todate
@@ -3787,6 +3798,7 @@ layout activity_alumni_report
 layout activity_balance_fees_report
 layout activity_balance_fees_report_with_remark
 layout activity_behaviour_comment
+layout activity_biometric_attlog_report
 layout activity_cbse_examination
 layout activity_cbsetimetable
 layout activity_class_attendance_report
@@ -4049,6 +4061,7 @@ layout item_total_student_academic_report
 layout item_type_wise_balance_report
 layout lesson_description
 layout lesson_topic_dialoug
+layout list_item_biometric_attlog_report
 layout list_row
 layout liveclasses_activity
 layout login_activity

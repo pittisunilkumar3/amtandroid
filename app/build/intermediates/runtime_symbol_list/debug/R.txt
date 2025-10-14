@@ -2111,11 +2111,13 @@ int id attempted 0x7f09014f
 int id attendancePercentageTv 0x7f090150
 int id attendanceProgressBar 0x7f090151
 int id attendanceRecyclerView 0x7f090152
+int id attendanceStatusTv 0x7f0907a2
 int id attendanceTypeCard 0x7f090153
 int id attendanceTypeTv 0x7f090154
 int id attendance_mainLay 0x7f090155
 int id attendence 0x7f090156
 int id attendence_date 0x7f090157
+int id attlogRecyclerView 0x7f0907a3
 int id auto 0x7f090158
 int id autoComplete 0x7f090159
 int id autoCompleteToEnd 0x7f09015a
@@ -2145,6 +2147,8 @@ int id beginOnFirstDraw 0x7f090171
 int id beginning 0x7f090172
 int id behaviourscore 0x7f090173
 int id bestChoice 0x7f090174
+int id biometricDeviceLayout 0x7f0907a4
+int id biometricDeviceTv 0x7f0907a5
 int id blocking 0x7f090175
 int id blood_layout 0x7f090176
 int id bloodgroup 0x7f090177
@@ -2373,6 +2377,7 @@ int id date6 0x7f090255
 int id date7 0x7f090256
 int id dateET 0x7f090257
 int id datePickerTv 0x7f090258
+int id dateRangeTv 0x7f0907a6
 int id dateSummaryTv 0x7f090259
 int id dateTV 0x7f09025a
 int id dateTv 0x7f09025b
@@ -2625,6 +2630,7 @@ int id fragment_student_classtimetable_listview 0x7f090351
 int id fridayNoData 0x7f090352
 int id fridaylayout 0x7f090353
 int id fromDateEditText 0x7f090354
+int id fromDateTv 0x7f0907a7
 int id from_date_edit_text 0x7f090355
 int id from_date_et 0x7f090356
 int id fromdate 0x7f090357
@@ -2801,6 +2807,7 @@ int id listMode 0x7f090401
 int id list_item 0x7f090402
 int id liveclass_webview 0x7f090403
 int id ll_checkBox 0x7f090404
+int id loadMoreButton 0x7f0907a8
 int id localIdNo 0x7f090405
 int id localIdNo_layout 0x7f090406
 int id location 0x7f090407
@@ -3097,6 +3104,7 @@ int id refresh 0x7f090529
 int id religion 0x7f09052a
 int id religion_layout 0x7f09052b
 int id remark 0x7f09052c
+int id remarkLayout 0x7f0907a9
 int id remarkTv 0x7f09052d
 int id remark_layout 0x7f09052e
 int id remark_tv 0x7f09052f
@@ -3115,6 +3123,7 @@ int id reports_recyclerView 0x7f09053b
 int id reset_quiz 0x7f09053c
 int id resultBtn 0x7f09053d
 int id resultTV 0x7f09053e
+int id returnedRecordsTv 0x7f0907aa
 int id reverseSawtooth 0x7f09053f
 int id review 0x7f090540
 int id review_layout 0x7f090541
@@ -3189,6 +3198,7 @@ int id search_type_spinner 0x7f090585
 int id search_voice_btn 0x7f090586
 int id sectionNameTV 0x7f090587
 int id sectionSpinner 0x7f090588
+int id sectionTv 0x7f0907ab
 int id section_id_tv 0x7f090589
 int id section_name_tv 0x7f09058a
 int id section_spinner 0x7f09058b
@@ -3544,6 +3554,7 @@ int id title_template 0x7f0906e8
 int id title_textview 0x7f0906e9
 int id titlename 0x7f0906ea
 int id toDateEditText 0x7f0906eb
+int id toDateTv 0x7f0907ac
 int id to_date_edit_text 0x7f0906ec
 int id to_date_et 0x7f0906ed
 int id todate 0x7f0906ee
@@ -3786,6 +3797,7 @@ int layout activity_alumni_report 0x7f0c001d
 int layout activity_balance_fees_report 0x7f0c001e
 int layout activity_balance_fees_report_with_remark 0x7f0c001f
 int layout activity_behaviour_comment 0x7f0c0020
+int layout activity_biometric_attlog_report 0x7f0c017b
 int layout activity_cbse_examination 0x7f0c0021
 int layout activity_cbsetimetable 0x7f0c0022
 int layout activity_class_attendance_report 0x7f0c0023
@@ -4048,6 +4060,7 @@ int layout item_total_student_academic_report 0x7f0c0123
 int layout item_type_wise_balance_report 0x7f0c0124
 int layout lesson_description 0x7f0c0125
 int layout lesson_topic_dialoug 0x7f0c0126
+int layout list_item_biometric_attlog_report 0x7f0c017c
 int layout list_row 0x7f0c0127
 int layout liveclasses_activity 0x7f0c0128
 int layout login_activity 0x7f0c0129

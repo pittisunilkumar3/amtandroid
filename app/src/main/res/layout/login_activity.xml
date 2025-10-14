@@ -260,17 +260,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/login_layout"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="133dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="133dp"
-        android:layout_marginBottom="312dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:text="@string/gototeacherlogin"
         android:textAlignment="center"
         android:textColor="@color/textHeading"
-        android:textSize="@dimen/primaryText" />
+        android:textSize="@dimen/primaryText"
+        android:padding="10dp" />
 
 
 </RelativeLayout>

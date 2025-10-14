@@ -39,6 +39,7 @@ import com.qdocs.ssre241123.teachers.OnlineAdmissionReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineAdmissionFeeReportActivity;
 import com.qdocs.ssre241123.teachers.OnlineFeesReportActivity;
 import com.qdocs.ssre241123.teachers.StaffAttendanceReportActivity;
+import com.qdocs.ssre241123.teachers.BiometricAttlogReportActivity;
 import com.qdocs.ssre241123.teachers.OtherFeeAndCollectionFeeCombinedActivity;
 import com.qdocs.ssre241123.teachers.OtherFeesCollectionReportActivity;
 import com.qdocs.ssre241123.teachers.OtherCollectionReportActivity;
@@ -260,6 +261,11 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch StaffAttendanceReportActivity for Staff Attendance Report
             Log.d(TAG, "Launching StaffAttendanceReportActivity");
             intent = new Intent(context, StaffAttendanceReportActivity.class);
+        } else if ("biometric_attendance_log".equals(reportItem.getId()) ||
+                   "biometric_attlog_report".equals(reportItem.getId())) {
+            // Launch BiometricAttlogReportActivity for Biometric Attendance Log Report
+            Log.d(TAG, "Launching BiometricAttlogReportActivity");
+            intent = new Intent(context, BiometricAttlogReportActivity.class);
         } else {
             // Launch generic TeacherReportDetailActivity for other reports
             Log.d(TAG, "Launching TeacherReportDetailActivity");

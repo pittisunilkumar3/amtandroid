@@ -3,7 +3,6 @@ package com.qdocs.ssre241123.adapters;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
