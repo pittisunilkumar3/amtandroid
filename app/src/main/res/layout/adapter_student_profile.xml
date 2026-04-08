@@ -17,7 +17,7 @@
         android:layout_weight="1"
         android:id="@+id/adapter_student_profile_head"
         android:gravity="start"
-        android:padding="5dp"
+        android:padding="8dp"
         android:textSize="@dimen/secondaryText"
         android:textColor="@color/textHeading"
         android:text="@string/empty"/>
@@ -28,7 +28,7 @@
         android:layout_weight="1"
         android:id="@+id/adapter_student_profile_value"
         android:gravity="start"
-        android:padding="5dp"
+        android:padding="8dp"
         android:textSize="@dimen/secondaryText"
         android:text="@string/empty"
         />

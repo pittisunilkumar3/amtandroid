@@ -71,7 +71,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_user"
                             android:layout_weight="1"
-                            android:padding="6dp"
+                            android:padding="8dp"
                             />
 
                         <ImageView
@@ -86,7 +86,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/ic_briefcase"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:layout_weight="1"
                             />
 
@@ -226,7 +226,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_user"
                             android:layout_weight="1"
-                            android:padding="6dp"
+                            android:padding="8dp"
                             />
 
                         <ImageView
@@ -241,7 +241,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/ic_briefcase"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:layout_weight="1"
                             />
 
@@ -379,7 +379,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_user"
                             android:layout_weight="1"
-                            android:padding="6dp"
+                            android:padding="8dp"
                             />
 
                         <ImageView
@@ -394,14 +394,14 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/ic_briefcase"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:layout_weight="1"
                             />
 
                         <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:layout_weight="1"
                             android:src="@drawable/ic_relation"
                             />
@@ -410,7 +410,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/ic_email_filled"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:layout_weight="1"
                             />
 
@@ -418,7 +418,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/ic_location"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:layout_weight="1"
                             />
 

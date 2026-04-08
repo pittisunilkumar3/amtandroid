@@ -9,10 +9,9 @@
     <!-- Action Bar -->
     <FrameLayout
         android:id="@+id/actionBar"
+        android:background="@drawable/bg_gradient_primary"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@color/colorPrimary">
-
+        android:layout_height="64dp">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -27,13 +26,13 @@
                 <ImageView
                     android:id="@+id/back_button"
                     android:layout_width="56dp"
-                    android:layout_height="56dp"
+                    android:layout_height="64dp"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:background="@drawable/drawer_selector"
+                    android:background="?attr/selectableItemBackgroundBorderless"
                     android:scaleType="centerInside"
                     android:src="@drawable/ic_arrow_back"
-                    android:tint="@color/textHeading" />
+                    android:tint="@android:color/white" />
 
                 <TextView
                     android:id="@+id/title"
@@ -41,8 +40,8 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:text="@string/type_wise_balance_report"
-                    android:textColor="@color/textHeading"
-                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
             </RelativeLayout>
@@ -69,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="4dp">
+                app:cardElevation="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -83,7 +82,7 @@
                         android:text="Filters"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@color/textHeading"
+                        android:textColor="@android:color/white"
                         android:layout_marginBottom="12dp" />
 
                     <!-- Session Spinner -->
@@ -92,14 +91,14 @@
                         android:layout_height="wrap_content"
                         android:text="Session"
                         android:textSize="14sp"
-                        android:textColor="@color/textHeading"
+                        android:textColor="@android:color/white"
                         android:layout_marginBottom="4dp" />
 
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginBottom="12dp"
-                        android:background="@drawable/grey_outline">
+                        android:background="@drawable/bg_input_field">
 
                         <Spinner
                             android:id="@+id/session_spinner"
@@ -116,14 +115,14 @@
                         android:layout_height="wrap_content"
                         android:text="Class"
                         android:textSize="14sp"
-                        android:textColor="@color/textHeading"
+                        android:textColor="@android:color/white"
                         android:layout_marginBottom="4dp" />
 
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginBottom="12dp"
-                        android:background="@drawable/grey_outline">
+                        android:background="@drawable/bg_input_field">
 
                         <Spinner
                             android:id="@+id/class_spinner"
@@ -140,14 +139,14 @@
                         android:layout_height="wrap_content"
                         android:text="Section"
                         android:textSize="14sp"
-                        android:textColor="@color/textHeading"
+                        android:textColor="@android:color/white"
                         android:layout_marginBottom="4dp" />
 
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginBottom="12dp"
-                        android:background="@drawable/grey_outline">
+                        android:background="@drawable/bg_input_field">
 
                         <Spinner
                             android:id="@+id/section_spinner"
@@ -164,14 +163,14 @@
                         android:layout_height="wrap_content"
                         android:text="Fee Group"
                         android:textSize="14sp"
-                        android:textColor="@color/textHeading"
+                        android:textColor="@android:color/white"
                         android:layout_marginBottom="4dp" />
 
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginBottom="12dp"
-                        android:background="@drawable/grey_outline">
+                        android:background="@drawable/bg_input_field">
 
                         <Spinner
                             android:id="@+id/fee_group_spinner"
@@ -188,14 +187,14 @@
                         android:layout_height="wrap_content"
                         android:text="Fee Type"
                         android:textSize="14sp"
-                        android:textColor="@color/textHeading"
+                        android:textColor="@android:color/white"
                         android:layout_marginBottom="4dp" />
 
                     <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_marginBottom="12dp"
-                        android:background="@drawable/grey_outline">
+                        android:background="@drawable/bg_input_field">
 
                         <Spinner
                             android:id="@+id/fee_type_spinner"
@@ -214,7 +213,6 @@
                         android:text="Generate Report"
                         android:textColor="@android:color/white"
                         android:textStyle="bold"
-                        android:background="@color/colorPrimary"
                         android:layout_marginTop="8dp" />
 
                 </LinearLayout>

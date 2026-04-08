@@ -10,14 +10,14 @@
         android:id="@+id/card_view_outer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardCornerRadius="0dp"
+        app:cardCornerRadius="16dp"
         app:cardElevation="0dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:elevation="10dp"
-            app:cardElevation="3dp"
+            android:elevation="2dp"
+            app:cardElevation="1dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="20dp">
 
@@ -32,10 +32,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:cardPreventCornerOverlap="false"
-                    android:elevation="8dp"
+                    android:elevation="2dp"
                     android:layout_marginEnd="@dimen/card_end"
                     android:layout_marginStart="@dimen/card_start"
-                    app:cardCornerRadius="0dp">
+                    app:cardCornerRadius="16dp">
 
                     <RelativeLayout
                         android:id="@+id/teacher_profile_headerLayout"
@@ -118,11 +118,11 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:elevation="10dp"
-                    app:cardElevation="5dp"
+                    android:elevation="2dp"
+                    app:cardElevation="2dp"
                     android:layout_margin="10dp"
                     app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="15dp">
+                    app:cardCornerRadius="16dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"

@@ -134,6 +134,99 @@
             android:name=".teachers.UserLogReportActivity"
             android:exported="false" />
         <activity
+            android:name=".teachers.BoysGirlsRatioReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.SiblingReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.StaffReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.LessonPlanReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.TeacherSyllabusStatusReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.OnlineExamsReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.OnlineExamRankReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.OnlineExamAttendReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.InternalResultReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.ExternalResultReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.HomeworkReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.DailyAssignmentReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.EvaluationReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.StudentBookIssueReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.BookDueReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.BookInventoryReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.IssueReturnReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.InventoryStockReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.AddItemReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.IssueInventoryReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.StudentTransportDetailsReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.StudentHostelDetailsReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.StudentAcademicReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.TotalStudentAcademicReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.FeeGroupwiseCollectionReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.SessionFeeStructureReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.AuditLogReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.GenericReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.GenericCrudActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.GenericListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".teachers.BaseFilterReportActivity"
+            android:exported="false" />
+        <activity
             android:name=".teachers.TypeWiseBalanceReportActivity"
             android:exported="false" />
         <activity
@@ -199,6 +292,10 @@
         <activity
             android:name=".teachers.TeacherSubmenuActivity"
             android:exported="false" />
+        <activity
+            android:name=".teachers.TeacherSubmenuDetailActivity"
+            android:exported="false"
+            android:hardwareAccelerated="true" />
         <activity
             android:name=".teachers.TeacherLogin"
             android:exported="false" />

@@ -9,10 +9,9 @@
     <!-- Action Bar -->
     <FrameLayout
         android:id="@+id/actionBar"
+        android:background="@drawable/bg_gradient_primary"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary">
-
+        android:layout_height="?attr/actionBarSize">
         <ImageView
             android:id="@+id/actionBarBackBtn"
             android:layout_width="wrap_content"
@@ -29,7 +28,7 @@
             android:layout_gravity="center"
             android:text="@string/other_collection_report"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
     </FrameLayout>
 
@@ -50,8 +49,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -241,7 +240,7 @@
                         android:layout_marginTop="16dp"
                         android:text="Generate Report"
                         android:textColor="@color/white"
-                        android:background="@drawable/button_background"
+                        android:background="@drawable/bg_button_primary"
                         android:padding="12dp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -253,8 +252,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:visibility="gone"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"

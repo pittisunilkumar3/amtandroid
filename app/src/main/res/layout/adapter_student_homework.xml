@@ -28,10 +28,10 @@
                 android:id="@+id/adapter_student_homework_subjectNameTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minHeight="40dp"
+                android:minHeight="48dp"
                 android:textSize="@dimen/primaryText"
                 android:gravity="start|center"
-                android:padding="5dp"
+                android:padding="8dp"
                 android:text="@string/subject"
                 android:textStyle="bold"
                 android:textColor="@color/textHeading" />
@@ -99,7 +99,7 @@
                 android:id="@+id/adapter_student_homework_class"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
+                android:padding="8dp"
                 android:text="@string/empty"
                 android:textColor="@color/textHeading"
                 android:textSize="@dimen/secondaryText"
@@ -131,7 +131,7 @@
             android:layout_marginEnd="10dp"
             android:baselineAligned="false"
             android:orientation="horizontal"
-            android:padding="5dp">
+            android:padding="8dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"

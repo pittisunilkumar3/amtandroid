@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/base_activity"
-    android:background="#E1EDE9"
+    android:background="@color/surfaceContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -11,7 +11,7 @@
     <!-- Action-bar looking view -->
     <FrameLayout
         android:id="@+id/actionBar"
-        android:background="#E1EDE9"
+        android:background="@drawable/bg_gradient_primary"
         android:layout_width="match_parent"
         android:layout_height="56dp">
 
@@ -25,7 +25,7 @@
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:scaleType="centerInside"
-                android:background="@drawable/drawer_selector"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:layout_gravity="start" />
 
             <ImageView
@@ -36,7 +36,7 @@
                 android:maxHeight="45dp"
                 android:minWidth="150dp"
                 android:padding="10dp"
-                android:minHeight="30dp"
+                android:minHeight="48dp"
                 android:src="@drawable/splash_logo"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="60dp"
@@ -60,7 +60,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:layout_gravity="center"
-                    android:tint="@color/textHeading"
+                    android:tint="@android:color/white"
                     android:src="@drawable/ic_add_alert"/>
 
                 <TextView
@@ -71,7 +71,7 @@
                     android:layout_marginLeft="18dp"
                     android:background="@drawable/badge_background"
                     android:gravity="center"
-                    android:padding="3dp"
+                    android:padding="4dp"
                     android:text=""
                     android:visibility="gone"
                     android:textColor="@android:color/white"
@@ -100,7 +100,7 @@
             android:id="@+id/linear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#E1EDE9"
+            android:background="@color/surfaceContainer"
             android:orientation="vertical">
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -119,7 +119,7 @@
                 android:textAllCaps="true"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/textHeading"
+                android:textColor="@android:color/white"
                 android:textSize="@dimen/primaryText"
                 android:textStyle="bold"/>
             <TextView
@@ -131,7 +131,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
-                android:textColor="@color/textHeading"
+                android:textColor="@android:color/white"
                 android:textSize="@dimen/secondaryText"
                />
 
@@ -142,7 +142,7 @@
       <androidx.cardview.widget.CardView
           android:layout_width="match_parent"
           android:layout_height="match_parent"
-          android:elevation="10dp"
+          android:elevation="2dp"
           app:cardBackgroundColor="@color/white"
           app:cardCornerRadius="20dp">
           <LinearLayout
@@ -153,11 +153,11 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:elevation="10dp"
-        android:layout_marginTop="20dp"
-        app:cardCornerRadius="10dp">
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:elevation="2dp"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="16dp">
         <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -167,7 +167,7 @@
                 android:text="Recently Used"
                 android:textStyle="bold"
                 android:padding="10dp"
-                android:textColor="@color/textHeading"
+                android:textColor="@android:color/white"
                 android:textSize="@dimen/primaryText"
                 android:layout_height="wrap_content"/>
             <LinearLayout
@@ -186,15 +186,15 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:tint="@color/hintDark"
+                        android:tint="@color/textSecondary"
                         android:src="@drawable/ic_online_exams"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:text="E-Connect"
                         android:textStyle="bold"
-                        android:layout_margin="5dp"
+                        android:layout_margin="8dp"
                         android:gravity="center"
-                        android:textColor="@color/hintDark"
+                        android:textColor="@color/textSecondary"
                         android:textSize="@dimen/secondaryText"
                         android:layout_height="wrap_content"/>
 
@@ -207,16 +207,16 @@
                     android:orientation="vertical">
                     <ImageView
                         android:layout_width="30dp"
-                        android:tint="@color/hintDark"
+                        android:tint="@color/textSecondary"
                         android:layout_height="30dp"
                         android:src="@drawable/ic_dashboard_homework"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:text="Homework"
                         android:textStyle="bold"
-                        android:layout_margin="5dp"
+                        android:layout_margin="8dp"
                         android:gravity="center"
-                        android:textColor="@color/hintDark"
+                        android:textColor="@color/textSecondary"
                         android:textSize="@dimen/secondaryText"
                         android:layout_height="wrap_content"/>
 
@@ -230,15 +230,15 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:tint="@color/hintDark"
+                        android:tint="@color/textSecondary"
                         android:src="@drawable/ic_dashboard_attendance"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:text="Attendance"
                         android:textStyle="bold"
-                        android:layout_margin="5dp"
+                        android:layout_margin="8dp"
                         android:gravity="center"
-                        android:textColor="@color/hintDark"
+                        android:textColor="@color/textSecondary"
                         android:textSize="@dimen/secondaryText"
                         android:layout_height="wrap_content"/>
 
@@ -252,15 +252,15 @@
                     <ImageView
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:tint="@color/hintDark"
+                        android:tint="@color/textSecondary"
                         android:src="@drawable/ic_open_book"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:text="Marks"
                         android:textStyle="bold"
-                        android:layout_margin="5dp"
+                        android:layout_margin="8dp"
                         android:gravity="center"
-                        android:textColor="@color/hintDark"
+                        android:textColor="@color/textSecondary"
                         android:textSize="@dimen/secondaryText"
                         android:layout_height="wrap_content"/>
 
@@ -274,11 +274,11 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:elevation="10dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="2dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="16dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -288,7 +288,7 @@
                         android:text="Academic"
                         android:textStyle="bold"
                         android:padding="10dp"
-                        android:textColor="@color/textHeading"
+                        android:textColor="@android:color/white"
                         android:textSize="@dimen/primaryText"
                         android:layout_height="wrap_content"/>
                     <HorizontalScrollView
@@ -309,15 +309,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_nav_timeline"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Timetable"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -329,16 +329,16 @@
                             android:orientation="vertical">
                             <ImageView
                                 android:layout_width="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:layout_height="30dp"
                                 android:src="@drawable/ic_dashboard_homework"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Homework"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -351,15 +351,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_nav_examination"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Examination"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -372,15 +372,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Marks"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -393,15 +393,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Online Exam"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -415,15 +415,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Online Course"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -436,15 +436,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Recently Used"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -457,15 +457,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Recently Used"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -480,11 +480,11 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:elevation="10dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="2dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="16dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -494,7 +494,7 @@
                         android:text="E-Learning"
                         android:textStyle="bold"
                         android:padding="10dp"
-                        android:textColor="@color/textHeading"
+                        android:textColor="@android:color/white"
                         android:textSize="@dimen/primaryText"
                         android:layout_height="wrap_content"/>
                     <LinearLayout
@@ -513,15 +513,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_online_exams"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Online Exam"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -534,16 +534,16 @@
                             android:orientation="vertical">
                             <ImageView
                                 android:layout_width="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:layout_height="30dp"
                                 android:src="@drawable/ic_onlinecourse"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Online Course"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -557,15 +557,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_dashboard_attendance"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Attendance"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -579,15 +579,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Marks"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -601,11 +601,11 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:elevation="10dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="2dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="16dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -615,7 +615,7 @@
                         android:text="Homework"
                         android:textStyle="bold"
                         android:padding="10dp"
-                        android:textColor="@color/textHeading"
+                        android:textColor="@android:color/white"
                         android:textSize="@dimen/primaryText"
                         android:layout_height="wrap_content"/>
                     <LinearLayout
@@ -634,15 +634,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_online_exams"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="E-Connect"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -655,16 +655,16 @@
                             android:orientation="vertical">
                             <ImageView
                                 android:layout_width="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:layout_height="30dp"
                                 android:src="@drawable/ic_dashboard_homework"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Homework"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -678,15 +678,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_dashboard_attendance"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Attendance"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -700,15 +700,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Marks"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -722,11 +722,11 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:elevation="10dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="2dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="16dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -736,7 +736,7 @@
                         android:text="Recently Used"
                         android:textStyle="bold"
                         android:padding="10dp"
-                        android:textColor="@color/textHeading"
+                        android:textColor="@android:color/white"
                         android:textSize="@dimen/primaryText"
                         android:layout_height="wrap_content"/>
                     <LinearLayout
@@ -755,15 +755,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_online_exams"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="E-Connect"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -776,16 +776,16 @@
                             android:orientation="vertical">
                             <ImageView
                                 android:layout_width="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:layout_height="30dp"
                                 android:src="@drawable/ic_dashboard_homework"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Homework"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -799,15 +799,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_dashboard_attendance"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Attendance"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -821,15 +821,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Marks"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -843,11 +843,11 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:elevation="10dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="2dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="16dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -857,7 +857,7 @@
                         android:text="Recently Used"
                         android:textStyle="bold"
                         android:padding="10dp"
-                        android:textColor="@color/textHeading"
+                        android:textColor="@android:color/white"
                         android:textSize="@dimen/primaryText"
                         android:layout_height="wrap_content"/>
                     <LinearLayout
@@ -876,15 +876,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Recently Used"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -897,38 +897,16 @@
                             android:orientation="vertical">
                             <ImageView
                                 android:layout_width="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:layout_height="30dp"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Recently Used"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
-                                android:textSize="@dimen/secondaryText"
-                                android:layout_height="wrap_content"/>
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="vertical">
-                            <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:tint="@color/hintDark"
-                                android:src="@drawable/ic_open_book"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:text="Recently Used"
-                                android:textStyle="bold"
-                                android:layout_margin="5dp"
-                                android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -942,15 +920,37 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Recently Used"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/textSecondary"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Recently Used"
+                                android:textStyle="bold"
+                                android:layout_margin="8dp"
+                                android:gravity="center"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -963,11 +963,11 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:elevation="10dp"
-                android:layout_marginTop="20dp"
-                app:cardCornerRadius="10dp">
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="2dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="16dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -977,7 +977,7 @@
                         android:text="Recently Used"
                         android:textStyle="bold"
                         android:padding="10dp"
-                        android:textColor="@color/textHeading"
+                        android:textColor="@android:color/white"
                         android:textSize="@dimen/primaryText"
                         android:layout_height="wrap_content"/>
                     <LinearLayout
@@ -996,15 +996,15 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Recently Used"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -1017,38 +1017,16 @@
                             android:orientation="vertical">
                             <ImageView
                                 android:layout_width="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:layout_height="30dp"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Recently Used"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
-                                android:textSize="@dimen/secondaryText"
-                                android:layout_height="wrap_content"/>
-
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center"
-                            android:orientation="vertical">
-                            <ImageView
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:tint="@color/hintDark"
-                                android:src="@drawable/ic_open_book"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:text="Recently Used"
-                                android:textStyle="bold"
-                                android:layout_margin="5dp"
-                                android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 
@@ -1062,15 +1040,37 @@
                             <ImageView
                                 android:layout_width="30dp"
                                 android:layout_height="30dp"
-                                android:tint="@color/hintDark"
+                                android:tint="@color/textSecondary"
                                 android:src="@drawable/ic_open_book"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:text="Recently Used"
                                 android:textStyle="bold"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:gravity="center"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="@dimen/secondaryText"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:tint="@color/textSecondary"
+                                android:src="@drawable/ic_open_book"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Recently Used"
+                                android:textStyle="bold"
+                                android:layout_margin="8dp"
+                                android:gravity="center"
+                                android:textColor="@color/textSecondary"
                                 android:textSize="@dimen/secondaryText"
                                 android:layout_height="wrap_content"/>
 

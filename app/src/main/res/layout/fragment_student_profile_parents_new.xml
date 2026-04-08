@@ -72,7 +72,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_user"
                             android:layout_weight="0.1"
-                            android:padding="6dp" />
+                            android:padding="8dp" />
                         <TextView
                             android:id="@+id/student_profile_parent_fatherName"
                             android:layout_width="wrap_content"
@@ -100,7 +100,7 @@
                         android:layout_height="30dp"
                         android:src="@drawable/ic_phone_filled"
                         android:layout_weight="0.1"
-                            android:padding="6dp"
+                            android:padding="8dp"
                            />
 
                         <TextView
@@ -128,7 +128,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_briefcase"
                             android:layout_weight="0.1"
-                            android:padding="6dp"
+                            android:padding="8dp"
                             />
 
                         <TextView
@@ -212,7 +212,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_user"
                             android:layout_weight="0.1"
-                            android:padding="6dp" />
+                            android:padding="8dp" />
                         <TextView
                             android:id="@+id/student_profile_parent_motherName"
                             android:layout_width="wrap_content"
@@ -239,7 +239,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_phone_filled"
                             android:layout_weight="0.1"
-                            android:padding="6dp"
+                            android:padding="8dp"
                             />
 
                         <TextView
@@ -267,7 +267,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_briefcase"
                             android:layout_weight="0.1"
-                            android:padding="6dp"
+                            android:padding="8dp"
                             />
 
                         <TextView
@@ -348,7 +348,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_user"
                             android:layout_weight="0.1"
-                            android:padding="6dp" />
+                            android:padding="8dp" />
                         <TextView
                             android:id="@+id/student_profile_parent_guardianName"
                             android:layout_width="wrap_content"
@@ -376,7 +376,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_phone_filled"
                             android:layout_weight="0.1"
-                            android:padding="6dp"
+                            android:padding="8dp"
                             />
 
                         <TextView
@@ -404,7 +404,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_briefcase"
                             android:layout_weight="0.1"
-                            android:padding="6dp"
+                            android:padding="8dp"
                             />
 
                         <TextView
@@ -432,7 +432,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_relation"
                             android:layout_weight="0.1"
-                            android:padding="6dp"
+                            android:padding="8dp"
                             />
 
                         <TextView
@@ -460,7 +460,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_email_filled"
                             android:layout_weight="0.1"
-                            android:padding="6dp" />
+                            android:padding="8dp" />
 
                         <TextView
                             android:id="@+id/student_profile_parent_guardianEmail"
@@ -486,7 +486,7 @@
                             android:layout_height="30dp"
                             android:src="@drawable/ic_location"
                             android:layout_weight="0.1"
-                            android:padding="6dp"
+                            android:padding="8dp"
                             />
 
                         <TextView

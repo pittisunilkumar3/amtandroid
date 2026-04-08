@@ -29,7 +29,7 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/ic_back"
                     android:layout_gravity="start"
-                    android:padding="19dp"/>
+                    android:padding="16dp"/>
 
                 <TextView
                     android:id="@+id/actionBar_title"
@@ -77,14 +77,14 @@
             android:id="@+id/card_view_outer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:cardCornerRadius="0dp"
+            app:cardCornerRadius="16dp"
             app:cardElevation="0dp" >
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:elevation="10dp"
-            app:cardElevation="3dp"
+            android:elevation="2dp"
+            app:cardElevation="1dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="20dp">
 
@@ -118,7 +118,7 @@
                         android:textColor="@color/textHeading"
                         android:textStyle="bold"
                         android:layout_marginStart="5dp"
-                        android:textSize="22dp"/>
+                        android:textSize="22sp"/>
 
                 </LinearLayout>
                 <LinearLayout
@@ -136,7 +136,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/InputFieldContainer"
                 android:layout_width="match_parent"
                 app:boxStrokeColor="@color/textHeading"
                 android:layout_height="50dp"
@@ -164,7 +164,7 @@
             android:orientation="horizontal"
             android:weightSum="2">
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/InputFieldContainer"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 app:boxStrokeColor="@color/textHeading"
@@ -187,7 +187,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/InputFieldContainer"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 app:boxStrokeColor="@color/textHeading"
@@ -214,7 +214,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/InputFieldContainer"
                 android:layout_width="match_parent"
                 app:boxStrokeColor="@color/textHeading"
                 android:layout_height="50dp"
@@ -236,7 +236,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
-            app:cardElevation="3dp"
+            app:cardElevation="1dp"
             app:cardUseCompatPadding="true"
             android:layout_marginLeft="10dp">
             <LinearLayout
@@ -296,7 +296,7 @@
             android:layout_marginTop="20sp"
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"
-            android:background="@drawable/green_curve_border"
+            android:background="@drawable/bg_button_secondary"
             android:text="@string/submit"
             android:foreground="?attr/selectableItemBackgroundBorderless"
             android:layout_marginBottom="30dp"

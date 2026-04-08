@@ -16,9 +16,9 @@
             <CheckBox
                 android:id="@+id/CheckBox"
                 android:layout_width="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="5dp"
-                android:buttonTint="#119326"
+                android:buttonTint="@color/success"
                 android:layout_height="wrap_content"/>
             <ImageView
                 android:id="@+id/play_icon"
@@ -74,7 +74,7 @@
                 android:layout_height="20dp"
                 android:visibility="gone"
                 android:layout_marginTop="15dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginEnd="8dp"
                 android:src="@drawable/ic_description"/>
 
         </LinearLayout>

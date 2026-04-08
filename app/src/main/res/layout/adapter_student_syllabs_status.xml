@@ -3,10 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:elevation="10dp"
+    android:elevation="2dp"
     app:cardBackgroundColor="@color/white"
     app:cardCornerRadius="20dp"
-    app:cardElevation="3dp"
+    app:cardElevation="1dp"
     android:layout_margin="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -38,7 +38,7 @@
                     android:id="@+id/adapter_student_subject_nameTV"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     android:layout_weight="1"
                     android:textAllCaps="true"
                     android:textColor="@color/textHeading"
@@ -47,7 +47,7 @@
                     android:id="@+id/adapter_student_status_nameTV"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     android:layout_weight="1"
                     android:gravity="end"
                     android:textColor="@color/textHeading"
@@ -61,7 +61,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="40dp"
+            android:minHeight="48dp"
             android:orientation="horizontal"
             android:gravity="center|end"
             android:background="@color/transparent"
@@ -74,7 +74,7 @@
                 android:id="@+id/adapter_student_lesson"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginEnd="12dp"
                 android:gravity="center">
 
                 <ImageView
@@ -86,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Lesson"
-                    android:paddingLeft="5dp"
+                    android:paddingStart="8dp"
                     android:textColor="@color/hyperLink"/>
 
             </LinearLayout>

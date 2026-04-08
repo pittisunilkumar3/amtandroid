@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="16dp"
     app:cardElevation="2dp"
     android:clickable="true"
     android:focusable="true"
@@ -100,7 +100,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="8dp"
             android:padding="8dp"
-            android:background="#F5F5F5">
+            android:background="@color/surfaceVariant">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -149,7 +149,7 @@
                     android:text="₹7,000"
                     android:textSize="14sp"
                     android:textStyle="bold"
-                    android:textColor="#4CAF50"
+                    android:textColor="@color/success"
                     android:layout_marginTop="4dp" />
 
             </LinearLayout>
@@ -175,7 +175,7 @@
                     android:text="₹3,000"
                     android:textSize="14sp"
                     android:textStyle="bold"
-                    android:textColor="#F44336"
+                    android:textColor="@color/error"
                     android:layout_marginTop="4dp" />
 
             </LinearLayout>

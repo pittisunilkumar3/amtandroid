@@ -10,6 +10,7 @@
     <!-- Action-bar looking view -->
     <FrameLayout
         android:id="@+id/actionBar"
+        android:background="@drawable/bg_gradient_primary"
         android:layout_width="match_parent"
         android:layout_height="56dp">
 
@@ -23,7 +24,7 @@
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:scaleType="centerInside"
-                android:background="@drawable/drawer_selector"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:layout_gravity="start" />
 
             <ImageView
@@ -33,7 +34,7 @@
                 android:maxWidth="200dp"
                 android:maxHeight="45dp"
                 android:minWidth="150dp"
-                android:minHeight="30dp"
+                android:minHeight="48dp"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="10dp"
                 android:layout_toEndOf="@+id/drawer_indicator"
@@ -66,7 +67,7 @@
                     android:layout_marginLeft="18dp"
                     android:background="@drawable/badge_background"
                     android:gravity="center"
-                    android:padding="3dp"
+                    android:padding="4dp"
                     android:text=""
                     android:textColor="@android:color/white"
                     android:textSize="10sp"

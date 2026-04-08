@@ -20,7 +20,7 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginBottom="8dp"
-            android:tint="@color/hintDark"
+            android:tint="@color/textSecondary"
             android:src="@drawable/ic_fa_list_alt"
             android:scaleType="centerInside" />
 
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Module"
-            android:textColor="@color/hintDark"
+            android:textColor="@color/textSecondary"
             android:textSize="11sp"
             android:textStyle="bold"
             android:maxLines="2"

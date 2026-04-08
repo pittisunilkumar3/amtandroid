@@ -42,7 +42,7 @@
                     android:textSize="@dimen/primaryText"
                     android:textStyle="bold"
                     android:textColor="@color/textHeading"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     />
 
             </LinearLayout>

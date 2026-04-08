@@ -65,11 +65,13 @@ public class AcademicModuleAdapter extends RecyclerView.Adapter<AcademicModuleAd
         private TextView modulename;
         LinearLayout layout;
         ImageView moduleiamge;
+        View iconBg;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             modulename = (TextView) itemView.findViewById(R.id.modulename);
             moduleiamge = (ImageView) itemView.findViewById(R.id.moduleiamge);
+            iconBg = itemView.findViewById(R.id.module_icon_bg);
             layout = (LinearLayout) itemView.findViewById(R.id.layout);
         }
     }

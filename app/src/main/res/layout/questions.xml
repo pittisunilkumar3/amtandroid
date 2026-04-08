@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#fafafa"
+    android:background="@color/backgroundMain"
     android:orientation="vertical">
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view_inner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="10dp"
-        app:cardElevation="5dp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
         android:layout_margin="10dp"
         app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="15dp">
+        app:cardCornerRadius="16dp">
 
     <LinearLayout
         android:id="@+id/question_layout"
@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1"
-                android:paddingLeft="10dp"
+                android:paddingStart="12dp"
                 android:gravity="right"
                 android:textColor="@color/textHeading"
                 android:layout_marginTop="15dp"
@@ -46,7 +46,7 @@
                 android:layout_marginTop="15dp"
                 android:gravity="left"
                 android:layout_marginLeft="10dp"
-                android:paddingLeft="10dp"
+                android:paddingStart="12dp"
                 android:text="-"
                 android:textColor="@color/textHeading"
                 android:textSize="@dimen/primaryText"
@@ -59,7 +59,7 @@
                 android:layout_marginTop="15dp"
                 android:gravity="left"
                 android:layout_marginLeft="10dp"
-                android:paddingLeft="10dp"
+                android:paddingStart="12dp"
                 android:text="-"
                 android:textColor="@color/textHeading"
                 android:textSize="@dimen/primaryText"
@@ -78,7 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="(Marks: 1.00)"
-                android:paddingRight="10dp"
+                android:paddingEnd="12dp"
                 android:gravity="right"
                 android:textColor="@color/red"
                 android:textStyle="bold" />
@@ -87,7 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="(Nagative Marks: 1.00)"
-                android:paddingRight="10dp"
+                android:paddingEnd="12dp"
                 android:gravity="right"
                 android:textColor="@color/red"
                 android:textStyle="bold" />
@@ -105,7 +105,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                app:cardElevation="3dp"
+                app:cardElevation="1dp"
                 app:cardUseCompatPadding="true"
                 android:layout_marginLeft="10dp">
                 <LinearLayout
@@ -168,11 +168,11 @@
             android:id="@+id/descriptive"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edittext_stlye"
+            android:background="@drawable/bg_input_field"
             android:gravity="start"
-            android:padding="5dp"
+            android:padding="8dp"
             android:minLines="50"
-            android:textColorHint="#000000"
+            android:textColorHint="@color/black"
             android:textSize="@dimen/primaryText"
             android:textStyle="bold" />
 
@@ -216,11 +216,11 @@
                             android:background="@color/white"
                             android:buttonTint="@color/textHeading"
                             android:text="Option 1"
-                            android:textColor="@color/hintDark" />
+                            android:textColor="@color/textSecondary" />
                         <TextView
                             android:id="@+id/true_value_option"
                             android:layout_width="match_parent"
-                            android:layout_margin="5dp"
+                            android:layout_margin="8dp"
                             android:textColor="@color/textHeading"
                             android:text="True"
                             android:layout_height="wrap_content"/>
@@ -237,7 +237,7 @@
                             android:id="@+id/false_value"
                             android:layout_width="31dp"
                             android:layout_height="31dp"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:background="@color/white"
                             android:buttonTint="@color/textHeading"
                             android:text="Option 2"/>
@@ -245,7 +245,7 @@
                         <TextView
                             android:id="@+id/false_value_option"
                             android:layout_width="match_parent"
-                            android:layout_margin="5dp"
+                            android:layout_margin="8dp"
                             android:text="False"
                             android:textColor="@color/textHeading"
                             android:layout_height="wrap_content"/>
@@ -265,10 +265,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="5dp"
+            android:padding="8dp"
             android:visibility="gone"
             android:layout_gravity="center"
-            android:layout_margin="5dp">
+            android:layout_margin="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -282,12 +282,12 @@
                     android:background="@color/white"
                     android:buttonTint="@color/textHeading"
                     android:text="Option 1"
-                    android:textColor="@color/hintDark" />
+                    android:textColor="@color/textSecondary" />
 
                 <WebView
                     android:id="@+id/moption_a_value"
                     android:layout_width="match_parent"
-                    android:layout_margin="5dp"
+                    android:layout_margin="8dp"
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>
@@ -304,12 +304,12 @@
                     android:background="@color/white"
                     android:buttonTint="@color/textHeading"
                     android:text="Option 1"
-                    android:textColor="@color/hintDark" />
+                    android:textColor="@color/textSecondary" />
 
                 <WebView
                     android:id="@+id/moption_b_value"
                     android:layout_width="match_parent"
-                    android:layout_margin="5dp"
+                    android:layout_margin="8dp"
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>
@@ -327,12 +327,12 @@
                     android:background="@color/white"
                     android:buttonTint="@color/textHeading"
                     android:text="Option 1"
-                    android:textColor="@color/hintDark" />
+                    android:textColor="@color/textSecondary" />
 
                 <WebView
                     android:id="@+id/moption_c_value"
                     android:layout_width="match_parent"
-                    android:layout_margin="5dp"
+                    android:layout_margin="8dp"
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>
@@ -350,12 +350,12 @@
                     android:background="@color/white"
                     android:buttonTint="@color/textHeading"
                     android:text="Option 1"
-                    android:textColor="@color/hintDark" />
+                    android:textColor="@color/textSecondary" />
 
                 <WebView
                     android:id="@+id/moption_d_value"
                     android:layout_width="match_parent"
-                    android:layout_margin="5dp"
+                    android:layout_margin="8dp"
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>
@@ -373,12 +373,12 @@
                     android:background="@color/white"
                     android:buttonTint="@color/textHeading"
                     android:text="Option 1"
-                    android:textColor="@color/hintDark" />
+                    android:textColor="@color/textSecondary" />
 
                 <WebView
                     android:id="@+id/moption_e_value"
                     android:layout_width="match_parent"
-                    android:layout_margin="5dp"
+                    android:layout_margin="8dp"
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>
@@ -392,7 +392,7 @@
             android:orientation="vertical"
             android:layout_gravity="center"
             android:visibility="visible"
-            android:layout_margin="5dp">
+            android:layout_margin="8dp">
 
             <LinearLayout
 
@@ -422,11 +422,11 @@
                                 android:background="@color/white"
                                 android:buttonTint="@color/textHeading"
                                 android:text="Option 1"
-                                android:textColor="@color/hintDark" />
+                                android:textColor="@color/textSecondary" />
                             <WebView
                                 android:id="@+id/option_a_value"
                                 android:layout_width="match_parent"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:layout_height="wrap_content"/>
 
                         </LinearLayout>
@@ -440,7 +440,7 @@
                                 android:id="@+id/option2"
                                 android:layout_width="31dp"
                                 android:layout_height="31dp"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:background="@color/white"
                                 android:buttonTint="@color/textHeading"
                                 android:text="Option 2"/>
@@ -448,7 +448,7 @@
                             <WebView
                                 android:id="@+id/option_b_value"
                                 android:layout_width="match_parent"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:layout_height="wrap_content"/>
 
                         </LinearLayout>
@@ -466,11 +466,11 @@
                                 android:buttonTint="@color/textHeading"
                                 android:text="Option 3"
                                 android:background="@color/white"
-                                android:textColor="@color/hintDark" />
+                                android:textColor="@color/textSecondary" />
                             <WebView
                                 android:id="@+id/option_c_value"
                                 android:layout_width="match_parent"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:layout_height="wrap_content"/>
 
                         </LinearLayout>
@@ -484,14 +484,14 @@
                                 android:id="@+id/option4"
                                 android:layout_width="31dp"
                                 android:layout_height="31dp"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:background="@color/white"
                                 android:buttonTint="@color/textHeading"
                                 android:text="Option 4"/>
                             <WebView
                                 android:id="@+id/option_d_value"
                                 android:layout_width="match_parent"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:layout_height="wrap_content"/>
 
                         </LinearLayout>
@@ -506,7 +506,7 @@
                                 android:id="@+id/option5"
                                 android:layout_width="31dp"
                                 android:layout_height="31dp"
-                                android:textColor="@color/hintDark"
+                                android:textColor="@color/textSecondary"
                                 android:background="@color/white"
                                 android:layout_marginBottom="10dp"
                                 android:buttonTint="@color/textHeading"
@@ -514,7 +514,7 @@
                             <WebView
                                 android:id="@+id/option_e_value"
                                 android:layout_width="match_parent"
-                                android:layout_margin="5dp"
+                                android:layout_margin="8dp"
                                 android:layout_height="wrap_content"/>
 
 

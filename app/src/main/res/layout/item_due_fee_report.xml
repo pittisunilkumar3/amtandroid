@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="12dp"
-    app:cardElevation="4dp">
+    app:cardElevation="2dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                         android:layout_height="wrap_content"
                         android:text="Student Name"
                         android:textColor="@android:color/white"
-                        android:textSize="18sp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <!-- Admission Number -->
@@ -216,7 +216,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:background="#FFF3E0"
+                android:background="@color/cardOrange"
                 android:padding="8dp"
                 android:layout_marginBottom="4dp">
 
@@ -323,7 +323,7 @@
                 android:orientation="vertical"
                 android:layout_marginTop="12dp"
                 android:padding="8dp"
-                android:background="#E3F2FD"
+                android:background="@color/light_blue"
                 android:visibility="gone">
 
                 <TextView

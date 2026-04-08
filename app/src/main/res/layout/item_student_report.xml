@@ -8,8 +8,8 @@
     android:layout_marginEnd="12dp"
     android:layout_marginTop="8dp"
     android:layout_marginBottom="8dp"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="3dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="1dp"
     app:cardUseCompatPadding="false">
 
     <LinearLayout
@@ -55,7 +55,7 @@
                     android:text="John Michael Doe"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textColor="#333333"
+                    android:textColor="@color/textPrimary"
                     android:maxLines="2"
                     android:ellipsize="end" />
 
@@ -66,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:text="Class 10 - A"
                     android:textSize="14sp"
-                    android:textColor="#666666"
+                    android:textColor="@color/textSecondary"
                     android:layout_marginTop="2dp" />
             </LinearLayout>
 
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:text="Male"
                 android:textSize="12sp"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:background="@drawable/status_generated_bg"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
@@ -90,7 +90,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#E0E0E0"
+            android:background="@color/divider"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp" />
 
@@ -127,7 +127,7 @@
                         android:layout_height="wrap_content"
                         android:text="Adm. No: 2024001"
                         android:textSize="13sp"
-                        android:textColor="#555555" />
+                        android:textColor="@color/textSecondary" />
                 </LinearLayout>
 
                 <!-- Roll Number -->
@@ -150,7 +150,7 @@
                         android:layout_height="wrap_content"
                         android:text="Roll No: 101"
                         android:textSize="13sp"
-                        android:textColor="#555555" />
+                        android:textColor="@color/textSecondary" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -174,7 +174,7 @@
                     android:layout_height="wrap_content"
                     android:text="Father: Robert Doe"
                     android:textSize="13sp"
-                    android:textColor="#555555" />
+                    android:textColor="@color/textSecondary" />
             </LinearLayout>
 
             <!-- Row 3: Date of Birth -->
@@ -197,7 +197,7 @@
                     android:layout_height="wrap_content"
                     android:text="DOB: 2010-05-15"
                     android:textSize="13sp"
-                    android:textColor="#555555" />
+                    android:textColor="@color/textSecondary" />
             </LinearLayout>
 
             <!-- Row 4: Mobile Number -->
@@ -220,7 +220,7 @@
                     android:layout_height="wrap_content"
                     android:text="Mobile: 9876543210"
                     android:textSize="13sp"
-                    android:textColor="#555555" />
+                    android:textColor="@color/textSecondary" />
             </LinearLayout>
 
             <!-- Row 5: Email -->
@@ -244,7 +244,7 @@
                     android:layout_weight="1"
                     android:text="john.doe@example.com"
                     android:textSize="13sp"
-                    android:textColor="#555555"
+                    android:textColor="@color/textSecondary"
                     android:maxLines="1"
                     android:ellipsize="end" />
             </LinearLayout>
@@ -267,7 +267,7 @@
                     android:layout_height="wrap_content"
                     android:text="Category: "
                     android:textSize="13sp"
-                    android:textColor="#555555" />
+                    android:textColor="@color/textSecondary" />
 
                 <TextView
                     android:id="@+id/category_tv"
@@ -275,7 +275,7 @@
                     android:layout_height="wrap_content"
                     android:text="General"
                     android:textSize="13sp"
-                    android:textColor="#2196F3"
+                    android:textColor="@color/blue"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>

@@ -18,7 +18,7 @@
                 android:id="@+id/marks"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
-                android:padding="5dp"
+                android:padding="8dp"
                 android:textColor="@color/textHeading"
                 android:layout_height="wrap_content"
                 />

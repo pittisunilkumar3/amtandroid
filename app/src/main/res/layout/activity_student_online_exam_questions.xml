@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fafafa"
+    android:background="@color/backgroundMain"
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,7 +61,7 @@
                         android:text="Timer"
                         android:textStyle="bold"
                         android:textAllCaps="true"
-                        android:padding="5dp"
+                        android:padding="8dp"
                        android:drawableStart="@drawable/ic_access_time_black_24dp"
                         android:textColor="@color/textHeading"
                         android:textSize="@dimen/primaryText"/>

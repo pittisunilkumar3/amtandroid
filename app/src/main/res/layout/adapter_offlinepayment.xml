@@ -18,11 +18,11 @@
             android:id="@+id/card_view_inner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:elevation="10dp"
-            app:cardElevation="5dp"
+            android:elevation="2dp"
+            app:cardElevation="2dp"
             android:layout_margin="10dp"
             app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="15dp">
+            app:cardCornerRadius="16dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -34,7 +34,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:background="#E7F1EE">
+                    android:background="@color/surfaceContainer">
 
                     <TextView
                         android:id="@+id/id"
@@ -64,7 +64,7 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:orientation="horizontal"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:layout_marginStart="5dp"
                             android:layout_gravity="center_vertical"
                             android:gravity="center"
@@ -102,7 +102,7 @@
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
                                 android:src="@drawable/ic_nav_download"
-                                android:padding="2dp" />
+                                android:padding="4dp" />
 
                                 <TextView
                                     android:id="@+id/status"

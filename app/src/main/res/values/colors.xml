@@ -1,68 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#B67604</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="iconColours">#000D5C</color>
-    <color name="colorAccent">#030303</color>
-    <color name="examgreen">#B0DD38</color>
-    <color name="examgrey">#D8D6D3D3</color>
+    <!-- ===== Modern Material Design 3 Color Palette ===== -->
+    <!-- Primary - Deep Indigo -->
+    <color name="colorPrimary">#4F46E5</color>
+    <color name="colorPrimaryDark">#3730A3</color>
+    <color name="colorPrimaryVariant">#6366F1</color>
+    <color name="colorPrimaryLight">#818CF8</color>
+    <color name="colorPrimaryBg">#EEF2FF</color>
+    <color name="colorPrimarySurface">#E0E7FF</color>
 
-    <!--faa21c-->
-    <color name="fontPrimary">#004a6b</color>
-    <color name="transparent">#00004a6b</color>
-    <color name="hyperLink">#012ff9</color>
-    <color name="payBtn">#1a73e8</color>
-    <color name="correct">#66AA18</color>
-    <color name="wrong">#EF5350</color>
-    <color name="notattempt">#C8C4C4</color>
+    <!-- Secondary - Teal -->
+    <color name="colorSecondary">#0D9488</color>
+    <color name="colorSecondaryDark">#0F766E</color>
+    <color name="colorSecondaryLight">#2DD4BF</color>
 
-    <color name="white">#ffffff</color>
+    <!-- Accent - Amber -->
+    <color name="colorAccent">#F59E0B</color>
+    <color name="colorAccentLight">#FCD34D</color>
+
+    <!-- Tertiary - Rose -->
+    <color name="colorTertiary">#F43F5E</color>
+    <color name="colorTertiaryLight">#FB7185</color>
+
+    <!-- Neutral Surfaces -->
+    <color name="surface">#FFFFFF</color>
+    <color name="surfaceVariant">#F8FAFC</color>
+    <color name="surfaceContainer">#F1F5F9</color>
+    <color name="surfaceContainerHigh">#E2E8F0</color>
+    <color name="surfaceContainerHighest">#CBD5E1</color>
+    <color name="surfaceDim">#F1F5F9</color>
+
+    <!-- Backgrounds -->
+    <color name="backgroundMain">#F0F4FF</color>
+    <color name="backgroundColour">#FFFFFF</color>
+    <color name="cardBg">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#1E293B</color>
+    <color name="textSecondary">#64748B</color>
+    <color name="textTertiary">#94A3B8</color>
+    <color name="textOnPrimary">#FFFFFF</color>
+    <color name="textDisabled">#CBD5E1</color>
+
+    <!-- Semantic Colors -->
+    <color name="success">#10B981</color>
+    <color name="successLight">#D1FAE5</color>
+    <color name="successDark">#059669</color>
+    <color name="warning">#F59E0B</color>
+    <color name="warningLight">#FEF3C7</color>
+    <color name="error">#EF4444</color>
+    <color name="errorLight">#FEE2E2</color>
+    <color name="errorDark">#DC2626</color>
+    <color name="info">#3B82F6</color>
+    <color name="infoLight">#DBEAFE</color>
+
+    <!-- Status Colors -->
+    <color name="status_approved">#10B981</color>
+    <color name="status_generated">#10B981</color>
+    <color name="status_pending">#F59E0B</color>
+    <color name="status_rejected">#EF4444</color>
+
+    <!-- Gradients -->
+    <color name="gradientStart">#4F46E5</color>
+    <color name="gradientMid">#7C3AED</color>
+    <color name="gradientEnd">#EC4899</color>
+
+    <!-- Card gradient colors -->
+    <color name="cardBlue">#EFF6FF</color>
+    <color name="cardBlueIcon">#3B82F6</color>
+    <color name="cardGreen">#F0FDF4</color>
+    <color name="cardGreenIcon">#22C55E</color>
+    <color name="cardPurple">#FAF5FF</color>
+    <color name="cardPurpleIcon">#A855F7</color>
+    <color name="cardOrange">#FFF7ED</color>
+    <color name="cardOrangeIcon">#F97316</color>
+    <color name="cardPink">#FDF2F8</color>
+    <color name="cardPinkIcon">#EC4899</color>
+    <color name="cardTeal">#F0FDFA</color>
+    <color name="cardTealIcon">#14B8A6</color>
+    <color name="cardRed">#FEF2F2</color>
+    <color name="cardRedIcon">#EF4444</color>
+    <color name="cardYellow">#FEFCE8</color>
+    <color name="cardYellowIcon">#EAB308</color>
+
+    <!-- Basic Colors -->
+    <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="green">#66AA18</color>
-    <color name="yellow">#f39c12</color>
-    <color name="gray">#757575</color>
+    <color name="transparent">#00000000</color>
+    <color name="hyperLink">#3B82F6</color>
+    <color name="divider">#E2E8F0</color>
+    <color name="separator">#CBD5E1</color>
 
-    <color name="backgroundColour">#ffffff</color>
-    <color name="drawerIndicatorColour">#000000</color>
-    <color name="primaryTextColour">#000000</color>
-    <color name="hintDark">#5b5b5b</color>
-    <color name="seperator">#afafaf</color>
-    <color name="lightGrey">#34D6D3D3</color>
-    <color name="grey">#D8D6D3D3</color>
+    <!-- Icon Colors -->
+    <color name="iconColours">#1E293B</color>
+    <color name="drawerIndicatorColour">#1E293B</color>
 
-    <color name="red">#ed5c5c</color>
-    <color name="redDanger">#FA0000</color>
-    <color name="primaryTextColourLight">#004a6b</color>
+    <!-- Exam colors -->
+    <color name="examgreen">#22C55E</color>
+    <color name="examgrey">#E2E8F0</color>
+    <color name="correct">#10B981</color>
+    <color name="wrong">#EF4444</color>
+    <color name="notattempt">#CBD5E1</color>
 
-    <color name="themeCyan">#8200dcbb</color>
-    <color name="themeGreen">#13e2da</color>
+    <!-- Legacy Aliases (keep for backward compat) -->
+    <color name="fontPrimary">#4F46E5</color>
+    <color name="primaryTextColour">#1E293B</color>
+    <color name="primaryTextColourLight">#4F46E5</color>
+    <color name="hintDark">#64748B</color>
+    <color name="seperator">#94A3B8</color>
+    <color name="lightGrey">#F1F5F9</color>
+    <color name="grey">#CBD5E1</color>
+    <color name="green">#10B981</color>
+    <color name="yellow">#F59E0B</color>
+    <color name="gray">#64748B</color>
+    <color name="red">#EF4444</color>
+    <color name="redDanger">#DC2626</color>
+    <color name="textHeading">#1E293B</color>
+    <color name="blue">#3B82F6</color>
+    <color name="orange">#F97316</color>
+    <color name="payBtn">#4F46E5</color>
 
+    <!-- Theme legacy -->
+    <color name="themeCyan">#0D9488</color>
+    <color name="themeGreen">#10B981</color>
+
+    <!-- Light backgrounds -->
+    <color name="light_blue">#EFF6FF</color>
+    <color name="light_gray">#F8FAFC</color>
+    <color name="light_gray_background">#F8FAFC</color>
+
+    <!-- Roboto calendar -->
     <color name="roboto_calendar_background">#FFFFFF</color>
-    <color name="roboto_calendar_day_of_the_week_font">#161d20</color>
+    <color name="roboto_calendar_day_of_the_week_font">#64748B</color>
     <color name="roboto_calendar_selected_day_font">#FFFFFF</color>
-    <color name="roboto_calendar_current_day_ring">#00a3d3</color>
-    <color name="roboto_calendar_day_of_the_month_font">#000000</color>
-    <color name="roboto_calendar_circle_1">#008000</color>  <!-- Small Circle -->
-    <color name="roboto_calendar_circle_2">#8B0000</color>  <!-- Small Circle -->
-    <color name="roboto_calendar_circle_3">#FFFF00</color>  <!-- Small Circle -->
-    <color name="roboto_calendar_circle_4">#ff9500</color>  <!-- Small Circle -->
-    <color name="roboto_calendar_circle_5">#969595</color>  <!-- Small Circle -->
-    <color name="roboto_calendar_month_arrow">#55c6da</color>
-
-    <!-- Status Colors for Teacher Profile -->
-    <color name="status_approved">#4CAF50</color>
-    <color name="status_generated">#4CAF50</color>
-    <color name="status_pending">#FF9800</color>
-    <color name="status_rejected">#F44336</color>
-    <color name="textSecondary">#757575</color>
-    <color name="textHeading">#212121</color>
-    <color name="divider">#E0E0E0</color>
-
-    <!-- Additional Colors for Student Academic Report -->
-    <color name="light_blue">#E3F2FD</color>
-    <color name="light_gray">#F5F5F5</color>
-    <color name="light_gray_background">#F9F9F9</color>
-    <color name="blue">#2196F3</color>
-    <color name="orange">#FF9800</color>
-
+    <color name="roboto_calendar_current_day_ring">#4F46E5</color>
+    <color name="roboto_calendar_day_of_the_month_font">#1E293B</color>
+    <color name="roboto_calendar_circle_1">#10B981</color>
+    <color name="roboto_calendar_circle_2">#EF4444</color>
+    <color name="roboto_calendar_circle_3">#F59E0B</color>
+    <color name="roboto_calendar_circle_4">#F97316</color>
+    <color name="roboto_calendar_circle_5">#94A3B8</color>
+    <color name="roboto_calendar_month_arrow">#4F46E5</color>
 </resources>

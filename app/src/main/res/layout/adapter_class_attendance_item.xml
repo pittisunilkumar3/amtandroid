@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="12dp"
-    app:cardElevation="6dp"
+    app:cardElevation="2dp"
     android:foreground="?android:attr/selectableItemBackground">
 
     <LinearLayout
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:background="@drawable/rounded_background"
-            android:backgroundTint="#F5F5F5"
+            android:backgroundTint="@color/surfaceVariant"
             android:padding="8dp"
             android:layout_marginBottom="12dp">
 
@@ -119,14 +119,14 @@
                 android:gravity="center"
                 android:padding="8dp"
                 android:background="@drawable/rounded_background"
-                android:backgroundTint="#E8F5E9"
+                android:backgroundTint="@color/successLight"
                 android:layout_marginEnd="4dp">
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_fa_check_circle"
-                    android:tint="#4CAF50"
+                    android:tint="@color/success"
                     android:layout_marginBottom="4dp" />
 
                 <TextView
@@ -134,16 +134,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="#4CAF50" />
+                    android:textColor="@color/success" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Present"
                     android:textSize="10sp"
-                    android:textColor="#4CAF50" />
+                    android:textColor="@color/success" />
             </LinearLayout>
 
             <!-- Excuse -->
@@ -155,14 +155,14 @@
                 android:gravity="center"
                 android:padding="8dp"
                 android:background="@drawable/rounded_background"
-                android:backgroundTint="#FFF3E0"
+                android:backgroundTint="@color/cardOrange"
                 android:layout_marginEnd="4dp">
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_fa_calendar"
-                    android:tint="#FF9800"
+                    android:tint="@color/warning"
                     android:layout_marginBottom="4dp" />
 
                 <TextView
@@ -170,16 +170,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="#FF9800" />
+                    android:textColor="@color/warning" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Excuse"
                     android:textSize="10sp"
-                    android:textColor="#FF9800" />
+                    android:textColor="@color/warning" />
             </LinearLayout>
 
             <!-- Late -->
@@ -191,14 +191,14 @@
                 android:gravity="center"
                 android:padding="8dp"
                 android:background="@drawable/rounded_background"
-                android:backgroundTint="#E1F5FE"
+                android:backgroundTint="@color/infoLight"
                 android:layout_marginEnd="4dp">
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_fa_calendar_check"
-                    android:tint="#2196F3"
+                    android:tint="@color/blue"
                     android:layout_marginBottom="4dp" />
 
                 <TextView
@@ -206,16 +206,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="#2196F3" />
+                    android:textColor="@color/blue" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Late"
                     android:textSize="10sp"
-                    android:textColor="#2196F3" />
+                    android:textColor="@color/blue" />
             </LinearLayout>
 
             <!-- Absent -->
@@ -227,13 +227,13 @@
                 android:gravity="center"
                 android:padding="8dp"
                 android:background="@drawable/rounded_background"
-                android:backgroundTint="#FFEBEE">
+                android:backgroundTint="@color/errorLight">
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_fa_exclamation_triangle"
-                    android:tint="#F44336"
+                    android:tint="@color/error"
                     android:layout_marginBottom="4dp" />
 
                 <TextView
@@ -241,16 +241,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="#F44336" />
+                    android:textColor="@color/error" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Absent"
                     android:textSize="10sp"
-                    android:textColor="#F44336" />
+                    android:textColor="@color/error" />
             </LinearLayout>
         </LinearLayout>
 

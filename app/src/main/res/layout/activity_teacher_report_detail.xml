@@ -4,54 +4,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/backgroundColour">
+    android:background="@color/backgroundMain">
 
     <!-- Action Bar -->
-    <FrameLayout
+    <LinearLayout
         android:id="@+id/actionBar"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="#E7F1EE">
+        android:layout_height="64dp"
+        android:background="@drawable/bg_gradient_primary"
+        android:gravity="center_vertical"
+        android:paddingStart="4dp"
+        android:paddingEnd="16dp"
+        android:elevation="1dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back"
+            android:scaleType="centerInside"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@android:color/white" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Report"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp"
+             />
 
-                <ImageView
-                    android:id="@+id/back_button"
-                    android:layout_width="56dp"
-                    android:layout_height="56dp"
-                    android:src="@drawable/ic_arrow_back"
-                    android:scaleType="centerInside"
-                    android:padding="16dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:background="@drawable/drawer_selector"
-                    android:tint="@color/textHeading" />
-
-                <TextView
-                    android:id="@+id/title"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Report"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/textHeading"
-                    android:layout_marginStart="8dp" />
-
-            </LinearLayout>
-
-        </androidx.appcompat.widget.Toolbar>
-
-    </FrameLayout>
+    </LinearLayout>
 
     <!-- Main Content -->
     <ScrollView
@@ -68,111 +58,147 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
+                android:layout_margin="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/surface"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/surfaceContainerHigh">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="16dp">
+                    android:padding="20dp">
 
-                    <!-- Filter Title -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Report Filters"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/textHeading"
-                        android:layout_marginBottom="12dp" />
-
-                    <!-- Session Dropdown -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Session"
-                        android:textSize="14sp"
-                        android:textColor="@color/textSecondary"
-                        android:layout_marginBottom="4dp" />
-
-                    <FrameLayout
+                    <!-- Filter Header -->
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginBottom="12dp"
-                        android:background="@drawable/grey_outline">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="20dp">
+
+                        <FrameLayout
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/bg_gradient_teal">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_fa_filter"
+                                android:tint="@android:color/white" />
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Report Filters"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            
+                            android:layout_marginStart="12dp" />
+
+                    </LinearLayout>
+
+                    <!-- Session -->
+                    <LinearLayout
+                        android:background="@drawable/bg_input_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:hint="Session"
+                        
+                        
+                        
+                        
+                        
+                        
+                        xmlns:app="http://schemas.android.com/apk/res-auto">
 
                         <Spinner
                             android:id="@+id/session_spinner"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:paddingStart="12dp"
-                            android:paddingEnd="12dp" />
+                            android:layout_height="wrap_content"
+                            
+                            
+                             />
 
-                    </FrameLayout>
+                    </LinearLayout>
 
-                    <!-- Class Dropdown -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Class"
-                        android:textSize="14sp"
-                        android:textColor="@color/textSecondary"
-                        android:layout_marginBottom="4dp" />
-
-                    <FrameLayout
+                    <!-- Class -->
+                    <LinearLayout
+                        android:background="@drawable/bg_input_field"
                         android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginBottom="12dp"
-                        android:background="@drawable/grey_outline">
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:hint="Class"
+                        
+                        
+                        
+                        
+                        
+                        
+                        xmlns:app="http://schemas.android.com/apk/res-auto">
 
                         <Spinner
                             android:id="@+id/class_spinner"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:paddingStart="12dp"
-                            android:paddingEnd="12dp" />
+                            android:layout_height="wrap_content"
+                            
+                            
+                             />
 
-                    </FrameLayout>
+                    </LinearLayout>
 
-                    <!-- Section Dropdown -->
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Section"
-                        android:textSize="14sp"
-                        android:textColor="@color/textSecondary"
-                        android:layout_marginBottom="4dp" />
-
-                    <FrameLayout
+                    <!-- Section -->
+                    <LinearLayout
+                        android:background="@drawable/bg_input_field"
                         android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_marginBottom="12dp"
-                        android:background="@drawable/grey_outline">
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:hint="Section"
+                        
+                        
+                        
+                        
+                        
+                        
+                        xmlns:app="http://schemas.android.com/apk/res-auto">
 
                         <Spinner
                             android:id="@+id/section_spinner"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:paddingStart="12dp"
-                            android:paddingEnd="12dp" />
+                            android:layout_height="wrap_content"
+                            
+                            
+                             />
 
-                    </FrameLayout>
+                    </LinearLayout>
 
-                    <!-- Generate Report Button -->
+                    <!-- Generate Button -->
                     <Button
                         android:id="@+id/generate_report_button"
                         android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                        android:layout_height="52dp"
                         android:text="Generate Report"
                         android:textColor="@android:color/white"
                         android:textStyle="bold"
-                        android:background="@color/colorPrimary"
-                        android:layout_marginTop="8dp" />
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:letterSpacing="0.3"
+                        android:background="@drawable/bg_gradient_teal"
+                        
+                        
+                        
+                        
+                        
+                        xmlns:app="http://schemas.android.com/apk/res-auto" />
 
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <!-- Report Content Section -->
@@ -180,9 +206,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginStart="12dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="12dp">
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp">
 
                 <!-- Progress Bar -->
                 <ProgressBar
@@ -191,6 +217,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="32dp"
+                    android:indeterminateTint="@color/colorPrimary"
                     android:visibility="gone" />
 
                 <!-- No Data Layout -->
@@ -203,27 +230,37 @@
                     android:padding="32dp"
                     android:visibility="visible">
 
-                    <ImageView
+                    <FrameLayout
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ic_fa_bar_chart"
-                        android:tint="@color/seperator"
-                        android:layout_marginBottom="16dp" />
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/bg_circle_teal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_fa_bar_chart"
+                            android:tint="@color/cardTealIcon"
+                            android:alpha="0.5" />
+
+                    </FrameLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="No report data"
-                        android:textSize="16sp"
-                        android:textColor="@color/textSecondary"
-                        android:layout_marginBottom="8dp" />
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        
+                        android:layout_marginBottom="4dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Please select filters and generate report"
-                        android:textSize="14sp"
-                        android:textColor="@color/seperator"
+                        android:textSize="13sp"
+                        android:textColor="@color/textSecondary"
                         android:gravity="center" />
 
                 </LinearLayout>
@@ -240,8 +277,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
     </ScrollView>
 
 </LinearLayout>
-

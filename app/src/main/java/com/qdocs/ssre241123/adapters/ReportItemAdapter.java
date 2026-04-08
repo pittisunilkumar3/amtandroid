@@ -56,6 +56,34 @@ import com.qdocs.ssre241123.teachers.TypeWiseBalanceReportActivity;
 import com.qdocs.ssre241123.teachers.UserLogReportActivity;
 import com.qdocs.ssre241123.teachers.YearReportDueFeeActivity;
 import com.qdocs.ssre241123.teachers.AlumniReportActivity;
+import com.qdocs.ssre241123.teachers.AuditLogReportActivity;
+import com.qdocs.ssre241123.teachers.BoysGirlsRatioReportActivity;
+import com.qdocs.ssre241123.teachers.SiblingReportActivity;
+import com.qdocs.ssre241123.teachers.StaffReportActivity;
+import com.qdocs.ssre241123.teachers.LessonPlanReportActivity;
+import com.qdocs.ssre241123.teachers.TeacherSyllabusStatusReportActivity;
+import com.qdocs.ssre241123.teachers.OnlineExamsReportActivity;
+import com.qdocs.ssre241123.teachers.OnlineExamRankReportActivity;
+import com.qdocs.ssre241123.teachers.OnlineExamAttendReportActivity;
+import com.qdocs.ssre241123.teachers.InternalResultReportActivity;
+import com.qdocs.ssre241123.teachers.ExternalResultReportActivity;
+import com.qdocs.ssre241123.teachers.HomeworkReportActivity;
+import com.qdocs.ssre241123.teachers.DailyAssignmentReportActivity;
+import com.qdocs.ssre241123.teachers.EvaluationReportActivity;
+import com.qdocs.ssre241123.teachers.StudentBookIssueReportActivity;
+import com.qdocs.ssre241123.teachers.BookDueReportActivity;
+import com.qdocs.ssre241123.teachers.BookInventoryReportActivity;
+import com.qdocs.ssre241123.teachers.IssueReturnReportActivity;
+import com.qdocs.ssre241123.teachers.InventoryStockReportActivity;
+import com.qdocs.ssre241123.teachers.AddItemReportActivity;
+import com.qdocs.ssre241123.teachers.IssueInventoryReportActivity;
+import com.qdocs.ssre241123.teachers.StudentTransportDetailsReportActivity;
+import com.qdocs.ssre241123.teachers.StudentHostelDetailsReportActivity;
+import com.qdocs.ssre241123.teachers.StudentAcademicReportActivity;
+import com.qdocs.ssre241123.teachers.TotalStudentAcademicReportActivity;
+import com.qdocs.ssre241123.teachers.FeeGroupwiseCollectionReportActivity;
+import com.qdocs.ssre241123.teachers.SessionFeeStructureReportActivity;
+import com.qdocs.ssre241123.teachers.GenericReportActivity;
 import com.qdocs.ssre241123.utils.Constants;
 import com.qdocs.ssre241123.utils.Utility;
 
@@ -266,9 +294,106 @@ public class ReportItemAdapter extends RecyclerView.Adapter<ReportItemAdapter.Re
             // Launch BiometricAttlogReportActivity for Biometric Attendance Log Report
             Log.d(TAG, "Launching BiometricAttlogReportActivity");
             intent = new Intent(context, BiometricAttlogReportActivity.class);
+        } else if ("sibling_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching SiblingReportActivity");
+            intent = new Intent(context, SiblingReportActivity.class);
+        } else if ("student_gender_ratio_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching BoysGirlsRatioReportActivity");
+            intent = new Intent(context, BoysGirlsRatioReportActivity.class);
+        } else if ("boys_girls_ratio".equals(reportItem.getId()) || "boys_girls_ratio_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching BoysGirlsRatioReportActivity");
+            intent = new Intent(context, BoysGirlsRatioReportActivity.class);
+        } else if ("staff_report".equals(reportItem.getId()) || "staff_report_hr".equals(reportItem.getId()) || "payroll_report_hr".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching StaffReportActivity");
+            intent = new Intent(context, StaffReportActivity.class);
+        } else if ("subject_lesson_plan_report".equals(reportItem.getId()) || "lesson_plan_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching LessonPlanReportActivity");
+            intent = new Intent(context, LessonPlanReportActivity.class);
+        } else if ("syllabus_status_report".equals(reportItem.getId()) || "teacher_syllabus_status_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching TeacherSyllabusStatusReportActivity");
+            intent = new Intent(context, TeacherSyllabusStatusReportActivity.class);
+        } else if ("exams_report".equals(reportItem.getId()) || "online_exams".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching OnlineExamsReportActivity");
+            intent = new Intent(context, OnlineExamsReportActivity.class);
+        } else if ("exams_rank_report".equals(reportItem.getId()) || "online_exam_rank".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching OnlineExamRankReportActivity");
+            intent = new Intent(context, OnlineExamRankReportActivity.class);
+        } else if ("student_exams_attempt_report".equals(reportItem.getId()) || "online_exam_attend".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching OnlineExamAttendReportActivity");
+            intent = new Intent(context, OnlineExamAttendReportActivity.class);
+        } else if ("result_report".equals(reportItem.getId()) || "internal_result".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching InternalResultReportActivity");
+            intent = new Intent(context, InternalResultReportActivity.class);
+        } else if ("external_result".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching ExternalResultReportActivity");
+            intent = new Intent(context, ExternalResultReportActivity.class);
+        } else if ("homework_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching HomeworkReportActivity");
+            intent = new Intent(context, HomeworkReportActivity.class);
+        } else if ("homework_evaluation_report".equals(reportItem.getId()) || "evaluation_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching EvaluationReportActivity");
+            intent = new Intent(context, EvaluationReportActivity.class);
+        } else if ("daily_assignment_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching DailyAssignmentReportActivity");
+            intent = new Intent(context, DailyAssignmentReportActivity.class);
+        } else if ("book_issue_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching StudentBookIssueReportActivity");
+            intent = new Intent(context, StudentBookIssueReportActivity.class);
+        } else if ("book_due_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching BookDueReportActivity");
+            intent = new Intent(context, BookDueReportActivity.class);
+        } else if ("book_inventory_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching BookInventoryReportActivity");
+            intent = new Intent(context, BookInventoryReportActivity.class);
+        } else if ("book_issue_return_report".equals(reportItem.getId()) || "issue_return".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching IssueReturnReportActivity");
+            intent = new Intent(context, IssueReturnReportActivity.class);
+        } else if ("stock_report".equals(reportItem.getId()) || "inventory_stock_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching InventoryStockReportActivity");
+            intent = new Intent(context, InventoryStockReportActivity.class);
+        } else if ("add_item_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching AddItemReportActivity");
+            intent = new Intent(context, AddItemReportActivity.class);
+        } else if ("issue_item_report".equals(reportItem.getId()) || "issue_inventory_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching IssueInventoryReportActivity");
+            intent = new Intent(context, IssueInventoryReportActivity.class);
+        } else if ("student_transport_details".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching StudentTransportDetailsReportActivity");
+            intent = new Intent(context, StudentTransportDetailsReportActivity.class);
+        } else if ("student_hostel_details".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching StudentHostelDetailsReportActivity");
+            intent = new Intent(context, StudentHostelDetailsReportActivity.class);
+        } else if ("student_academic_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching StudentAcademicReportActivity");
+            intent = new Intent(context, StudentAcademicReportActivity.class);
+        } else if ("total_student_academic_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching TotalStudentAcademicReportActivity");
+            intent = new Intent(context, TotalStudentAcademicReportActivity.class);
+        } else if ("feegroupwise_collection".equals(reportItem.getId()) || "feegroupwise_collection_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching FeeGroupwiseCollectionReportActivity");
+            intent = new Intent(context, FeeGroupwiseCollectionReportActivity.class);
+        } else if ("session_fee_structure".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching SessionFeeStructureReportActivity");
+            intent = new Intent(context, SessionFeeStructureReportActivity.class);
+        } else if ("audit_log".equals(reportItem.getId()) || "audit_log_report".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching AuditLogReportActivity");
+            intent = new Intent(context, AuditLogReportActivity.class);
+        } else if ("report_by_name".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching GenericReportActivity for report_by_name");
+            intent = new Intent(context, GenericReportActivity.class);
+            intent.putExtra("api_endpoint", "report-by-name/filter");
+            intent.putExtra("title_field", "name");
+            intent.putExtra("subtitle_field", "class");
+            intent.putExtra("detail_field", "amount");
+        } else if ("login_detail_report".equals(reportItem.getId()) || "logindetailreport".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching StudentLoginActivity");
+            intent = new Intent(context, StudentLoginActivity.class);
+        } else if ("parent_login_detail_report".equals(reportItem.getId()) || "parentlogindetailreport".equals(reportItem.getId())) {
+            Log.d(TAG, "Launching ParentLoginActivity");
+            intent = new Intent(context, ParentLoginActivity.class);
         } else {
-            // Launch generic TeacherReportDetailActivity for other reports
-            Log.d(TAG, "Launching TeacherReportDetailActivity");
+            // Launch generic TeacherReportDetailActivity for any remaining unhandled reports
+            Log.d(TAG, "Launching TeacherReportDetailActivity for: " + reportItem.getId());
             intent = new Intent(context, TeacherReportDetailActivity.class);
         }
 

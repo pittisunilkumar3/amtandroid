@@ -27,7 +27,7 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/ic_back"
                     android:layout_gravity="start"
-                    android:padding="19dp"/>
+                    android:padding="16dp"/>
 
                 <TextView
                     android:id="@+id/actionBar_title"
@@ -79,15 +79,15 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="10dp"
-            android:background="@drawable/grey_outline"
+            android:background="@drawable/bg_input_field"
             android:gravity="start"
             android:hint="@string/Reason"
-            android:minHeight="40dp"
+            android:minHeight="48dp"
             android:minLines="5"
             android:paddingStart="10dp"
             android:paddingTop="12dp"
             android:paddingEnd="10dp"
-            android:textColorHint="#000000"
+            android:textColorHint="@color/black"
             android:textSize="@dimen/primaryText"
             android:textStyle="bold" />
         <LinearLayout
@@ -110,7 +110,7 @@
                     android:id="@+id/upload_image"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     android:background="@drawable/red_border"
                     android:fontFamily="sans-serif-smallcaps"
                     android:gravity="center"
@@ -131,7 +131,7 @@
                 android:textColor="@color/textHeading"
                 android:visibility="visible"
                 android:contentDescription="@string/app_name"
-                android:padding="3dp" />
+                android:padding="4dp" />
 
         </LinearLayout>
 

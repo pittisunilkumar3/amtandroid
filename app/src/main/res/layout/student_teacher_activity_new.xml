@@ -9,14 +9,14 @@ tools:context="com.qdocs.ssre241123.students.StudentTeachersList">
         android:id="@+id/card_view_outer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardCornerRadius="0dp"
+        app:cardCornerRadius="16dp"
         app:cardElevation="0dp" >
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:elevation="10dp"
-        app:cardElevation="3dp"
+        android:elevation="2dp"
+        app:cardElevation="1dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp">
     <LinearLayout
@@ -48,7 +48,7 @@ tools:context="com.qdocs.ssre241123.students.StudentTeachersList">
                     android:text="@string/teacherheading"
                     android:textColor="@color/textHeading"
                     android:textStyle="bold"
-                    android:textSize="22dp"/>
+                    android:textSize="22sp"/>
 
             </LinearLayout>
             <LinearLayout

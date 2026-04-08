@@ -33,7 +33,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:padding="5dp"
+                android:padding="8dp"
                 android:src="@drawable/ic_close"
                 android:tint="@color/white" />
 
@@ -42,8 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@id/addTask_dialog_calenderIcon"
                 android:gravity="start|center"
-                android:minHeight="40dp"
-                android:padding="5dp"
+                android:minHeight="48dp"
+                android:padding="8dp"
                 android:text="@string/subjectdetail"
                 android:textColor="@color/white"
                 android:textSize="@dimen/primaryText"

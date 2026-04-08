@@ -19,7 +19,7 @@
     <FrameLayout
         android:layout_width="15dp"
         android:layout_height="match_parent"
-        android:padding="2dp"
+        android:padding="4dp"
         android:background="@color/colorAccent"
         android:id="@+id/item_line">
 

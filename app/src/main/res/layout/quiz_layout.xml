@@ -18,7 +18,7 @@
                 android:id="@+id/linear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#242736"
+                android:background="@color/textPrimary"
                 android:orientation="vertical">
 
                 <ImageView
@@ -31,7 +31,7 @@
                     android:layout_margin="10dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/online_logo"
-                    android:minHeight="30dp"
+                    android:minHeight="48dp"
                     android:layout_centerVertical="true"
                     android:layout_toEndOf="@+id/drawer_indicator"
                     android:scaleType="fitStart"
@@ -47,9 +47,9 @@
                     android:text="ONLINE EXAM"
                     android:layout_marginTop="10dp"
                     android:textAllCaps="true"
-                    android:paddingLeft="10dp"
+                    android:paddingStart="12dp"
                     android:background="@drawable/examname_outline"
-                    android:paddingRight="10dp"
+                    android:paddingEnd="12dp"
                     android:textColor="@color/white"
                     android:textSize="@dimen/largeheading"
                     android:textStyle="bold" />
@@ -62,14 +62,14 @@
             android:id="@+id/card_view_outer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:cardCornerRadius="0dp"
+            app:cardCornerRadius="16dp"
             app:cardElevation="0dp" >
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:elevation="10dp"
-                app:cardElevation="3dp"
+                android:elevation="2dp"
+                app:cardElevation="1dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="20dp">
                 <LinearLayout

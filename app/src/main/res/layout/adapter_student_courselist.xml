@@ -17,11 +17,11 @@
             android:id="@+id/card_view_inner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:elevation="10dp"
-            app:cardElevation="5dp"
+            android:elevation="2dp"
+            app:cardElevation="2dp"
             android:layout_margin="10dp"
             app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="15dp">
+            app:cardCornerRadius="16dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -52,14 +52,14 @@
                         android:orientation="horizontal"
                         android:weightSum="2"
                         android:textColor="@color/textHeading"
-                        android:textSize="17dp"
+                        android:textSize="17sp"
                         android:layout_marginTop="135dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:padding="3dp"
+                            android:padding="4dp"
                             >
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -96,7 +96,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:gravity="center_vertical"
-                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginStart="8dp"
                                         android:text="Tanu Malviya"
                                         android:textStyle="bold"
                                         android:textColor="@color/white"
@@ -109,7 +109,7 @@
                                         android:layout_height="wrap_content"
                                         android:gravity="center_vertical"
                                         android:text="28-02-2021"
-                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginStart="8dp"
                                         android:textColor="@color/white"
                                         android:textStyle="bold"
                                         android:textSize="@dimen/secondaryText"
@@ -178,14 +178,14 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="8dp"
                             android:gravity="end">
 
                             <ImageView
                                 android:layout_width="20dp"
                                 android:layout_height="20dp"
                                 android:layout_marginLeft="5dp"
-                                android:padding="3dp"
+                                android:padding="4dp"
                                 android:src="@drawable/ic_clock" />
                             <TextView
                                 android:id="@+id/coursehours"
@@ -222,13 +222,13 @@
                         android:id="@+id/rating_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="5dp">
+                        android:padding="8dp">
                         <RatingBar
                             android:id="@+id/rating"
                             style="@style/customRatingBar"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:progressBackgroundTint="@color/hintDark"
+                            android:progressBackgroundTint="@color/textSecondary"
                             android:progressTint="@color/yellow"
                             android:visibility="visible" />
                         <TextView
@@ -295,7 +295,7 @@
                                 android:id="@+id/course_startlesson"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="10dp"
+                                android:layout_marginStart="8dp"
                                 android:text="@string/startlesson"
                                 android:gravity="center"
                                 android:visibility="visible"

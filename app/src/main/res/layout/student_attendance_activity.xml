@@ -9,14 +9,14 @@
         android:id="@+id/card_view_outer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardCornerRadius="0dp"
+        app:cardCornerRadius="16dp"
         app:cardElevation="0dp" >
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:elevation="10dp"
-        app:cardElevation="3dp"
+        android:elevation="2dp"
+        app:cardElevation="1dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="20dp">
     <LinearLayout
@@ -46,7 +46,7 @@
                     android:textColor="@color/textHeading"
                     android:textStyle="bold"
                     android:layout_marginStart="10dp"
-                    android:textSize="22dp"/>
+                    android:textSize="22sp"/>
 
             </LinearLayout>
             <LinearLayout
@@ -66,11 +66,11 @@
             android:id="@+id/card_view_inner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:elevation="10dp"
-            app:cardElevation="5dp"
+            android:elevation="2dp"
+            app:cardElevation="2dp"
             android:layout_margin="15dp"
             app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="15dp">
+            app:cardCornerRadius="16dp">
 
 
         <LinearLayout
@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/primaryText"
                 android:gravity="start|center"
-                android:paddingLeft="10dp"
+                android:paddingStart="12dp"
                 android:text="@string/date"
                 android:layout_marginRight="5dp"
                 android:textStyle="bold"
@@ -104,8 +104,8 @@
             android:textSize="@dimen/primaryText"
             android:layout_marginLeft="10dp"
             android:gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:text="@string/date"
@@ -129,7 +129,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="40dp">
+            android:minHeight="48dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -170,7 +170,7 @@
                     android:layout_weight="0.9"
                     android:text="@string/attendance"
                     android:textStyle="bold"
-                    android:paddingRight="10dp"
+                    android:paddingEnd="12dp"
                     android:gravity="right"
                     android:textColor="@color/textHeading"/>
 
@@ -185,9 +185,9 @@
             android:id="@+id/recyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="5dp"
+            android:paddingStart="8dp"
             android:visibility="visible"
-            android:paddingRight="5dp"/>
+            android:paddingEnd="8dp"/>
 
 
     </LinearLayout>
@@ -222,11 +222,11 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:elevation="10dp"
-            app:cardElevation="5dp"
+            android:elevation="2dp"
+            app:cardElevation="2dp"
             android:layout_margin="10dp"
             app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="15dp">
+            app:cardCornerRadius="16dp">
 
     <RelativeLayout
         android:id="@+id/attendance_mainLay"

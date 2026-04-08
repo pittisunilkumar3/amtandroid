@@ -9,7 +9,7 @@
     android:layout_marginTop="8dp"
     android:layout_marginBottom="8dp"
     app:cardCornerRadius="12dp"
-    app:cardElevation="4dp"
+    app:cardElevation="2dp"
     app:cardUseCompatPadding="false">
 
     <LinearLayout
@@ -55,9 +55,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="John Michael Doe"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:maxLines="2"
                     android:ellipsize="end" />
 
@@ -68,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:text="Adm. No: 2024001"
                     android:textSize="14sp"
-                    android:textColor="#E0E0E0"
+                    android:textColor="@color/divider"
                     android:layout_marginTop="4dp" />
             </LinearLayout>
 
@@ -80,7 +80,7 @@
                 android:text="✓ Active"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:background="@drawable/bg_status_active"
                 android:padding="8dp"
                 android:layout_marginStart="8dp" />
@@ -92,7 +92,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp"
-            android:background="#FFFFFF">
+            android:background="@color/white">
 
             <!-- Admission Date -->
             <LinearLayout
@@ -110,7 +110,7 @@
                     android:layout_height="wrap_content"
                     android:text="📅 Admission Date: 2024-04-15"
                     android:textSize="14sp"
-                    android:textColor="#333333"
+                    android:textColor="@color/textPrimary"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -134,7 +134,7 @@
                     android:layout_height="wrap_content"
                     android:text="🎓 Class 10 - A"
                     android:textSize="14sp"
-                    android:textColor="#2196F3"
+                    android:textColor="@color/blue"
                     android:textStyle="bold" />
             </LinearLayout>
 
@@ -158,14 +158,14 @@
                     android:layout_height="wrap_content"
                     android:text="📚 Session: 2024-2025"
                     android:textSize="14sp"
-                    android:textColor="#555555" />
+                    android:textColor="@color/textSecondary" />
             </LinearLayout>
 
             <!-- Divider -->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#E0E0E0"
+                android:background="@color/divider"
                 android:layout_marginTop="4dp"
                 android:layout_marginBottom="12dp" />
 
@@ -175,7 +175,7 @@
                 android:layout_height="wrap_content"
                 android:text="Guardian Information"
                 android:textSize="13sp"
-                android:textColor="#888888"
+                android:textColor="@color/textTertiary"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp" />
 
@@ -199,7 +199,7 @@
                     android:layout_height="wrap_content"
                     android:text="👤 Robert Doe (Father)"
                     android:textSize="14sp"
-                    android:textColor="#555555" />
+                    android:textColor="@color/textSecondary" />
             </LinearLayout>
 
             <!-- Contact Numbers -->
@@ -230,7 +230,7 @@
                         android:layout_height="wrap_content"
                         android:text="📱 9876543210"
                         android:textSize="13sp"
-                        android:textColor="#555555" />
+                        android:textColor="@color/textSecondary" />
                 </LinearLayout>
 
                 <!-- Guardian Mobile -->
@@ -253,7 +253,7 @@
                         android:layout_height="wrap_content"
                         android:text="📞 9876543210"
                         android:textSize="13sp"
-                        android:textColor="#555555" />
+                        android:textColor="@color/textSecondary" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

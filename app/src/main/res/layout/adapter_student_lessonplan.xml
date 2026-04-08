@@ -5,7 +5,7 @@
     android:id="@+id/headlayout"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="5dp"
+    android:padding="8dp"
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
     android:weightSum="2">

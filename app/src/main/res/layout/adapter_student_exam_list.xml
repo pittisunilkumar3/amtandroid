@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:minHeight="50dp"
-    android:elevation="10dp"
-    app:cardElevation="5dp"
+    android:elevation="2dp"
+    app:cardElevation="2dp"
     android:layout_margin="10dp"
     app:cardBackgroundColor="@color/white"
-    app:cardCornerRadius="15dp"
+    app:cardCornerRadius="16dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
@@ -23,14 +23,14 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:orientation="vertical"
-            android:background="#E7F1EE">
+            android:background="@color/surfaceContainer">
             <TextView
                 android:id="@+id/adapter_student_examList_nameTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:layout_marginEnd="5dp"
-                android:paddingLeft="5dp"
+                android:paddingStart="8dp"
                 android:text=""
                 android:textSize="@dimen/primaryText"
                 android:layout_gravity="center_vertical"
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:layout_marginEnd="5dp"
-                android:paddingLeft="5dp"
+                android:paddingStart="8dp"
                 android:text=""
                 android:textSize="@dimen/secondaryText"
                 android:layout_gravity="center_vertical"
@@ -76,8 +76,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/examSchedule"
                         android:gravity="center"
-                        android:paddingRight="10dp"
-                        android:paddingLeft="10dp"
+                        android:paddingEnd="12dp"
+                        android:paddingStart="12dp"
                         android:paddingBottom="5dp"
                         android:paddingTop="5dp"
                         android:textSize="@dimen/secondaryText"
@@ -91,7 +91,7 @@
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
                     android:layout_gravity="center_vertical"
                     android:gravity="center"
                     >
@@ -102,12 +102,12 @@
                         android:layout_height="wrap_content"
                         android:text="@string/examresult"
                         android:textStyle="bold"
-                       android:paddingRight="10dp"
-                        android:paddingLeft="10dp"
+                       android:paddingEnd="12dp"
+                        android:paddingStart="12dp"
                         android:paddingBottom="5dp"
                         android:paddingTop="5dp"
                         android:textSize="@dimen/secondaryText"
-                        android:background="@drawable/green_curve_border"
+                        android:background="@drawable/bg_button_secondary"
                         android:gravity="center"
                         android:textColor="@color/white"/>
 
@@ -118,7 +118,7 @@
         <!--<LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:minHeight="40dp"
+            android:minHeight="48dp"
             android:layout_weight="1"
             android:orientation="horizontal"
             android:gravity="center|end"
@@ -132,7 +132,7 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"
                 android:orientation="horizontal"
-                android:padding="5dp"
+                android:padding="8dp"
                 android:layout_marginEnd="5dp"
                 android:layout_gravity="center_vertical"
                 android:gravity="center"
@@ -152,11 +152,11 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"
                 android:orientation="horizontal"
-                android:padding="5dp"
+                android:padding="8dp"
                 android:layout_marginStart="5dp"
                 android:layout_gravity="center_vertical"
                 android:gravity="center"
-                android:background="@drawable/yellow_curve_border">
+                android:background="@drawable/bg_button_primary_border">
 
 
                 <TextView

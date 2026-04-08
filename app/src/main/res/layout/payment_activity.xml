@@ -24,7 +24,7 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_back"
                 android:layout_gravity="start"
-                android:padding="19dp"/>
+                android:padding="16dp"/>
 
             <TextView
                 android:id="@+id/actionBar_title"
@@ -57,7 +57,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/ic_open_book"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     android:tint="@color/white"
                     />
 
@@ -87,7 +87,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/ic_dashboard_pandingtask"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     />
 
                 <TextView
@@ -115,7 +115,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/courseperformance"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     android:tint="@color/white"
                     />
 
@@ -144,7 +144,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/ic_reset"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     />
 
                 <TextView
@@ -173,7 +173,7 @@
                     android:layout_height="30dp"
                     android:src="@drawable/ic_calender"
                     android:tint="@color/white"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     />
 
                 <TextView
@@ -201,7 +201,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/ic_reset"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     />
 
                 <TextView

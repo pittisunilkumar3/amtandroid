@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardPreventCornerOverlap="true"
-    android:layout_margin="5dp"
+    android:layout_margin="8dp"
     android:id="@+id/viewContainer">
 
     <LinearLayout
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/linear_layout"
-            android:padding="5dp"
+            android:padding="8dp"
             android:weightSum="2"
             android:layout_marginBottom="5dp"
             android:orientation="vertical">
@@ -77,7 +77,7 @@
                 style="@style/customRatingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:progressBackgroundTint="@color/hintDark"
+                android:progressBackgroundTint="@color/textSecondary"
                 android:progressTint="@color/yellow"
                 android:layout_marginLeft="10dp"
                 android:visibility="visible" />

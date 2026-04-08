@@ -26,7 +26,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                android:padding="5dp"
+                android:padding="8dp"
                 android:src="@drawable/ic_close"
                 android:tint="@color/white" />
 
@@ -34,8 +34,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start|center"
-                android:minHeight="35dp"
-                android:padding="5dp"
+                android:minHeight="44dp"
+                android:padding="8dp"
                 android:text="@string/payFees"
                 android:textColor="@color/white"
                 android:textSize="@dimen/primaryText"
@@ -83,9 +83,9 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="40dp"
+                android:minHeight="48dp"
                 android:weightSum="2"
-                app:cardElevation="10dp"
+                app:cardElevation="2dp"
                 android:layout_gravity="center"
                 android:orientation="horizontal">
                 <LinearLayout
@@ -122,7 +122,7 @@
                         android:gravity="right|center_vertical"
                         android:layout_weight="1"
                         android:background="@color/seperator"
-                        android:padding="5dp">
+                        android:padding="8dp">
 
                         <TextView
                             android:id="@+id/total_fees"

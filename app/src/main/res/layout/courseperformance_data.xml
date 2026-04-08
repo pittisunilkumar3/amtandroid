@@ -20,11 +20,11 @@
                 android:id="@+id/card_view_inner"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:elevation="10dp"
-                app:cardElevation="5dp"
+                android:elevation="2dp"
+                app:cardElevation="2dp"
                 android:layout_margin="10dp"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="15dp">
+                app:cardCornerRadius="16dp">
                 >
 
                 <LinearLayout
@@ -40,7 +40,7 @@
                         android:id="@+id/quiz_no"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
+                        android:padding="8dp"
                         android:textColor="@color/textHeading"
                         android:textStyle="bold"
                         android:text="quiz 1"/>
@@ -49,14 +49,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/textHeading"
-                        android:padding="5dp"
+                        android:padding="8dp"
                         android:text="quiz name"/>
                     <TextView
                         android:id="@+id/total_question"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/textHeading"
-                        android:padding="5dp"
+                        android:padding="8dp"
                         android:text="Total Question"/>
 
                 </LinearLayout>
@@ -77,9 +77,9 @@
                         android:id="@+id/piechart"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:padding="6dp"
+                        android:padding="8dp"
                         android:layout_weight="1"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="12dp"
                         android:layout_marginBottom="15dp"
 
                         />
@@ -90,7 +90,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="16dp"
                         android:orientation="vertical"
                         android:gravity="center_vertical"
                         >
@@ -111,14 +111,14 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Correct Answer:"
-                                android:paddingLeft="10dp"/>
+                                android:paddingStart="12dp"/>
 
                             <TextView
                                 android:id="@+id/correct_count"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="2"
-                                android:paddingLeft="10dp"/>
+                                android:paddingStart="12dp"/>
 
                         </LinearLayout>
 
@@ -140,14 +140,14 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Wrong Answer:"
-                                android:paddingLeft="10dp"/>
+                                android:paddingStart="12dp"/>
 
                             <TextView
                                 android:id="@+id/wrong_count"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="2"
-                                android:paddingLeft="10dp"/>
+                                android:paddingStart="12dp"/>
                         </LinearLayout>
 
                         <!--Linear layout to display C++-->
@@ -168,14 +168,14 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Not Attempt:"
-                                android:paddingLeft="10dp"/>
+                                android:paddingStart="12dp"/>
 
                             <TextView
                                 android:id="@+id/noanswer_count"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="2"
-                                android:paddingLeft="10dp"/>
+                                android:paddingStart="12dp"/>
 
                         </LinearLayout>
 

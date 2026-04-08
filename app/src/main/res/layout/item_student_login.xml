@@ -7,7 +7,7 @@
     android:layout_marginEnd="12dp"
     android:layout_marginTop="8dp"
     android:layout_marginBottom="8dp"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="16dp"
     app:cardElevation="2dp"
     app:cardUseCompatPadding="false">
 
@@ -48,7 +48,7 @@
                     android:text="Student Name"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    android:textColor="#333333" />
+                    android:textColor="@color/textPrimary" />
 
                 <TextView
                     android:id="@+id/tv_class_section"
@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:text="Class - Section"
                     android:textSize="14sp"
-                    android:textColor="#666666"
+                    android:textColor="@color/textSecondary"
                     android:layout_marginTop="2dp" />
             </LinearLayout>
 
@@ -76,7 +76,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#E0E0E0"
+            android:background="@color/divider"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp" />
 
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:text="• Adm. No: 12345"
                 android:textSize="14sp"
-                android:textColor="#555555"
+                android:textColor="@color/textSecondary"
                 android:layout_marginBottom="4dp"
                 android:drawablePadding="8dp" />
 
@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:text="• Mobile: 9876543210"
                 android:textSize="14sp"
-                android:textColor="#555555"
+                android:textColor="@color/textSecondary"
                 android:layout_marginBottom="4dp"
                 android:drawablePadding="8dp" />
 
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:text="• Email: student@example.com"
                 android:textSize="14sp"
-                android:textColor="#555555"
+                android:textColor="@color/textSecondary"
                 android:layout_marginBottom="4dp"
                 android:drawablePadding="8dp" />
 
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:text="• Session: 2024-2025"
                 android:textSize="14sp"
-                android:textColor="#555555"
+                android:textColor="@color/textSecondary"
                 android:drawablePadding="8dp" />
         </LinearLayout>
 
@@ -134,7 +134,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#E0E0E0"
+            android:background="@color/divider"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp" />
 
@@ -145,7 +145,7 @@
             android:text="Student Login Credentials"
             android:textSize="14sp"
             android:textStyle="bold"
-            android:textColor="#333333"
+            android:textColor="@color/textPrimary"
             android:layout_marginBottom="8dp" />
 
         <!-- Username Container -->
@@ -169,7 +169,7 @@
                     android:layout_height="wrap_content"
                     android:text="Username"
                     android:textSize="12sp"
-                    android:textColor="#999999" />
+                    android:textColor="@color/textTertiary" />
 
                 <TextView
                     android:id="@+id/tv_username"
@@ -178,7 +178,7 @@
                     android:text="student123"
                     android:textSize="14sp"
                     android:textStyle="bold"
-                    android:textColor="#333333"
+                    android:textColor="@color/textPrimary"
                     android:layout_marginTop="2dp" />
             </LinearLayout>
 
@@ -187,9 +187,9 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@drawable/ic_fa_copy"
-                android:padding="6dp"
+                android:padding="8dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:tint="#2196F3"
+                android:tint="@color/blue"
                 android:contentDescription="Copy Username" />
         </LinearLayout>
 
@@ -213,7 +213,7 @@
                     android:layout_height="wrap_content"
                     android:text="Password"
                     android:textSize="12sp"
-                    android:textColor="#999999" />
+                    android:textColor="@color/textTertiary" />
 
                 <TextView
                     android:id="@+id/tv_password"
@@ -222,7 +222,7 @@
                     android:text="password123"
                     android:textSize="14sp"
                     android:textStyle="bold"
-                    android:textColor="#333333"
+                    android:textColor="@color/textPrimary"
                     android:layout_marginTop="2dp" />
             </LinearLayout>
 
@@ -231,9 +231,9 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@drawable/ic_fa_copy"
-                android:padding="6dp"
+                android:padding="8dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:tint="#2196F3"
+                android:tint="@color/blue"
                 android:contentDescription="Copy Password" />
         </LinearLayout>
 

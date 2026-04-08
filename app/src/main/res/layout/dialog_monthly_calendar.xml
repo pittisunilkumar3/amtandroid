@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
     app:cardCornerRadius="12dp"
-    app:cardElevation="8dp">
+    app:cardElevation="2dp">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                         android:layout_height="wrap_content"
                         android:text="Staff Name"
                         android:textColor="@color/black"
-                        android:textSize="18sp"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -216,7 +216,7 @@
                 <View
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:background="#D4EDDA"
+                    android:background="@color/successLight"
                     android:layout_marginEnd="4dp" />
                 <TextView
                     android:layout_width="0dp"
@@ -229,7 +229,7 @@
                 <View
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:background="#F8D7DA"
+                    android:background="@color/errorLight"
                     android:layout_marginEnd="4dp" />
                 <TextView
                     android:layout_width="0dp"
@@ -250,7 +250,7 @@
                 <View
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:background="#FFF3CD"
+                    android:background="@color/warningLight"
                     android:layout_marginEnd="4dp" />
                 <TextView
                     android:layout_width="0dp"
@@ -263,7 +263,7 @@
                 <View
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:background="#D1ECF1"
+                    android:background="@color/infoLight"
                     android:layout_marginEnd="4dp" />
                 <TextView
                     android:layout_width="0dp"

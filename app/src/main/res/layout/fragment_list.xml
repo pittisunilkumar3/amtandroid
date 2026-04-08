@@ -43,7 +43,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/admDate"/>
@@ -54,9 +54,9 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:text="@string/empty"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:textSize="@dimen/secondaryText"
                             />
 
@@ -75,7 +75,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/dob"/>
@@ -86,9 +86,9 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:text="@string/empty"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:textSize="@dimen/secondaryText"
                             />
                     </LinearLayout>
@@ -105,7 +105,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/gender"/>
@@ -116,9 +116,9 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:text="@string/empty"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:textSize="@dimen/secondaryText"
                             />
                     </LinearLayout>
@@ -135,7 +135,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/category"/>
@@ -146,9 +146,9 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:text="@string/empty"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:textSize="@dimen/secondaryText"
                             />
                     </LinearLayout>
@@ -166,7 +166,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/mobileNo"/>
@@ -177,9 +177,9 @@
                             android:layout_weight="1"
                             android:id="@+id/mobileno"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             />
 
                     </LinearLayout>
@@ -196,7 +196,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/caste"/>
@@ -206,10 +206,10 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:id="@+id/caste"
                             android:textSize="@dimen/secondaryText"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:text="@string/empty" />
 
                     </LinearLayout>
@@ -226,7 +226,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/religion"/>
@@ -237,9 +237,9 @@
                             android:layout_weight="1"
                             android:gravity="start"
                             android:id="@+id/religion"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:text="@string/empty" />
 
                     </LinearLayout>
@@ -256,7 +256,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/email"/>
@@ -267,9 +267,9 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:text="@string/empty"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:textSize="@dimen/secondaryText"
                             />
 
@@ -287,7 +287,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/currentAdd"/>
@@ -298,9 +298,9 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:text="@string/empty"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:textSize="@dimen/secondaryText"
                             />
 
@@ -318,7 +318,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/permanentAdd"/>
@@ -329,9 +329,9 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:text="@string/empty"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:textSize="@dimen/secondaryText"
                             />
 
@@ -350,7 +350,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/bloodGroup"/>
@@ -361,9 +361,9 @@
                             android:layout_weight="1"
                             android:id="@+id/bloodgroup"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:text="@string/empty" />
 
                     </LinearLayout>
@@ -380,7 +380,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/height"/>
@@ -391,9 +391,9 @@
                             android:layout_weight="1"
                             android:id="@+id/height"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:text="@string/empty" />
 
                     </LinearLayout>
@@ -410,7 +410,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/weight"/>
@@ -421,9 +421,9 @@
                             android:layout_weight="1"
                             android:id="@+id/weight"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:text="@string/empty" />
 
                     </LinearLayout>
@@ -441,7 +441,7 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
                             android:textColor="@color/textHeading"
                             android:text="@string/note"/>
@@ -452,9 +452,9 @@
                             android:layout_weight="1"
                             android:id="@+id/note"
                             android:gravity="start"
-                            android:padding="5dp"
+                            android:padding="8dp"
                             android:textSize="@dimen/secondaryText"
-                            android:textColor="@color/hintDark"
+                            android:textColor="@color/textSecondary"
                             android:text="@string/empty" />
 
                     </LinearLayout>

@@ -17,11 +17,11 @@
             android:id="@+id/card_view_inner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:elevation="10dp"
-            app:cardElevation="5dp"
+            android:elevation="2dp"
+            app:cardElevation="2dp"
             android:layout_margin="10dp"
             app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="15dp">
+            app:cardCornerRadius="16dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
                     android:layout_height="wrap_content"
                     android:padding="10dp"
                     android:weightSum="2"
-                    android:background="#E7F1EE">
+                    android:background="@color/surfaceContainer">
                     <TextView
                         android:id="@+id/adapter_subjectNameTV"
                         android:layout_width="0dp"
@@ -63,7 +63,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/ic_edit"
-                            android:padding="5dp" />
+                            android:padding="8dp" />
 
                         <ImageView
                             android:id="@+id/adapter_deleteBtn"
@@ -71,7 +71,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/ic_delete"
-                            android:padding="5dp" />
+                            android:padding="8dp" />
                     </LinearLayout>
                 </LinearLayout>
                 <LinearLayout

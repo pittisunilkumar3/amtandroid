@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#fafafa"
+    android:background="@color/backgroundMain"
     android:orientation="vertical">
 
     <LinearLayout
@@ -20,7 +20,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question"
-                android:layout_marginLeft="15dp"
+                android:layout_marginStart="12dp"
                 android:gravity="right"
                 android:textColor="@color/textHeading"
                 android:layout_marginTop="15dp"
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:gravity="left"
-                android:paddingLeft="10dp"
+                android:paddingStart="12dp"
                 android:text="-"
                 android:textColor="@color/textHeading"
                 android:textSize="@dimen/primaryText"
@@ -74,10 +74,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="5dp"
+            android:padding="8dp"
             android:visibility="visible"
             android:layout_gravity="center"
-            android:layout_margin="5dp">
+            android:layout_margin="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -91,11 +91,11 @@
                     android:background="@color/white"
                     android:buttonTint="@color/textHeading"
                     android:text="Option 1"
-                    android:textColor="@color/hintDark" />
+                    android:textColor="@color/textSecondary" />
                 <TextView
                     android:id="@+id/moption_a_value"
                     android:layout_width="match_parent"
-                    android:layout_margin="5dp"
+                    android:layout_margin="8dp"
                     android:textColor="@color/textHeading"
                     android:layout_height="wrap_content"/>
 
@@ -112,11 +112,11 @@
                     android:background="@color/white"
                     android:buttonTint="@color/textHeading"
                     android:text="Option 1"
-                    android:textColor="@color/hintDark" />
+                    android:textColor="@color/textSecondary" />
                 <TextView
                     android:id="@+id/moption_b_value"
                     android:layout_width="match_parent"
-                    android:layout_margin="5dp"
+                    android:layout_margin="8dp"
                     android:textColor="@color/textHeading"
                     android:layout_height="wrap_content"/>
 
@@ -134,11 +134,11 @@
                     android:background="@color/white"
                     android:buttonTint="@color/textHeading"
                     android:text="Option 1"
-                    android:textColor="@color/hintDark" />
+                    android:textColor="@color/textSecondary" />
                 <TextView
                     android:id="@+id/moption_c_value"
                     android:layout_width="match_parent"
-                    android:layout_margin="5dp"
+                    android:layout_margin="8dp"
                     android:textColor="@color/textHeading"
                     android:layout_height="wrap_content"/>
 
@@ -156,11 +156,11 @@
                     android:background="@color/white"
                     android:buttonTint="@color/textHeading"
                     android:text="Option 1"
-                    android:textColor="@color/hintDark" />
+                    android:textColor="@color/textSecondary" />
                 <TextView
                     android:id="@+id/moption_d_value"
                     android:layout_width="match_parent"
-                    android:layout_margin="5dp"
+                    android:layout_margin="8dp"
                     android:textColor="@color/textHeading"
                     android:layout_height="wrap_content"/>
 
@@ -178,12 +178,12 @@
                     android:background="@color/white"
                     android:buttonTint="@color/textHeading"
                     android:text="Option 1"
-                    android:textColor="@color/hintDark" />
+                    android:textColor="@color/textSecondary" />
                 <TextView
                     android:id="@+id/moption_e_value"
                     android:layout_width="match_parent"
                     android:textColor="@color/textHeading"
-                    android:layout_margin="5dp"
+                    android:layout_margin="8dp"
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>

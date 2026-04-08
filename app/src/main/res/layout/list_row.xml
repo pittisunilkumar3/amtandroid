@@ -34,7 +34,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffffff"
+        android:background="@color/white"
        >
 
         <androidx.cardview.widget.CardView
@@ -88,7 +88,7 @@
                     android:baselineAligned="false"
                     android:orientation="vertical"
                     android:layout_below="@+id/headLayout"
-                    android:padding="5dp">
+                    android:padding="8dp">
 
                     <TextView
                         android:id="@+id/message"

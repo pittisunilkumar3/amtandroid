@@ -9,11 +9,11 @@
         android:id="@+id/card_view_inner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="10dp"
-        app:cardElevation="5dp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
         android:layout_margin="10dp"
         app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="15dp">
+        app:cardCornerRadius="16dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,12 +29,12 @@
                 android:id="@+id/adapter_student_examSchedule_subjectTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="40dp"
+                android:minHeight="48dp"
                 android:textSize="@dimen/primaryText"
                 android:gravity="start|center"
                 android:textColor="@color/textHeading"
                 android:textStyle="bold"
-                android:padding="5dp" />
+                android:padding="8dp" />
 
 
             <LinearLayout

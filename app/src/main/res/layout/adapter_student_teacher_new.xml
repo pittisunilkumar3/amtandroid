@@ -10,11 +10,11 @@
         android:id="@+id/card_view_inner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="10dp"
-        app:cardElevation="5dp"
+        android:elevation="2dp"
+        app:cardElevation="2dp"
         android:layout_margin="10dp"
         app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="15dp">
+        app:cardCornerRadius="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:background="#E7F1EE">
+                android:background="@color/surfaceContainer">
                 <ImageView
                     android:id="@+id/studentSubjectAdapter_teacherIconIV"
                     android:layout_width="25dp"
@@ -73,7 +73,7 @@
                         android:layout_marginTop="10dp"
                         android:background="@drawable/green_border"
                         android:gravity="center"
-                        android:padding="5dp"
+                        android:padding="8dp"
                         android:text="@string/classTeacher"
                         android:textColor="@color/white"
                         android:textSize="@dimen/secondaryText"
@@ -162,7 +162,7 @@
                         android:id="@+id/viewdetail"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
-                        android:layout_marginRight="15dp"
+                        android:layout_marginEnd="12dp"
                         android:gravity="center">
                         <ImageView
                             android:layout_width="30dp"
@@ -180,7 +180,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:gravity="center"
-                        android:layout_marginRight="15dp"
+                        android:layout_marginEnd="12dp"
                         android:layout_weight="0.5">
 
                         <LinearLayout
@@ -197,7 +197,7 @@
                                 style="@style/customRatingBar"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:progressBackgroundTint="@color/hintDark"
+                                android:progressBackgroundTint="@color/textSecondary"
                                 android:progressTint="@color/yellow"
                                 android:visibility="visible" />
 

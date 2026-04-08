@@ -22,11 +22,11 @@
                 android:id="@+id/adapter_patient_opd_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minHeight="40dp"
+                android:minHeight="48dp"
                 android:text=""
                 android:textSize="@dimen/primaryText"
                 android:textColor="@color/textHeading"
-                android:padding="5dp"
+                android:padding="8dp"
                 />
 
             <LinearLayout
@@ -78,9 +78,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="3"
-                android:padding="5dp"
+                android:padding="8dp"
                 android:gravity="center"
-                android:layout_margin="5dp"
+                android:layout_margin="8dp"
                 >
 
                 <LinearLayout
@@ -94,7 +94,7 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/ic_profile_plus"
-                    android:layout_margin="5dp"
+                    android:layout_margin="8dp"
                     />
 
                 <LinearLayout
@@ -136,7 +136,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_calender"
-                        android:layout_margin="5dp"
+                        android:layout_margin="8dp"
                         />
 
                     <LinearLayout
@@ -180,7 +180,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_calender"
-                        android:layout_margin="5dp"
+                        android:layout_margin="8dp"
                         />
 
                     <LinearLayout

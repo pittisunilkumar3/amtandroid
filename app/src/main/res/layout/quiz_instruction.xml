@@ -22,8 +22,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start|center"
-                android:minHeight="35dp"
-                android:padding="5dp"
+                android:minHeight="44dp"
+                android:padding="8dp"
                 android:text="Quiz Instructions"
                 android:textColor="@color/white"
                 android:textSize="@dimen/primaryText"
@@ -42,7 +42,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="5dp"
+                    android:padding="8dp"
                     android:orientation="vertical">
 
                 <LinearLayout
@@ -58,7 +58,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/quiztitle"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="12dp"
                         android:textSize="@dimen/primaryText"
                         android:textColor="@color/textHeading"/>
                     <TextView
@@ -66,7 +66,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/quiztitle"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="12dp"
                         android:textSize="@dimen/primaryText"
                         android:textStyle="bold"
                         android:textColor="@color/textHeading"/>
@@ -83,7 +83,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="12dp"
                             android:textSize="@dimen/primaryText"
                             android:text="@string/noofquestion"
                             android:textColor="@color/textHeading"/>
@@ -92,7 +92,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="3"
-                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="12dp"
                             android:textSize="@dimen/primaryText"
                             android:textStyle="bold"
                             android:textColor="@color/textHeading"/>
@@ -102,7 +102,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="12dp"
                         android:textSize="@dimen/primaryText"
                         android:text="Instructions"
                         android:textStyle="bold"
@@ -117,7 +117,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="12dp"
                             android:textSize="@dimen/primaryText"
                             android:text="1.Read each question carefully, and click on the button next to your response that is based on the information covered on the topic in the module.
 \n2.Each question in the quiz is of multiple-choice or true or false format.
@@ -135,11 +135,11 @@
                             android:id="@+id/startBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
-                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="12dp"
                             android:textSize="@dimen/primaryText"
                             android:text="Start Quiz"
                             android:paddingStart="10dp"
-                            android:background="@drawable/green_curve_border"
+                            android:background="@drawable/bg_button_secondary"
                             android:paddingEnd="10dp"
                             android:gravity="center"
                             android:textStyle="bold"

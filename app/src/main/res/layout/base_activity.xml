@@ -6,40 +6,43 @@
     android:layout_height="match_parent"
     tools:context="com.qdocs.ssre241123.BaseActivity"
     android:orientation="vertical">
-    <!--Secondary Action-bar looking view -->
+
+    <!-- Action Bar -->
     <FrameLayout
         android:id="@+id/actionBarSecondary"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        >
+        android:layout_height="64dp"
+        android:background="@drawable/bg_gradient_primary"
+        android:elevation="1dp">
 
         <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="56dp"
-            >
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/actionBar_backBtn"
-                android:layout_width="56dp"
-                android:layout_height="56dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_back"
-                android:layout_gravity="start"
-                android:padding="19dp"/>
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@android:color/white" />
 
             <TextView
                 android:id="@+id/actionBar_title"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_toEndOf="@+id/actionBar_backBtn"
-                android:layout_marginStart="10dp"
-                android:scaleType="fitXY"
-                android:adjustViewBounds="true"
-                android:textSize="@dimen/heading"
-                android:textColor="@color/white"
+                android:layout_marginStart="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
                 android:gravity="center_vertical"
-                />
+                android:letterSpacing="0.01" />
 
             <LinearLayout
                 android:id="@+id/baseActivity_libraryBtn"
@@ -49,25 +52,25 @@
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="15dp"
-                android:background="@color/transparent"
+                android:layout_marginEnd="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:visibility="gone"
-                >
+                android:padding="8dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
                     android:src="@drawable/ic_open_book"
-                    android:padding="5dp"
-                    android:tint="@color/white"
-                    />
+                    android:padding="4dp"
+                    android:tint="@android:color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/book"
-                    android:textSize="@dimen/primaryText"
-                    android:textColor="@color/white"/>
+                    android:textSize="13sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="4dp" />
 
             </LinearLayout>
 
@@ -79,26 +82,28 @@
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="15dp"
-                android:background="@color/transparent"
+                android:layout_marginEnd="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:visibility="gone"
-                >
+                android:padding="8dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
                     android:src="@drawable/ic_dashboard_pandingtask"
-                    android:padding="5dp"
-                    />
+                    android:padding="4dp"
+                    android:tint="@android:color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/task"
-                    android:textSize="@dimen/primaryText"
-                    android:textColor="@color/white"/>
+                    android:textSize="13sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="4dp" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/course_performance"
                 android:layout_width="wrap_content"
@@ -107,27 +112,28 @@
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="15dp"
-                android:background="@color/transparent"
+                android:layout_marginEnd="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:visibility="gone"
-                >
+                android:padding="8dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
                     android:src="@drawable/courseperformance"
-                    android:padding="5dp"
-                    android:tint="@color/white"
-                    />
+                    android:padding="4dp"
+                    android:tint="@android:color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/courseperformance"
-                    android:textSize="@dimen/primaryText"
-                    android:textColor="@color/white"/>
+                    android:textSize="13sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="4dp" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/reset_quiz"
                 android:layout_width="wrap_content"
@@ -136,26 +142,28 @@
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="15dp"
-                android:background="@color/transparent"
+                android:layout_marginEnd="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:visibility="gone"
-                >
+                android:padding="8dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
                     android:src="@drawable/ic_reset"
-                    android:padding="5dp"
-                    />
+                    android:padding="4dp"
+                    android:tint="@android:color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/reset"
-                    android:textSize="@dimen/primaryText"
-                    android:textColor="@color/white"/>
+                    android:textSize="13sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="4dp" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/cbesetimetable"
                 android:layout_width="wrap_content"
@@ -164,27 +172,28 @@
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="15dp"
-                android:background="@color/transparent"
+                android:layout_marginEnd="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:visibility="gone"
-                >
+                android:padding="8dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
                     android:src="@drawable/ic_calender"
-                    android:tint="@color/white"
-                    android:padding="5dp"
-                    />
+                    android:tint="@android:color/white"
+                    android:padding="4dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/examSchedule"
-                    android:textSize="@dimen/primaryText"
-                    android:textColor="@color/white"/>
+                    android:textSize="13sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="4dp" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/logout"
                 android:layout_width="wrap_content"
@@ -193,40 +202,38 @@
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="15dp"
-                android:background="@color/transparent"
+                android:layout_marginEnd="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:visibility="gone"
-                >
+                android:padding="8dp">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
                     android:src="@drawable/ic_reset"
-                    android:padding="5dp"
-                    />
+                    android:padding="4dp"
+                    android:tint="@android:color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/Logout"
-                    android:textSize="@dimen/primaryText"
-                    android:textColor="@color/white"/>
+                    android:textSize="13sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="4dp" />
 
             </LinearLayout>
 
         </RelativeLayout>
-
     </FrameLayout>
-    <!--Secondary Action-bar looking view -->
 
     <!-- Content -->
     <FrameLayout
         android:id="@+id/container"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/img_background_main" >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundMain">
 
     </FrameLayout>
-
 
 </LinearLayout>

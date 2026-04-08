@@ -1,10 +1,80 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- ===== Material Design 3 Typography Scale ===== -->
+    <!-- Display -->
+    <dimen name="displayLarge">57sp</dimen>
+    <dimen name="displayMedium">45sp</dimen>
+    <dimen name="displaySmall">36sp</dimen>
+
+    <!-- Headlines -->
+    <dimen name="headlineLarge">32sp</dimen>
+    <dimen name="headlineMedium">28sp</dimen>
+    <dimen name="headlineSmall">24sp</dimen>
+
+    <!-- Titles -->
+    <dimen name="titleLarge">22sp</dimen>
+    <dimen name="titleMedium">16sp</dimen>
+    <dimen name="titleSmall">14sp</dimen>
+
+    <!-- Body -->
+    <dimen name="bodyLarge">16sp</dimen>
+    <dimen name="bodyMedium">14sp</dimen>
+    <dimen name="bodySmall">12sp</dimen>
+
+    <!-- Labels -->
+    <dimen name="labelLarge">14sp</dimen>
+    <dimen name="labelMedium">12sp</dimen>
+    <dimen name="labelSmall">11sp</dimen>
+
+    <!-- Legacy aliases (backward compat) -->
+    <dimen name="largeheading">24sp</dimen>
+    <dimen name="heading">20sp</dimen>
+    <dimen name="btntext">15sp</dimen>
+    <dimen name="primaryText">15sp</dimen>
+    <dimen name="secondaryText">12sp</dimen>
+
+    <!-- ===== Spacing Scale ===== -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="spacing_base">16dp</dimen>
+    <dimen name="spacing_lg">20dp</dimen>
+    <dimen name="spacing_xl">24dp</dimen>
+    <dimen name="spacing_xxl">32dp</dimen>
+
+    <!-- ===== Component Sizes ===== -->
+    <dimen name="toolbar_height">64dp</dimen>
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="card_radius_sm">12dp</dimen>
+    <dimen name="card_radius_lg">20dp</dimen>
+    <dimen name="input_height">52dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_height_sm">40dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_size_sm">20dp</dimen>
+    <dimen name="icon_size_lg">32dp</dimen>
+    <dimen name="avatar_size">48dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="list_item_height">72dp</dimen>
+
+    <!-- ===== Layout ===== -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="appbar_padding_top">8dp</dimen>
 
+    <!-- Card spacing -->
+    <dimen name="card_top">0dp</dimen>
+    <dimen name="card_bottom">8dp</dimen>
+    <dimen name="card_start">0dp</dimen>
+    <dimen name="card_end">0dp</dimen>
+
+    <!-- List items -->
+    <dimen name="list_item_padding_sides">16dp</dimen>
+
+    <!-- Navigation separator -->
+    <dimen name="design_navigation_separator_vertical_padding">0dp</dimen>
+
+    <!-- Roboto calendar -->
     <dimen name="roboto_calendar_padding">8dp</dimen>
     <dimen name="roboto_calendar_month_margin_bottom">8dp</dimen>
     <dimen name="roboto_calendar_week_margin_bottom">5dp</dimen>
@@ -13,20 +83,4 @@
     <dimen name="roboto_calendar_ring_size">18dp</dimen>
     <dimen name="roboto_calendar_day_of_week_font">16sp</dimen>
     <dimen name="roboto_calendar_day_of_the_month_font">16sp</dimen>
-
-    <dimen name="card_top">0dp</dimen>
-    <dimen name="card_bottom">8dp</dimen>
-    <dimen name="card_start">0dp</dimen>
-    <dimen name="card_end">0dp</dimen>
-
-    <dimen name="largeheading">20sp</dimen>
-    <dimen name="heading">18sp</dimen>
-    <dimen name="btntext">16sp</dimen>
-    <dimen name="primaryText">15sp</dimen>
-    <dimen name="secondaryText">12sp</dimen>
-
-    <dimen name="design_navigation_separator_vertical_padding">0dp</dimen>
-
-    <dimen name="list_item_padding_sides">16dp</dimen>
-    <dimen name="list_item_height">80dp</dimen>
 </resources>
